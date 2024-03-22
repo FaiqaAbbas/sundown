@@ -196,14 +196,14 @@ nav .nav-links a:hover {
 /* ======Hero===== */
 /* ======Hero===== */
 .hero {
-  min-height: calc(100vh - 110px);
+  min-height:max-content;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   line-height: 1;
   letter-spacing: -0.1em;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-  padding-bottom: 3.7rem;
+  padding: 3.7rem 0;
 }
 
 .left {
@@ -312,10 +312,10 @@ nav .nav-links a:hover {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 1.15;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.2rem;
     text-align: right;
     color: black;
-    font-size: 3.7rem;
+    font-size: 3.6rem;
     font-weight: 700;
   }
 
