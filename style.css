@@ -312,6 +312,7 @@ nav .nav-links a:hover {
   nav .nav-links-hamburger a {
     text-decoration: none;
     text-transform: uppercase;
+    line-height:1;
     /* letter-spacing: -0.2rem; */
     text-align: right;
     color: black;
