@@ -250,7 +250,7 @@ nav .nav-links a:hover {
     align-items: center;
     color: rgb(47, 45, 45);
     border: 2px solid;
-    padding: 0.85em 1.25em;
+    padding: 0.9em 1.25em;
     border: 1px solid rgba(128, 128, 128, 0.451);
     border-radius: 3rem;
   }
@@ -295,7 +295,6 @@ nav .nav-links a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
     position: absolute;
     top: -150%;
     right: 0;
@@ -304,16 +303,16 @@ nav .nav-links a:hover {
     border-bottom-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     padding-inline: 1.5rem;
-    padding-top:7.7rem;
-    padding-bottom: 2rem;
+    padding-top:8rem;
+    padding-bottom: 2.5rem;
     transition: linear 0.7s;
     overflow: hidden;
   }
   nav .nav-links-hamburger a {
     text-decoration: none;
     text-transform: uppercase;
-    line-height:1;
-    /* letter-spacing: -0.2rem; */
+    line-height: 1.15;
+    letter-spacing: -0.2rem;
     text-align: right;
     color: black;
     font-size: 3.6rem;
