@@ -1,0 +1,368 @@
+@import url(https://db.onlinewebfonts.com/c/f21923cb0f60b46d41a66875255790b3?family=Neue+Haas+Grotesk+Display+Pro+65+Medium);
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.94rem;
+  background-color: #efeae3;
+}
+.container {
+  width: 95%;
+  max-width: 1500px;
+  margin: 1.9rem auto;
+  /* background-color: aquamarine; */
+}
+
+nav .menu-btn {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+/* ======Nav Bar===== */
+/* ======Nav Bar===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+hr{
+  display: none;
+}
+nav img {
+  width: 8.7rem;
+}
+nav .nav-links-hamburger{
+    display: none;
+}
+nav .nav-links-hamburger-backdrop{
+  display: none;
+}
+.nav-links-hamburger a{
+    display: none;
+}
+nav .nav-links {
+  display: flex;
+  /* will make a tags inside block/inline-block level and now we can apply overflow:hidded. 
+    overflow:hidden will not work if we have inline display */
+  gap: 0.5rem;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: rgb(47, 45, 45);
+  padding: 0.7em 1.42em;
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  border-radius: 5rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /* to keep the after element relative to a*/
+}
+nav .nav-links a::after {
+  z-index: -1;
+  content: "";
+  height: 250%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: -250%;
+  background: radial-gradient(
+    circle at center,
+    #fe530a,
+    #fe690a,
+    #fe330a,
+    #fe330a,
+    #fe530a,
+    #fe630a,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3
+  );
+  transition: ease-in-out 1s;
+}
+nav .nav-links a:hover::after {
+  top: -15%;
+  transition: all ease 0.7s;
+  background: radial-gradient(
+    circle at center,
+    /* #fe530a,
+        #fe690a,
+        #fe330a,
+        #fe330a,
+        #fe530a,
+        #fe630a,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3,
+        #efeae3, */
+      #fe530a,
+    #fe690a,
+    #fe330a,
+    #fe330a,
+    #fe530a,
+    #fe630a,
+    #fe330a,
+    #fe330a,
+    #fe330a,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+}
+nav .nav-links a:hover {
+  color: white;
+  background-color: black;
+  transition: all ease 0.4s;
+}
+
+/* ======Hero===== */
+/* ======Hero===== */
+.hero {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 1;
+  letter-spacing: -0.1em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  padding-bottom: 3.7rem;
+}
+
+.left {
+  width: 40%;
+  max-width: 900px;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.right {
+  width: 60%;
+  font-size: 11vw;
+  font-weight: 600;
+  line-height: 0.8;
+  padding-right: 1.5rem;
+  letter-spacing: -0.6rem;
+  text-align: right;
+}
+.page1 video {
+  display: block;
+  margin-top: 3.3rem;
+  border-radius: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  /* ======NAV BAR===== */
+  /* ======NAV BAR===== */
+  nav img {
+    width: 8.8rem;
+  }
+ 
+  /* ======Hamburger Menu===== */
+  /* ======Hamburger Menu===== */
+
+  /* ======Label .menu-btn===== */
+  /* ======Label .menu-btn===== */
+  nav .menu-btn {
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgb(47, 45, 45);
+    border: 2px solid;
+    padding: 0.85em 1.25em;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    border-radius: 3rem;
+  }
+
+  /* ======Hamburger Lines===== */
+  /* ======Hamburger Lines===== */
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  .hamburger .line {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  /* ======Menu Text next to Hamburger Lines===== */
+  /* ======Menu Text nect to Hamburger Lines===== */
+
+  .menu {
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    user-select: none;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  nav .nav-links-hamburger {
+    min-height:max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    left: 0;
+    background-color: #efeae3;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding-inline: 1.5rem;
+    padding-top:10rem;
+    padding-bottom: 2rem;
+    transition: linear 0.7s;
+    overflow: hidden;
+  }
+  nav .nav-links-hamburger a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    text-align: right;
+    color: black;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  nav .nav-links-hamburger-backdrop{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top:-250%;
+    left: 0;
+    transition: all ease 0.5s;
+  }
+  .nav-links-hamburger a hr{
+    display: block;
+    color:gray;
+    opacity:0.5;
+    height: 0.5px;
+    width: 100vw;
+    position: fixed;
+    left:0;
+    top:60px;
+    transition:0.5s;
+  
+    
+  }
+  #click:checked ~ .nav-links-hamburger {
+    display: flex;
+    top: 0;
+    transition: all ease 0.5s;
+  }
+  
+  #click:checked ~ .nav-links-hamburger a {
+    display: flex;
+  }
+  #click:checked ~ .nav-links-hamburger-backdrop {
+    transition: all ease 0.5s;
+    top:0;
+  }
+  #click:checked ~ .menu-btn .hamburger .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-10%, 45%);
+    transition: linear 0.3s;
+  }
+
+  #click:checked ~ .menu-btn .hamburger .line:nth-child(2) {
+    transform: rotate(45deg) translate(-14%, -45%);
+    transition: linear 0.3s;
+  }
+ 
+}
