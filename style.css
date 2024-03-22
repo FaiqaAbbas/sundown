@@ -303,7 +303,7 @@ nav .nav-links a:hover {
     border-bottom-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     padding-inline: 1.5rem;
-    padding-top:10rem;
+    padding-top:8rem;
     padding-bottom: 2rem;
     transition: linear 0.7s;
     overflow: hidden;
@@ -329,7 +329,7 @@ nav .nav-links a:hover {
     left: 0;
     transition: all ease 0.5s;
   }
-  .nav-links-hamburger a hr{
+/*  .nav-links-hamburger a hr{
     display: block;
     color:gray;
     opacity:0.5;
@@ -341,7 +341,7 @@ nav .nav-links a:hover {
     transition:0.5s;
   
     
-  }
+  }*/
   #click:checked ~ .nav-links-hamburger {
     display: flex;
     top: 0;
