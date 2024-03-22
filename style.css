@@ -313,6 +313,7 @@ nav .nav-links a:hover {
   nav .nav-links-hamburger a {
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
     text-align: right;
     color: black;
     font-size: 3.6rem;
