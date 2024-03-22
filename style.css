@@ -7,7 +7,6 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
-}
 body,
 html {
   font-family: "Bebas Neue", sans-serif;
@@ -313,7 +312,7 @@ nav .nav-links a:hover {
   nav .nav-links-hamburger a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Bebas Neue", sans-serif;
+    /* letter-spacing: -0.2rem; */
     text-align: right;
     color: black;
     font-size: 3.6rem;
@@ -331,7 +330,7 @@ nav .nav-links a:hover {
     left: 0;
     transition: all ease 0.5s;
   }
-/*  .nav-links-hamburger a hr{
+  /* .nav-links-hamburger a hr{
     display: block;
     color:gray;
     opacity:0.5;
@@ -341,9 +340,8 @@ nav .nav-links a:hover {
     left:0;
     top:60px;
     transition:0.5s;
-  
-    
-  }*/
+  }
+   */
   #click:checked ~ .nav-links-hamburger {
     display: flex;
     top: 0;
