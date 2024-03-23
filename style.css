@@ -340,12 +340,12 @@ nav .menu-btn .hamburger .line {
   }
   .hero {
     flex-direction: column-reverse;
-    padding-top: 3.4rem;
+    padding-top: 3.3rem;
     padding-bottom: 2.8rem;
     gap: 4.5rem;
   }
   .hero .left {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     align-self: flex-start;
     width: 100%;
     max-width: 280px;
