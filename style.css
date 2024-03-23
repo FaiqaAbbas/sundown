@@ -237,9 +237,8 @@ nav .nav-links a:hover {
   }
   .page1 video{
     margin:2.6rem auto;
-    height: 95vh;
+    height: 65vh;
     object-fit: cover;
-    /* background-position: ; */
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -574,3 +573,4 @@ nav .nav-links a:hover {
     padding-right:0rem;
   }
 }
+
