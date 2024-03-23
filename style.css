@@ -345,17 +345,17 @@ nav .menu-btn .hamburger .line {
     gap: 4.5rem;
   }
   .hero .left {
-    font-size: 1.39rem;
+    font-size: 1.55rem;
     align-self: flex-start;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     letter-spacing: -0.11rem;
   }
   .hero .right {
     width: 100%;
     justify-self: flex-start;
     align-self: flex-end;
-    font-size: 4.2rem;
+    font-size: 4.35rem;
     letter-spacing: -0.33rem;
     padding-right: 0.1rem;
   }
