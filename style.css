@@ -340,7 +340,7 @@ nav .menu-btn .hamburger .line {
   }
   .hero {
     flex-direction: column-reverse;
-    padding-top: 3.5rem;
+    padding-top: 3.4rem;
     padding-bottom: 2.8rem;
     gap: 4.5rem;
   }
@@ -356,7 +356,7 @@ nav .menu-btn .hamburger .line {
     justify-self: flex-start;
     align-self: flex-end;
     font-size: 4.4rem;
-    letter-spacing: -0.33rem;
+    letter-spacing: -0.2rem;
     padding-right: 0.1rem;
   }
 
