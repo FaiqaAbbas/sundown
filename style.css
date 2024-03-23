@@ -34,9 +34,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-hr{
-  display: none;
-}
+
 nav img {
   width: 9.1rem;
 }
@@ -200,26 +198,28 @@ nav .nav-links a:hover {
   min-height:max-content;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  line-height: 1;
   letter-spacing: -0.1em;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-  padding: 3.7rem 0;
+  padding-top:7.5rem;
+  padding-bottom:4rem;
 }
 
 .left {
+  align-self: flex-end;
   width: 40%;
-  max-width: 900px;
+  max-width: 350px;
   text-align: left;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.13rem;
 }
 .right {
   width: 60%;
-  font-size: 11vw;
-  font-weight: 600;
+  font-size: 9.6rem;
+  font-weight: 700;
   line-height: 0.8;
-  padding-right: 1.5rem;
+  padding-right: 0.9rem;
   letter-spacing: -0.6rem;
   text-align: right;
 }
@@ -229,14 +229,36 @@ nav .nav-links a:hover {
   border-radius: 1.3rem;
 }
 
-@media (max-width: 765px) {
+@media (max-width:765px) {
   .container {
-    width: 92%;
+    width: 91.5%;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
   nav img {
     width: 8.8rem;
+  }
+  .hero{
+    flex-direction: column-reverse;
+    padding-top:5.5rem;
+    gap:3.8rem;
+  }
+  .hero .left{
+    font-size:1.4rem;
+    align-self:flex-start;
+    width: 100%;
+    max-width:280px;
+    letter-spacing: -0.1rem;
+    line-height: 0.95;
+    /* justify-self:flex-start ; */
+  }
+  .hero .right{
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 6.5rem;
+    letter-spacing: -0.4rem;
+    padding-right: 0;
   }
  
   /* ======Hamburger Menu===== */
@@ -305,8 +327,8 @@ nav .nav-links a:hover {
     border-bottom-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     padding-inline: 1.5rem;
-    padding-top:8rem;
-    padding-bottom: 2.5rem;
+    padding-top:9rem;
+    padding-bottom: 3rem;
     transition: linear 0.7s;
     overflow: hidden;
   }
@@ -317,7 +339,7 @@ nav .nav-links a:hover {
     letter-spacing: -0.2rem;
     text-align: right;
     color: black;
-    font-size: 3.6rem;
+    font-size:5.5rem;
     font-weight: 700;
   }
 
@@ -368,8 +390,11 @@ nav .nav-links a:hover {
   }
  
 }
-@media (600px<=width<=991px){
- 
+@media (765px<=  width<= 991px){
+
+  .container{
+    width: 93%;
+  }
   nav .nav-links {
     gap: 0.4rem;
   }
@@ -377,5 +402,20 @@ nav .nav-links a:hover {
     font-size:1.19rem;
     padding: 0.7em 1.55em;
     
+  }
+  .hero{
+    padding-top: 7.2rem;
+    padding-bottom:3.5rem;
+  }
+  .hero .left{
+    font-size:1.4rem;
+    max-width: 280px;
+    letter-spacing: -0.1rem;
+    line-height: 1;
+  }
+  .hero .right{
+    font-size:7.3rem;
+    letter-spacing: -0.45rem;
+    padding-right:0rem;
   }
 }
