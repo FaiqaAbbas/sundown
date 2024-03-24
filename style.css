@@ -381,7 +381,7 @@ nav .menu-btn .hamburger .line {
 /* ==============================================Mobile=========================================== */
 
 @media (0 <= width <= 450px) {
-  body{
+  .page1,body,html{
     overflow-x: hidden;
   }
   .container {
@@ -514,6 +514,9 @@ nav .menu-btn .hamburger .line {
 }
 /* =========================================Tablet/Phablets=========================================== */
 @media (450px <= width <= 765px) {
+    .page1,body,html{
+    overflow-x: hidden;
+    }
   .container {
     width: 91.9%;
   }
