@@ -379,9 +379,9 @@ nav .menu-btn .hamburger .line {
   body,html{
     overflow-x: hidden;
   }
-/*   .page1{
+ .page1{
     position:relative;
-  } */
+  }
   .container {
     width: 88%;
     margin-bottom: 0rem;
@@ -464,7 +464,7 @@ nav .menu-btn .hamburger .line {
     display: none;
   }
   /* ============================================Hero Shape============================================= */
-/* .hero-animated-ball{
+ .hero-animated-ball{
   position:absolute;
   width: 50vw;
   height: 85vh;
@@ -509,7 +509,7 @@ nav .menu-btn .hamburger .line {
     transform: rotate(0deg);
   }
 }
- */
+ 
 }
 /* =========================================Tablet/Phablets=========================================== */
 @media (450px <= width <= 765px) {
