@@ -476,6 +476,7 @@ nav .menu-btn .hamburger .line {
   }
   /* ============================================Hero Shape============================================= */
 .hero-animated-ball{
+  position:fixed;
   width: 50vw;
   height: 85vh;
   right:0;
