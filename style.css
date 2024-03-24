@@ -12,6 +12,7 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
+  overflow-x: hidden;
 }
 .container {
   width: 95%;
@@ -303,13 +304,69 @@ nav .menu-btn .hamburger .line {
 /* ======Hero Right Text===== */
 .right {
   width: 60%;
-  font-size: 9.6rem;
+  font-size: 9.7rem;
   font-weight: 700;
   line-height: 0.8;
   padding-right: 0.9rem;
   letter-spacing: -0.6rem;
   text-align: right;
 }
+
+/* ============================================Page1 Video============================================= */
+.page1 video {
+  display: block;
+  margin-top: 3.4rem;
+  border-radius: 1.3rem;
+  position:relative;
+  
+}
+/* ============================================Hero Shape============================================= */
+.hero-animated-ball{
+  position: absolute;
+  width: 40vw;
+  height: 35vw;
+  right:0;
+  top:40vh;
+  
+}
+.ball1{
+  
+  position: absolute;
+  height: 50vw;
+  width: 68vh;
+  background-color:#fe320a;
+  border-radius:15rem;
+  right: -20rem;
+ border-radius: 50rem;
+  /* top:-2rem; */
+  filter:blur(1rem);
+  animation: ball1 3s linear infinite alternate;
+}
+.ball2{
+  
+  position: absolute;
+  height: 50vw;
+  width: 50vw;
+  background:linear-gradient(to top,#fe320a,#f15b10);
+  border-radius:15rem;
+  right: -5rem;
+  border-radius: 50rem;
+  top:4rem;
+  filter:blur(1.5rem);
+  animation: ball2 6s linear infinite alternate;
+}
+
+@keyframes ball1 {
+  from{
+    transform:translate(0,-10%);
+    transform: rotate(-25deg);
+  }
+  to{
+    transform:translate(0,10%);
+    transform: rotate(10deg);
+  }
+}
+
 /* ============================================Video============================================= */
 .page1 video {
   display: block;
@@ -324,13 +381,16 @@ nav .menu-btn .hamburger .line {
 /* ==============================================Mobile=========================================== */
 
 @media (0 <= width <= 450px) {
+  body{
+    overflow-x:hidden ;
+  }
   .container {
     width: 88%;
     margin-bottom: 0rem;
   }
   .page1 video {
     margin: 2.6rem auto;
-    height: 65vh;
+    height: 60vh;
     object-fit: cover;
   }
   /* ======NAV BAR===== */
@@ -340,23 +400,23 @@ nav .menu-btn .hamburger .line {
   }
   .hero {
     flex-direction: column-reverse;
-    padding-top: 3.3rem;
+    padding-top: 3.65rem;
     padding-bottom: 2.8rem;
-    gap: 4.34rem;
+    gap: 4.5rem;
   }
   .hero .left {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     align-self: flex-start;
     width: 100%;
     max-width: 280px;
-    letter-spacing: -0.11rem;
+    letter-spacing: -0.12rem;
   }
   .hero .right {
     width: 100%;
     justify-self: flex-start;
     align-self: flex-end;
-    font-size: 4.4rem;
-    letter-spacing: -0.2rem;
+    font-size: 4.2rem;
+    letter-spacing: -0.33rem;
     padding-right: 0.1rem;
   }
 
@@ -390,25 +450,72 @@ nav .menu-btn .hamburger .line {
 
   nav .nav-links-hamburger-backdrop {
     display: block;
+    transition: linear 0.6s;
   }
   nav .nav-links-hamburger {
     display: flex;
     padding-inline: 1.5rem;
     transition: linear 0.7s;
-    padding-top: 8.3rem;
-    padding-bottom: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 1.6rem;
   }
   nav .nav-links-hamburger a {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
   }
   nav .nav-links {
     display: none;
   }
+  /* ============================================Hero Shape============================================= */
+.hero-animated-ball{
+  width: 50vw;
+  height: 85vh;
+  right:0;
+  top:67vh;
+  
+}
+.ball1{
+  
+  position: absolute;
+  height: 33vh;
+  width: 80vh;
+  background-color:#fe320a;
+  border-radius:50vh;
+  right: -19rem;
+  border-radius: 50rem;
+  top:-1.3rem;
+  filter:blur(1rem);
+  animation: ball1 3s linear infinite alternate;
+}
+.ball2{
+  
+  position: absolute;
+  height: 35vh;
+  width: 50vw;
+  background:linear-gradient(to top,#fe320a,#f15b10);
+  border-radius:15rem;
+  right: -6rem;
+  border-radius: 50vh;
+  top:5rem;
+  filter:blur(1.5rem);
+  animation: ball2 6s linear infinite alternate;
+}
+
+@keyframes ball1 {
+  from{
+    transform:translate(0,-10%);
+    transform: rotate(-15deg);
+  }
+  to{
+    transform:translate(0,10%);
+    transform: rotate(0deg);
+  }
+}
+
 }
 /* =========================================Tablet/Phablets=========================================== */
 @media (450px <= width <= 765px) {
   .container {
-    width: 91.5%;
+    width: 91.9%;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -425,7 +532,7 @@ nav .menu-btn .hamburger .line {
     gap: 3.8rem;
   }
   .hero .left {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     align-self: flex-start;
     width: 100%;
     max-width: 280px;
@@ -464,6 +571,7 @@ nav .menu-btn .hamburger .line {
   nav .nav-links-hamburger-backdrop {
     display: flex;
   }
+  
 }
 /* =================================================================================================== */
 @media (765px <= width <= 991px) {
@@ -497,14 +605,14 @@ nav .menu-btn .hamburger .line {
 #click:checked ~ .nav-links-hamburger {
   display: flex;
   top: 0;
-  transition: all ease 0.5s;
+  transition: all ease 0.8s;
 }
 
 #click:checked ~ .nav-links-hamburger a {
   display: flex;
 }
 #click:checked ~ .nav-links-hamburger-backdrop {
-  transition: all ease 0.5s;
+  transition: all ease 0.8s;
   top: 0;
 }
 #click:checked ~ .menu-btn .hamburger .line:nth-child(1) {
