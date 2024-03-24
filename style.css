@@ -390,8 +390,11 @@ nav .menu-btn .hamburger .line {
 /* ==============================================Mobile=========================================== */
 
 @media (0 <= width <= 450px) {
-  .page1,body,html{
+  body,html{
     overflow-x: hidden;
+  }
+  .page1{
+    position:relative;
   }
   .container {
     width: 88%;
