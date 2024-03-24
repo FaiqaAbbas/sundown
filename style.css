@@ -382,7 +382,7 @@ nav .menu-btn .hamburger .line {
 
 @media (0 <= width <= 450px) {
   body{
-    overflow-x:hidden ;
+    overflow-x: hidden;
   }
   .container {
     width: 88%;
@@ -601,7 +601,34 @@ nav .menu-btn .hamburger .line {
     padding-right: 0rem;
   }
 }
-
+@media (991px <= width) {
+  .container {
+    width: 93%;
+  }
+  nav .nav-links {
+    gap: 0.4rem;
+  }
+  nav .nav-links a {
+    font-size: 1.19rem;
+    padding: 0.7em 1.55em;
+  }
+  .hero {
+    padding-top: 7.2rem;
+    padding-bottom: 3.5rem;
+  }
+  .hero .left {
+    font-size: 1.4rem;
+    max-width: 280px;
+    letter-spacing: -0.1rem;
+    line-height: 1;
+  }
+  .hero .right {
+    font-size: 7.3rem;
+    letter-spacing: -0.45rem;
+    padding-right: 0rem;
+  }
+  
+}
 #click:checked ~ .nav-links-hamburger {
   display: flex;
   top: 0;
