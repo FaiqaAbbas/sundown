@@ -368,12 +368,6 @@ nav .menu-btn .hamburger .line {
   }
 }
 
-/* ============================================Video============================================= */
-.page1 video {
-  display: block;
-  margin-top: 3.3rem;
-  border-radius: 1.3rem;
-}
 
 /* ==============================================Media Queries=========================================== */
 /* ==============================================Media Queries=========================================== */
@@ -385,9 +379,9 @@ nav .menu-btn .hamburger .line {
   body,html{
     overflow-x: hidden;
   }
-  .page1{
+/*   .page1{
     position:relative;
-  }
+  } */
   .container {
     width: 88%;
     margin-bottom: 0rem;
