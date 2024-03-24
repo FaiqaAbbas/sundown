@@ -7,15 +7,7 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
-@media (max-width: 450px) {
-  .hero-animated-ball {
-    width: 80vw; /* Adjust width to fit within viewport */
-  }
-  .ball1,
-  .ball2 {
-    width: 40vw; /* Adjust width to fit within viewport */
-  }
-}
+
 body,
 html {
   font-family: "Bebas Neue", sans-serif;
