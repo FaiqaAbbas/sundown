@@ -449,6 +449,7 @@ nav .menu-btn .hamburger .line {
   nav .nav-links-hamburger-backdrop {
     display: block;
     transition: linear 0.6s;
+    z-index:20000;
   }
   nav .nav-links-hamburger {
     display: flex;
