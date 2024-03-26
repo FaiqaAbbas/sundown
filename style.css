@@ -328,6 +328,7 @@ nav .menu-btn .hamburger .line {
   height: 35vw;
   right:0;
   top:60vh;
+  z-index:0;
   
 }
 .ball1{
@@ -341,6 +342,7 @@ nav .menu-btn .hamburger .line {
   border-radius: 50rem;
   /* top:-2rem; */
   filter:blur(1rem);
+  z-index:0;
   animation: ball1 3s linear infinite alternate;
 }
 .ball2{
@@ -353,6 +355,7 @@ nav .menu-btn .hamburger .line {
   right: -5rem;
   border-radius: 50rem;
   top:4rem;
+  z-index:0;
   filter:blur(1.5rem);
   animation: ball2 6s linear infinite alternate;
 }
@@ -471,7 +474,7 @@ nav .menu-btn .hamburger .line {
   height: 85vh;
   right:0;
   top:60vh;
-  
+  z-index:0;
 }
 .ball1{
   
@@ -484,6 +487,7 @@ nav .menu-btn .hamburger .line {
   border-radius: 50rem;
   top:-1.3rem;
   filter:blur(1rem);
+  z-index:0;
   animation: ball1 3s linear infinite alternate;
 }
 .ball2{
@@ -496,6 +500,7 @@ nav .menu-btn .hamburger .line {
   right: -6rem;
   border-radius: 50vh;
   top:5rem;
+  z-index:0;
   filter:blur(1.5rem);
   animation: ball2 6s linear infinite alternate;
 }
