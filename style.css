@@ -260,7 +260,7 @@ nav .menu-btn {
 
 @media (0px <= width <= 483px) {
   .container {
-    width: 92.5%;
+    width: 92%;
     margin-bottom: 0rem;
   }
   .page1 video {
