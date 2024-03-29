@@ -268,7 +268,7 @@ nav .menu-btn {
     height: 62vh;
     padding:0.2rem 1rem;
     object-fit: cover;
-    border-radius:1.5rem;
+    border-radius:2rem;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -388,6 +388,8 @@ nav .menu-btn {
     margin: 2.6rem auto;
     height: 65vh;
     object-fit: cover;
+    padding:0.3rem 1rem;
+    border-radius:2rem;
   }
   nav img {
     width: 8.8rem;
