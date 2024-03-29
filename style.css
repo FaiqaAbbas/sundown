@@ -261,6 +261,10 @@ nav .menu-btn {
 
 @media (0px <= width <= 483px) {
   .main{
+    /* Overflow hidden doesnot work on mobile
+    device so when we do position:relative and then 
+    use overflow-x : hidden on a container, it works 
+    for mobile device.*/
     position: relative;
     overflow-x:hidden;
   }
