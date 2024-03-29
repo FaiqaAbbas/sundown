@@ -253,26 +253,45 @@ nav .menu-btn {
   border-radius: 1.3rem;
   position: relative;
 }
-
-
-@keyframes ball1 {
-  from{
-    transform: rotate(2deg);
-  }
-  to{
-    transform:rotate(-18deg);
-  }
-  
+.main{
+  position: relative;
+  overflow-x:hidden ;
 }
-@keyframes ball2 {
-  from{
-    transform: translate(0,-20%);
-  }
-  to{
-    transform:translate(0%,0%);
-  }
-  
+
+.animated-ball1{
+  height: 45vw;
+  width: 95vw;
+  background-color: #fe330a;
+  border-radius:50vw;
+  right: -30vw;
+  position: absolute;
+  top:31rem;
+  filter:blur(15px);
+  animation:ball1 ease-in-out infinite alternate 4s;
 }
+.animated-ball2{
+  height: 35vw;
+  width: 35vw;
+  background-color:#fe470a;
+  border-radius:50vw;
+  right: -13vw;
+  position: absolute;
+  top:45rem;
+  filter:blur(10px);
+  animation:ball2 linear infinite alternate 3s;
+}
+.animated-ball3{
+  height: 35vw;
+  width: 35vw;
+  background-color:#fe530a;
+  border-radius:50vw;
+  right: 22vw;
+  position: absolute;
+  top:37rem;
+  filter:blur(15px);
+  animation:ball2 linear infinite alternate 3s;
+}
+
 
 /* ==============================================Media Queries=========================================== */
 /* ==============================================Media Queries=========================================== */
@@ -281,20 +300,21 @@ nav .menu-btn {
 /* ==============================================Mobile=========================================== */
 
 @media (0px <= width <= 483px) {
-  .main{
+  /* .main{ */
     /* Overflow hidden doesnot work on mobile
     device so when we do position:relative and then 
     use overflow-x : hidden on a container, it works 
     for mobile device.*/
-    position: relative;
-    overflow-x:hidden;
-  }
+    /* position: relative; */
+    /* overflow-x:hidden; */
+   /* */
   .container {
+    margin-top:1.7rem;
     width: 92%;
   }
   .page1 video {
-    margin: 2.2rem auto;
-    height: 28.4rem;
+    margin: 2rem auto;
+    height: 126.3vw;
     padding:0.2rem 0.4rem;
     object-fit: cover;
     border-radius:1.5rem;
@@ -306,7 +326,7 @@ nav .menu-btn {
     width: 50rem;
     background-color: #fe330a;
     border-radius:50vw;
-    right: -29rem;
+    right: -30rem;
     position: absolute;
     top:30rem;
     filter:blur(15px);
@@ -323,6 +343,17 @@ nav .menu-btn {
     filter:blur(10px);
     animation:ball2 linear infinite alternate 3s;
   } 
+  .animated-ball3{
+    height: 16rem;
+    width: 18rem;
+    background-color:#fe530a;
+    border-radius:50vw;
+    right: -2rem;
+    position: absolute;
+    top:36.5rem;
+    filter:blur(15px);
+    animation:ball2 linear infinite alternate 3s;
+  }
   
 
   /* ======NAV BAR===== */
@@ -346,15 +377,15 @@ nav .menu-btn {
     align-self: flex-start;
     width: 100%;
     max-width: 270px;
-    letter-spacing: -0.09rem;
-    padding-bottom:0.4rem;
+    letter-spacing: -0.11rem;
+    padding-bottom:0.3rem;
   }
   .hero .right {
     width: 100%;
     justify-self: flex-start;
     align-self: flex-end;
     font-size: 4.2rem;
-    letter-spacing: -0.2rem;
+    letter-spacing: -0.33rem;
     padding-right: 0.5rem;
   }
   /* ======Hamburger menu .menu-btn===== */
@@ -443,7 +474,7 @@ nav .menu-btn {
     overflow-x:hidden;
   }
   .container {
-    width: 92.5%;
+    width: 90%;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -456,12 +487,12 @@ nav .menu-btn {
   }
   .animated-ball1{
     height: 40vw;
-    width: 95vw;
+    width: 101vw;
     background-color: #fe330a;
     border-radius:50vw;
-    right: -35vw;
+    right: -39vw;
     position: absolute;
-    top:35rem;
+    top:34rem;
     filter:blur(15px);
     animation:ball1 ease-in-out infinite alternate 4s;
   }
@@ -472,10 +503,21 @@ nav .menu-btn {
     border-radius:50vw;
     right: -13vw;
     position: absolute;
-    top:45rem;
+    top:46rem;
     filter:blur(10px);
     animation:ball2 linear infinite alternate 3s;
   } 
+  .animated-ball3{
+    height: 12rem;
+    width: 16rem;
+    background-color:#fe530a;
+    border-radius:50vw;
+    right: 10rem;
+    position: absolute;
+    top:41rem;
+    filter:blur(15px);
+    animation:ball2 linear infinite alternate 3s;
+  }
   nav img {
     width: 8.8rem;
   }
@@ -608,6 +650,40 @@ nav .menu-btn {
     letter-spacing: -0.45rem;
     padding-right: 0rem;
   }
+
+  .animated-ball1{
+    height: 40vw;
+    width: 95vw;
+    background-color: #fe330a;
+    border-radius:50vw;
+    right: -30vw;
+    position: absolute;
+    top:31rem;
+    filter:blur(15px);
+    animation:ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2{
+    height: 35vw;
+    width: 35vw;
+    background-color:#fe470a;
+    border-radius:50vw;
+    right: -13vw;
+    position: absolute;
+    top:42rem;
+    filter:blur(10px);
+    animation:ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3{
+    height: 35vw;
+    width: 35vw;
+    background-color:#fe530a;
+    border-radius:50vw;
+    right: 22vw;
+    position: absolute;
+    top:37rem;
+    filter:blur(15px);
+    animation:ball2 linear infinite alternate 3s;
+  }
 }
 
 #click:checked ~ .nav-links-hamburger {
@@ -631,4 +707,22 @@ nav .menu-btn {
 #click:checked ~ .menu-btn .hamburger .line:nth-child(2) {
   transform: rotate(45deg) translate(-14%, -45%);
   transition: linear 0.3s;
+}
+@keyframes ball1 {
+  from{
+    transform: rotate(2deg);
+  }
+  to{
+    transform:rotate(-18deg);
+  }
+  
+}
+@keyframes ball2 {
+  from{
+    transform: translate(0,-25%);
+  }
+  to{
+    transform:translate(0%,0%);
+  }
+  
 }
