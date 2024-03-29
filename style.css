@@ -7,6 +7,9 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
+main{
+  overflow-x:hidden;
+}
 body,
 html {
   overflow-x: hidden;
@@ -260,9 +263,9 @@ nav .menu-btn {
 /* ==============================================Mobile=========================================== */
 
 @media (0px <= width <= 483px) {
-  body,html{
-    overflow-x:hidden;
-  }
+ main{
+  overflow-x:hidden;
+}
   .container {
     width: 92%;
     margin-bottom: 0rem;
