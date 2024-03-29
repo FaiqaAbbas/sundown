@@ -9,6 +9,7 @@
 }
 body,
 html {
+  overflow-x: hidden;
   font-family: "Bebas Neue", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
@@ -268,8 +269,55 @@ nav .menu-btn {
     height: 63vh;
     padding:0.2rem 0.4rem;
     object-fit: cover;
-    border-radius:1.3rem;
+    border-radius:1.5rem;
+    position: relative;
+    z-index: 0;
   }
+
+   .animated-ball1{
+    height: 15rem;
+    width: 50rem;
+    background-color: #fe330a;
+    border-radius:50vw;
+    right: -29rem;
+    position: absolute;
+    top:30rem;
+    filter:blur(15px);
+    overflow-x:clip;
+    animation:ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2{
+    height: 17rem;
+    width: 24rem;
+    background-color:#fe470a;
+    border-radius:50vw;
+    right: -13rem;
+    position: absolute;
+    top:35rem;
+    filter:blur(10px);
+    overflow-x:clip;
+    animation:ball2 linear infinite alternate 3s;
+  } 
+  
+  @keyframes ball1 {
+    from{
+      transform: rotate(2deg);
+    }
+    to{
+      transform:rotate(-18deg);
+    }
+    
+  }
+  @keyframes ball2 {
+    from{
+      transform: translate(0,-20%);
+    }
+    to{
+      transform:translate(0%,0%);
+    }
+    
+  }
+
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
   nav img {
@@ -303,7 +351,7 @@ nav .menu-btn {
   /* ======Hamburger menu .menu-btn===== */
   /* ======Hamburger menu .men-btn===== */
   nav .menu-btn {
-    z-index: 1;
+    z-index: 2;
     font-size: 1.25rem;
     display: flex;
     padding: 0.65em 1em;
@@ -358,6 +406,7 @@ nav .menu-btn {
     border-bottom-right-radius: 1.8rem;
     transition: linear 0.7s;
     overflow: hidden;
+    z-index: 1;
   }
   /* ======Hamburger Nav Drop Down Menu Links===== */
   nav .nav-links-hamburger a {
@@ -375,6 +424,7 @@ nav .menu-btn {
 
   nav .nav-links-hamburger-backdrop {
     display: block;
+    z-index: 1;
   }
 }
 /* =========================================Tablet/Phablets=========================================== */
