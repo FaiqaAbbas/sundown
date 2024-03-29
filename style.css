@@ -344,6 +344,7 @@ nav .menu-btn {
     align-self: flex-start;
     width: 100%;
     max-width: 290px;
+    font-weight:400;
     letter-spacing: -0.11rem;
   }
   .hero .right {
