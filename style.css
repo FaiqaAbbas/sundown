@@ -260,6 +260,9 @@ nav .menu-btn {
 /* ==============================================Mobile=========================================== */
 
 @media (0px <= width <= 483px) {
+  body,html{
+    overflow-x:hidden;
+  }
   .container {
     width: 92%;
     margin-bottom: 0rem;
