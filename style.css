@@ -270,7 +270,6 @@ nav .menu-btn {
   }
   .container {
     width: 92%;
-    margin-bottom: 0rem;
   }
   .page1 video {
     margin: 2.3rem auto;
@@ -344,7 +343,7 @@ nav .menu-btn {
     font-size: 1.39rem;
     align-self: flex-start;
     width: 100%;
-    max-width: 290px;
+    max-width: 280px;
     letter-spacing: -0.11rem;
   }
   .hero .right {
