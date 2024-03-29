@@ -346,7 +346,7 @@ nav .menu-btn {
     align-self: flex-start;
     width: 100%;
     max-width: 270px;
-    letter-spacing: -0.11rem;
+    letter-spacing: -0.10rem;
     padding-bottom:0.4rem;
   }
   .hero .right {
@@ -354,7 +354,7 @@ nav .menu-btn {
     justify-self: flex-start;
     align-self: flex-end;
     font-size: 4.2rem;
-    letter-spacing: -0.33rem;
+    letter-spacing: -0.3rem;
     padding-right: 0.5rem;
   }
   /* ======Hamburger menu .menu-btn===== */
