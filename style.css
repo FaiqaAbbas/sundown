@@ -7,19 +7,16 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
-main{
-  overflow-x:hidden;
-}
 body,
 html {
-  overflow-x: hidden;
+  
   font-family: "Bebas Neue", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
 }
 .container {
   width: 95%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: 1.9rem auto;
 }
 input[type="checkbox"] {
@@ -263,9 +260,10 @@ nav .menu-btn {
 /* ==============================================Mobile=========================================== */
 
 @media (0px <= width <= 483px) {
- main{
-  overflow-x:hidden;
-}
+  .main{
+    position: relative;
+    overflow-x:hidden;
+  }
   .container {
     width: 92%;
     margin-bottom: 0rem;
@@ -289,7 +287,6 @@ nav .menu-btn {
     position: absolute;
     top:30rem;
     filter:blur(15px);
-    overflow-x:clip;
     animation:ball1 ease-in-out infinite alternate 4s;
   }
   .animated-ball2{
@@ -301,7 +298,6 @@ nav .menu-btn {
     position: absolute;
     top:35rem;
     filter:blur(10px);
-    overflow-x:clip;
     animation:ball2 linear infinite alternate 3s;
   } 
   
@@ -338,13 +334,13 @@ nav .menu-btn {
     padding-top: 3.65rem;
     padding-bottom: 2.8rem;
     gap: 4.5rem;
+
   }
   .hero .left {
     font-size: 1.39rem;
     align-self: flex-start;
     width: 100%;
     max-width: 290px;
-    font-weight:400;
     letter-spacing: -0.11rem;
   }
   .hero .right {
