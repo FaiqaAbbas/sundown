@@ -251,6 +251,27 @@ nav .menu-btn {
   display: block;
   margin-top: 3.3rem;
   border-radius: 1.3rem;
+  position: relative;
+}
+
+
+@keyframes ball1 {
+  from{
+    transform: rotate(2deg);
+  }
+  to{
+    transform:rotate(-18deg);
+  }
+  
+}
+@keyframes ball2 {
+  from{
+    transform: translate(0,-20%);
+  }
+  to{
+    transform:translate(0%,0%);
+  }
+  
 }
 
 /* ==============================================Media Queries=========================================== */
@@ -273,16 +294,15 @@ nav .menu-btn {
   }
   .page1 video {
     margin: 2.3rem auto;
-    height: 63vh;
+    height: 28.2rem;
     padding:0.2rem 0.4rem;
     object-fit: cover;
     border-radius:1.5rem;
     position: relative;
     z-index: 0;
   }
-
-   .animated-ball1{
-    height: 15rem;
+  .animated-ball1{
+    height: 17rem;
     width: 50rem;
     background-color: #fe330a;
     border-radius:50vw;
@@ -299,29 +319,11 @@ nav .menu-btn {
     border-radius:50vw;
     right: -13rem;
     position: absolute;
-    top:35rem;
+    top:37rem;
     filter:blur(10px);
     animation:ball2 linear infinite alternate 3s;
   } 
   
-  @keyframes ball1 {
-    from{
-      transform: rotate(2deg);
-    }
-    to{
-      transform:rotate(-18deg);
-    }
-    
-  }
-  @keyframes ball2 {
-    from{
-      transform: translate(0,-20%);
-    }
-    to{
-      transform:translate(0%,0%);
-    }
-    
-  }
 
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -340,11 +342,12 @@ nav .menu-btn {
 
   }
   .hero .left {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     align-self: flex-start;
     width: 100%;
-    max-width: 280px;
+    max-width: 270px;
     letter-spacing: -0.11rem;
+    padding-bottom:0.6rem;
   }
   .hero .right {
     width: 100%;
@@ -434,19 +437,45 @@ nav .menu-btn {
   }
 }
 /* =========================================Tablet/Phablets=========================================== */
-@media (483px <= width <= 765px) {
+@media (483px <= width <= 768px) {
+  .page1{
+    position: relative;
+    overflow-x:hidden;
+  }
   .container {
     width: 92.5%;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
   .page1 video {
-    margin: 2.5rem auto;
-    height: 67vh;
+    margin: 3.6rem auto;
+    height: 52vw;
     object-fit: cover;
     padding:0 0.2rem;
     border-radius:1.3rem;
   }
+  .animated-ball1{
+    height: 40vw;
+    width: 95vw;
+    background-color: #fe330a;
+    border-radius:50vw;
+    right: -35vw;
+    position: absolute;
+    top:35rem;
+    filter:blur(15px);
+    animation:ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2{
+    height: 35vw;
+    width: 35vw;
+    background-color:#fe470a;
+    border-radius:50vw;
+    right: -13vw;
+    position: absolute;
+    top:45rem;
+    filter:blur(10px);
+    animation:ball2 linear infinite alternate 3s;
+  } 
   nav img {
     width: 8.8rem;
   }
@@ -466,6 +495,7 @@ nav .menu-btn {
     max-width: 280px;
     letter-spacing: -0.1rem;
     line-height: 0.95;
+    padding-bottom: 0.7rem;
   }
   .hero .right {
     width: 100%;
