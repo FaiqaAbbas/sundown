@@ -266,9 +266,9 @@ nav .menu-btn {
   .page1 video {
     margin: 2.6rem auto;
     height: 62vh;
-    padding:0.2rem 1rem;
+    padding:0.3rem 0.6rem;
     object-fit: cover;
-    border-radius:2rem;
+    border-radius:3rem;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -388,8 +388,8 @@ nav .menu-btn {
     margin: 2.6rem auto;
     height: 65vh;
     object-fit: cover;
-    padding:0.3rem 1rem;
-    border-radius:2rem;
+    padding:0.3rem 0.6rem;
+    border-radius:3rem;
   }
   nav img {
     width: 8.8rem;
