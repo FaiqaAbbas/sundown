@@ -266,8 +266,9 @@ nav .menu-btn {
   .page1 video {
     margin: 2.6rem auto;
     height: 62vh;
-    padding:0.5rem 1rem;
+    padding:0.2rem 1rem;
     object-fit: cover;
+    border-radius:1.5rem;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
