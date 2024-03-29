@@ -328,7 +328,7 @@ nav .menu-btn {
     border-radius:50vw;
     right: -30rem;
     position: absolute;
-    top:30rem;
+    top:31rem;
     filter:blur(15px);
     animation:ball1 ease-in-out infinite alternate 4s;
   }
