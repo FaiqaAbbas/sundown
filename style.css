@@ -264,11 +264,11 @@ nav .menu-btn {
     margin-bottom: 0rem;
   }
   .page1 video {
-    margin: 2.6rem auto;
+    margin: 2.5rem auto;
     height: 62vh;
     padding:0 0.2rem;
     object-fit: cover;
-    border-radius:1.6rem;
+    border-radius:1.4rem;
   }
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -385,11 +385,11 @@ nav .menu-btn {
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
   .page1 video {
-    margin: 2.6rem auto;
-    height: 65vh;
+    margin: 2.5rem auto;
+    height: 62vh;
     object-fit: cover;
     padding:0 0.2rem;
-    border-radius:1.6rem;
+    border-radius:1.4rem;
   }
   nav img {
     width: 8.8rem;
