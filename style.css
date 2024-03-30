@@ -9,7 +9,6 @@
 }
 body,
 html {
-  
   font-family: "Bebas Neue", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
@@ -19,86 +18,90 @@ html {
   /* max-width: 1500px; */
   margin: 1.9rem auto;
 }
-input[type="checkbox"] {
-  display: none;
-}
+
 /* ===============================================Nav Bar============================================= */
 /* ===============================================Nav Bar============================================= */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav img {
-  width: 8.8rem;
-}
-nav .nav-links {
-  display: flex;
-  /* will make a tags inside block/inline-block level and now we can apply overflow:hidded. 
+/* #region NavStyles*/
+  
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  nav img {
+    width: 8.8rem;
+  }
+  nav .nav-links {
+    display: flex;
+    /* will make a tags inside block/inline-block level and now we can apply overflow:hidded. 
     overflow:hidden will not work if we have inline display */
-  gap: 0.4rem;
-  padding-right: 0.2em;
-}
-nav .nav-links a {
-  font-size: 0.98rem;
-  text-decoration: none;
-  color: rgb(47, 45, 45);
-  padding: 0.8em 1.65em;
-  border: 1px solid rgba(128, 128, 128, 0.451);
-  border-radius: 5rem;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  /* to keep the after element relative to a*/
-}
-nav .nav-links a::after {
-  z-index: -1;
-  content: "";
-  height: 250%;
-  width: 100%;
-  position: absolute;
-  left: 0%;
-  top: -250%;
-  background: radial-gradient(
-    circle at center,
-    #fe530a,
-    #fe690a,
-    #fe330a,
-    #fe330a,
-    #fe530a,
-    #fe630a,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3,
-    #efeae3
-  );
-  transition: ease-in-out 1s;
-}
-nav .nav-links a:hover::after {
-  top: -15%;
-  transition: all ease 0.7s;
-  background: radial-gradient(
-    circle at center,
-    /* #fe530a,
+    gap: 0.4rem;
+    padding-right: 0.2em;
+  }
+  nav .nav-links a {
+    font-size: 0.98rem;
+    text-decoration: none;
+    color: rgb(47, 45, 45);
+    padding: 0.8em 1.65em;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    border-radius: 5rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    /* to keep the after element relative to a*/
+  }
+  nav .nav-links a::after {
+    z-index: -1;
+    content: "";
+    height: 250%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: -250%;
+    background: radial-gradient(
+      circle at center,
+      #fe530a,
+      #fe690a,
+      #fe330a,
+      #fe330a,
+      #fe530a,
+      #fe630a,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3,
+      #efeae3
+    );
+    transition: ease-in-out 1s;
+  }
+  nav .nav-links a:hover::after {
+    top: -15%;
+    transition: all ease 0.7s;
+    background: radial-gradient(
+      circle at center,
+      /* #fe530a,
         #fe690a,
         #fe330a,
         #fe330a,
@@ -127,59 +130,62 @@ nav .nav-links a:hover::after {
         #efeae3,
         #efeae3,
         #efeae3, */
+        #fe530a,
+      #fe690a,
+      #fe330a,
+      #fe330a,
       #fe530a,
-    #fe690a,
-    #fe330a,
-    #fe330a,
-    #fe530a,
-    #fe630a,
-    #fe330a,
-    #fe330a,
-    #fe330a,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000,
-    #000000
-  );
-}
-nav .nav-links a:hover {
-  color: white;
-  background-color: black;
-  transition: all ease 0.4s;
-}
+      #fe630a,
+      #fe330a,
+      #fe330a,
+      #fe330a,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000
+    );
+  }
+  nav .nav-links a:hover {
+    color: white;
+    background-color: black;
+    transition: all ease 0.4s;
+  }
+
+/* #endregion */
 
 /* ========================================= Hamburger Menu============================================ */
-
+/* ========================================= Hamburger Menu============================================ */
+/* #region HamburgerMenu */
 /* ======Hamburger Menu Nav Container====== */
 nav .nav-links-hamburger {
   display: none;
@@ -211,10 +217,24 @@ nav .menu-btn {
 .hamburger:hover {
   cursor: pointer;
 }
+/* #endregion */
+
+/* ============================================Page1============================================= */
+/* ============================================Page1============================================= */
+
+/* #region Page1 */
+.page1 {
+  position: relative;
+  overflow-x: hidden;
+  /* Overflow hidden doesnot work on mobile
+    device so when we do position:relative and then 
+    use overflow-x : hidden on a container, it works 
+    for mobile device.*/
+}
 
 /* ============================================Hero============================================= */
 /* ============================================Hero============================================= */
-
+/* #region Hero */
 /* ======Hero Wrapper===== */
 .hero {
   min-height: max-content;
@@ -246,51 +266,53 @@ nav .menu-btn {
   letter-spacing: -0.7rem;
   text-align: right;
 }
+/* #endregion */
 /* ============================================Video============================================= */
+
 .page1 video {
   display: block;
   margin-top: 3.3rem;
   border-radius: 1.3rem;
   position: relative;
 }
-.main{
-  position: relative;
-  overflow-x:hidden ;
-}
 
-.animated-ball1{
+/* #endregion */
+/* #region Animated-Balls */
+.animated-ball1 {
   height: 45vw;
   width: 95vw;
   background-color: #fe330a;
-  border-radius:50vw;
+  border-radius: 50vw;
   right: -30vw;
   position: absolute;
-  top:31rem;
-  filter:blur(15px);
-  animation:ball1 ease-in-out infinite alternate 4s;
+  top: 31rem;
+  filter: blur(15px);
+  animation: ball1 ease-in-out infinite alternate 4s;
 }
-.animated-ball2{
+.animated-ball2 {
   height: 35vw;
   width: 35vw;
-  background-color:#fe470a;
-  border-radius:50vw;
+  background-color: #fe470a;
+  border-radius: 50vw;
   right: -13vw;
   position: absolute;
-  top:45rem;
-  filter:blur(10px);
-  animation:ball2 linear infinite alternate 3s;
+  top: 45rem;
+  filter: blur(10px);
+  animation: ball2 linear infinite alternate 3s;
 }
-.animated-ball3{
+.animated-ball3 {
   height: 35vw;
   width: 35vw;
-  background-color:#fe530a;
-  border-radius:50vw;
+  background-color: #fe530a;
+  border-radius: 50vw;
   right: 22vw;
   position: absolute;
-  top:37rem;
-  filter:blur(15px);
-  animation:ball2 linear infinite alternate 3s;
+  top: 37rem;
+  filter: blur(15px);
+  animation: ball2 linear infinite alternate 3s;
 }
+
+/* #endregion */
 
 
 /* ==============================================Media Queries=========================================== */
@@ -298,63 +320,55 @@ nav .menu-btn {
 /* ==============================================Media Queries=========================================== */
 
 /* ==============================================Mobile=========================================== */
-
+/* ==============================================Mobile=========================================== */
+/* #region MobileDevice */
 @media (0px <= width <= 483px) {
-  /* .main{ */
-    /* Overflow hidden doesnot work on mobile
-    device so when we do position:relative and then 
-    use overflow-x : hidden on a container, it works 
-    for mobile device.*/
-    /* position: relative; */
-    /* overflow-x:hidden; */
-   /* */
   .container {
-    margin-top:1.7rem;
+    margin-top: 1.7rem;
     width: 92%;
   }
   .page1 video {
     margin: 2rem auto;
     height: 126.3vw;
-    padding:0.2rem 0.4rem;
+    padding: 0.2rem 0.4rem;
     object-fit: cover;
-    border-radius:1.5rem;
+    border-radius: 1.5rem;
     position: relative;
     z-index: 0;
   }
-  .animated-ball1{
+  .animated-ball1 {
     height: 17rem;
     width: 50rem;
     background-color: #fe330a;
-    border-radius:50vw;
+    border-radius: 50vw;
     right: -30rem;
     position: absolute;
-    top:30rem;
-    filter:blur(15px);
-    animation:ball1 ease-in-out infinite alternate 4s;
+    top: 30rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
   }
-  .animated-ball2{
+  .animated-ball2 {
     height: 17rem;
     width: 24rem;
-    background-color:#fe470a;
-    border-radius:50vw;
+    background-color: #fe470a;
+    border-radius: 50vw;
     right: -13rem;
     position: absolute;
-    top:37rem;
-    filter:blur(10px);
-    animation:ball2 linear infinite alternate 3s;
-  } 
-  .animated-ball3{
+    top: 37rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
     height: 16rem;
     width: 18rem;
-    background-color:#fe530a;
-    border-radius:50vw;
+    background-color: #fe530a;
+    border-radius: 50vw;
     right: -2rem;
     position: absolute;
-    top:36.5rem;
-    filter:blur(15px);
-    animation:ball2 linear infinite alternate 3s;
+    top: 36.5rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
   }
-  
 
   /* ======NAV BAR===== */
   /* ======NAV BAR===== */
@@ -370,7 +384,6 @@ nav .menu-btn {
     padding-top: 3.65rem;
     padding-bottom: 2.8rem;
     gap: 4.5rem;
-
   }
   .hero .left {
     font-size: 1.4rem;
@@ -466,12 +479,12 @@ nav .menu-btn {
     z-index: 1;
   }
 }
+/* #endregion */
+
 /* =========================================Tablet/Phablets=========================================== */
+/* =========================================Tablet/Phablets=========================================== */
+/* #region Tablets/Phablets */
 @media (483px <= width <= 768px) {
-  .page1{
-    position: relative;
-    overflow-x:hidden;
-  }
   .container {
     width: 90%;
   }
@@ -481,41 +494,41 @@ nav .menu-btn {
     margin: 3.6rem auto;
     height: 52vw;
     object-fit: cover;
-    padding:0 0.2rem;
-    border-radius:1.3rem;
+    padding: 0 0.2rem;
+    border-radius: 1.3rem;
   }
-  .animated-ball1{
+  .animated-ball1 {
     height: 40vw;
     width: 101vw;
     background-color: #fe330a;
-    border-radius:50vw;
+    border-radius: 50vw;
     right: -39vw;
     position: absolute;
-    top:34rem;
-    filter:blur(15px);
-    animation:ball1 ease-in-out infinite alternate 4s;
+    top: 34rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
   }
-  .animated-ball2{
+  .animated-ball2 {
     height: 35vw;
     width: 35vw;
-    background-color:#fe470a;
-    border-radius:50vw;
+    background-color: #fe470a;
+    border-radius: 50vw;
     right: -13vw;
     position: absolute;
-    top:46rem;
-    filter:blur(10px);
-    animation:ball2 linear infinite alternate 3s;
-  } 
-  .animated-ball3{
+    top: 46rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
     height: 12rem;
     width: 16rem;
-    background-color:#fe530a;
-    border-radius:50vw;
+    background-color: #fe530a;
+    border-radius: 50vw;
     right: 10rem;
     position: absolute;
-    top:41rem;
-    filter:blur(15px);
-    animation:ball2 linear infinite alternate 3s;
+    top: 41rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
   }
   nav img {
     width: 8.8rem;
@@ -622,7 +635,11 @@ nav .menu-btn {
     display: flex;
   }
 }
-/* =================================================================================================== */
+/* #endregion */
+
+/* ====================================Laptops============================================================== */
+/* ====================================Laptops============================================================== */
+/* #region Laptops */
 @media (765px <= width <= 991px) {
   .container {
     width: 93%;
@@ -650,41 +667,43 @@ nav .menu-btn {
     padding-right: 0rem;
   }
 
-  .animated-ball1{
+  .animated-ball1 {
     height: 40vw;
     width: 95vw;
     background-color: #fe330a;
-    border-radius:50vw;
+    border-radius: 50vw;
     right: -30vw;
     position: absolute;
-    top:31rem;
-    filter:blur(15px);
-    animation:ball1 ease-in-out infinite alternate 4s;
+    top: 31rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
   }
-  .animated-ball2{
+  .animated-ball2 {
     height: 35vw;
     width: 35vw;
-    background-color:#fe470a;
-    border-radius:50vw;
+    background-color: #fe470a;
+    border-radius: 50vw;
     right: -13vw;
     position: absolute;
-    top:42rem;
-    filter:blur(10px);
-    animation:ball2 linear infinite alternate 3s;
+    top: 42rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
   }
-  .animated-ball3{
+  .animated-ball3 {
     height: 35vw;
     width: 35vw;
-    background-color:#fe530a;
-    border-radius:50vw;
+    background-color: #fe530a;
+    border-radius: 50vw;
     right: 22vw;
     position: absolute;
-    top:37rem;
-    filter:blur(15px);
-    animation:ball2 linear infinite alternate 3s;
+    top: 37rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
   }
 }
+/* #endregion */
 
+/* #region Nav-Menu-Button-Clicks */
 #click:checked ~ .nav-links-hamburger {
   display: flex;
   top: 0;
@@ -707,21 +726,23 @@ nav .menu-btn {
   transform: rotate(45deg) translate(-14%, -45%);
   transition: linear 0.3s;
 }
+/* #endregion */
+
+/* #region Animated-balls Animation  */
 @keyframes ball1 {
-  from{
+  from {
     transform: rotate(2deg);
   }
-  to{
-    transform:rotate(-18deg);
+  to {
+    transform: rotate(-18deg);
   }
-  
 }
 @keyframes ball2 {
-  from{
-    transform: translate(0,-25%);
+  from {
+    transform: translate(0, -25%);
   }
-  to{
-    transform:translate(0%,0%);
+  to {
+    transform: translate(0%, 0%);
   }
-  
 }
+/* #endregion */
