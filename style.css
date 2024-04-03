@@ -14,16 +14,18 @@ html {
   background-color: #efeae3;
 }
 .container {
-  width: 95%;
+  width: 94.5%;
   /* max-width: 1500px; */
   margin: 1.9rem auto;
 }
 
-/* ===============================================Nav Bar============================================= */
-/* ===============================================Nav Bar============================================= */
-/* #region NavStyles*/
-  
-  
+
+/* #region pResets */
+
+
+/** ==============================================Nav Bar============================================= */
+/** ==============================================Nav Bar============================================= */
+/* #region p-NavBar */
   nav {
     display: flex;
     align-items: center;
@@ -33,20 +35,19 @@ html {
     display: none;
   }
   nav img {
-    width: 8.8rem;
+    width: 9.3rem;
   }
   nav .nav-links {
     display: flex;
-    /* will make a tags inside block/inline-block level and now we can apply overflow:hidded. 
-    overflow:hidden will not work if we have inline display */
-    gap: 0.4rem;
-    padding-right: 0.2em;
+    /* will make a tags inside block/inline-block level and now we can apply overflow:hidded  overflow:hidden will not work if we have inline display */
+    gap: 0.5rem;
+  
   }
   nav .nav-links a {
-    font-size: 0.98rem;
+    font-size: 0.93rem;
     text-decoration: none;
     color: rgb(47, 45, 45);
-    padding: 0.8em 1.65em;
+    padding: 0.8em 1.6em;
     border: 1px solid rgba(128, 128, 128, 0.451);
     border-radius: 5rem;
     position: relative;
@@ -99,38 +100,8 @@ html {
   nav .nav-links a:hover::after {
     top: -15%;
     transition: all ease 0.7s;
-    background: radial-gradient(
-      circle at center,
-      /* #fe530a,
-        #fe690a,
-        #fe330a,
-        #fe330a,
-        #fe530a,
-        #fe630a,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3,
-        #efeae3, */
-        #fe530a,
+    background: radial-gradient(circle at center,
+      #fe530a,
       #fe690a,
       #fe330a,
       #fe330a,
@@ -181,11 +152,15 @@ html {
     transition: all ease 0.4s;
   }
 
-/* #endregion */
+/* #endregion p-Navbar */
 
-/* ========================================= Hamburger Menu============================================ */
-/* ========================================= Hamburger Menu============================================ */
-/* #region HamburgerMenu */
+/** ================================== Hamburger Menu and Menu-Button========================== */
+/** ================================== Hamburger Menu and Menu-Button========================== */
+/* #region p-HamburgerMenu and Menu-Button*/
+
+/** ======================================= Hamburger DropDown Menu========================== */
+/** ======================================= Hamburger DropDown Menu========================== */
+/* #region l-HamburgerDropDown Menu*/
 /* ======Hamburger Menu Nav Container====== */
 nav .nav-links-hamburger {
   display: none;
@@ -206,9 +181,10 @@ nav .nav-links-hamburger-backdrop {
   left: 0;
   transition: all ease 0.5s;
 }
-/* =================================Hamburger Menu Button========================================= */
-/*==================================Hamburger Menu Button========================================= */
-
+/* #endregion l-HamburgerDropDown Menu*/
+/** ========================================Hamburger Menu Button========================================= */
+/** ========================================Hamburger Menu Button========================================= */
+/* #region l-DropDown Menu-Button*/
 /* ======Menu Button Label for Checkbox===== */
 nav .menu-btn {
   display: none;
@@ -217,24 +193,24 @@ nav .menu-btn {
 .hamburger:hover {
   cursor: pointer;
 }
-/* #endregion */
+/* #endregion l-Menu-Button*/
+/* #endregion p-HamburgerMenu */
 
-/* ============================================Page1============================================= */
-/* ============================================Page1============================================= */
+/** ============================================Page1============================================= */
+/** ============================================Page1============================================= */
+/* #region p-Page1 */
 
-/* #region Page1 */
 .page1 {
   position: relative;
   overflow-x: hidden;
   /* Overflow hidden doesnot work on mobile
     device so when we do position:relative and then 
-    use overflow-x : hidden on a container, it works 
+    use overflop-x : hidden on a container, it works 
     for mobile device.*/
 }
-
-/* ============================================Hero============================================= */
-/* ============================================Hero============================================= */
-/* #region Hero */
+/** ============================================Hero, left and right ============================================= */
+/** ============================================Hero, left and right============================================= */
+/* #region l-Hero*/
 /* ======Hero Wrapper===== */
 .hero {
   min-height: max-content;
@@ -242,16 +218,16 @@ nav .menu-btn {
   justify-content: space-between;
   letter-spacing: -0.1em;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-  padding-top: 7rem;
-  padding-bottom: 3.5rem;
+  padding-top: 7.35rem;
+  padding-bottom: 4.2rem;
 }
 /* ======Hero Left Text===== */
 .left {
   align-self: flex-end;
   width: 40%;
-  max-width: 330px;
+  max-width: 350px;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.73rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.13rem;
@@ -259,149 +235,190 @@ nav .menu-btn {
 /* ======Hero Right Text===== */
 .right {
   width: 60%;
-  font-size: 9.6rem;
+  font-size: 9.9rem;
   font-weight: 700;
   line-height: 0.8;
-  padding-right: 0.7rem;
-  letter-spacing: -0.7rem;
+  padding-right: 1rem;
+  letter-spacing: -0.67rem;
   text-align: right;
 }
-/* #endregion */
-/* ============================================Video============================================= */
-
+/* #endregion l-Hero*/
+/** ============================================Video============================================= */
+/** ============================================Video============================================= */
 .page1 video {
   display: block;
   margin-top: 3.3rem;
   border-radius: 1.3rem;
+  width: 94vw;
+  object-fit: cover;
   position: relative;
 }
-
-/* #endregion */
-/* #region Animated-Balls */
+/** ============================================Animated-Balls============================================= */
+/** ============================================Animated-Balls============================================= */
+/* #region l-Animated-Balls */
 .animated-ball1 {
-  height: 45vw;
-  width: 95vw;
+  height: 38vw;
+  width: 80vw;
   background-color: #fe330a;
   border-radius: 50vw;
-  right: -30vw;
+  right: -24vw;
   position: absolute;
-  top: 31rem;
+  top: 37rem;
   filter: blur(15px);
   animation: ball1 ease-in-out infinite alternate 4s;
 }
 .animated-ball2 {
-  height: 35vw;
-  width: 35vw;
-  background-color: #fe470a;
+  height: 27vw;
+  width: 50vw;
+  background-color: #fe690a;
   border-radius: 50vw;
   right: -13vw;
   position: absolute;
-  top: 45rem;
-  filter: blur(10px);
+  top: 49rem;
+  filter: blur(20px);
   animation: ball2 linear infinite alternate 3s;
 }
 .animated-ball3 {
   height: 35vw;
-  width: 35vw;
-  background-color: #fe530a;
+  width: 45vw;
+  background-color: #fe330a;
   border-radius: 50vw;
-  right: 22vw;
+  right: 3vw;
   position: absolute;
-  top: 37rem;
+  top: 42rem;
   filter: blur(15px);
   animation: ball2 linear infinite alternate 3s;
 }
+/* #endregion l-Animated-Balls */
 
-/* #endregion */
 
 
-/* ==============================================Media Queries=========================================== */
-/* ==============================================Media Queries=========================================== */
-/* ==============================================Media Queries=========================================== */
 
-/* ==============================================Mobile=========================================== */
-/* ==============================================Mobile=========================================== */
-/* #region MobileDevice */
+
+/* #endregion p-Page1 */
+
+/** ============================================Page2============================================= */
+/** ============================================Page2============================================= */
+/* #region p-Page2 */
+.page2{
+  /* position: relative;
+  overflow-x: scroll; */
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: hsl(35, 100%, 79%); */
+}
+ /* #region p-moving-text */
+ /* =============Moving Text Container============ */
+ .moving-text-container {
+  overflow-x: scroll;
+  /* background-color: rgb(120, 192, 255); */
+  display: flex;
+  padding: 6rem 0;
+}
+.moving-text-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* =============Moving Text============ */
+.moving-text {
+  /* background-color: rgb(192, 104, 104); */
+  display: flex;
+  align-items: center;
+  gap:1.7rem;
+  justify-content: center;
+  padding-right:2rem ;
+  animation: moving-text infinite linear 12.5s;
+}
+/* =============Disk before Heading============ */
+
+.moving-text .disk {
+  height: 3.56rem;
+  width: 3.6rem;
+  border-radius: 9rem;
+  background-color: #fe330a;
+}
+/* =============Heading============ */
+.moving-text h1 {
+  font-size: 8.3rem;
+  letter-spacing: -0.65rem;
+}
+
+  
+/* #endregion p-moving-text */
+/* #endregion p-Page2 */
+/* #endregion pResets */
+/*! ==============================================Media Queries=========================================== */
+/*! ==============================================Media Queries=========================================== */
+/*! ==============================================Media Queries=========================================== */
+
+/** ==============================================Mobile=========================================== */
+/** ==============================================Mobile=========================================== */
+/* #region g-MobileDevice */
 @media (0px <= width <= 483px) {
   .container {
     margin-top: 1.7rem;
     width: 92%;
   }
-  .page1 video {
-    margin: 2rem auto;
-    height: 126.3vw;
-    padding: 0.2rem 0.4rem;
-    object-fit: cover;
-    border-radius: 1.5rem;
-    position: relative;
-    z-index: 0;
-  }
-  .animated-ball1 {
-    height: 17rem;
-    width: 50rem;
-    background-color: #fe330a;
-    border-radius: 50vw;
-    right: -30rem;
-    position: absolute;
-    top: 30rem;
-    filter: blur(15px);
-    animation: ball1 ease-in-out infinite alternate 4s;
-  }
-  .animated-ball2 {
-    height: 17rem;
-    width: 24rem;
-    background-color: #fe470a;
-    border-radius: 50vw;
-    right: -13rem;
-    position: absolute;
-    top: 37rem;
-    filter: blur(10px);
-    animation: ball2 linear infinite alternate 3s;
-  }
-  .animated-ball3 {
-    height: 16rem;
-    width: 18rem;
-    background-color: #fe530a;
-    border-radius: 50vw;
-    right: -2rem;
-    position: absolute;
-    top: 36.5rem;
-    filter: blur(15px);
-    animation: ball2 linear infinite alternate 3s;
-  }
-
-  /* ======NAV BAR===== */
-  /* ======NAV BAR===== */
+/** ===============================================Nav Bar============================================= */
+/** ===============================================Nav Bar============================================= */
+/* #region p-NavStyles */          
   nav img {
     width: 8.8rem;
   }
   nav .nav-links {
     display: none;
   }
+/* #endregion p-NavStyles */
+/** ======================================= Hamburger Menu and Menu-Button========================== */
+/** ======================================= Hamburger Menu and Menu-Button========================== */
+/* #region p-HamburgerMenu and Menu-Button*/
+/** ========================================= Hamburger DropDown Menu============================== */
+/** ========================================= Hamburger DropDown Menu============================== */
+/* #region l-Hamburger DropDown Menu */
 
-  .hero {
-    flex-direction: column-reverse;
-    padding-top: 3.65rem;
-    padding-bottom: 2.8rem;
-    gap: 4.5rem;
-  }
-  .hero .left {
-    font-size: 1.4rem;
-    align-self: flex-start;
-    width: 100%;
-    max-width: 270px;
-    letter-spacing: -0.11rem;
-  }
-  .hero .right {
-    width: 100%;
-    justify-self: flex-start;
-    align-self: flex-end;
-    font-size: 4.2rem;
-    letter-spacing: -0.33rem;
-    padding-right: 0.5rem;
-  }
-  /* ======Hamburger menu .menu-btn===== */
-  /* ======Hamburger menu .men-btn===== */
+ nav .nav-links-hamburger {
+  min-height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: -150%;
+  right: 0;
+  left: 0;
+  background-color: #efeae3;
+  padding-inline: 1.17rem;
+  padding-top: 8.3rem;
+  padding-bottom: 2.5rem;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  transition: linear 0.7s;
+  overflow: hidden;
+  z-index: 1;
+}
+/* ======Hamburger Nav Drop Down Menu Links===== */
+nav .nav-links-hamburger a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.3rem;
+  text-align: right;
+  color: black;
+  font-size: 3.7rem;
+  font-weight: 700;
+  transition: linear 0.5s;
+}
+
+nav .nav-links-hamburger-backdrop {
+  display: block;
+  z-index: 1;
+}
+/* #endregion l-Hamburger DropDown Menu */
+
+/** =========================================Hamburger Menu Button====================================== */
+/** =========================================Hamburger Menu Button====================================== */
+/* #region l-Hamburger DropDown Menu-Button */
   nav .menu-btn {
     z-index: 2;
     font-size: 1.25rem;
@@ -437,132 +454,201 @@ nav .menu-btn {
     letter-spacing: -0.01em;
     user-select: none;
   }
-
-  /* ======Hamburger Nav Drop Down Menu===== */
-
-  nav .nav-links-hamburger {
-    min-height: max-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: -150%;
-    right: 0;
-    left: 0;
-    background-color: #efeae3;
-    padding-inline: 1.17rem;
-    padding-top: 8.3rem;
-    padding-bottom: 2.5rem;
-    border-bottom-left-radius: 1.8rem;
-    border-bottom-right-radius: 1.8rem;
-    transition: linear 0.7s;
-    overflow: hidden;
-    z-index: 1;
-  }
-  /* ======Hamburger Nav Drop Down Menu Links===== */
-  nav .nav-links-hamburger a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1.1;
-    letter-spacing: -0.3rem;
-    text-align: right;
-    color: black;
-    font-size: 3.7rem;
-    font-weight: 700;
-    transition: linear 0.5s;
-  }
-
-  nav .nav-links-hamburger-backdrop {
-    display: block;
-    z-index: 1;
-  }
+/* #endregion l-Hamburger DropDown Menu-Button */
+ 
+/* #endregion p-HamburgerMenu*/
+             
+/** ============================================Page1============================================= */
+/** ============================================Page1============================================= */
+/* #region p-Page1*/
+/** ============================================Hero, left and right ============================================= */
+/** ============================================Hero, left and right============================================= */
+/* #region l-Hero */
+/* ======Hero Wrapper===== */
+.hero {
+  flex-direction: column-reverse;
+  padding-top: 3.65rem;
+  padding-bottom: 2.8rem;
+  gap: 4.5rem;
 }
-/* #endregion */
+/* ======Hero Left===== */
+.hero .left {
+  font-size: 1.4rem;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 270px;
+  letter-spacing: -0.11rem;
+}
+/* ======Hero Right===== */
+.hero .right {
+  width: 100%;
+  justify-self: flex-start;
+  align-self: flex-end;
+  font-size: 4.2rem;
+  letter-spacing: -0.33rem;
+  padding-right: 0.5rem;
+}
+/* #endregion l-Hero */
 
-/* =========================================Tablet/Phablets=========================================== */
-/* =========================================Tablet/Phablets=========================================== */
-/* #region Tablets/Phablets */
+/** ============================================Video============================================= */
+/** ============================================Video============================================= */
+.page1 video {
+  margin: 0rem auto;
+  margin-bottom:1.9rem;
+  width:91.5vw;
+  height: 122.3vw;
+  padding: 0.2rem 0.4rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 0;
+}
+
+/** ============================================Animated-Balls============================================= */
+/** ============================================Animated-Balls============================================= */
+/* #region l-Animated-Balls*/
+.animated-ball1 {
+  height: 17rem;
+  width: 50rem;
+  background-color: #fe330a;
+  border-radius: 50vw;
+  right: -30rem;
+  position: absolute;
+  top: 30rem;
+  filter: blur(15px);
+  animation: ball1 ease-in-out infinite alternate 4s;
+}
+.animated-ball2 {
+  height: 17rem;
+  width: 24rem;
+  background-color: #fe470a;
+  border-radius: 50vw;
+  right: -13rem;
+  position: absolute;
+  top: 37rem;
+  filter: blur(10px);
+  animation: ball2 linear infinite alternate 3s;
+}
+.animated-ball3 {
+  height: 16rem;
+  width: 18rem;
+  background-color: #fe530a;
+  border-radius: 50vw;
+  right: -2rem;
+  position: absolute;
+  top: 36.5rem;
+  filter: blur(15px);
+  animation: ball2 linear infinite alternate 3s;
+}
+/* #endregion l-Animated-Balls*/
+
+/* #endregion p-Page1*/
+/** ============================================Page2============================================= */
+/** ============================================Page2============================================= */
+/* #region p-Page2 */
+.page2{
+
+}
+ /* #region p-moving-text */
+ /* =============Moving Text Container============ */
+ .moving-text-container {
+    padding:0.1rem 0;
+}
+
+
+/* =============Moving Text============ */
+.moving-text {
+  gap:0.7rem;
+  padding-right: 1rem;
+  animation: moving-text infinite linear 10.4s;
+}
+/* =============Disk before Heading============ */
+
+.moving-text .disk {
+  height: 2rem;
+  width: 2rem;
+}
+/* =============Heading============ */
+.moving-text h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.27rem;
+}
+
+  
+/* #endregion p-moving-text */
+/* #endregion p-Page2 */
+}
+/* #endregion g-mobile*/
+
+/** =========================================Tablet/Phablets=========================================== */
+/** =========================================Tablet/Phablets=========================================== */
+/* #region g-Tablets/Phablets */
 @media (483px <= width <= 768px) {
   .container {
-    width: 90%;
+    width: 93%;
   }
   /* ======NAV BAR===== */
-  /* ======NAV BAR===== */
-  .page1 video {
-    margin: 3.6rem auto;
-    height: 52vw;
-    object-fit: cover;
-    padding: 0 0.2rem;
-    border-radius: 1.3rem;
-  }
-  .animated-ball1 {
-    height: 40vw;
-    width: 101vw;
-    background-color: #fe330a;
-    border-radius: 50vw;
-    right: -39vw;
-    position: absolute;
-    top: 34rem;
-    filter: blur(15px);
-    animation: ball1 ease-in-out infinite alternate 4s;
-  }
-  .animated-ball2 {
-    height: 35vw;
-    width: 35vw;
-    background-color: #fe470a;
-    border-radius: 50vw;
-    right: -13vw;
-    position: absolute;
-    top: 46rem;
-    filter: blur(10px);
-    animation: ball2 linear infinite alternate 3s;
-  }
-  .animated-ball3 {
-    height: 12rem;
-    width: 16rem;
-    background-color: #fe530a;
-    border-radius: 50vw;
-    right: 10rem;
-    position: absolute;
-    top: 41rem;
-    filter: blur(15px);
-    animation: ball2 linear infinite alternate 3s;
-  }
-  nav img {
-    width: 8.8rem;
-  }
-  nav .nav-links {
-    display: none;
-  }
-  .hero {
-    flex-direction: column-reverse;
-    padding-top: 5.5rem;
-    padding-bottom: 2.8rem;
-    gap: 3.8rem;
-  }
-  .hero .left {
-    font-size: 1.4rem;
-    align-self: flex-start;
-    width: 100%;
-    max-width: 280px;
-    letter-spacing: -0.1rem;
-    line-height: 0.95;
-    padding-bottom: 0.7rem;
-  }
-  .hero .right {
-    width: 100%;
-    justify-self: flex-start;
-    align-self: flex-end;
-    font-size: 6.5rem;
-    letter-spacing: -0.4rem;
-    padding-right: 0;
-  }
-  /* ======Hamburger menu .menu-btn===== */
-  /* ======Hamburger menu .men-btn===== */
-  nav .menu-btn {
-    z-index: 1;
+/** ===============================================Nav Bar============================================= */
+/** ===============================================Nav Bar============================================= */
+/* #region p-NavStyles */  
+nav img {
+  width: 8.8rem;
+}
+nav .nav-links {
+  display: none;
+}
+/* #endregion p-NavStyles */  
+/** ======================================= Hamburger Menu and Menu-Button========================== */
+/** ======================================= Hamburger Menu and Menu-Button========================== */
+/* #region p-HamburgerMenu and Menu-Button */
+
+/** ======================================= Hamburger DropDown Menu========================== */
+/** ======================================= Hamburger DropDown Menu========================== */
+/* #region l-HamburgerDropDown Menu */
+ /* ======Hamburger Nav Drop Down Menu===== */
+ nav .nav-links-hamburger {
+  min-height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: -150%;
+  right: 0;
+  left: 0;
+  background-color: #efeae3;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  padding-inline: 1.5rem;
+  padding-top: 9.2rem;
+  padding-bottom: 3.3rem;
+  transition: linear 0.7s;
+  overflow: hidden;
+}
+/* ======Hamburger Nav Drop Down Menu Links===== */
+nav .nav-links-hamburger a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: -0.2rem;
+  text-align: right;
+  color: black;
+  font-size: 5.4rem;
+  font-weight: 700;
+  transition: linear 0.5s;
+}
+
+nav .nav-links-hamburger-backdrop {
+  display: flex;
+}
+/* #endregion l-Hamburger DropDown Menu */
+
+/** =================================Hamburger Menu Button========================================= */
+/** ==================================Hamburger Menu Button========================================= */
+/* #region l-Hamburger DropDown Menu-Button */ 
+nav .menu-btn {
+  z-index: 1;
     background-color: #efeae3;
     font-size: 1.4rem;
     display: flex;
@@ -597,82 +683,194 @@ nav .menu-btn {
     letter-spacing: -0.01em;
     user-select: none;
   }
-  /* ======Hamburger Nav Drop Down Menu===== */
-  nav .nav-links-hamburger {
-    min-height: max-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: -150%;
-    right: 0;
-    left: 0;
-    background-color: #efeae3;
-    border-bottom-left-radius: 1.8rem;
-    border-bottom-right-radius: 1.8rem;
-    padding-inline: 1.5rem;
-    padding-top: 9.2rem;
-    padding-bottom: 3.3rem;
-    transition: linear 0.7s;
-    overflow: hidden;
-  }
-  /* ======Hamburger Nav Drop Down Menu Links===== */
-  nav .nav-links-hamburger a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1.15;
-    letter-spacing: -0.2rem;
-    text-align: right;
-    color: black;
-    font-size: 5.4rem;
-    font-weight: 700;
-    transition: linear 0.5s;
-  }
+  
+/* #endregion l-Hamburger DropDown Menu-Button*/ 
+/* #endregion p-HamburgerMenu and Menu-Button */
 
-  nav .nav-links-hamburger-backdrop {
-    display: flex;
+/** ============================================Page1============================================= */
+/** ============================================Page1============================================= */
+/* #region p-Page1 */
+.page1 video {
+    margin: 3rem auto;
+    height: 52vw;
+    width:91vw;
+    object-fit: cover;
+    padding: 0 0.2rem;
+    border-radius: 1.3rem;
   }
+  /** ============================================Hero, left and right ============================================= */
+/** ============================================Hero, left and right============================================= */
+/* #region l-Hero */
+/* ======Hero Wrapper===== */
+.hero {
+  flex-direction: column-reverse;
+  padding-top: 5.5rem;
+  padding-bottom: 2.8rem;
+  gap: 3.8rem;
 }
-/* #endregion */
+/* ======Hero Left Text===== */
+.hero .left {
+  font-size: 1.4rem;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 280px;
+  letter-spacing: -0.1rem;
+  line-height: 0.95;
+  padding-bottom: 0.7rem;
+}
+/* ======Hero Right Text===== */
+  .hero .right {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 6.5rem;
+    letter-spacing: -0.4rem;
+    padding-right: 0;
+  }
+  /* #endregion l-Hero */
+ /** ============================================Animated-Balls============================================= */
+/** ============================================Animated-Balls============================================= */
+/* #region l-Animated-Balls */
+  .animated-ball1 {
+    height: 40vw;
+    width: 90vw;
+    background-color: #fe330a;
+    border-radius: 50vw;
+    right: -39vw;
+    position: absolute;
+    top: 34rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2 {
+    height: 35vw;
+    width: 35vw;
+    background-color: #fe690a;
+    border-radius: 50vw;
+    right: -13vw;
+    position: absolute;
+    top: 46rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
+    height: 16rem;
+    width: 16rem;
+    background-color: #fe330a;
+    border-radius: 50vw;
+    right: 5rem;
+    position: absolute;
+    top: 38rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
+  }
 
-/* ====================================Laptops============================================================== */
-/* ====================================Laptops============================================================== */
-/* #region Laptops */
+  /* #endregion l-Animated-Balls */
+/* #endregion p-Page1 */
+
+
+/** ============================================Page2============================================= */
+/** ============================================Page2============================================= */
+/* #region p-Page2 */
+.page2{
+
+}
+ /* #region p-moving-text */
+ /* =============Moving Text Container============ */
+ .moving-text-container {
+    padding:0.1rem 0;
+}
+
+
+/* =============Moving Text============ */
+.moving-text {
+  gap:0.9rem;
+  padding-right: 1rem;
+  animation: moving-text infinite linear 10.2s;
+}
+/* =============Disk before Heading============ */
+
+.moving-text .disk {
+  height: 2rem;
+  width: 2rem;
+}
+/* =============Heading============ */
+.moving-text h1 {
+  font-size: 3.68rem;
+  letter-spacing: -0.27rem;
+}
+
+  
+/* #endregion p-moving-text */
+/* #endregion p-Page2 */
+}
+/* #endregion g-Tablets/Phablets */
+/** ====================================Laptops============================================================== */
+/** ====================================Laptops============================================================== */
+
+/* #region g-Laptops */
 @media (765px <= width <= 991px) {
   .container {
-    width: 93%;
+
+    width: 93.5%;
   }
+ 
+  
+/** ===============================================Nav Bar============================================= */
+/** ===============================================Nav Bar============================================= */
+/* #region p-NavStyles */ 
+nav img{
+  width:8.7rem;
+}
   nav .nav-links {
     gap: 0.4rem;
   }
   nav .nav-links a {
-    font-size: 1.19rem;
-    padding: 0.7em 1.55em;
+    font-size: 1.2rem;
+    padding: 0.73em 1.5em;
   }
+/* #endregion p-Navbar */
+/** ============================================Page1============================================= */
+/** ============================================Page1============================================= */
+/* #region p-Page1 */
+/** ============================================Hero, left and right ============================================= */
+/** ============================================Hero, left and right============================================= */
+/* #region l-Hero*/
+/* ======Hero Wrapper===== */
   .hero {
-    padding-top: 7.2rem;
+    padding-top: 7.4rem;
     padding-bottom: 3.5rem;
   }
+   /* ============Hero Left=======  */
   .hero .left {
-    font-size: 1.4rem;
+    font-size: 1.36rem;
     max-width: 280px;
-    letter-spacing: -0.1rem;
-    line-height: 1;
+    letter-spacing: -0.08rem;
+    line-height: 1.08;
   }
+   /* ============Hero Right=======  */
   .hero .right {
     font-size: 7.3rem;
     letter-spacing: -0.45rem;
-    padding-right: 0rem;
+    padding-right: 0.6rem;
+    line-height: 0.8;
   }
-
+  /*#endregion l-Hero*/
+/** ============================================Video============================================= */
+/** ============================================Video============================================= */
+.page1 video {
+  height:53.7vw;
+  width:92vw;  
+}
+/** ============================================Animated-Balls============================================= */
+/** ============================================Animated-Balls============================================= */
+/* #region l-Animated-Balls */
   .animated-ball1 {
     height: 40vw;
-    width: 95vw;
+    width: 80vw;
     background-color: #fe330a;
     border-radius: 50vw;
-    right: -30vw;
+    right: -25vw;
     position: absolute;
     top: 31rem;
     filter: blur(15px);
@@ -681,11 +879,11 @@ nav .menu-btn {
   .animated-ball2 {
     height: 35vw;
     width: 35vw;
-    background-color: #fe470a;
+    background-color: #fe690a;
     border-radius: 50vw;
     right: -13vw;
     position: absolute;
-    top: 42rem;
+    top: 40rem;
     filter: blur(10px);
     animation: ball2 linear infinite alternate 3s;
   }
@@ -694,16 +892,51 @@ nav .menu-btn {
     width: 35vw;
     background-color: #fe530a;
     border-radius: 50vw;
-    right: 22vw;
+    right: 14vw;
     position: absolute;
     top: 37rem;
     filter: blur(15px);
     animation: ball2 linear infinite alternate 3s;
   }
-}
-/* #endregion */
+/* #endregion l-Animated-Balls */
+/* #endregion p-Page1 */
 
-/* #region Nav-Menu-Button-Clicks */
+/** ============================================Page2============================================= */
+/** ============================================Page2============================================= */
+/* #region p-Page2 */
+.page2{
+ 
+}
+ /* #region p-moving-text */
+ /* =============Moving Text Container============ */
+ .moving-text-container {
+  padding: 3rem 0;
+}
+
+
+/* =============Moving Text============ */
+.moving-text {
+  gap:1.2rem;
+  animation: moving-text infinite linear 16s;
+}
+/* =============Disk before Heading============ */
+
+.moving-text .disk {
+  height: 3rem;
+  width: 3rem;
+}
+/* =============Heading============ */
+.moving-text h1 {
+  font-size: 5.7rem;
+  letter-spacing: -0.5rem;
+}
+
+  
+/* #endregion p-moving-text */
+/* #endregion p-Page2 */
+}
+/* #endregion g-Laptops */
+/* #region p-Nav-Menu-Button-Clicks */
 #click:checked ~ .nav-links-hamburger {
   display: flex;
   top: 0;
@@ -726,9 +959,10 @@ nav .menu-btn {
   transform: rotate(45deg) translate(-14%, -45%);
   transition: linear 0.3s;
 }
-/* #endregion */
+/* #endregion p-Nav-Menu-Button-Clicks*/
 
-/* #region Animated-balls Animation  */
+/* #region p-Animations */
+/* #region p-Animated-balls Animation  */
 @keyframes ball1 {
   from {
     transform: rotate(2deg);
@@ -745,4 +979,11 @@ nav .menu-btn {
     transform: translate(0%, 0%);
   }
 }
-/* #endregion */
+/* #endregion p-Animated-balls Animation*/
+/* #region p-Moving-Text Animations*/
+@keyframes moving-text {
+  from { transform: translateX(0); } /* Start text outside the container */
+  to { transform: translateX(-100% ); } /* Move text all the way to the left */
+}
+/* #endregion p-Moving-Text Animations*/
+/* #endregion p-Animations */
