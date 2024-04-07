@@ -9,12 +9,14 @@
 }
 body,
 html {
+  width: 100vw;
+  height: 100vh;
   font-family: "Bebas Neue", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
 }
 .container {
-  width: 94.5%;
+  width: 95%;
   /* max-width: 1500px; */
   margin: 1.9rem auto;
 }
@@ -33,18 +35,21 @@ input[type="checkbox"] {
   display: none;
 }
 nav img {
-  width: 9.3rem;
+  display: block;
+  width: calc(9.2rem - 0.5vw);
 }
 nav .nav-links {
   display: flex;
   /* will make a tags inside block/inline-block level and now we can apply overflow:hidded  overflow:hidden will not work if we have inline display */
-  gap: 0.5rem;
+  gap: calc(0.44rem + 0.2vw);
+  padding-right:calc(1.2rem + 0.05vw);
+  
 }
 nav .nav-links a {
-  font-size: 0.93rem;
+  font-size: calc(0.96rem - 0.1vw);
   text-decoration: none;
   color: rgb(47, 45, 45);
-  padding: 0.8em 1.6em;
+  padding: calc(0.75em  + 0.18vw) calc(1.6em + 0.18vw);
   border: 1px solid rgba(128, 128, 128, 0.451);
   border-radius: 5rem;
   position: relative;
@@ -214,13 +219,12 @@ nav .menu-btn {
   min-height: max-content;
   display: flex;
   justify-content: space-between;
-  letter-spacing: -0.1em;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-  padding-top: 7.35rem;
+  padding-top: 7.7rem;
   padding-bottom: 4.2rem;
 }
 /* ======Hero Left Text===== */
-.left {
+.hero .left {
   align-self: flex-end;
   width: 40%;
   max-width: 350px;
@@ -231,13 +235,13 @@ nav .menu-btn {
   letter-spacing: -0.13rem;
 }
 /* ======Hero Right Text===== */
-.right {
+.hero .right {
   width: 60%;
   font-size: 9.9rem;
   font-weight: 700;
   line-height: 0.8;
-  padding-right: 1rem;
-  letter-spacing: -0.67rem;
+  padding-right: 2rem;
+  letter-spacing: -0.8rem;
   text-align: right;
 }
 /* #endregion l-Hero*/
@@ -293,13 +297,15 @@ nav .menu-btn {
 
 /** ============================================Page2============================================= */
 /** ============================================Page2============================================= */
+
 /* #region p-Page2 */
+
 .page2 {
-  /* position: relative;
-  overflow-x: scroll; */
+  /* background-color: cornsilk; */
   min-height: 100vh;
   width: 100%;
-  /* background-color: hsl(35, 100%, 79%); */
+  position: relative;
+
 }
 /* #region p-moving-text */
 /* =============Moving Text Container============ */
@@ -307,7 +313,7 @@ nav .menu-btn {
   overflow-x: scroll;
   /* background-color: rgb(120, 192, 255); */
   display: flex;
-  padding: 6rem 0;
+  padding: 6.5rem 0;
 }
 .moving-text-container::-webkit-scrollbar {
   display: none;
@@ -338,7 +344,102 @@ nav .menu-btn {
 }
 
 /* #endregion p-moving-text */
+
+/* #region p-Page2-content */
+.page2-content-container{
+  /* background-color: red; */
+  width: 86%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6.5rem;
+  /* gap:rem; */
+
+}
+/* #region l-page2contenet .left  */
+.page2-content-container .left{
+  /* background-color: rebeccapurple; */
+  width:64%;
+  min-width:580px;
+  max-width: 640px;
+  margin-top:3rem;
+  position: relative;
+  z-index:1;
+}
+.page2-content-container .left h1{
+  font-size: 4rem;
+  letter-spacing: -0.22rem;
+  word-spacing: -0.2rem;
+  line-height: 1.05;
+}
+/* ball1 */
+.page2-content-container .left .page2-animated-ball1{
+  height: 35vw;
+  width: 35vw;
+  border-radius:30rem;
+  filter: blur(50px);
+  background-color:#fe330a;
+  position: absolute;
+  left:17rem;
+  top:14rem;
+  z-index:-1;
+  animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+}
+/* ball 2*/
+.page2-content-container .left .page2-animated-ball2{
+  height: 40vw;
+  width: 38vw;
+  border-radius:30rem;
+  filter: blur(20px);
+  background-color:#fe690a;
+  position: absolute;
+  left:17rem;
+  top:5rem;
+  z-index:-2;
+  animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+}
+
+/* #endregion l-page2contenet .left  */
+
+/* #region l-page2contenet .right  */
+.page2-content-container .right{
+ /* background-color: coral; */
+  width: 25%;
+  z-index: 2;
+  margin-right: 1rem;
+}
+.page2-content-container .right img{
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  margin-top: 11.5rem;
+  margin-bottom: 2.7rem;
+
+}
+
+.page2-content-container .right p{
+  font-size: 0.9rem;  
+  line-height: 1.6;
+  word-spacing: -0.05rem;
+  padding-inline:0.3rem;
+  min-width:240px;
+  max-width:250px;
+
+
+}
+/* #endregion l-page2contenet .right  */
+
+/* #endregion p-Page2-content */
+
 /* #endregion p-Page2 */
+
+/** ============================================Page3============================================= */
+/** ============================================Page3============================================= */
+/* #region p-Page3 */
+.page3{
+  height: 100vh;
+}
+/* #endregion p-Page3 */
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
@@ -614,6 +715,7 @@ nav .menu-btn {
     padding-bottom: 3.3rem;
     transition: linear 0.7s;
     overflow: hidden;
+    z-index: 1;
   }
   /* ======Hamburger Nav Drop Down Menu Links===== */
   nav .nav-links-hamburger a {
@@ -630,7 +732,8 @@ nav .menu-btn {
   }
 
   nav .nav-links-hamburger-backdrop {
-    display: flex;
+    display: block;
+    z-index: 1;
   }
   /* #endregion l-Hamburger DropDown Menu */
 
@@ -638,7 +741,7 @@ nav .menu-btn {
   /** ==================================Hamburger Menu Button========================================= */
   /* #region l-Hamburger DropDown Menu-Button */
   nav .menu-btn {
-    z-index: 1;
+    z-index: 2;
     background-color: #efeae3;
     font-size: 1.4rem;
     display: flex;
@@ -795,9 +898,10 @@ nav .menu-btn {
 /** ====================================Laptops============================================================== */
 
 /* #region g-Laptops */
-@media (765px <= width <= 991px) {
+@media (765px <= width <= 980px) {
   .container {
-    width: 93.5%;
+    width: 94%;
+    margin:1.9rem auto;
   }
 
   /** ===============================================Nav Bar============================================= */
@@ -822,7 +926,7 @@ nav .menu-btn {
   /* #region l-Hero*/
   /* ======Hero Wrapper===== */
   .hero {
-    padding-top: 7.4rem;
+    padding-top: 7rem;
     padding-bottom: 3.5rem;
   }
   /* ============Hero Left=======  */
@@ -836,7 +940,7 @@ nav .menu-btn {
   .hero .right {
     font-size: 7.3rem;
     letter-spacing: -0.45rem;
-    padding-right: 0.6rem;
+    padding-right: 0.4rem;
     line-height: 0.8;
   }
   /*#endregion l-Hero*/
@@ -893,7 +997,9 @@ nav .menu-btn {
   /* #region p-moving-text */
   /* =============Moving Text Container============ */
   .moving-text-container {
-    padding: 3rem 0;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin: 0;
   }
 
   /* =============Moving Text============ */
@@ -914,6 +1020,63 @@ nav .menu-btn {
   }
 
   /* #endregion p-moving-text */
+  /* #region p-Page2-content */
+  .page2-content-container{
+  
+  
+  }
+  /* #region l-page2contenet .left  */
+  .page2-content-container .left{
+  
+  }
+  .page2-content-container .left h1{
+  
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1{
+    /* height: 26rem;
+    width: 27rem;
+    border-radius:30rem;
+    filter: blur(90px);
+    background-color:#fe330a;
+    position: absolute;
+    left:14rem;
+    top:9rem;
+    z-index:-1;
+    animation:page2-animated-ball1-animation 3s infinite alternate; */
+  }
+  /* ball 2*/
+  .page2-content-container .left .page2-animated-ball2{
+    /* height: 28rem;
+    width: 30rem;
+    border-radius:30rem;
+    filter: blur(20px);
+    background-color:#fe690a;
+    position: absolute;
+    left:11rem;
+    top:6rem;
+    z-index:-2;
+    animation:page2-animated-ball2-animation 3s linear infinite alternate; */
+  }
+  
+  /* #endregion l-page2contenet .left  */
+  
+  /* #region l-page2contenet .right  */
+  .page2-content-container .right{
+   
+  }
+  .page2-content-container .right img{
+   
+  }
+  .page2-content-container .right div{
+   
+  }
+  .page2-content-container .right p{
+   
+  }
+/* #endregion l-page2contenet .right  */
+
+/* #endregion p-Page2-content */
   /* #endregion p-Page2 */
 }
 /* #endregion g-Laptops */
@@ -943,6 +1106,8 @@ nav .menu-btn {
 /* #endregion p-Nav-Menu-Button-Clicks*/
 
 /* #region p-Animations */
+/* #region l-page1 Animations */
+
 /* #region p-Animated-balls Animation  */
 @keyframes ball1 {
   from {
@@ -961,7 +1126,9 @@ nav .menu-btn {
   }
 }
 /* #endregion p-Animated-balls Animation*/
-/* #region p-Moving-Text Animations*/
+/* #endregion l-page1 Animations */
+/* #endregion l-page2 Animations */
+/* #region c-Moving-Text Animations*/
 @keyframes moving-text {
   from {
     transform: translateX(0);
@@ -971,4 +1138,25 @@ nav .menu-btn {
   } /* Move text all the way to the left */
 }
 /* #endregion p-Moving-Text Animations*/
+/* #region c-Left Animated ball Animation */
+/* ball1 animation */
+@keyframes page2-animated-ball1-animation{
+  from{
+    transform: translate(0%,0%);
+  }
+  to{
+    transform: translate(-10%,-20%);
+  }
+}
+/* ball2 animation */
+@keyframes page2-animated-ball2-animation{
+  from{
+    transform: translate(0%,-5%) rotate(360deg);
+  }
+  to{
+    transform:translate(-15%,15%) rotate(300deg);
+  }
+}
+/* #endregion c-Left Animated ball Animation */
+/* #endregion l-page2 Animations */
 /* #endregion p-Animations */
