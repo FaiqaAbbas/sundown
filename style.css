@@ -314,6 +314,7 @@ nav .menu-btn {
   /* background-color: rgb(120, 192, 255); */
   display: flex;
   padding: 6.5rem 0;
+  pointer-events:none;
 }
 .moving-text-container::-webkit-scrollbar {
   display: none;
@@ -652,6 +653,7 @@ nav .menu-btn {
   .moving-text {
     gap: 0.7rem;
     padding-right: 1rem;
+    userselect:none;
     animation: moving-text infinite linear 10.4s;
   }
   /* =============Disk before Heading============ */
