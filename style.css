@@ -653,7 +653,6 @@ nav .menu-btn {
   .moving-text {
     gap: 0.7rem;
     padding-right: 1rem;
-    userselect:none;
     animation: moving-text infinite linear 10.4s;
   }
   /* =============Disk before Heading============ */
