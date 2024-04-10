@@ -314,6 +314,7 @@ nav .menu-btn {
   /* background-color: rgb(120, 192, 255); */
   display: flex;
   padding: 6.5rem 0;
+  pointer-events: none;
 }
 .moving-text-container::-webkit-scrollbar {
   display: none;
@@ -1069,7 +1070,7 @@ nav .menu-btn {
 }
 
 /* #endregion l-page2contenet .left  */
-
+ 
 /* #region l-page2contenet .right  */
 .page2-content-container .right{
   /* background-color: coral; */
