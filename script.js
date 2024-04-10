@@ -5,10 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       });
     });
-<<<<<<< Updated upstream
-    
-});
-=======
+
 
 function x(y){
   console.log('x');
@@ -18,4 +15,3 @@ function x(y){
 setTimeout(function y(){
   console.log('y');
 },1000);
->>>>>>> Stashed changes
