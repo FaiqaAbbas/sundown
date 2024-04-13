@@ -1,4 +1,28 @@
-@import url(https://db.onlinewebfonts.com/c/f21923cb0f60b46d41a66875255790b3?family=Neue+Haas+Grotesk+Display+Pro+65+Medium);
+/* @import url(https://db.onlinewebfonts.com/c/f21923cb0f60b46d41a66875255790b3?family=Neue+Haas+Grotesk+Display+Pro+65+Medium); */
+@font-face {
+  font-family: 'Neuehaasdisplay';
+  src: url('https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c4_NeueHaasDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuehaasdisplay mediu';
+  src: url('https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuehaasdisplay roman';
+  src: url('https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 ::before,
 ::after {
@@ -11,7 +35,7 @@ body,
 html {
   width: 100vw;
   height: 100vh;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Neuehaasdisplay mediu", sans-serif;
   font-size: 0.94rem;
   background-color: #efeae3;
 }
@@ -305,7 +329,7 @@ nav .menu-btn {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  /* background-color: red; */
 
 }
 /* #region p-moving-text */
