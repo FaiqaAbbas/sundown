@@ -70,9 +70,11 @@ nav .nav-links {
   
 }
 nav .nav-links a {
-  font-size: calc(0.96rem - 0.1vw);
+  font-family: "Neuehaasdisplay roman";
+  font-weight:500;
+  font-size: calc(1rem - 0.1vw);
   text-decoration: none;
-  color: rgb(47, 45, 45);
+  color:black;
   padding: calc(0.75em  + 0.18vw) calc(1.6em + 0.18vw);
   border: 1px solid rgba(128, 128, 128, 0.451);
   border-radius: 5rem;
@@ -253,19 +255,17 @@ nav .menu-btn {
   width: 40%;
   max-width: 350px;
   text-align: left;
-  font-size: 1.73rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.13rem;
+  font-size: 1.625rem;
+  line-height: 1.09;
+  /* letter-spacing: -0.13rem; */
 }
 /* ======Hero Right Text===== */
 .hero .right {
   width: 60%;
   font-size: 9.9rem;
-  font-weight: 700;
-  line-height: 0.8;
-  padding-right: 2rem;
-  letter-spacing: -0.8rem;
+  line-height: 0.81;
+  padding-right: 2.45rem;
+  letter-spacing: -0.3rem;
   text-align: right;
 }
 /* #endregion l-Hero*/
@@ -366,7 +366,7 @@ nav .menu-btn {
 /* =============Heading============ */
 .moving-text h1 {
   font-size: 8.3rem;
-  letter-spacing: -0.65rem;
+  letter-spacing: -0.15rem;
 }
 
 /* #endregion p-moving-text */
@@ -387,16 +387,15 @@ nav .menu-btn {
   /* background-color: rebeccapurple; */
   width:64%;
   min-width:580px;
-  max-width: 640px;
+  max-width: 650px;
   margin-top:3rem;
   position: relative;
   z-index:1;
 }
 .page2-content-container .left h1{
-  font-size: 4rem;
-  letter-spacing: -0.22rem;
-  word-spacing: -0.2rem;
-  line-height: 1.05;
+  font-size: 4.2rem;
+  letter-spacing: -0.13rem;
+  line-height: 1.0;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
@@ -444,9 +443,9 @@ nav .menu-btn {
 }
 
 .page2-content-container .right p{
-  font-size: 0.9rem;  
+  font-family: "Neuehaasdisplay roman";
+  font-size: 0.97rem;  
   line-height: 1.6;
-  word-spacing: -0.05rem;
   padding-inline:0.3rem;
   max-width:270px;
 
