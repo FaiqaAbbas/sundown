@@ -1203,6 +1203,7 @@ nav .menu-btn {
   /* =============Heading============ */
   .moving-text h1 {
     font-size: 3.5rem;
+    font-family:'Neuehaasdisplay roman';
   }
 
   /* #endregion p-moving-text */
@@ -1226,6 +1227,7 @@ nav .menu-btn {
   margin-top:4.2rem;
 }
 .page2-content-container .left h1{
+ font-family:'Neuehaasdisplay roman'
   font-size: 4.9vh;
   letter-spacing: -0.06rem;
   /* background-color: red; */
