@@ -1222,14 +1222,14 @@ nav .menu-btn {
 /* #region l-page2content .left  */
 .page2-content-container .left{
   width: 100%;
-  max-width:380px; 
+  max-width:390px; 
   min-width: 300px;
   margin-top:4.2rem;
 }
 .page2-content-container .left h1{
-  font-family:'Neuehaasdisplay roman';
+  font-family:'Neuehaasdisplay mediu';
   font-size: 4vh;
-  letter-spacing: -0.06rem;
+  letter-spacing: 0;
   /* background-color: red; */
   line-height: 1.03;
   
