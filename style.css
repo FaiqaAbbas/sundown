@@ -1202,8 +1202,7 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
-    font-size: 3.4rem;
-    font-family:'Neuehaasdisplay mediu';
+    font-size: 3.5rem;
   }
 
   /* #endregion p-moving-text */
@@ -1222,41 +1221,40 @@ nav .menu-btn {
 /* #region l-page2content .left  */
 .page2-content-container .left{
   width: 100%;
-  max-width:400px; 
-  min-width: 300px;
+  max-width:420px; 
+  min-width: 0;
   margin-top:4.2rem;
 }
 .page2-content-container .left h1{
-  font-family:'Neuehaasdisplay mediu';
-  font-size: 4.35vh;
-  letter-spacing: -0.04rem;
+  font-size: 2.1rem;
+  letter-spacing: -0.06rem;
   /* background-color: red; */
-  line-height: 1;
+  line-height: 1.03;
   
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: 15rem;
-  width:14rem;
+  height: 19rem;
+  width:18rem;
   border-radius:30rem;
   filter: blur(40px);
   background-color:#fe330a;
   position: absolute;
-  left:10rem;
-  top:11.5rem;
+  left:30%;
+  top:9rem;
   z-index:-1;
   animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: 20rem;
-  width: 19rem;
+  height: 18rem;
+  width: 18rem;
   border-radius:30rem;
-  filter: blur(10px);
-  background-color:#fe690a;
+  filter: blur(5px);
+  background-color:#fe880a;
   position: absolute;
-  left:10rem;
-  top:5rem;
+  left:40%;
+  top:7em;
   z-index:-2;
   animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
 }
@@ -1282,7 +1280,7 @@ nav .menu-btn {
  
  .page2-content-container .right p{
    text-justify: right;
-   font-size: 0.93rem;  
+   font-size: 0.92rem;  
    line-height: 1.4;
    /* word-spacing: -0.1rem; */
    min-width:170px;
@@ -1295,7 +1293,6 @@ nav .menu-btn {
 /* #endregion p-Page2-content */
   /* #endregion p-Page2 */
 
-  
  
 }
 /* #endregion g-mobile*/
