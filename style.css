@@ -399,29 +399,29 @@ nav .menu-btn {
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: calc(30rem - 0.1vw);
-  width: calc(30rem - 0.1vw);
+  height: calc(34rem - 0.1vw);
+  width: calc(34rem - 0.1vw);
   border-radius:30rem;
-  filter: blur(80px);
+  filter: blur(50px);
   background-color:#fe330a;
   position: absolute;
   left:11rem;
-  top:9rem;
+  top:8rem;
   z-index:-1;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
   height: calc(32rem - 0.1vw);
-  width: calc(30rem - 0.1vw);
+  width: calc(32rem - 0.1vw);
   border-radius:30rem;
   filter: blur(10px);
   background-color:#fe880a;
   position: absolute;
   left:13rem;
-  top:6rem;
+  top:4rem;
   z-index:-2;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2content .left  */
@@ -626,7 +626,7 @@ nav .menu-btn {
   left:6rem;
   top:14rem;
   z-index:-1;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
@@ -639,7 +639,7 @@ nav .menu-btn {
   left:9rem;
   top:11rem;
   z-index:-2;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animatied-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2contenet .left  */
@@ -933,7 +933,7 @@ nav .menu-btn {
   left:9rem;
   top:4.5rem;
   z-index:-1;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
@@ -946,7 +946,7 @@ nav .menu-btn {
   left:13rem;
   top:2rem;
   z-index:-2;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2content .left  */
@@ -1242,7 +1242,7 @@ nav .menu-btn {
   left:34%;
   top:8rem;
   z-index:-1;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
@@ -1255,7 +1255,7 @@ nav .menu-btn {
   left:45%;
   top:5rem;
   z-index:-2;
-  animation:page2-animated-ball-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2content .left  */
@@ -1358,23 +1358,23 @@ nav .menu-btn {
 /* #endregion p-Moving-Text Animations*/
 /* #region c-Left Animated ball Animation */
 /* ball animation */
-/* Orange ball front */
-/* @keyframes page2-animated-ball1-animation{
+/* red ball front */
+@keyframes page2-animated-ball1-animation{
   from{
-    transform: translate(5%,-10%);
+    transform: translate(0%,-5%);
   }
   to{
-    transform:translate(15%,0%)
+    transform:translate(-5%,0%)
   }
-} */
+}
 /* ball2 animation */
-/* Yellow ball behind */
-@keyframes page2-animated-ball-animation{
+/* orange back ball*/
+@keyframes page2-animated-ball2-animation{
   from{
-    transform: translate(0%,-5%) rotate(-10deg);
+    transform: translate(0%,-5%) rotate(-10deg) skew(0deg);
   }
   to{
-    transform:translate(-5%,15%) rotate(60deg);
+    transform:translate(-5%,15%) rotate(60deg) skew(9deg);
   }
 }
 /* #endregion c-Left Animated ball Animation */
