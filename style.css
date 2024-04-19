@@ -393,33 +393,33 @@ nav .menu-btn {
   z-index:1;
 }
 .page2-content-container .left h1{
-  font-size: calc(4.15rem - 0.55vw);
+  font-size: calc(4.3rem - 0.15vw);
   letter-spacing: -0.13rem;
   line-height: 1.0;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: calc(34rem - 4vw);
-  width: calc(34rem - 4vw);
+  height: calc(34rem - 1vw);
+  width: calc(34rem - 1vw);
   border-radius:30rem;
   filter: blur(50px);
   background-color:#fe330a;
   position: absolute;
   left:11rem;
-  top:8rem;
+  top:12rem;
   z-index:-1;
   animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: calc(32rem - 4vw);
-  width: calc(32rem - 4vw);
+  height: calc(32rem - 1vw);
+  width: calc(32rem - 1vw);
   border-radius:30rem;
   filter: blur(10px);
   background-color:#fe880a;
   position: absolute;
   left:13rem;
-  top:4rem;
+  top:6rem;
   z-index:-2;
   animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
@@ -429,7 +429,7 @@ nav .menu-btn {
 /* #region l-page2content .right  */
 .page2-content-container .right{
  /* background-color: coral; */
-  width: 25%;
+  width: 26%;
   z-index: 2;
   margin-right: 1rem;
 }
@@ -444,10 +444,10 @@ nav .menu-btn {
 
 .page2-content-container .right p{
   font-family: "Neuehaasdisplay roman";
-  font-size: calc(0.97rem - 0.1vw);  
+  font-size: calc(1.05rem - 0.07vw);  
   line-height: 1.6;
   padding-inline:0.3rem;
-  max-width:270px;
+  max-width:280px;
 
 
 }
