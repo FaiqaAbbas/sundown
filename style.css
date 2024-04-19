@@ -393,14 +393,14 @@ nav .menu-btn {
   z-index:1;
 }
 .page2-content-container .left h1{
-  font-size: calc(4.15rem - 0.1vw);
+  font-size: calc(4.15rem - 0.55vw);
   letter-spacing: -0.13rem;
   line-height: 1.0;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: calc(34rem - 0.1vw);
-  width: calc(34rem - 0.1vw);
+  height: calc(34rem - 4vw);
+  width: calc(34rem - 4vw);
   border-radius:30rem;
   filter: blur(50px);
   background-color:#fe330a;
@@ -412,8 +412,8 @@ nav .menu-btn {
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: calc(32rem - 0.1vw);
-  width: calc(32rem - 0.1vw);
+  height: calc(32rem - 4vw);
+  width: calc(32rem - 4vw);
   border-radius:30rem;
   filter: blur(10px);
   background-color:#fe880a;
@@ -464,6 +464,29 @@ nav .menu-btn {
   height: 100vh;
 }
 /* #endregion p-Page3 */
+/* #region p-Featured Header */
+.featured-projects-heading{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap:1rem;
+}
+.featured-projects-heading h6{
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.featured-projects-heading .red-dot{
+  background-color: #fe330a;
+  border-radius: 100vw;
+  width: .5em;
+  height: .5em;
+}
+/* #endregion p-Featured Header */
+
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
@@ -617,10 +640,10 @@ nav .menu-btn {
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: 28rem;
-  width:28rem;
+  height: calc(29rem - 1vw);
+  width:calc(29rem - 1vw);
   border-radius:30rem;
-  filter: blur(50px);
+  filter: blur(40px);
   background-color:#fe330a;
   position: absolute;
   left:6rem;
@@ -630,8 +653,8 @@ nav .menu-btn {
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: 27rem;
-  width: 25rem;
+  height: calc(27rem - 1vw);
+  width: calc(27rem - 1vw);
   border-radius:30rem;
   filter: blur(10px);
   background-color:#ff9831;
@@ -639,7 +662,7 @@ nav .menu-btn {
   left:9rem;
   top:11rem;
   z-index:-2;
-  animation:page2-animatied-ball2-animation 3s ease-in-out infinite alternate;
+  animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2contenet .left  */
@@ -924,27 +947,27 @@ nav .menu-btn {
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: 26rem;
-  width:26rem;
+  height: calc(26rem - 1vw);
+  width:calc(26rem - 1vw);
   border-radius:30rem;
   filter: blur(40px);
   background-color:#fe330a;
   position: absolute;
-  left:9rem;
-  top:4.5rem;
+  left:13rem;
+  top:8rem;
   z-index:-1;
   animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: 23rem;
-  width: 22rem;
+  height: calc(25rem - 1vw);
+  width: calc(25rem - 1vw);
   border-radius:30rem;
-  filter: blur(6px);
+  filter: blur(10px);
   background-color:#ff9831;
   position: absolute;
-  left:13rem;
-  top:2rem;
+  left:16rem;
+  top:4rem;
   z-index:-2;
   animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
@@ -1233,27 +1256,27 @@ nav .menu-btn {
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1{
-  height: 17rem;
-  width:20rem;
+  height: calc(22em - 1vw);
+  width:calc(22rem - 1vw);
   border-radius:30rem;
   filter: blur(30px);
   background-color:#fe330a;
   position: absolute;
-  left:34%;
-  top:8rem;
+  left:30%;
+  top:9rem;
   z-index:-1;
   animation:page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2{
-  height: 18rem;
-  width: 16rem;
+  height: calc(20rem - 2vh + 2vw);
+  width:calc(20rem - 2vh + 2vw);
   border-radius:30rem;
   filter: blur(5px);
   background-color:#fe880a;
   position: absolute;
-  left:45%;
-  top:5rem;
+  left:35%;
+  top:6rem;
   z-index:-2;
   animation:page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
