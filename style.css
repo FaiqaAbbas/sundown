@@ -470,7 +470,8 @@ nav .menu-btn {
   justify-content:flex-start;
   align-items: center;
   gap:1rem;
-  background-color:lavender;
+  padding:4rem 0;
+  background-color:pink;
 }
 .featured-projects-heading h6{
   letter-spacing: .02em;
