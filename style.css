@@ -1268,6 +1268,7 @@ nav .menu-btn {
 
   /* =============Moving Text============ */
   .moving-text {
+    font-family: 'Neuehaasdisplay mediu';
     gap: 0.7rem;
     padding-right: 1rem;
     animation: moving-text infinite linear 10.4s;
@@ -1288,6 +1289,7 @@ nav .menu-btn {
   
   /* #region p-Page2-content */
   .page2-content-container {
+    font-family: 'Neuehaasdisplay mediu';
     /* background-color: red; */
     width: 92%;
     margin: 0 auto;
@@ -1298,6 +1300,7 @@ nav .menu-btn {
   }
   /* #region l-page2content .left  */
   .page2-content-container .left {
+    font-family: 'Neuehaasdisplay mediu';
     width: 100%;
     max-width: 500px;
     min-width: 0;
