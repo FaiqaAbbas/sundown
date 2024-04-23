@@ -378,7 +378,7 @@ nav .menu-btn {
   margin:0 auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 6.5rem;
+  padding-bottom: 5.1rem;
   /* gap:rem; */
 
 }
@@ -466,20 +466,20 @@ nav .menu-btn {
   z-index: 0;
 }
 /* #endregion p-Page3 */
-/* #region p-Featured Header */
+/* #region p-featured-projects-heading */
 .featured-projects-heading{
   display: flex;
   justify-content:flex-start;
   align-items: center;
-  gap:0.3rem;
-  padding-bottom:2rem;
-  background-color:pink;
+  gap:0.6rem;
+  padding-bottom:1.9rem;
+  /* background-color:pink; */
 }
 .featured-projects-heading h6{
   letter-spacing: .02em;
   text-transform: uppercase;
   font-family: "Neuehaasdisplay roman", sans-serif;
-  font-size: .875em;
+  font-size: .85rem;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -489,8 +489,55 @@ nav .menu-btn {
   width: .5em;
   height: .5em;
 }
-/* #endregion p-Featured Header */
+/* #endregion p-featured-projects-heading */
+/* #region p-featured-projects-list */
+.featured-projects-list{ 
+  /* background-color: red; */
+}
+.featured-projects-list .project{
+  
+  /* background-color: pink; */
+  border-bottom: 0.1px solid rgba(0, 0, 0, .2);
+}
+.featured-projects-list .project a{
+  width: 95%;
+  margin:0 auto;
+  padding:1.9rem 0;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Neuehaasdisplay mediu", sans-serif;
+  text-decoration: none;
+  color:black
+}
+.featured-projects-list .project a h2{
+  font-family: "Neuehaasdisplay mediu";
+  font-size:3.215rem;
+  letter-spacing: -0.1rem;
+}
+.featured-projects-list .project a .brand{
+  padding-right: 1.31rem;
+  font-family: "Neuehaasdisplay roman";
+  text-align:right;
+}
+.featured-projects-list .project a .brand .name{
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-family: 'Neuehaasdisplay roman', sans-serif;
+  font-size: .85rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
 
+.featured-projects-list .project a .brand .category{
+  color:rgba(0, 0, 0, .4);
+  font-size: .85rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* #endregion p-featured-projects-list */
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
