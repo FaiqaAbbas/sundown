@@ -260,6 +260,7 @@ nav .menu-btn {
 }
 /* ======Hero Left Text===== */
 .hero .left {
+  font-family: 'Neuehaasdisplay roman';
   align-self: flex-end;
   width: 40%;
   max-width: 350px;
@@ -270,6 +271,7 @@ nav .menu-btn {
 }
 /* ======Hero Right Text===== */
 .hero .right {
+  font-family: 'Neuehaasdisplay mediu';
   width: 60%;
   font-size: 9.9rem;
   line-height: 0.81;
@@ -355,7 +357,6 @@ nav .menu-btn {
 
 /* =============Moving Text============ */
 .moving-text {
-  font-family: "Neuehaasdisplay mediu";
   /* background-color: rgb(192, 104, 104); */
   display: flex;
   align-items: center;
@@ -393,7 +394,6 @@ nav .menu-btn {
 }
 /* #region l-page2content .left  */
 .page2-content-container .left {
-  font-family:"Neuehaasdisplay mediu";
   /* background-color: rebeccapurple; */
   width: 64%;
   min-width: 570px;
@@ -972,7 +972,6 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
-    font-family:"Neuehaasdisplay mediu";
     font-size: 4rem;
   }
 
@@ -996,7 +995,6 @@ nav .menu-btn {
     margin-top: 5.8rem;
   }
   .page2-content-container .left h1 {
-    font-family:"Neuehaasdisplay mediu";
     font-size: 2.39rem;
     line-height: 1;
     letter-spacing: -0.099rem;
