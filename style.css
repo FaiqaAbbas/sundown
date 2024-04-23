@@ -104,8 +104,8 @@ nav .nav-links a::after {
     circle at center,
     #fe530a,
     #fe690a,
-    #fe330a,
-    #fe330a,
+    var(--sundown-orange),
+    var(--sundown-orange),
     #fe530a,
     #fe630a,
     #efeae3,
@@ -141,13 +141,13 @@ nav .nav-links a:hover::after {
     circle at center,
     #fe530a,
     #fe690a,
-    #fe330a,
-    #fe330a,
+    var(--sundown-orange),
+    var(--sundown-orange),
     #fe530a,
     #fe630a,
-    #fe330a,
-    #fe330a,
-    #fe330a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    var(--sundown-orange),
     #000000,
     #000000,
     #000000,
@@ -294,7 +294,7 @@ nav .menu-btn {
 .animated-ball1 {
   height: 38vw;
   width: 80vw;
-  background-color: #fe330a;
+  background-color: var(--sundown-orange);
   border-radius: 50vw;
   right: -24vw;
   position: absolute;
@@ -316,7 +316,7 @@ nav .menu-btn {
 .animated-ball3 {
   height: 35vw;
   width: 45vw;
-  background-color: #fe330a;
+  background-color: var(--sundown-orange);
   border-radius: 50vw;
   right: 3vw;
   position: absolute;
@@ -369,7 +369,7 @@ nav .menu-btn {
   height: 3.56rem;
   width: 3.6rem;
   border-radius: 9rem;
-  background-color: #fe330a;
+  background-color: var(--sundown-orange);
 }
 /* =============Heading============ */
 .moving-text h1 {
@@ -410,7 +410,7 @@ nav .menu-btn {
   width: calc(34rem - 1vw);
   border-radius: 30rem;
   filter: blur(50px);
-  background-color: #fe330a;
+  background-color: var(--sundown-orange);
   position: absolute;
   left: 11rem;
   top: 12rem;
@@ -490,7 +490,7 @@ nav .menu-btn {
   line-height: 1.2;
 }
 .featured-projects-heading .red-dot {
-  background-color: #fe330a;
+  background-color: var(--sundown-orange);
   border-radius: 100vw;
   width: 0.5em;
   height: 0.5em;
@@ -541,7 +541,7 @@ nav .menu-btn {
   color: rgba(0, 0, 0, 0.4);
   font-size: 0.85rem;
   line-height: 1.3;
-  font-weight: 400;
+  font-weight: 400;color:
 }
 
 /* #endregion p-featured-projects-list */
@@ -610,7 +610,7 @@ nav .menu-btn {
   .animated-ball1 {
     height: 40vw;
     width: 80vw;
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     border-radius: 50vw;
     right: -25vw;
     position: absolute;
@@ -701,7 +701,7 @@ nav .menu-btn {
     width: calc(29rem - 1vw);
     border-radius: 30rem;
     filter: blur(40px);
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     position: absolute;
     left: 6rem;
     top: 14rem;
@@ -714,7 +714,7 @@ nav .menu-btn {
     width: calc(27rem - 1vw);
     border-radius: 30rem;
     filter: blur(10px);
-    background-color: #ff9831;
+    background-color:var(--sundown-orange);
     position: absolute;
     left: 9rem;
     top: 11rem;
@@ -909,7 +909,7 @@ nav .menu-btn {
   .animated-ball1 {
     height: 45vw;
     width: 100vw;
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     border-radius: 50vw;
     right: -40vw;
     position: absolute;
@@ -931,7 +931,7 @@ nav .menu-btn {
   .animated-ball3 {
     height: 16rem;
     width: 16rem;
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     border-radius: 50vw;
     right: -4rem;
     position: absolute;
@@ -1001,7 +1001,7 @@ nav .menu-btn {
     width: calc(26rem - 1vw);
     border-radius: 30rem;
     filter: blur(40px);
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     position: absolute;
     left: 13rem;
     top: 8rem;
@@ -1014,7 +1014,7 @@ nav .menu-btn {
     width: calc(25rem - 1vw);
     border-radius: 30rem;
     filter: blur(10px);
-    background-color: #ff9831;
+    background-color: var(--sundown-orange);
     position: absolute;
     left: 16rem;
     top: 4rem;
@@ -1217,7 +1217,7 @@ nav .menu-btn {
   .animated-ball1 {
     height: 17rem;
     width: 50rem;
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     border-radius: 50vw;
     right: -30rem;
     position: absolute;
@@ -1310,7 +1310,7 @@ nav .menu-btn {
     width: calc(22rem - 1vw);
     border-radius: 30rem;
     filter: blur(30px);
-    background-color: #fe330a;
+    background-color: var(--sundown-orange);
     position: absolute;
     left: 30%;
     top: 9rem;
