@@ -451,6 +451,7 @@ nav .menu-btn {
 }
 
 .page2-content-container .right p {
+  font-family: "Neuehaasdisplay roman";
   font-size: calc(1.03rem - 0.07vw);
   line-height: 1.6;
   padding-inline: 0.3rem;
