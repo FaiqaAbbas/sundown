@@ -355,6 +355,7 @@ nav .menu-btn {
 
 /* =============Moving Text============ */
 .moving-text {
+  font-family: "Neuehaasdisplay mediu";
   /* background-color: rgb(192, 104, 104); */
   display: flex;
   align-items: center;
@@ -373,7 +374,6 @@ nav .menu-btn {
 }
 /* =============Heading============ */
 .moving-text h1 {
-  font-family:"Neuehaasdisplay mediu";
   font-size: 8.3rem;
   letter-spacing: -0.15rem;
 }
@@ -392,6 +392,7 @@ nav .menu-btn {
 }
 /* #region l-page2content .left  */
 .page2-content-container .left {
+  font-family:"Neuehaasdisplay mediu";
   /* background-color: rebeccapurple; */
   width: 64%;
   min-width: 570px;
@@ -401,7 +402,7 @@ nav .menu-btn {
   z-index: 1;
 }
 .page2-content-container .left h1 {
-  font-family:"Neuehaasdisplay mediu";
+  
   font-size: calc(4.3rem - 0.15vw);
   letter-spacing: -0.13rem;
   line-height: 1;
@@ -1173,7 +1174,6 @@ nav .menu-btn {
   /* #region l-Hero */
   /* ======Hero Wrapper===== */
   .hero {
-    font-family: 'Neuehaasdisplay mediu';
     flex-direction: column-reverse;
     padding-top: 2.2rem;
     padding-bottom: 2.5rem;
@@ -1181,7 +1181,6 @@ nav .menu-btn {
   }
   /* ======Hero Left===== */
   .hero .left {    
-    font-family: 'Neuehaasdisplay mediu';
     font-size: 1.45rem;
     font-weight: 500;
     line-height: 1;
@@ -1268,7 +1267,6 @@ nav .menu-btn {
 
   /* =============Moving Text============ */
   .moving-text {
-    font-family: 'Neuehaasdisplay mediu';
     gap: 0.7rem;
     padding-right: 1rem;
     animation: moving-text infinite linear 10.4s;
@@ -1281,7 +1279,6 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
-    font-family: 'Neuehaasdisplay mediu';
     font-size: 3.5rem;
   }
 
@@ -1289,7 +1286,6 @@ nav .menu-btn {
   
   /* #region p-Page2-content */
   .page2-content-container {
-    font-family: 'Neuehaasdisplay mediu';
     /* background-color: red; */
     width: 92%;
     margin: 0 auto;
@@ -1300,14 +1296,12 @@ nav .menu-btn {
   }
   /* #region l-page2content .left  */
   .page2-content-container .left {
-    font-family: 'Neuehaasdisplay mediu';
     width: 100%;
     max-width: 500px;
     min-width: 0;
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
-    font-family: 'Neuehaasdisplay mediu';
     font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
@@ -1361,7 +1355,6 @@ nav .menu-btn {
   }
 
   .page2-content-container .right p {
-    font-family:"Neuehaasdisplay roman";
     text-justify: right;
     font-size: 0.92rem;
     line-height: 1.4;
