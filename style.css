@@ -257,10 +257,10 @@ nav .menu-btn {
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
   padding-top: 5.6rem;
   padding-bottom: 4.2rem;
+  font-family: 'Neuehaasdisplay mediu';
 }
 /* ======Hero Left Text===== */
 .hero .left {
-  font-family: 'Neuehaasdisplay mediu';
   align-self: flex-end;
   width: 40%;
   max-width: 350px;
@@ -271,7 +271,6 @@ nav .menu-btn {
 }
 /* ======Hero Right Text===== */
 .hero .right {
-  font-family: 'Neuehaasdisplay mediu';
   width: 60%;
   font-size: 9.9rem;
   line-height: 0.81;
@@ -777,7 +776,6 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
-    font-family:'Neuehaasdisplay mediu';
     font-size: 3.5rem;
   }
 
@@ -801,7 +799,6 @@ nav .menu-btn {
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
-    font-family:'Neuehaasdisplay mediu';
       font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
