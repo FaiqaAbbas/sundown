@@ -1296,10 +1296,11 @@ nav .menu-btn {
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
-    font-size: calc(2.09rem - 0.08vw);
+    font-weight: 300;
+    font-size: calc(2rem);
     letter-spacing: -0.05rem;
     /* background-color: red; */
-    line-height: 1.03;
+    /* line-height: 1.03; */
   }
   /* ball1 */
   .page2-content-container .left .page2-animated-ball1 {
