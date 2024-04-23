@@ -255,7 +255,7 @@ nav .menu-btn {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-  padding-top: 7.7rem;
+  padding-top: 5.6rem;
   padding-bottom: 4.2rem;
 }
 /* ======Hero Left Text===== */
@@ -298,7 +298,7 @@ nav .menu-btn {
   border-radius: 50vw;
   right: -24vw;
   position: absolute;
-  top: 37rem;
+  top: 31rem;
   filter: blur(15px);
   animation: ball1 ease-in-out infinite alternate 4s;
 }
@@ -309,7 +309,7 @@ nav .menu-btn {
   border-radius: 50vw;
   right: -13vw;
   position: absolute;
-  top: 49rem;
+  top: 43rem;
   filter: blur(20px);
   animation: ball2 linear infinite alternate 3s;
 }
@@ -320,7 +320,7 @@ nav .menu-btn {
   border-radius: 50vw;
   right: 3vw;
   position: absolute;
-  top: 42rem;
+  top: 36rem;
   filter: blur(15px);
   animation: ball2 linear infinite alternate 3s;
 }
@@ -436,7 +436,7 @@ nav .menu-btn {
 /* #region l-page2content .right  */
 .page2-content-container .right {
   /* background-color: coral; */
-  width: 26%;
+  width: 25.5%;
   z-index: 2;
   margin-right: 1rem;
 }
@@ -450,7 +450,7 @@ nav .menu-btn {
 
 .page2-content-container .right p {
   font-family: "Neuehaasdisplay roman";
-  font-size: calc(1.05rem - 0.07vw);
+  font-size: calc(1.03rem - 0.07vw);
   line-height: 1.6;
   padding-inline: 0.3rem;
   max-width: 280px;
@@ -1269,18 +1269,19 @@ nav .menu-btn {
     animation: moving-text infinite linear 10.4s;
   }
   /* =============Disk before Heading============ */
-
+  
   .moving-text .disk {
     height: 2rem;
     width: 2rem;
   }
   /* =============Heading============ */
   .moving-text h1 {
+    font-family:"Neuehaasdisplay mediu";
     font-size: 3.5rem;
   }
 
   /* #endregion p-moving-text */
-
+  
   /* #region p-Page2-content */
   .page2-content-container {
     /* background-color: red; */
@@ -1299,6 +1300,7 @@ nav .menu-btn {
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
+    font-family:"Neuehaasdisplay mediu";
     font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
@@ -1330,7 +1332,7 @@ nav .menu-btn {
     z-index: -2;
     animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
   }
-
+  
   /* #endregion l-page2content .left  */
 
   /* #region l-page2content .right  */
@@ -1352,6 +1354,7 @@ nav .menu-btn {
   }
 
   .page2-content-container .right p {
+    font-family:"Neuehaasdisplay roman";
     text-justify: right;
     font-size: 0.92rem;
     line-height: 1.4;
