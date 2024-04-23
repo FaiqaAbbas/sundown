@@ -251,7 +251,6 @@ nav .menu-btn {
 /* #region l-Hero*/
 /* ======Hero Wrapper===== */
 .hero {
-  font-family: "Neuehaasdisplay mediu";
   min-height: max-content;
   display: flex;
   justify-content: space-between;
