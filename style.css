@@ -373,6 +373,7 @@ nav .menu-btn {
 }
 /* =============Heading============ */
 .moving-text h1 {
+  font-family:"Neuehaasdisplay mediu";
   font-size: 8.3rem;
   letter-spacing: -0.15rem;
 }
@@ -400,6 +401,7 @@ nav .menu-btn {
   z-index: 1;
 }
 .page2-content-container .left h1 {
+  font-family:"Neuehaasdisplay mediu";
   font-size: calc(4.3rem - 0.15vw);
   letter-spacing: -0.13rem;
   line-height: 1;
@@ -1276,7 +1278,7 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
-    font-family:"Neuehaasdisplay mediu";
+    font-family:"Neuehaasdisplay";
     font-size: 3.5rem;
   }
 
@@ -1354,7 +1356,7 @@ nav .menu-btn {
   }
 
   .page2-content-container .right p {
-    font-family:"Neuehaasdisplay roman";
+    /* font-family:"Neuehaasdisplay roman"; */
     text-justify: right;
     font-size: 0.92rem;
     line-height: 1.4;
