@@ -1273,6 +1273,7 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
+    font-weight: 300;
     font-size: 3.5rem;
   }
 
@@ -1297,7 +1298,7 @@ nav .menu-btn {
   }
   .page2-content-container .left h1 {
     font-weight: 300;
-    font-size: calc(2rem);
+    font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
     /* line-height: 1.03; */
