@@ -462,6 +462,8 @@ nav .menu-btn {
 /* #region p-Page3 */
 .page3{
   height: 100vh;
+  position: relative;
+  z-index: 0;
 }
 /* #endregion p-Page3 */
 /* #region p-Featured Header */
@@ -469,8 +471,8 @@ nav .menu-btn {
   display: flex;
   justify-content:flex-start;
   align-items: center;
-  gap:1rem;
-  padding:4rem 0;
+  gap:0.3rem;
+  padding-bottom:2rem;
   background-color:pink;
 }
 .featured-projects-heading h6{
@@ -743,8 +745,8 @@ nav .menu-btn {
     border-bottom-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
     padding-inline: 1.5rem;
-    padding-top: 9.2rem;
-    padding-bottom: 3.3rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
     transition: linear 0.7s;
     overflow: hidden;
     z-index: 1;
@@ -828,9 +830,10 @@ nav .menu-btn {
   /* ======Hero Wrapper===== */
   .hero {
     flex-direction: column-reverse;
-    padding-top: 5.4rem;
+    padding-top: 3.2rem;
     padding-bottom: 2.8rem;
     gap: 3.8rem;
+
   }
   /* ======Hero Left Text===== */
   .hero .left {
@@ -847,34 +850,34 @@ nav .menu-btn {
     width: 100%;
     justify-self: flex-start;
     align-self: flex-end;
-    font-size: 6.5rem;
+    font-size: 6.7rem;
     letter-spacing: -0.24rem;
-    padding-right: 0;
+    padding-right: 0rem;
   }
   /* #endregion l-Hero */
   /** ============================================Animated-Balls============================================= */
   /** ============================================Animated-Balls============================================= */
   /* #region l-Animated-Balls */
   .animated-ball1 {
-    height: 40vw;
-    width: 90vw;
+    height: 45vw;
+    width: 100vw;
     background-color: #fe330a;
     border-radius: 50vw;
-    right: -39vw;
+    right: -40vw;
     position: absolute;
-    top: 34rem;
+    top: 25rem;
     filter: blur(15px);
-    animation: ball1 ease-in-out infinite alternate 4s;
+    animation: ball1 ease-in-out infinite alternate 3s;
   }
   .animated-ball2 {
-    height: 35vw;
-    width: 35vw;
+    height: 20vw;
+    width: 70vw;
     background-color: #fe690a;
     border-radius: 50vw;
-    right: -13vw;
+    right: -43vw;
     position: absolute;
-    top: 46rem;
-    filter: blur(10px);
+    top: 32rem;
+    filter: blur(30px);
     animation: ball2 linear infinite alternate 3s;
   }
   .animated-ball3 {
@@ -882,9 +885,9 @@ nav .menu-btn {
     width: 16rem;
     background-color: #fe330a;
     border-radius: 50vw;
-    right: 5rem;
+    right: -4rem;
     position: absolute;
-    top: 38rem;
+    top: 35rem;
     filter: blur(15px);
     animation: ball2 linear infinite alternate 3s;
   }
@@ -1365,7 +1368,7 @@ nav .menu-btn {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0%, -25);
+    transform: translate(0%, -25%);
   }
 }
 /* #endregion p-Animated-balls Animation*/
