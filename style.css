@@ -251,13 +251,13 @@ nav .menu-btn {
 /* #region l-Hero*/
 /* ======Hero Wrapper===== */
 .hero {
+  font-family: "Neuehaasdisplay mediu";
   min-height: max-content;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.329);
   padding-top: 5.6rem;
   padding-bottom: 4.2rem;
-  font-family: 'Neuehaasdisplay mediu';
 }
 /* ======Hero Left Text===== */
 .hero .left {
@@ -374,7 +374,6 @@ nav .menu-btn {
 }
 /* =============Heading============ */
 .moving-text h1 {
-  font-family: 'Neuehaasdisplay mediu';
   font-size: 8.3rem;
   letter-spacing: -0.15rem;
 }
@@ -402,7 +401,7 @@ nav .menu-btn {
   z-index: 1;
 }
 .page2-content-container .left h1 {
-  font-family: 'Neuehaasdisplay mediu';
+
   font-size: calc(4.3rem - 0.15vw);
   letter-spacing: -0.13rem;
   line-height: 1;
@@ -452,7 +451,6 @@ nav .menu-btn {
 }
 
 .page2-content-container .right p {
-  font-family: "Neuehaasdisplay roman";
   font-size: calc(1.03rem - 0.07vw);
   line-height: 1.6;
   padding-inline: 0.3rem;
@@ -552,9 +550,6 @@ nav .menu-btn {
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
-/** ====================================Laptops============================================================== */
-/** ====================================Laptops============================================================== */
-
 
 /** ==============================================Mobile=========================================== */
 /** ==============================================Mobile=========================================== */
@@ -799,7 +794,7 @@ nav .menu-btn {
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
-      font-size: calc(2.09rem - 0.08vw);
+    font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
     line-height: 1.03;
