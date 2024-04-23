@@ -401,7 +401,6 @@ nav .menu-btn {
   z-index: 1;
 }
 .page2-content-container .left h1 {
-
   font-size: calc(4.3rem - 0.15vw);
   letter-spacing: -0.13rem;
   line-height: 1;
@@ -551,6 +550,509 @@ nav .menu-btn {
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
+/** ====================================Laptops============================================================== */
+/** ====================================Laptops============================================================== */
+
+/* #region g-Laptops */
+@media (765px <= width <= 980px) {
+  .container {
+    width: 94%;
+    margin: 1.9rem auto;
+  }
+
+  /** ===============================================Nav Bar============================================= */
+  /** ===============================================Nav Bar============================================= */
+  /* #region p-NavStyles */
+  nav img {
+    width: 8.7rem;
+  }
+  nav .nav-links {
+    gap: 0.4rem;
+  }
+  nav .nav-links a {
+    font-size: 1.2rem;
+    padding: 0.73em 1.5em;
+  }
+  /* #endregion p-Navbar */
+  /** ============================================Page1============================================= */
+  /** ============================================Page1============================================= */
+  /* #region p-Page1 */
+  /** ============================================Hero, left and right ============================================= */
+  /** ============================================Hero, left and right============================================= */
+  /* #region l-Hero*/
+  /* ======Hero Wrapper===== */
+  .hero {
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+  }
+  /* ============Hero Left=======  */
+  .hero .left {
+    font-size: 1.36rem;
+    max-width: 280px;
+    letter-spacing: -0.03rem;
+    line-height: 1.08;
+  }
+  /* ============Hero Right=======  */
+  .hero .right {
+    font-size: 7.6rem;
+    padding-right: 1rem;
+    line-height: 0.8;
+  }
+  /*#endregion l-Hero*/
+  /** ============================================Video============================================= */
+  /** ============================================Video============================================= */
+  .page1 video {
+    height: 53.7vw;
+    width: 92vw;
+  }
+  /** ============================================Animated-Balls============================================= */
+  /** ============================================Animated-Balls============================================= */
+  /* #region l-Animated-Balls */
+  .animated-ball1 {
+    height: 40vw;
+    width: 80vw;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -25vw;
+    position: absolute;
+    top: 31rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2 {
+    height: 35vw;
+    width: 35vw;
+    background-color: #fe690a;
+    border-radius: 50vw;
+    right: -13vw;
+    position: absolute;
+    top: 40rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
+    height: 35vw;
+    width: 35vw;
+    background-color: #fe530a;
+    border-radius: 50vw;
+    right: 14vw;
+    position: absolute;
+    top: 37rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  /* #endregion l-Animated-Balls */
+  /* #endregion p-Page1 */
+
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page2 */
+  .page2 {
+  }
+  /* #region p-moving-text */
+  /* =============Moving Text Container============ */
+  .moving-text-container {
+    padding-top: 1rem;
+    padding: 3.2rem 0;
+    margin: 0;
+  }
+
+  /* =============Moving Text============ */
+  .moving-text {
+    gap: 1.2rem;
+    animation: moving-text infinite linear 16s;
+  }
+  /* =============Disk before Heading============ */
+
+  .moving-text .disk {
+    height: 3rem;
+    width: 3rem;
+  }
+  /* =============Heading============ */
+  .moving-text h1 {
+    font-size: 5.7rem;
+    /* letter-spacing: -0.5rem; */
+  }
+
+  /* #endregion p-moving-text */
+  /* #region p-Page2-content */
+  .page2-content-container {
+    /* background-color: red; */
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6.5rem;
+    /* gap:rem; */
+  }
+  /* #region l-page2contenet .left  */
+  .page2-content-container .left {
+    width: 66%;
+    min-width: 390px;
+    max-width: 530px;
+    margin-top: 3.65rem;
+  }
+  .page2-content-container .left h1 {
+    font-size: 3.25rem;
+    letter-spacing: -0.1rem;
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1 {
+    height: calc(29rem - 1vw);
+    width: calc(29rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(40px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 6rem;
+    top: 14rem;
+    z-index: -1;
+    animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  }
+  /* ball 2*/
+  .page2-content-container .left .page2-animated-ball2 {
+    height: calc(27rem - 1vw);
+    width: calc(27rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(10px);
+    background-color:var(--sundown-orange);
+    position: absolute;
+    left: 9rem;
+    top: 11rem;
+    z-index: -2;
+    animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  }
+
+  /* #endregion l-page2contenet .left  */
+
+  /* #region l-page2contenet .right  */
+  .page2-content-container .right {
+    /* background-color: coral; */
+    width: 25.5%;
+    z-index: 2;
+    margin-right: 2.3rem;
+  }
+  .page2-content-container .right img {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    margin-top: 10.4rem;
+    margin-bottom: 2.1rem;
+    margin-inline: auto;
+  }
+
+  .page2-content-container .right p {
+    text-justify: right;
+    font-size: 0.93rem;
+    line-height: 1.4;
+    max-width: 220px;
+    padding-inline: 0;
+  }
+  /* #endregion l-page2contenet .right  */
+
+  /* #endregion p-Page2-content */
+  /* #endregion p-Page2 */
+}
+/* #endregion g-Laptops */
+
+/** =========================================Tablet/Phablets=========================================== */
+/** =========================================Tablet/Phablets=========================================== */
+/* #region g-Tablets/Phablets */
+@media (481px <= width <= 765px) {
+  .container {
+    width: 93%;
+  }
+  /* ======NAV BAR===== */
+  /** ===============================================Nav Bar============================================= */
+  /** ===============================================Nav Bar============================================= */
+  /* #region p-NavStyles */
+  nav img {
+    width: 8.8rem;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  /* #endregion p-NavStyles */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /* #region p-HamburgerMenu and Menu-Button */
+
+  /** ======================================= Hamburger DropDown Menu========================== */
+  /** ======================================= Hamburger DropDown Menu========================== */
+  /* #region l-HamburgerDropDown Menu */
+  /* ======Hamburger Nav Drop Down Menu===== */
+  nav .nav-links-hamburger {
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    left: 0;
+    background-color: #efeae3;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding-inline: 1.5rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    transition: linear 0.7s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* ======Hamburger Nav Drop Down Menu Links===== */
+  nav .nav-links-hamburger a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.15;
+    text-align: right;
+    color: black;
+    font-size: 5.4rem;
+    font-weight: 700;
+    transition: linear 0.5s;
+  }
+
+  nav .nav-links-hamburger-backdrop {
+    display: block;
+    z-index: 1;
+  }
+  /* #endregion l-Hamburger DropDown Menu */
+
+  /** =================================Hamburger Menu Button========================================= */
+  /** ==================================Hamburger Menu Button========================================= */
+  /* #region l-Hamburger DropDown Menu-Button */
+  nav .menu-btn {
+    z-index: 2;
+    background-color: #efeae3;
+    font-size: 1.4rem;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: rgb(47, 45, 45);
+    padding: 0.6em 1.25em;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    border-radius: 3rem;
+  }
+
+  /* ======Hamburger Lines and menu-text aligned in flex===== */
+  nav .menu-btn .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+  }
+  /* ======Hamburger Lines===== */
+  nav .menu-btn .hamburger .line {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  /* ======Hamburger menu text next to lines===== */
+
+  nav .menu {
+    display: block;
+    font-size: 1.25rem;
+    user-select: none;
+  }
+
+  /* #endregion l-Hamburger DropDown Menu-Button*/
+  /* #endregion p-HamburgerMenu and Menu-Button */
+
+  /** ============================================Page1============================================= */
+  /** ============================================Page1============================================= */
+  /* #region p-Page1 */
+  .page1 video {
+    margin: 3rem auto;
+    height: 52vw;
+    width: 91vw;
+    object-fit: cover;
+    padding: 0 0.2rem;
+    border-radius: 1.3rem;
+  }
+  /** ============================================Hero, left and right ============================================= */
+  /** ============================================Hero, left and right============================================= */
+  /* #region l-Hero */
+  /* ======Hero Wrapper===== */
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 3.2rem;
+    padding-bottom: 2.8rem;
+    gap: 3.8rem;
+  }
+  /* ======Hero Left Text===== */
+  .hero .left {
+    font-size: 1.32rem;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 280px;
+    /* letter-spacing: -0.1rem; */
+    line-height: 1.03;
+    padding-bottom: 0.7rem;
+  }
+  /* ======Hero Right Text===== */
+  .hero .right {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 6.7rem;
+    letter-spacing: -0.24rem;
+    padding-right: 0rem;
+  }
+  /* #endregion l-Hero */
+  /** ============================================Animated-Balls============================================= */
+  /** ============================================Animated-Balls============================================= */
+  /* #region l-Animated-Balls */
+  .animated-ball1 {
+    height: 45vw;
+    width: 100vw;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -40vw;
+    position: absolute;
+    top: 25rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 3s;
+  }
+  .animated-ball2 {
+    height: 20vw;
+    width: 70vw;
+    background-color: #fe690a;
+    border-radius: 50vw;
+    right: -43vw;
+    position: absolute;
+    top: 32rem;
+    filter: blur(30px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
+    height: 16rem;
+    width: 16rem;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -4rem;
+    position: absolute;
+    top: 35rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+
+  /* #endregion l-Animated-Balls */
+  /* #endregion p-Page1 */
+
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page2 */
+  .page2 {
+  }
+  /* #region p-moving-text */
+  /* =============Moving Text Container============ */
+  .moving-text-container {
+    padding: 0 0;
+  }
+
+  /* =============Moving Text============ */
+  .moving-text {
+    gap: 0.9rem;
+    padding-right: 1rem;
+    animation: moving-text infinite linear 10.2s;
+  }
+  /* =============Disk before Heading============ */
+
+  .moving-text .disk {
+    height: 2rem;
+    width: 2rem;
+  }
+  /* =============Heading============ */
+  .moving-text h1 {
+    font-size: 4rem;
+  }
+
+  /* #endregion p-moving-text */
+
+  /* #region p-Page2-content */
+  .page2-content-container {
+    /* background-color: red; */
+    width: 91%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 6.5rem;
+  }
+  /* #region l-page2content .left  */
+  .page2-content-container .left {
+    width: 100%;
+    min-width: 420px;
+    max-width: 700px;
+    margin-top: 5.8rem;
+  }
+  .page2-content-container .left h1 {
+    font-size: 2.39rem;
+    line-height: 1;
+    letter-spacing: -0.099rem;
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1 {
+    height: calc(26rem - 1vw);
+    width: calc(26rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(40px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 13rem;
+    top: 8rem;
+    z-index: -1;
+    animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  }
+  /* ball 2*/
+  .page2-content-container .left .page2-animated-ball2 {
+    height: calc(25rem - 1vw);
+    width: calc(25rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(10px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 16rem;
+    top: 4rem;
+    z-index: -2;
+    animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  }
+
+  /* #endregion l-page2content .left  */
+
+  /* #region l-page2content .right  */
+  .page2-content-container .right {
+    /* background-color: coral; */
+    width: 20.5rem;
+    z-index: 2;
+    margin-right: 2.3rem;
+  }
+  .page2-content-container .right img {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    margin-top: 3.85rem;
+    margin-bottom: 2.3rem;
+    margin-inline: auto;
+  }
+
+  .page2-content-container .right p {
+    text-justify: right;
+    font-size: 0.92rem;
+    line-height: 1.3;
+    max-width: 350px;
+    padding-inline: 0;
+  }
+  /* #endregion l-page2content .right  */
+
+  /* #endregion p-Page2-content */
+  /* #endregion p-Page2 */
+}
+/* #endregion g-Tablets/Phablets */
 
 /** ==============================================Mobile=========================================== */
 /** ==============================================Mobile=========================================== */
