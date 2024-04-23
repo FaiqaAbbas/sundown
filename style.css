@@ -260,7 +260,7 @@ nav .menu-btn {
 }
 /* ======Hero Left Text===== */
 .hero .left {
-  font-family: 'Neuehaasdisplay roman';
+  font-family: 'Neuehaasdisplay mediu';
   align-self: flex-end;
   width: 40%;
   max-width: 350px;
@@ -777,6 +777,7 @@ nav .menu-btn {
   }
   /* =============Heading============ */
   .moving-text h1 {
+    font-family:'Neuehaasdisplay mediu';
     font-size: 3.5rem;
   }
 
@@ -800,7 +801,8 @@ nav .menu-btn {
     margin-top: 4.2rem;
   }
   .page2-content-container .left h1 {
-    font-size: calc(2.09rem - 0.08vw);
+    font-family:'Neuehaasdisplay mediu';
+      font-size: calc(2.09rem - 0.08vw);
     letter-spacing: -0.05rem;
     /* background-color: red; */
     line-height: 1.03;
