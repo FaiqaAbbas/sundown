@@ -78,7 +78,7 @@ nav .nav-links {
   gap: 0.44rem;
   padding-right: 1.12rem;
 }
-nav .nav-links a {
+nav .nav-links a{
   font-family: "Neuehaasdisplay roman";
   font-size: calc(1rem - 0.07vw);
   text-decoration: none;
