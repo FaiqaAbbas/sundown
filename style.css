@@ -504,7 +504,8 @@ nav .menu-btn {
   /* background-color: red; */
 }
 .featured-projects-list .project {
-  border-bottom: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgb(0, 0,0,0.2);
+  position: relative;
 }
 .featured-projects-list .project a {
   width: 95%;
@@ -517,6 +518,23 @@ nav .menu-btn {
   font-family: "Neuehaasdisplay mediu", sans-serif;
   text-decoration: none;
   color: black;
+}
+.featured-projects-list .project::before{
+  content:"";
+  z-index: -1;
+  position: absolute;
+  height: 0rem;
+  width: 100%;
+  transition:linear 0.2s;
+
+}
+.featured-projects-list .project:hover::before{
+  background-color: var(--orange);
+  height: 7.7rem;
+  width: 100%;
+  transition:linear 0.2s;
+  
+
 }
 .featured-projects-list .project a h2 {
   font-family: "Neuehaasdisplay mediu";
