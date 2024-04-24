@@ -470,7 +470,9 @@ nav .menu-btn {
   position: relative;
   z-index: 1;
 }
-/* #endregion p-Page3 */
+/** ==============================================featured projects heading=========================================== */
+/** ==============================================featured projects heading=========================================== */
+
 /* #region p-featured-projects-heading */
 .featured-projects-heading {
   display: flex;
@@ -495,19 +497,26 @@ nav .menu-btn {
   height: 0.5em;
 }
 /* #endregion p-featured-projects-heading */
-/* #region p-featured-projects-list */
+/** ==============================================featured projects list container=========================================== */
+/** ==============================================featured projects list container=========================================== */
+/* #region p-featured-projects-list container*/
+/** ================list container================= */
 .featured-projects-list-container {
   /* background-color: pink; */
   padding-bottom: 12rem;
 }
+/**==========================================list====================== */
 .featured-projects-list{
   /* background-color: red; */
 }
+/** ===================================list project========================== */
+/* #region l-list-project */
 .featured-projects-list .project {
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid rgb(0, 0,0,0.2);
 }
+
 .featured-projects-list .project a {
   width: 95%;
   margin: 0 auto;
@@ -520,26 +529,17 @@ nav .menu-btn {
   text-decoration: none;
   color: black;
 }
-.featured-projects-list .project .backdrop{
-  background-color: var(--orange);
-  content:"";
-  position: absolute;
-  z-index: -1;
-  left:0;
-  top:0;
-  height: 0rem;
-  width: 100%;
-  transition: ease 0.2s;
-}
-.featured-projects-list .project:hover .backdrop{
-  height: 8rem;
-  transition: all ease .2s;
-}
+/** ============================left========================== */
+/* #region  left */
 .featured-projects-list .project a h2 {
   font-family: "Neuehaasdisplay mediu";
   font-size: 3.215rem;
   letter-spacing: -0.1rem;
 }
+/* #endregion left */
+/** ==========================right===================== */
+/* #region  right*/
+
 .featured-projects-list .project a .brand {
   padding-right: 1.31rem;
   font-family: "Neuehaasdisplay roman";
@@ -560,8 +560,12 @@ nav .menu-btn {
   line-height: 1.3;
   font-weight: 400;
 }
+/* #endregion right*/
+
+/* #endregion l-list-project */
 
 /* #endregion p-featured-projects-list */
+/* #endregion p-Page3 */
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
