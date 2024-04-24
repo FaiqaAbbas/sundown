@@ -465,11 +465,10 @@ nav .menu-btn {
 /** ============================================Page3============================================= */
 /* #region p-Page3 */
 .page3 {
+  /* background-color: blueviolet; */
   min-height: 100vh;
   position: relative;
-  z-index: 0;
- 
-  /* overflow: hidden; */
+  z-index: 1;
 }
 /* #endregion p-Page3 */
 /* #region p-featured-projects-heading */
@@ -498,6 +497,7 @@ nav .menu-btn {
 /* #endregion p-featured-projects-heading */
 /* #region p-featured-projects-list */
 .featured-projects-list-container {
+  /* background-color: pink; */
   padding-bottom: 12rem;
 }
 .featured-projects-list{
