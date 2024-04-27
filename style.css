@@ -225,6 +225,7 @@ transition: all ease 0.5s;
 /* #region l-DropDown Menu-Button*/
 /* ======Menu Button Label for Checkbox===== */
 nav .menu-btn {
+  font-family: "Neuehaasdisplay roman";
 display: none;
 }
 
@@ -508,9 +509,18 @@ height: 0.5em;
 padding-bottom: 12rem;
 }
 /**==========================================list====================== */
-.featured-projects-list{
-/* background-color: red; */
-}
+.video-on-hover{
+  background-color: red;
+  height: 25.9rem;
+  width: 20.24rem;
+  position: fixed;
+  border-radius:1.5rem;
+  z-index:1;
+  right:26vw;
+  top:5.3rem;
+  display:none; 
+  pointer-events: none;
+  }
 /** ===================================list project========================== */
 /* #region l-list-project */
 .featured-projects-list .project {
@@ -707,7 +717,7 @@ nav .nav-links a {
   gap: 1.2rem;
   animation: moving-text infinite linear 16s;
 }
-/* =============Disk before Heading============ */
+/* ============= Disk before Heading ============ */
 
 .moving-text .disk {
   height: 3rem;
@@ -754,7 +764,7 @@ nav .nav-links a {
   z-index: -1;
   animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
-/* ball 2*/
+/* ball 2 */
 .page2-content-container .left .page2-animated-ball2 {
   height: calc(27rem - 1vw);
   width: calc(27rem - 1vw);
