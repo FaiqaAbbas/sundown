@@ -13,7 +13,6 @@ var project_list=document.querySelector(".featured-projects-list-container");
 var project=document.querySelectorAll(".featured-projects-list .project");
 project.forEach(function(e){
     e.addEventListener("mouseenter",function(){
-
       project_video.src = e.getAttribute('video-src');
       project_video.poster = e.getAttribute('image-src');
 
@@ -27,7 +26,7 @@ project.forEach(function(e){
 // })
 
 project_list.addEventListener("mouseenter",function(){
-  project_video.style.background="pink";
+  project_video.style.display="block";
 });
 // project_list.addEventListener("mouseleave",function(){
 //   project_video.style.display="none";
