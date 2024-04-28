@@ -480,14 +480,14 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 gap: 0.6rem;
-padding-bottom: 1.9rem;
+padding-bottom: calc(1.9rem - 1.2vw);
 /* background-color:pink; */
 }
 .featured-projects-heading h6 {
 letter-spacing: 0.02em;
 text-transform: uppercase;
 font-family: "Neuehaasdisplay roman", sans-serif;
-font-size: 0.85rem;
+font-size: calc(0.85rem - 0.09vw);
 font-weight: 200;
 line-height: 1.2;
 }
@@ -511,14 +511,14 @@ padding-bottom: 12rem;
 /**==========================================list====================== */
 .video-on-hover{
   object-fit: cover;
-  height: 25.9rem;
-  width: 20.24rem;
+  height: calc(26rem - 8vw);
+  width: calc(20.24rem - 6vw);
   position: fixed;
   border-radius:1.5rem;
   z-index:1;
-  right:26vw;
-  top:5.3rem;
-  display:block; 
+  right:26.5vw;
+  top:calc(7.4rem + 3vw);
+  
   pointer-events: none;
   }
 /** ===================================list project========================== */
@@ -545,7 +545,7 @@ color: black;
 /* #region  left */
 .featured-projects-list .project a h2 {
   font-family: "Neuehaasdisplay mediu";
-  font-size: 3.215rem;
+  font-size: calc(2rem + 1.49vw);
   letter-spacing: -0.1rem;
 }
 
