@@ -510,7 +510,8 @@ padding-bottom: 12rem;
 }
 /**==========================================list====================== */
 .video-on-hover{
-  background-color: red;
+  background-size: cover;
+  background-position: center;
   height: 25.9rem;
   width: 20.24rem;
   position: fixed;

@@ -14,7 +14,8 @@ project.forEach(function(e){
     e.addEventListener("mouseenter",function(){
 
       project_video.style.display="block";
-      project_video.style.background=`url(${ e.getAttribute('data-src')})`
+      project_video.style.backgroundImage=`url(${ e.getAttribute('data-src')})`;
+    
 
     })
     e.addEventListener("mouseleave",function(){
