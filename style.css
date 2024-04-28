@@ -510,8 +510,7 @@ padding-bottom: 12rem;
 }
 /**==========================================list====================== */
 .video-on-hover{
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
   height: 25.9rem;
   width: 20.24rem;
   position: fixed;
@@ -519,7 +518,7 @@ padding-bottom: 12rem;
   z-index:1;
   right:26vw;
   top:5.3rem;
-  display:none; 
+  display:block; 
   pointer-events: none;
   }
 /** ===================================list project========================== */
