@@ -8,10 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     var project_video = document.querySelector(".video-on-hover");
     var project_list = document.querySelector(".featured-projects-list");
-    
     var projects = document.querySelectorAll(".featured-projects-list .project");
-    
-    // Object to store preloaded media URLs for each project
+      // Object to store preloaded media URLs for each project
     var preloadedMediaByProject = {};
     
     // Function to preload video and image
@@ -29,13 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
     
-    // Preload media for each project
+    // // Preload media for each project
     projects.forEach(function(project) {
         var projectName = project.classList[1];
         var videoSrc = project.getAttribute('video-src');
         var imageSrc = project.getAttribute('image-src');
         preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
-    
+    });
+    console.log(preloadedMediaByProject);
         // Event listeners for project hover
         project.addEventListener("mouseenter", function() {
             var preloadedMedia = preloadedMediaByProject[projectName];
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
             project_video.src = "";
             project_video.poster = "";
         });
-    });
     
     // Show video on project list hover
     project_list.addEventListener("mouseenter", function() {
