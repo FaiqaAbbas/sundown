@@ -33,21 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
         var videoSrc = project.getAttribute('video-src');
         var imageSrc = project.getAttribute('image-src');
         preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
-    });
-    console.log(preloadedMediaByProject);
-        // Event listeners for project hover
-        project.addEventListener("mouseenter", function() {
-            var preloadedMedia = preloadedMediaByProject[projectName];
-            project_video.src = preloadedMedia.video.src;
-            project_video.poster = preloadedMedia.image.src;
-        });
-    
-        // Clear video source and poster on mouse leave
-        project.addEventListener("mouseleave", function() {
-            project_video.src = "";
-            project_video.poster = "";
-        });
-    
+         // Event listeners for project hover
+         project.addEventListener("mouseenter", function() {
+          var preloadedMedia = preloadedMediaByProject[projectName];
+          project_video.src = preloadedMedia.video.src;
+          project_video.poster = preloadedMedia.image.src;
+      });
+  
+      // Clear video source and poster on mouse leave
+      project.addEventListener("mouseleave", function() {
+          project_video.src = "";
+          project_video.poster = "";
+      });
+
+});
+           
     // Show video on project list hover
     project_list.addEventListener("mouseenter", function() {
         project_video.style.display = "block";
