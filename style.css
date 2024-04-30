@@ -257,16 +257,14 @@ display: flex;
 justify-content: space-between;
 border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 padding-top: calc(2.7rem + 3.9vw);
-padding-bottom: calc(1.8rem + 1.28vw)  ;
+padding-bottom: calc(1.8rem + 1.8vw)  ;
 }
 /* ======Hero Left Text===== */
 .hero .left {
 align-self: flex-end;
-width: 34%;
-/* width: 310px; */
-max-width: 340px;
+width: 35%;
 text-align: left;
-font-size: calc(0.93rem + 0.99vw);
+font-size: calc(0.9rem + 0.99vw);
 line-height: 1;
 padding-bottom: calc(0.35rem + 0.1vw);
 letter-spacing: -0.045rem;
