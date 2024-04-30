@@ -52,7 +52,7 @@ background-color: #efeae3;
 .container {
 width: 95%;
 /* max-width: 1500px; */
-margin: 1.9rem auto;
+margin: calc(1.2rem + 1vw) auto;
 }
 
 /* #region pResets */
@@ -70,7 +70,7 @@ display: none;
 }
 nav img {
 display: block;
-width: calc(7rem + 2.5vw);
+width: calc(4rem + 6.5vw);
 }
 nav .nav-links {
 display: flex;
@@ -244,7 +244,7 @@ position: relative;
 overflow-x: hidden;
 /* Overflow hidden doesnot work on mobile
   device so when we do position:relative and then 
-  use overflop-x : hidden on a container, it works 
+  use overflow-x : hidden on a container, it works 
   for mobile device.*/
 }
 /** ============================================Hero, left and right ============================================= */
@@ -256,7 +256,7 @@ min-height: max-content;
 display: flex;
 justify-content: space-between;
 border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-padding-top: calc(2.7rem + 3.9vw);
+padding-top: calc(3rem + 2.9vw);
 padding-bottom: calc(1.8rem + 1.8vw)  ;
 }
 /* ======Hero Left Text===== */
@@ -293,36 +293,36 @@ position: relative;
 /** ============================================Animated-Balls============================================= */
 /* #region l-Animated-Balls */
 .animated-ball1 {
-height: 38vw;
-width: 80vw;
+height: calc(14rem + 20vw);
+width: calc(40rem + 40vw);
 background-color: var(--sundown-orange);
 border-radius: 50vw;
-right: -20vw;
+right: calc(-20rem - 5vw);
 position: absolute;
-top: 29rem;
-filter: blur(15px);
+top: calc(16rem + 17vw);
+filter: blur(1vw);
 animation: ball1 ease-in-out infinite alternate 4s;
 }
 .animated-ball2 {
-height: 27vw;
-width: 50vw;
+height: calc(12rem + 13vw);
+width: calc(25rem + 25vw);
 background-color: #fe690a;
 border-radius: 50vw;
-right: -13vw;
+right: calc(-7rem - 6vw);
 position: absolute;
-top: 41rem;
-filter: blur(20px);
+top: calc(21rem + 20vw);
+filter: blur(1vw);
 animation: ball2 linear infinite alternate 3s;
 }
 .animated-ball3 {
-height: 35vw;
-width: 45vw;
+height: calc(15rem + 15vw);
+width: calc(16rem + 15vw);
 background-color: var(--sundown-orange);
 border-radius: 50vw;
-right: 3vw;
+right: calc(4rem + 6vw);
 position: absolute;
-top: 34rem;
-filter: blur(15px);
+top: calc(20rem + 18vw);
+filter: blur(1vw);
 animation: ball2 linear infinite alternate 3s;
 }
 /* #endregion l-Animated-Balls */
@@ -408,10 +408,10 @@ line-height: 1;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1 {
-height: calc(34rem - 1vw);
-width: calc(34rem - 1vw);
+height: calc(24rem + 5vw);
+width: calc(24rem + 5vw);
 border-radius: 30rem;
-filter: blur(50px);
+filter: blur(4vw);
 background-color: var(--sundown-orange);
 position: absolute;
 left: 11rem;
@@ -421,14 +421,14 @@ animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2 {
-height: calc(32rem - 1vw);
-width: calc(32rem - 1vw);
+height: calc(25rem + 8vw);
+width: calc(25rem + 8vw);
 border-radius: 30rem;
-filter: blur(10px);
+filter: blur(1.5vw);
 background-color: #fe880a;
 position: absolute;
 left: 13rem;
-top: 6rem;
+top: 8rem;
 z-index: -2;
 animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
@@ -1501,7 +1501,7 @@ from {
   transform: translate(0%, -5%) rotate(-10deg) skew(0deg);
 }
 to {
-  transform: translate(-5%, 15%) rotate(60deg) skew(9deg);
+  transform: translate(-5%, 15%) rotate(80deg) skew(9deg);
 }
 }
 /* #endregion c-Left Animated ball Animation */
