@@ -70,7 +70,7 @@ display: none;
 }
 nav img {
 display: block;
-width: 9.2rem;
+width: calc(7rem + 2.5vw);
 }
 nav .nav-links {
 display: flex;
@@ -80,10 +80,10 @@ padding-right: 1.12rem;
 }
 nav .nav-links a{
 font-family: "Neuehaasdisplay roman";
-font-size: calc(1rem - 0.07vw);
+font-size: calc(0.57rem + 0.5vw);
 text-decoration: none;
 color: black;
-padding: calc(0.75em + 0.15vw) calc(1.6em + 0.18vw);
+padding: calc(0.71em + 0.15vw) calc(1.4em + 0.18vw);
 border: 1px solid rgba(128, 128, 128, 0.451);
 border-radius: 5rem;
 position: relative;
@@ -256,7 +256,7 @@ min-height: max-content;
 display: flex;
 justify-content: space-between;
 border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-padding-top: 5.6rem;
+padding-top: 5rem;
 padding-bottom: 4.2rem;
 }
 /* ======Hero Left Text===== */
@@ -265,14 +265,14 @@ align-self: flex-end;
 width: 40%;
 max-width: 350px;
 text-align: left;
-font-size: 1.625rem;
+font-size: calc(0.5rem + 0.6vw);
 line-height: 1.09;
 /* letter-spacing: -0.13rem; */
 }
 /* ======Hero Right Text===== */
 .hero .right {
 width: 60%;
-font-size: 9.9rem;
+font-size: calc(7.75rem + 2vw);
 line-height: 0.81;
 padding-right: 2.45rem;
 letter-spacing: -0.3rem;
@@ -297,20 +297,20 @@ height: 38vw;
 width: 80vw;
 background-color: var(--sundown-orange);
 border-radius: 50vw;
-right: -24vw;
+right: -20vw;
 position: absolute;
-top: 31rem;
+top: 27rem;
 filter: blur(15px);
 animation: ball1 ease-in-out infinite alternate 4s;
 }
 .animated-ball2 {
 height: 27vw;
 width: 50vw;
-background-color: #fe690a;
+background-color: var(--orange);
 border-radius: 50vw;
 right: -13vw;
 position: absolute;
-top: 43rem;
+top: 39rem;
 filter: blur(20px);
 animation: ball2 linear infinite alternate 3s;
 }
@@ -321,7 +321,7 @@ background-color: var(--sundown-orange);
 border-radius: 50vw;
 right: 3vw;
 position: absolute;
-top: 36rem;
+top: 32rem;
 filter: blur(15px);
 animation: ball2 linear infinite alternate 3s;
 }
