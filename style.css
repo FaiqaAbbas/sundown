@@ -257,19 +257,19 @@ display: flex;
 justify-content: space-between;
 border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 padding-top: calc(2.7rem + 3.9vw);
-padding-bottom: 4rem;
+padding-bottom: calc(1.8rem + 1.28vw)  ;
 }
 /* ======Hero Left Text===== */
 .hero .left {
 align-self: flex-end;
-width: 40%;
-max-width: 350px;
+width: 34%;
+/* width: 310px; */
+max-width: 340px;
 text-align: left;
-font-size: calc(0.799rem + 1vw);
-line-height: 1.07;
-padding-bottom: 0.5rem;
-font-weight: 900;
-/* letter-spacing: -0rem; */
+font-size: calc(0.93rem + 0.99vw);
+line-height: 1;
+padding-bottom: calc(0.35rem + 0.1vw);
+letter-spacing: -0.045rem;
 }
 /* ======Hero Right Text===== */
 .hero .right {
@@ -301,7 +301,7 @@ background-color: var(--sundown-orange);
 border-radius: 50vw;
 right: -20vw;
 position: absolute;
-top: 27rem;
+top: 29rem;
 filter: blur(15px);
 animation: ball1 ease-in-out infinite alternate 4s;
 }
@@ -312,7 +312,7 @@ background-color: #fe690a;
 border-radius: 50vw;
 right: -13vw;
 position: absolute;
-top: 39rem;
+top: 41rem;
 filter: blur(20px);
 animation: ball2 linear infinite alternate 3s;
 }
@@ -323,7 +323,7 @@ background-color: var(--sundown-orange);
 border-radius: 50vw;
 right: 3vw;
 position: absolute;
-top: 32rem;
+top: 34rem;
 filter: blur(15px);
 animation: ball2 linear infinite alternate 3s;
 }
