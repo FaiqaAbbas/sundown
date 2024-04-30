@@ -359,7 +359,7 @@ display: none;
 /* background-color: rgb(192, 104, 104); */
 display: flex;
 align-items: center;
-gap: 1.7rem;
+gap: calc(1.7rem + 0.3vw);
 justify-content: center;
 padding-right: 2rem;
 animation: moving-text infinite linear 12.5s;
@@ -367,15 +367,16 @@ animation: moving-text infinite linear 12.5s;
 /* =============Disk before Heading============ */
 
 .moving-text .disk {
-height: 3.56rem;
-width: 3.6rem;
+height: calc(2.1rem + 2vw);
+width: calc(2.1rem + 2vw);
 border-radius: 9rem;
 background-color: var(--sundown-orange);
 }
+
 /* =============Heading============ */
 .moving-text h1 {
-font-size: 8.3rem;
-letter-spacing: -0.15rem;
+font-size: calc(6.3rem + 3vw);
+letter-spacing: calc(-0.15rem - 0.3vw);
 }
 
 /* #endregion p-moving-text */
