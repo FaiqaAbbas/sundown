@@ -408,8 +408,8 @@ line-height: 1;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1 {
-height: calc(24rem + 5vw);
-width: calc(24rem + 5vw);
+height: calc(24rem + 8vw);
+width: calc(24rem + 8vw);
 border-radius: 30rem;
 filter: blur(4vw);
 background-color: var(--sundown-orange);
@@ -510,14 +510,18 @@ height: calc(0.33rem + 0.3vw);
 padding-bottom: 12rem;
 }
 /**==========================================list====================== */
+.featured-projects-list{
+  /* display: flex;
+  flex-direction: column; */
+}
 .video-on-hover{
   object-fit: cover;
-  height: calc(10rem + 18vw);
-  width: calc(9rem + 12vw);
+  height: calc(10rem + 19vw);
+  width: calc(9rem + 14vw);
   position: fixed;
   border-radius:1.5rem;
   z-index:1;
-  right:26.5vw;
+  right:25.5vw;
   top:50%;
   transform:translate(0,-50%);
   pointer-events: none;
@@ -529,7 +533,9 @@ overflow: hidden;
 position: relative;
 border-bottom: 1px solid rgb(0, 0,0,0.2);
 }
-
+.featured-projects-list .project video{
+ display: none;
+}
 .featured-projects-list .project a {
 width: 95%;
 margin: 0 auto;
@@ -808,7 +814,142 @@ nav .nav-links a {
 
 /* #endregion p-Page2-content */
 /* #endregion p-Page2 */
+/** ============================================Page3============================================= */
+/** ============================================Page3============================================= */
+/* #region p-Page3 */
+.page3 {
+  /* background-color: blueviolet; */
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  }
+  /** ==============================================featured projects heading=========================================== */
+  /** ==============================================featured projects heading=========================================== */
+  
+  /* #region p-featured-projects-heading */
+  .featured-projects-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  padding-bottom: 1.9rem;
+  /* background-color:pink; */
+  }
+  .featured-projects-heading h6 {
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-size: calc(0.712rem + 0.152vw);
+  font-weight: 200;
+  line-height: 1.2;
+  }
+  .featured-projects-heading .red-dot {
+  background-color: var(--sundown-orange);
+  border-radius: 100vw;
+  width: calc(0.33rem + 0.3vw);
+  height: calc(0.33rem + 0.3vw);
+  }
+  /* #endregion p-featured-projects-heading */
+  
+  /** ==============================================featured projects list container=========================================== */
+  /** ==============================================featured projects list container=========================================== */
+  
+  /* #region p-featured-projects-list container*/
+  /** ================list container================= */
+  .featured-projects-list-container {
+  /* background-color: pink; */
+  padding-bottom: 12rem;
+  }
+  /**==========================================list====================== */
+  .featured-projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .video-on-hover{
+  display: none;
+    }
+  /** ===================================list project========================== */
+  /* #region l-list-project */
+  .featured-projects-list .project {
+  /* overflow: hidden; */
+  /* position: relative; */
+  border-bottom: 1px solid rgb(0, 0,0,0.2);
+  background-color: pink;  
+  
 }
+  .featured-projects-list .project a video{
+   display: block;
+   object-fit: cover;
+   height: calc(20rem + 19vw);
+   width: calc(20rem + 14vw);
+   border-radius:1.5rem;
+   
+  }
+  .featured-projects-list .project a {
+  width: 100%;
+  margin: 0 auto;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Neuehaasdisplay mediu", sans-serif;
+  text-decoration: none;
+  color: black;
+  }
+  /** ============================left========================== */
+  /* #region  left */
+  .featured-projects-list .project a h2 {
+    font-family: "Neuehaasdisplay mediu";
+    font-size: calc(1rem + 1.49vw);
+    letter-spacing: -0.1rem;
+  }
+  
+  /** ============================backdrop========================== */
+  .featured-projects-list .project .backdrop{
+    display: none;  
+  }
+  
+  /** featured visual  */
+  /* #region l-featured visual */
+  
+  /* #endregion l-featured visual */
+  
+  /* #endregion left */
+  /** ==========================right===================== */
+  /* #region  right*/
+  
+  .featured-projects-list .project a .brand {
+  padding-right: 1.31rem;
+  font-family: "Neuehaasdisplay roman";
+  text-align: left;
+  }
+  .featured-projects-list .project a .brand .name {
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-size: calc(0.6rem + 0.3vw);
+  font-weight: 400;
+  line-height: 1.2;
+  }
+  
+  .featured-projects-list .project a .brand .category {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.6rem + 0.3vw);
+  line-height: 1.3;
+  font-weight: 400;
+  }
+  /* #endregion right*/
+  
+  /* #endregion l-list-project */
+  
+  /* #endregion p-featured-projects-list */
+  /* #endregion p-Page3 */
+}
+/** ============================================Page3============================================= */
+/** ============================================Page3============================================= */
+
 /* #endregion g-Laptops */
 
 /** =========================================Tablet/Phablets=========================================== */
@@ -1107,7 +1248,10 @@ nav .menu {
 
 /* #endregion p-Page2-content */
 /* #endregion p-Page2 */
+
+
 }
+
 /* #endregion g-Tablets/Phablets */
 
 /** ==============================================Mobile=========================================== */
@@ -1423,6 +1567,8 @@ nav .menu {
 /* #endregion p-Page3 */
 }
 /* #endregion g-mobile*/
+
+
 /* #region p-Nav-Menu-Button-Clicks */
 #click:checked ~ .nav-links-hamburger {
 display: flex;
