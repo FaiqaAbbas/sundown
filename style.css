@@ -257,7 +257,7 @@ display: flex;
 justify-content: space-between;
 border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 padding-top: calc(3rem + 2.9vw);
-padding-bottom: calc(1.8rem + 1.8vw)  ;
+padding-bottom: calc(1.8rem + 1.8vw);
 }
 /* ======Hero Left Text===== */
 .hero .left {
@@ -618,7 +618,7 @@ font-weight: 400;
 /* #region g-Laptops */
 @media (765px <= width <= 980px) {
 .container {
-  width: 94%;
+  width: 93%;
   margin: 1.9rem auto;
 }
 
@@ -626,7 +626,7 @@ font-weight: 400;
 /** ===============================================Nav Bar============================================= */
 /* #region p-NavStyles */
 nav img {
-  width: 8.7rem;
+  width: calc(8rem + 1.1vw);
 }
 nav .nav-links {
   gap: 0.4rem;
@@ -644,19 +644,24 @@ nav .nav-links a {
 /* #region l-Hero*/
 /* ======Hero Wrapper===== */
 .hero {
-  padding-top: 7rem;
-  padding-bottom: 3.5rem;
+  min-height: max-content;
+  padding-top: calc(4rem + 2.2vw);
+  padding-bottom: calc(1.8rem + 1.8vw);
 }
 /* ============Hero Left=======  */
 .hero .left {
-  font-size: 1.36rem;
-  max-width: 280px;
+  align-self: normal;
+  padding-top:12.1rem;
+  font-size: calc(1.05rem + 0.6vw);
+  min-width: 300px;
   letter-spacing: -0.03rem;
-  line-height: 1.08;
+  line-height: 1;
+
 }
 /* ============Hero Right=======  */
 .hero .right {
-  font-size: 7.6rem;
+  font-size: calc(7rem + .6vw);
+  letter-spacing: calc(-0.12rem + -0.005vw);
   padding-right: 1rem;
   line-height: 0.8;
 }
@@ -671,39 +676,40 @@ nav .nav-links a {
 /** ============================================Animated-Balls============================================= */
 /* #region l-Animated-Balls */
 .animated-ball1 {
-  height: 40vw;
-  width: 80vw;
+  height: calc(14rem + 20vw);
+  width: calc(40rem + 40vw);
   background-color: var(--sundown-orange);
   border-radius: 50vw;
-  right: -25vw;
+  right: calc(-20rem - 15vw);
   position: absolute;
-  top: 31rem;
-  filter: blur(15px);
+  top: calc(16rem + 11vw);
+  filter: blur(2vw);
   animation: ball1 ease-in-out infinite alternate 4s;
-}
-.animated-ball2 {
-  height: 35vw;
-  width: 35vw;
+  }
+  .animated-ball2 {
+  height: calc(12rem + 13vw);
+  width: calc(25rem + 25vw);
   background-color: #fe690a;
   border-radius: 50vw;
-  right: -13vw;
+  right: calc(-7rem - 6vw);
   position: absolute;
-  top: 40rem;
-  filter: blur(10px);
+  top: calc(21rem + 18vw);
+  filter: blur(1vw);
   animation: ball2 linear infinite alternate 3s;
-}
-.animated-ball3 {
-  height: 35vw;
-  width: 35vw;
-  background-color: #fe530a;
+  }
+  .animated-ball3 {
+  height: calc(15rem + 15vw);
+  width: calc(16rem + 15vw);
+  background-color: var(--sundown-orange);
   border-radius: 50vw;
-  right: 14vw;
+  right: calc(4rem + 6vw);
   position: absolute;
-  top: 37rem;
-  filter: blur(15px);
+  top: calc(20rem + 18vw);
+  filter: blur(1vw);
   animation: ball2 linear infinite alternate 3s;
-}
-/* #endregion l-Animated-Balls */
+  }
+  /* #endregion l-Animated-Balls */
+  
 /* #endregion p-Page1 */
 
 /** ============================================Page2============================================= */
@@ -727,12 +733,12 @@ nav .nav-links a {
 /* ============= Disk before Heading ============ */
 
 .moving-text .disk {
-  height: 3rem;
-  width: 3rem;
+  height: calc(2.1rem + 1.1vw);
+  width: calc(2.1rem + 1.1vw);
 }
 /* =============Heading============ */
 .moving-text h1 {
-  font-size: 5.7rem;
+  font-size: calc(5rem + 1vw);
   /* letter-spacing: -0.5rem; */
 }
 
@@ -767,7 +773,7 @@ nav .nav-links a {
   background-color: var(--sundown-orange);
   position: absolute;
   left: 6rem;
-  top: 14rem;
+  top: 16rem;
   z-index: -1;
   animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
@@ -777,7 +783,7 @@ nav .nav-links a {
   width: calc(27rem - 1vw);
   border-radius: 30rem;
   filter: blur(10px);
-  background-color:var(--sundown-orange);
+  background-color:var(--orange);
   position: absolute;
   left: 9rem;
   top: 11rem;
@@ -857,14 +863,16 @@ nav .nav-links a {
   /* #region p-featured-projects-list container*/
   /** ================list container================= */
   .featured-projects-list-container {
-  /* background-color: pink; */
   padding-bottom: 12rem;
+  padding:0 0;
   }
   /**==========================================list====================== */
   .featured-projects-list{
     display: flex;
+    column-gap: -5rem;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    background-color: rgb(190, 190, 239);
   }
   .video-on-hover{
   display: none;
@@ -872,26 +880,28 @@ nav .nav-links a {
   /** ===================================list project========================== */
   /* #region l-list-project */
   .featured-projects-list .project {
-  /* overflow: hidden; */
-  /* position: relative; */
-  border-bottom: 1px solid rgb(0, 0,0,0.2);
+  overflow: hidden; 
+  position: relative;
+  border-bottom:none;
   background-color: pink;  
   
 }
-  .featured-projects-list .project a video{
+  .featured-projects-list .project video{
    display: block;
    object-fit: cover;
-   height: calc(20rem + 19vw);
-   width: calc(20rem + 14vw);
-   border-radius:1.5rem;
+   height: calc(26rem + 19vw);
+   width: calc(20rem + 12vw);
+   border-radius:2rem;
+   padding: calc(1rem + 0.4vw ) 0;
    
   }
   .featured-projects-list .project a {
   width: 100%;
   margin: 0 auto;
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
+    gap:0.1rem;
   align-items: flex-start;
   justify-content: center;
   font-family: "Neuehaasdisplay mediu", sans-serif;
