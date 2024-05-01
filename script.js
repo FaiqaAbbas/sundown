@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
       });
     });
+    var page1_video_clone=document.createElement("video");
+    page1_video_clone.src="./sources/page1video.mp4";
+    page1_video_clone.preload='auto';
+    var page1_video=document.querySelector('.page1_video');
+    page1_video.src=page1_video_clone.src;
+
+
     var project_video = document.querySelector(".video-on-hover");
     var project_list = document.querySelector(".featured-projects-list");
     var projects = document.querySelectorAll(".featured-projects-list .project");
