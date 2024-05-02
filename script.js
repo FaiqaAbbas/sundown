@@ -5,19 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     smooth: true,
   });
 });
-// Preload Page1 video
-var page1_video_clone = document.createElement("video");
-page1_video_clone.src = "./sources/page1video.mp4";
-page1_video_clone.preload = "auto";
-var page1_video = document.querySelector(".page1_video");
-page1_video.src = page1_video_clone.src;
-
-// Pre load all videos related to project lists
-var project_video = document.querySelector(".video-on-hover");
-var project_list = document.querySelector(".featured-projects-list");
-var projects = document.querySelectorAll(".featured-projects-list .project");
-// Object to store preloaded media URLs for each project
-var preloadedMediaByProject = {};
 
 // Function to preload video and image
 function preloadMedia(videoSrc, imageSrc) {
@@ -34,7 +21,20 @@ function preloadMedia(videoSrc, imageSrc) {
   };
 }
 
-// // Preload media for each project
+
+
+// Preload Page1 video
+var page1_video_clone =preloadMedia("./sources/page1video.mp4","");
+var page1_video= document.querySelector(".page1_video");
+page1_video.src = page1_video_clone.video.src;
+
+// Pre load all videos related to project lists
+var project_video = document.querySelector(".video-on-hover");
+var project_list = document.querySelector(".featured-projects-list");
+var projects = document.querySelectorAll(".featured-projects-list .project");
+// Object to store preloaded media URLs for each project
+var preloadedMediaByProject = {};
+
 projects.forEach(function (project) {
   var projectName = project.classList[1];
   var videoSrc = project.getAttribute("video-src");
