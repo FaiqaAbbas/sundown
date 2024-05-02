@@ -350,8 +350,14 @@ display: flex;
 padding: 6.5rem 0;
 pointer-events: none;
 }
+/* For WebKit-based browsers */
 .moving-text-container::-webkit-scrollbar {
-display: none;
+  display: none;
+}
+
+/* For Mozilla Firefox */
+.moving-text-container {
+  scrollbar-width: none; /* Firefox */
 }
 
 /* =============Moving Text============ */
