@@ -23,15 +23,6 @@ function preloadMedia(videoSrc, imageSrc) {
 
 
 
-// Preload Page1 video
-var page1_media = preloadMedia("./sources/page1video.mp4", "");
-var page1_video = document.querySelector(".page1_video");
-
-// Wait for video to preload
-page1_media.video.addEventListener('loadeddata', function() {
-  // Once preloaded, set the video source and display it
-  page1_video.src = page1_media.video.src;
-});
 
 // Pre load all videos related to project lists
 var project_video = document.querySelector(".video-on-hover");
