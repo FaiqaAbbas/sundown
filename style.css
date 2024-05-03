@@ -6,53 +6,53 @@
   --orange: #ff9831;
 }
 @font-face {
-font-family: "Neuehaasdisplay";
-src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c4_NeueHaasDisplay-Light.woff")
-  format("woff");
-font-weight: 300;
-font-style: normal;
-font-display: swap;
+  font-family: "Neuehaasdisplay";
+  src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c4_NeueHaasDisplay-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-font-family: "Neuehaasdisplay mediu";
-src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.woff")
-  format("woff");
-font-weight: 500;
-font-style: normal;
-font-display: swap;
+  font-family: "Neuehaasdisplay mediu";
+  src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-font-family: "Neuehaasdisplay roman";
-src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.woff")
-  format("woff");
-font-weight: 400;
-font-style: normal;
-font-display: swap;
+  font-family: "Neuehaasdisplay roman";
+  src: url("https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 *,
 ::before,
 ::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
--webkit-tap-highlight-color: transparent; /* Chrome, Safari */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
 body,
 html {
-overflow-x: hidden;
-width: 100vw;
-height: 100vh;
-font-family: "Neuehaasdisplay mediu", sans-serif;
-font-size: 0.94rem;
-background-color: #efeae3;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Neuehaasdisplay mediu", sans-serif;
+  font-size: 0.94rem;
+  background-color: #efeae3;
 }
 .container {
-width: 95%;
-/* max-width: 1500px; */
-margin: calc(1.2rem + 1vw) auto;
+  width: 95%;
+  /* max-width: 1500px; */
+  margin: calc(1.2rem + 1vw) auto;
 }
 
 /* #region pResets */
@@ -61,133 +61,133 @@ margin: calc(1.2rem + 1vw) auto;
 /** ==============================================Nav Bar============================================= */
 /* #region p-NavBar */
 nav {
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 input[type="checkbox"] {
-display: none;
+  display: none;
 }
 nav img {
-display: block;
-width: calc(4rem + 6.5vw);
+  display: block;
+  width: calc(4rem + 6.5vw);
 }
 nav .nav-links {
-display: flex;
-/* will make a tags inside block/inline-block level and now we can apply overflow:hidded  overflow:hidden will not work if we have inline display */
-gap: 0.44rem;
-padding-right: 1.12rem;
+  display: flex;
+  /* will make a tags inside block/inline-block level and now we can apply overflow:hidded  overflow:hidden will not work if we have inline display */
+  gap: 0.44rem;
+  padding-right: 1.12rem;
 }
-nav .nav-links a{
-font-family: "Neuehaasdisplay roman";
-font-size: calc(0.57rem + 0.5vw);
-text-decoration: none;
-color: black;
-padding: calc(0.71em + 0.15vw) calc(1.4em + 0.18vw);
-border: 1px solid rgba(128, 128, 128, 0.451);
-border-radius: 5rem;
-position: relative;
-z-index: 0;
-overflow: hidden;
-font-weight: 400;
-/* to keep the after element relative to a*/
+nav .nav-links a {
+  font-family: "Neuehaasdisplay roman";
+  font-size: calc(0.57rem + 0.5vw);
+  text-decoration: none;
+  color: black;
+  padding: calc(0.71em + 0.15vw) calc(1.4em + 0.18vw);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  border-radius: 5rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  font-weight: 400;
+  /* to keep the after element relative to a*/
 }
 nav .nav-links a::after {
-z-index: -1;
-content: "";
-height: 250%;
-width: 100%;
-position: absolute;
-left: 0%;
-top: -250%;
-background: radial-gradient(
-  circle at center,
-  #fe530a,
-  #fe690a,
-  var(--sundown-orange),
-  var(--sundown-orange),
-  #fe530a,
-  #fe630a,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3,
-  #efeae3
-);
-transition: ease-in-out 1s;
+  z-index: -1;
+  content: "";
+  height: 250%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: -250%;
+  background: radial-gradient(
+    circle at center,
+    #fe530a,
+    #fe690a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #fe530a,
+    #fe630a,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3
+  );
+  transition: ease-in-out 1s;
 }
 nav .nav-links a:hover::after {
-top: -15%;
-transition: all ease 0.7s;
-background: radial-gradient(
-  circle at center,
-  #fe530a,
-  #fe690a,
-  var(--sundown-orange),
-  var(--sundown-orange),
-  #fe530a,
-  #fe630a,
-  var(--sundown-orange),
-  var(--sundown-orange),
-  var(--sundown-orange),
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000,
-  #000000
-);
+  top: -15%;
+  transition: all ease 0.7s;
+  background: radial-gradient(
+    circle at center,
+    #fe530a,
+    #fe690a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #fe530a,
+    #fe630a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
 }
 nav .nav-links a:hover {
-color: white;
-background-color: black;
-transition: all ease 0.4s;
+  color: white;
+  background-color: black;
+  transition: all ease 0.4s;
 }
 
 /* #endregion p-Navbar */
@@ -201,23 +201,23 @@ transition: all ease 0.4s;
 /* #region l-HamburgerDropDown Menu*/
 /* ======Hamburger Menu Nav Container====== */
 nav .nav-links-hamburger {
-display: none;
+  display: none;
 }
 /* ======Hamburger Menu Nav links======= */
 nav .nav-links-hamburger a {
-display: none;
+  display: none;
 }
 /* ======Hamburger Menu Nav Container Backdrop======= */
 nav .nav-links-hamburger-backdrop {
-display: none;
-height: 100vh;
-width: 100%;
-background-color: black;
-opacity: 0.5;
-position: absolute;
-top: -250%;
-left: 0;
-transition: all ease 0.5s;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: -250%;
+  left: 0;
+  transition: all ease 0.5s;
 }
 /* #endregion l-HamburgerDropDown Menu*/
 /** ========================================Hamburger Menu Button========================================= */
@@ -226,11 +226,11 @@ transition: all ease 0.5s;
 /* ======Menu Button Label for Checkbox===== */
 nav .menu-btn {
   font-family: "Neuehaasdisplay roman";
-display: none;
+  display: none;
 }
 
 .hamburger:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 /* #endregion l-Menu-Button*/
 /* #endregion p-HamburgerMenu */
@@ -240,9 +240,9 @@ cursor: pointer;
 /* #region p-Page1 */
 
 .page1 {
-position: relative;
-overflow-x: hidden;
-/* Overflow hidden doesnot work on mobile
+  position: relative;
+  overflow-x: hidden;
+  /* Overflow hidden doesnot work on mobile
   device so when we do position:relative and then 
   use overflow-x : hidden on a container, it works 
   for mobile device.*/
@@ -252,78 +252,78 @@ overflow-x: hidden;
 /* #region l-Hero*/
 /* ======Hero Wrapper===== */
 .hero {
-min-height: max-content;
-display: flex;
-justify-content: space-between;
-border-bottom: 1px solid rgba(128, 128, 128, 0.329);
-padding-top: calc(3rem + 2.9vw);
-padding-bottom: calc(1.8rem + 1.8vw);
+  min-height: max-content;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  padding-top: calc(3rem + 2.9vw);
+  padding-bottom: calc(1.8rem + 1.8vw);
 }
 /* ======Hero Left Text===== */
 .hero .left {
-align-self: flex-end;
-width: 35%;
-text-align: left;
-font-size: calc(0.9rem + 0.99vw);
-line-height: 1;
-padding-bottom: calc(0.35rem + 0.1vw);
-letter-spacing: -0.045rem;
+  align-self: flex-end;
+  width: 35%;
+  text-align: left;
+  font-size: calc(0.9rem + 0.99vw);
+  line-height: 1;
+  padding-bottom: calc(0.35rem + 0.1vw);
+  letter-spacing: -0.045rem;
 }
 /* ======Hero Right Text===== */
 .hero .right {
-width: 60%;
-font-size: calc(5.37rem + 5.54vw);
-line-height: 0.81;
-padding-right: calc(1.8rem + 0.4vw);
-letter-spacing: calc(-0.3rem + 0.06vw);
-text-align: right;
+  width: 60%;
+  font-size: calc(5.37rem + 5.54vw);
+  line-height: 0.81;
+  padding-right: calc(1.8rem + 0.4vw);
+  letter-spacing: calc(-0.3rem + 0.06vw);
+  text-align: right;
 }
 /* #endregion l-Hero*/
 /** ============================================Video============================================= */
 /** ============================================Video============================================= */
 .page1 video {
-display: block;
-margin-top: 3.3rem;
-border-radius: 1.3rem;
-max-width: 94vw;
-object-fit: cover;
-position: relative;
+  display: block;
+  margin-top: 3.3rem;
+  border-radius: 1.3rem;
+  max-width: 94vw;
+  object-fit: cover;
+  position: relative;
 }
 /** ============================================Animated-Balls============================================= */
 /** ============================================Animated-Balls============================================= */
 /* #region l-Animated-Balls */
 .animated-ball1 {
-height: calc(14rem + 20vw);
-width: calc(40rem + 40vw);
-background-color: var(--sundown-orange);
-border-radius: 50vw;
-right: calc(-20rem - 5vw);
-position: absolute;
-top: calc(16rem + 17vw);
-filter: blur(1vw);
-animation: ball1 ease-in-out infinite alternate 4s;
+  height: calc(14rem + 20vw);
+  width: calc(40rem + 40vw);
+  background-color: var(--sundown-orange);
+  border-radius: 50vw;
+  right: calc(-20rem - 5vw);
+  position: absolute;
+  top: calc(16rem + 17vw);
+  filter: blur(1vw);
+  animation: ball1 ease-in-out infinite alternate 4s;
 }
 .animated-ball2 {
-height: calc(12rem + 13vw);
-width: calc(25rem + 25vw);
-background-color: #fe690a;
-border-radius: 50vw;
-right: calc(-7rem - 6vw);
-position: absolute;
-top: calc(21rem + 20vw);
-filter: blur(1vw);
-animation: ball2 linear infinite alternate 3s;
+  height: calc(12rem + 13vw);
+  width: calc(25rem + 25vw);
+  background-color: #fe690a;
+  border-radius: 50vw;
+  right: calc(-7rem - 6vw);
+  position: absolute;
+  top: calc(21rem + 20vw);
+  filter: blur(1vw);
+  animation: ball2 linear infinite alternate 3s;
 }
 .animated-ball3 {
-height: calc(15rem + 15vw);
-width: calc(16rem + 15vw);
-background-color: var(--sundown-orange);
-border-radius: 50vw;
-right: calc(4rem + 6vw);
-position: absolute;
-top: calc(20rem + 18vw);
-filter: blur(1vw);
-animation: ball2 linear infinite alternate 3s;
+  height: calc(15rem + 15vw);
+  width: calc(16rem + 15vw);
+  background-color: var(--sundown-orange);
+  border-radius: 50vw;
+  right: calc(4rem + 6vw);
+  position: absolute;
+  top: calc(20rem + 18vw);
+  filter: blur(1vw);
+  animation: ball2 linear infinite alternate 3s;
 }
 /* #endregion l-Animated-Balls */
 
@@ -335,20 +335,20 @@ animation: ball2 linear infinite alternate 3s;
 /* #region p-Page2 */
 
 .page2 {
-/* background-color: cornsilk; */
-min-height: 100vh;
-width: 100%;
-position: relative;
-/* background-color: red; */
+  /* background-color: cornsilk; */
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  /* background-color: red; */
 }
 /* #region p-moving-text */
 /* =============Moving Text Container============ */
 .moving-text-container {
-overflow-x: scroll;
-/* background-color: rgb(120, 192, 255); */
-display: flex;
-padding: 6.5rem 0;
-pointer-events: none;
+  overflow-x: scroll;
+  /* background-color: rgb(120, 192, 255); */
+  display: flex;
+  padding: 6.5rem 0;
+  pointer-events: none;
 }
 /* For WebKit-based browsers */
 .moving-text-container::-webkit-scrollbar {
@@ -362,106 +362,106 @@ pointer-events: none;
 
 /* =============Moving Text============ */
 .moving-text {
-/* background-color: rgb(192, 104, 104); */
-display: flex;
-align-items: center;
-gap: calc(1.7rem + 0.3vw);
-justify-content: center;
-padding-right: 2rem;
-animation: moving-text infinite linear 12.5s;
+  /* background-color: rgb(192, 104, 104); */
+  display: flex;
+  align-items: center;
+  gap: calc(1.7rem + 0.3vw);
+  justify-content: center;
+  padding-right: 2rem;
+  animation: moving-text infinite linear 12.5s;
 }
 /* =============Disk before Heading============ */
 
 .moving-text .disk {
-height: calc(2.1rem + 2vw);
-width: calc(2.1rem + 2vw);
-border-radius: 9rem;
-background-color: var(--sundown-orange);
+  height: calc(2.1rem + 2vw);
+  width: calc(2.1rem + 2vw);
+  border-radius: 9rem;
+  background-color: var(--sundown-orange);
 }
 
 /* =============Heading============ */
 .moving-text h1 {
-font-size: calc(6.3rem + 3vw);
-letter-spacing: calc(-0.15rem - 0.3vw);
+  font-size: calc(6.3rem + 3vw);
+  letter-spacing: calc(-0.15rem - 0.3vw);
 }
 
 /* #endregion p-moving-text */
 
 /* #region p-Page2-content */
 .page2-content-container {
-/* background-color: red; */
-width: 85%;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-padding-bottom: 5.1rem;
-/* gap:rem; */
+  /* background-color: red; */
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5.1rem;
+  /* gap:rem; */
 }
 /* #region l-page2content .left  */
 .page2-content-container .left {
-/* background-color: rebeccapurple; */
-width: 64%;
-/* min-width: 56s0px; */
-max-width: 640px;
-margin-top: 3rem;
-position: relative;
-z-index: 1;
+  /* background-color: rebeccapurple; */
+  width: 64%;
+  /* min-width: 56s0px; */
+  max-width: 640px;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 1;
 }
 .page2-content-container .left h1 {
-font-size: calc(2.95rem + 1.4vw);
-letter-spacing: -0.13rem;
-line-height: 1;
+  font-size: calc(2.95rem + 1.4vw);
+  letter-spacing: -0.13rem;
+  line-height: 1;
 }
 /* ball1 */
 .page2-content-container .left .page2-animated-ball1 {
-height: calc(24rem + 8vw);
-width: calc(24rem + 8vw);
-border-radius: 30rem;
-filter: blur(4vw);
-background-color: var(--sundown-orange);
-position: absolute;
-left: 11rem;
-top: 12rem;
-z-index: -1;
-animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  height: calc(24rem + 8vw);
+  width: calc(24rem + 8vw);
+  border-radius: 30rem;
+  filter: blur(4vw);
+  background-color: var(--sundown-orange);
+  position: absolute;
+  left: 11rem;
+  top: 12rem;
+  z-index: -1;
+  animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
 }
 /* ball 2*/
 .page2-content-container .left .page2-animated-ball2 {
-height: calc(25rem + 8vw);
-width: calc(25rem + 8vw);
-border-radius: 30rem;
-filter: blur(1.5vw);
-background-color: #fe880a;
-position: absolute;
-left: 13rem;
-top: 8rem;
-z-index: -2;
-animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  height: calc(25rem + 8vw);
+  width: calc(25rem + 8vw);
+  border-radius: 30rem;
+  filter: blur(1.5vw);
+  background-color: #fe880a;
+  position: absolute;
+  left: 13rem;
+  top: 8rem;
+  z-index: -2;
+  animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
 }
 
 /* #endregion l-page2content .left  */
 
 /* #region l-page2content .right  */
 .page2-content-container .right {
-/* background-color: coral; */
-width: 26%;
-z-index: 2;
-margin-right: 1rem;
+  /* background-color: coral; */
+  width: 26%;
+  z-index: 2;
+  margin-right: 1rem;
 }
 .page2-content-container .right img {
-display: block;
-width: 100%;
-border-radius: 0.4rem;
-margin-top: calc(9.8rem + 2vw);
-margin-bottom: calc(1.7rem + 1.1vw);
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  margin-top: calc(9.8rem + 2vw);
+  margin-bottom: calc(1.7rem + 1.1vw);
 }
 
 .page2-content-container .right p {
-font-family: "Neuehaasdisplay roman";
-font-size: calc(0.58rem + 0.5vw);
-line-height: 1.4;
-padding-inline: 0.3rem;
-max-width: 280px;
+  font-family: "Neuehaasdisplay roman";
+  font-size: calc(0.58rem + 0.5vw);
+  line-height: 1.4;
+  padding-inline: 0.3rem;
+  max-width: 280px;
 }
 /* #endregion l-page2content .right  */
 
@@ -473,36 +473,36 @@ max-width: 280px;
 /** ============================================Page3============================================= */
 /* #region p-Page3 */
 .page3 {
-/* background-color: blueviolet; */
-min-height: 100vh;
-position: relative;
-z-index: 1;
+  /* background-color: blueviolet; */
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 /** ==============================================featured projects heading=========================================== */
 /** ==============================================featured projects heading=========================================== */
 
 /* #region p-featured-projects-heading */
 .featured-projects-heading {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 0.3rem;
-padding-bottom: 1.9rem;
-/* background-color:pink; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  padding-bottom: 1.9rem;
+  /* background-color:pink; */
 }
 .featured-projects-heading h6 {
-letter-spacing: 0.03rem;
-text-transform: uppercase;
-font-family: "Neuehaasdisplay roman", sans-serif;
-font-size: calc(0.712rem + 0.152vw);
-font-weight: 200;
-line-height: 1.2;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-size: calc(0.712rem + 0.152vw);
+  font-weight: 200;
+  line-height: 1.2;
 }
 .featured-projects-heading .red-dot {
-background-color: var(--sundown-orange);
-border-radius: 100vw;
-width: calc(0.33rem + 0.3vw);
-height: calc(0.33rem + 0.3vw);
+  background-color: var(--sundown-orange);
+  border-radius: 100vw;
+  width: calc(0.33rem + 0.3vw);
+  height: calc(0.33rem + 0.3vw);
 }
 /* #endregion p-featured-projects-heading */
 
@@ -512,47 +512,47 @@ height: calc(0.33rem + 0.3vw);
 /* #region p-featured-projects-list container*/
 /** ================list container================= */
 .featured-projects-list-container {
-/* background-color: pink; */
-padding-bottom: 12rem;
+  /* background-color: pink; */
+  padding-bottom: 12rem;
 }
 /**==========================================list====================== */
-.featured-projects-list{
+.featured-projects-list {
   /* display: flex;
   flex-direction: column; */
 }
-.video-on-hover{
+.video-on-hover {
   object-fit: cover;
   height: calc(10rem + 19vw);
   width: calc(9rem + 14vw);
   position: fixed;
-  border-radius:1.5rem;
-  z-index:1;
-  right:25.5vw;
-  top:50%;
-  transform:translate(0,-50%);
+  border-radius: 1.5rem;
+  z-index: 1;
+  right: 25.5vw;
+  top: 50%;
+  transform: translate(0, -50%);
   pointer-events: none;
-  }
+}
 /** ===================================list project========================== */
 /* #region l-list-project */
 .featured-projects-list .project {
-overflow: hidden;
-position: relative;
-border-bottom: 1px solid rgb(0, 0,0,0.2);
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 }
-.featured-projects-list .project video{
- display: none;
+.featured-projects-list .project video {
+  display: none;
 }
 .featured-projects-list .project a {
-width: 95%;
-margin: 0 auto;
-padding: 1.9rem 0;
-/* background-color: blue; */
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-family: "Neuehaasdisplay mediu", sans-serif;
-text-decoration: none;
-color: black;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.9rem 0;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Neuehaasdisplay mediu", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 /** ============================left========================== */
 /* #region  left */
@@ -563,20 +563,20 @@ color: black;
 }
 
 /** ============================backdrop========================== */
-.featured-projects-list .project .backdrop{
+.featured-projects-list .project .backdrop {
   background-color: var(--orange);
-  content:"";
+  content: "";
   position: absolute;
   z-index: -1;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   height: 0rem;
   width: 100%;
   transition: ease 0.2s;
 }
-.featured-projects-list .project:hover .backdrop{
+.featured-projects-list .project:hover .backdrop {
   height: 100%;
-  transition: all ease .2s;
+  transition: all ease 0.2s;
 }
 
 /** featured visual  */
@@ -589,24 +589,24 @@ color: black;
 /* #region  right*/
 
 .featured-projects-list .project a .brand {
-padding-right: 1.31rem;
-font-family: "Neuehaasdisplay roman";
-text-align: right;
+  padding-right: 1.31rem;
+  font-family: "Neuehaasdisplay roman";
+  text-align: right;
 }
 .featured-projects-list .project a .brand .name {
-letter-spacing: 0.02em;
-text-transform: uppercase;
-font-family: "Neuehaasdisplay roman", sans-serif;
-font-size: calc(0.6rem + 0.3vw);
-font-weight: 400;
-line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-size: calc(0.6rem + 0.3vw);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .featured-projects-list .project a .brand .category {
-color: rgba(0, 0, 0, 0.4);
-font-size: calc(0.6rem + 0.3vw);
-line-height: 1.3;
-font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: calc(0.6rem + 0.3vw);
+  line-height: 1.3;
+  font-weight: 400;
 }
 /* #endregion right*/
 
@@ -622,650 +622,629 @@ font-weight: 400;
 /** ====================================Laptops============================================================== */
 
 /* #region g-Laptops */
-@media (765px <= width <= 980px) {
-.container {
-  width: 93%;
-  margin: 1.9rem auto;
-}
+@media (767px <= width <= 991px) {
+  .container {
+    width: 93%;
+    margin: 1.9rem auto;
+  }
 
-/** ===============================================Nav Bar============================================= */
-/** ===============================================Nav Bar============================================= */
-/* #region p-NavStyles */
-nav img {
-  width: calc(8rem + 1.1vw);
-}
-nav .nav-links {
-  gap: 0.4rem;
-}
-nav .nav-links a {
-  font-size: 1.2rem;
-  padding: 0.73em 1.5em;
-}
-/* #endregion p-Navbar */
-/** ============================================Page1============================================= */
-/** ============================================Page1============================================= */
-/* #region p-Page1 */
-/** ============================================Hero, left and right ============================================= */
-/** ============================================Hero, left and right============================================= */
-/* #region l-Hero*/
-/* ======Hero Wrapper===== */
-.hero {
-  min-height: max-content;
-  padding-top: calc(4rem + 2.2vw);
-  padding-bottom: calc(1.8rem + 1.8vw);
-}
-/* ============Hero Left=======  */
-.hero .left {
-  align-self: normal;
-  padding-top:12.1rem;
-  font-size: calc(1.05rem + 0.6vw);
-  min-width: 300px;
-  letter-spacing: -0.03rem;
-  line-height: 1;
-
-}
-/* ============Hero Right=======  */
-.hero .right {
-  font-size: calc(7rem + .6vw);
-  letter-spacing: calc(-0.12rem + -0.005vw);
-  padding-right: 1rem;
-  line-height: 0.8;
-}
-/*#endregion l-Hero*/
-/** ============================================Video============================================= */
-/** ============================================Video============================================= */
-.page1 video {
-  height: 53.7vw;
-  width: 92vw;
-}
-/** ============================================Animated-Balls============================================= */
-/** ============================================Animated-Balls============================================= */
-/* #region l-Animated-Balls */
-.animated-ball1 {
-  height: calc(14rem + 20vw);
-  width: calc(40rem + 40vw);
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  right: calc(-20rem - 15vw);
-  position: absolute;
-  top: calc(16rem + 11vw);
-  filter: blur(2vw);
-  animation: ball1 ease-in-out infinite alternate 4s;
+  /** ===============================================Nav Bar============================================= */
+  /** ===============================================Nav Bar============================================= */
+  /* #region p-NavStyles */
+  nav img {
+    width: calc(8rem + 1.1vw);
+  }
+  nav .nav-links {
+    gap: 0.4rem;
+  }
+  nav .nav-links a {
+    font-size: 1.2rem;
+    padding: 0.73em 1.5em;
+  }
+  /* #endregion p-Navbar */
+  /** ============================================Page1============================================= */
+  /** ============================================Page1============================================= */
+  /* #region p-Page1 */
+  /** ============================================Hero, left and right ============================================= */
+  /** ============================================Hero, left and right============================================= */
+  /* #region l-Hero*/
+  /* ======Hero Wrapper===== */
+  .hero {
+    min-height: max-content;
+    padding-top: calc(4rem + 2.2vw);
+    padding-bottom: calc(1.8rem + 1.8vw);
+  }
+  /* ============Hero Left=======  */
+  .hero .left {
+    align-self: normal;
+    padding-top: 12.1rem;
+    font-size: calc(1.05rem + 0.6vw);
+    min-width: 300px;
+    letter-spacing: -0.03rem;
+    line-height: 1;
+  }
+  /* ============Hero Right=======  */
+  .hero .right {
+    font-size: calc(7rem + 0.6vw);
+    letter-spacing: calc(-0.12rem + -0.005vw);
+    padding-right: 1rem;
+    line-height: 0.8;
+  }
+  /*#endregion l-Hero*/
+  /** ============================================Video============================================= */
+  /** ============================================Video============================================= */
+  .page1 video {
+    height: 53.7vw;
+    width: 92vw;
+  }
+  /** ============================================Animated-Balls============================================= */
+  /** ============================================Animated-Balls============================================= */
+  /* #region l-Animated-Balls */
+  .animated-ball1 {
+    height: calc(14rem + 20vw);
+    width: calc(40rem + 40vw);
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: calc(-20rem - 15vw);
+    position: absolute;
+    top: calc(16rem + 11vw);
+    filter: blur(2vw);
+    animation: ball1 ease-in-out infinite alternate 4s;
   }
   .animated-ball2 {
-  height: calc(12rem + 13vw);
-  width: calc(25rem + 25vw);
-  background-color: #fe690a;
-  border-radius: 50vw;
-  right: calc(-7rem - 6vw);
-  position: absolute;
-  top: calc(21rem + 18vw);
-  filter: blur(1vw);
-  animation: ball2 linear infinite alternate 3s;
+    height: calc(12rem + 13vw);
+    width: calc(25rem + 25vw);
+    background-color: #fe690a;
+    border-radius: 50vw;
+    right: calc(-7rem - 6vw);
+    position: absolute;
+    top: calc(21rem + 18vw);
+    filter: blur(1vw);
+    animation: ball2 linear infinite alternate 3s;
   }
   .animated-ball3 {
-  height: calc(15rem + 15vw);
-  width: calc(16rem + 15vw);
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  right: calc(4rem + 6vw);
-  position: absolute;
-  top: calc(20rem + 18vw);
-  filter: blur(1vw);
-  animation: ball2 linear infinite alternate 3s;
+    height: calc(15rem + 15vw);
+    width: calc(16rem + 15vw);
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: calc(4rem + 6vw);
+    position: absolute;
+    top: calc(20rem + 18vw);
+    filter: blur(1vw);
+    animation: ball2 linear infinite alternate 3s;
   }
   /* #endregion l-Animated-Balls */
-  
-/* #endregion p-Page1 */
 
-/** ============================================Page2============================================= */
-/** ============================================Page2============================================= */
-/* #region p-Page2 */
-.page2 {
-}
-/* #region p-moving-text */
-/* =============Moving Text Container============ */
-.moving-text-container {
-  padding-top: 1rem;
-  padding: 3.2rem 0;
-  margin: 0;
-}
+  /* #endregion p-Page1 */
 
-/* =============Moving Text============ */
-.moving-text {
-  gap: 1.2rem;
-  animation: moving-text infinite linear 16s;
-}
-/* ============= Disk before Heading ============ */
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page2 */
+  .page2 {
+  }
+  /* #region p-moving-text */
+  /* =============Moving Text Container============ */
+  .moving-text-container {
+    padding-top: 1rem;
+    padding: 3.2rem 0;
+    margin: 0;
+  }
 
-.moving-text .disk {
-  height: calc(2.1rem + 1.1vw);
-  width: calc(2.1rem + 1.1vw);
-}
-/* =============Heading============ */
-.moving-text h1 {
-  font-size: calc(5rem + 1vw);
-  /* letter-spacing: -0.5rem; */
-}
+  /* =============Moving Text============ */
+  .moving-text {
+    gap: 1.2rem;
+    animation: moving-text infinite linear 16s;
+  }
+  /* ============= Disk before Heading ============ */
 
-/* #endregion p-moving-text */
-/* #region p-Page2-content */
-.page2-content-container {
-  /* background-color: red; */
-  width: 86%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 6.5rem;
-  /* gap:rem; */
-}
-/* #region l-page2contenet .left  */
-.page2-content-container .left {
-  width: 66%;
-  min-width: 390px;
-  max-width: 530px;
-  margin-top: 3.65rem;
-}
-.page2-content-container .left h1 {
-  font-size: 3.25rem;
-  letter-spacing: -0.1rem;
-}
-/* ball1 */
-.page2-content-container .left .page2-animated-ball1 {
-  height: calc(29rem - 1vw);
-  width: calc(29rem - 1vw);
-  border-radius: 30rem;
-  filter: blur(40px);
-  background-color: var(--sundown-orange);
-  position: absolute;
-  left: 6rem;
-  top: 16rem;
-  z-index: -1;
-  animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
-}
-/* ball 2 */
-.page2-content-container .left .page2-animated-ball2 {
-  height: calc(27rem - 1vw);
-  width: calc(27rem - 1vw);
-  border-radius: 30rem;
-  filter: blur(10px);
-  background-color:var(--orange);
-  position: absolute;
-  left: 9rem;
-  top: 11rem;
-  z-index: -2;
-  animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
-}
+  .moving-text .disk {
+    height: calc(2.1rem + 1.1vw);
+    width: calc(2.1rem + 1.1vw);
+  }
+  /* =============Heading============ */
+  .moving-text h1 {
+    font-size: calc(5rem + 1vw);
+    /* letter-spacing: -0.5rem; */
+  }
 
-/* #endregion l-page2contenet .left  */
+  /* #endregion p-moving-text */
+  /* #region p-Page2-content */
+  .page2-content-container {
+    /* background-color: red; */
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6.5rem;
+    /* gap:rem; */
+  }
+  /* #region l-page2contenet .left  */
+  .page2-content-container .left {
+    width: 66%;
+    min-width: 390px;
+    max-width: 530px;
+    margin-top: 3.65rem;
+  }
+  .page2-content-container .left h1 {
+    font-size: 3.25rem;
+    letter-spacing: -0.1rem;
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1 {
+    height: calc(29rem - 1vw);
+    width: calc(29rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(40px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 2rem;
+    top: 14rem;
+    z-index: -1;
+    animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  }
+  /* ball 2 */
+  .page2-content-container .left .page2-animated-ball2 {
+    height: calc(27rem - 1vw);
+    width: calc(27rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(10px);
+    background-color: var(--orange);
+    position: absolute;
+    left: 5rem;
+    top: 11rem;
+    z-index: -2;
+    animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  }
 
-/* #region l-page2contenet .right  */
-.page2-content-container .right {
-  /* background-color: coral; */
-  width: 25.5%;
-  z-index: 2;
-  margin-right: 2.3rem;
-}
-.page2-content-container .right img {
-  display: block;
-  width: 100%;
-  border-radius: 0.4rem;
-  margin-top: 10.4rem;
-  margin-bottom: 2.1rem;
-  margin-inline: auto;
-}
+  /* #endregion l-page2contenet .left  */
 
-.page2-content-container .right p {
-  text-justify: right;
-  font-size: 0.93rem;
-  line-height: 1.4;
-  max-width: 220px;
-  padding-inline: 0;
-}
-/* #endregion l-page2contenet .right  */
+  /* #region l-page2contenet .right  */
+  .page2-content-container .right {
+    /* background-color: coral; */
+    width: 25.5%;
+    z-index: 2;
+    margin-right: 2.3rem;
+  }
+  .page2-content-container .right img {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    margin-top: 10.4rem;
+    margin-bottom: 2.1rem;
+    margin-inline: auto;
+  }
 
-/* #endregion p-Page2-content */
-/* #endregion p-Page2 */
-/** ============================================Page3============================================= */
-/** ============================================Page3============================================= */
-/* #region p-Page3 */
-.page3 {
-  /* background-color: blueviolet; */
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
+  .page2-content-container .right p {
+    text-justify: right;
+    font-size: 0.93rem;
+    line-height: 1.4;
+    max-width: 220px;
+    padding-inline: 0;
+  }
+  /* #endregion l-page2contenet .right  */
+
+  /* #endregion p-Page2-content */
+  /* #endregion p-Page2 */
+  /** ============================================Page3============================================= */
+  /** ============================================Page3============================================= */
+  /* #region p-Page3 */
+  .page3 {
+    /* background-color: blueviolet; */
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
   }
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
-  
+
   /* #region p-featured-projects-heading */
   .featured-projects-heading {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.3rem;
-  padding-bottom: 1.9rem;
-  /* background-color:pink; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    padding-bottom: calc(1rem + 0.9vw);
+    /* background-color:pink; */
   }
   .featured-projects-heading h6 {
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
-  font-family: "Neuehaasdisplay roman", sans-serif;
-  font-size: calc(0.712rem + 0.152vw);
-  font-weight: 200;
-  line-height: 1.2;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    font-family: "Neuehaasdisplay roman", sans-serif;
+    font-size: calc(0.712rem + 0.152vw);
+    font-weight: 200;
+    line-height: 1.2;
   }
   .featured-projects-heading .red-dot {
-  background-color: var(--sundown-orange);
-  border-radius: 100vw;
-  width: calc(0.33rem + 0.3vw);
-  height: calc(0.33rem + 0.3vw);
+    background-color: var(--sundown-orange);
+    border-radius: 100vw;
+    width: calc(0.33rem + 0.3vw);
+    height: calc(0.33rem + 0.3vw);
   }
   /* #endregion p-featured-projects-heading */
-  
+
   /** ==============================================featured projects list container=========================================== */
   /** ==============================================featured projects list container=========================================== */
-  
+
   /* #region p-featured-projects-list container*/
   /** ================list container================= */
   .featured-projects-list-container {
-  padding-bottom: 12rem;
-  padding:0 0;
+    /* background-color: pink; */
+    padding-bottom: 12rem;
   }
   /**==========================================list====================== */
-  .featured-projects-list{
-    display: flex;
-    column-gap: -5rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: rgb(190, 190, 239);
+  .featured-projects-list {
+    /* background-color: #ff9831; */
+    grid-column-gap: calc(0.6rem + 1.1vw);
+    grid-row-gap: 1em;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding: 0 calc(1em + 1vw);
+    display: grid;
   }
-  .video-on-hover{
-  display: none;
-    }
+  .video-on-hover {
+    display: none;
+  }
   /** ===================================list project========================== */
   /* #region l-list-project */
   .featured-projects-list .project {
-  overflow: hidden; 
-  position: relative;
-  border-bottom:none;
-  background-color: pink;  
-  
-}
-  .featured-projects-list .project video{
-   display: block;
-   object-fit: cover;
-   height: calc(26rem + 19vw);
-   width: calc(20rem + 12vw);
-   border-radius:2rem;
-   padding: calc(1rem + 0.4vw ) 0;
-   
+    border-bottom: none;
+    overflow: hidden;
+  }
+
+  .featured-projects-list .project video {
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    height: calc(56vw);
+    /* width: calc(23rem + 10vw); */
+    width: 98%;
+    border-radius: 1rem;
   }
   .featured-projects-list .project a {
-  width: 100%;
-  margin: 0 auto;
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-    gap:0.1rem;
-  align-items: flex-start;
-  justify-content: center;
-  font-family: "Neuehaasdisplay mediu", sans-serif;
-  text-decoration: none;
-  color: black;
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.1rem + 1vw);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0.1rem;
   }
   /** ============================left========================== */
   /* #region  left */
   .featured-projects-list .project a h2 {
-    font-family: "Neuehaasdisplay mediu";
-    font-size: calc(1rem + 1.49vw);
-    letter-spacing: -0.1rem;
+    font-size: calc(1.26rem + 1.7vw);
   }
-  
+
   /** ============================backdrop========================== */
-  .featured-projects-list .project .backdrop{
-    display: none;  
+  .featured-projects-list .project .backdrop {
+    display: none;
   }
-  
+
   /** featured visual  */
   /* #region l-featured visual */
-  
+
   /* #endregion l-featured visual */
-  
+
   /* #endregion left */
   /** ==========================right===================== */
   /* #region  right*/
-  
+
   .featured-projects-list .project a .brand {
-  padding-right: 1.31rem;
-  font-family: "Neuehaasdisplay roman";
-  text-align: left;
+    text-align: left;
+    padding-right: 0rem;
   }
   .featured-projects-list .project a .brand .name {
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-family: "Neuehaasdisplay roman", sans-serif;
-  font-size: calc(0.6rem + 0.3vw);
-  font-weight: 400;
-  line-height: 1.2;
+    font-size: calc(0.55rem + 1vw);
   }
-  
+
   .featured-projects-list .project a .brand .category {
-  color: rgba(0, 0, 0, 0.4);
-  font-size: calc(0.6rem + 0.3vw);
-  line-height: 1.3;
-  font-weight: 400;
+    font-size: calc(0.55rem + 1vw);
   }
   /* #endregion right*/
-  
+
   /* #endregion l-list-project */
-  
+
   /* #endregion p-featured-projects-list */
   /* #endregion p-Page3 */
 }
-/** ============================================Page3============================================= */
-/** ============================================Page3============================================= */
-
 /* #endregion g-Laptops */
 
 /** =========================================Tablet/Phablets=========================================== */
 /** =========================================Tablet/Phablets=========================================== */
 /* #region g-Tablets/Phablets */
 @media (481px <= width <= 765px) {
-.container {
-  width: 93%;
-}
-/* ======NAV BAR===== */
-/** ===============================================Nav Bar============================================= */
-/** ===============================================Nav Bar============================================= */
-/* #region p-NavStyles */
-nav img {
-  width: 8.8rem;
-}
-nav .nav-links {
-  display: none;
-}
-/* #endregion p-NavStyles */
-/** ======================================= Hamburger Menu and Menu-Button========================== */
-/** ======================================= Hamburger Menu and Menu-Button========================== */
-/* #region p-HamburgerMenu and Menu-Button */
+  .container {
+    width: 93%;
+  }
+  /* ======NAV BAR===== */
+  /** ===============================================Nav Bar============================================= */
+  /** ===============================================Nav Bar============================================= */
+  /* #region p-NavStyles */
+  nav img {
+    width: 8.8rem;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  /* #endregion p-NavStyles */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /* #region p-HamburgerMenu and Menu-Button */
 
-/** ======================================= Hamburger DropDown Menu========================== */
-/** ======================================= Hamburger DropDown Menu========================== */
-/* #region l-HamburgerDropDown Menu */
-/* ======Hamburger Nav Drop Down Menu===== */
-nav .nav-links-hamburger {
-  min-height: max-content;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: -150%;
-  right: 0;
-  left: 0;
-  background-color: #efeae3;
-  border-bottom-left-radius: 1.8rem;
-  border-bottom-right-radius: 1.8rem;
-  padding-inline: 1.5rem;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-  transition: linear 0.7s;
-  overflow: hidden;
-  z-index: 1;
-}
-/* ======Hamburger Nav Drop Down Menu Links===== */
-nav .nav-links-hamburger a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1.15;
-  text-align: right;
-  color: black;
-  font-size: 5.4rem;
-  font-weight: 700;
-  transition: linear 0.5s;
-}
+  /** ======================================= Hamburger DropDown Menu========================== */
+  /** ======================================= Hamburger DropDown Menu========================== */
+  /* #region l-HamburgerDropDown Menu */
+  /* ======Hamburger Nav Drop Down Menu===== */
+  nav .nav-links-hamburger {
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    left: 0;
+    background-color: #efeae3;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding-inline: 1.5rem;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    transition: linear 0.7s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* ======Hamburger Nav Drop Down Menu Links===== */
+  nav .nav-links-hamburger a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.15;
+    text-align: right;
+    color: black;
+    font-size: 5.4rem;
+    font-weight: 700;
+    transition: linear 0.5s;
+  }
 
-nav .nav-links-hamburger-backdrop {
-  display: block;
-  z-index: 1;
-}
-/* #endregion l-Hamburger DropDown Menu */
+  nav .nav-links-hamburger-backdrop {
+    display: block;
+    z-index: 1;
+  }
+  /* #endregion l-Hamburger DropDown Menu */
 
-/** =================================Hamburger Menu Button========================================= */
-/** ==================================Hamburger Menu Button========================================= */
-/* #region l-Hamburger DropDown Menu-Button */
-nav .menu-btn {
-  z-index: 2;
-  background-color: #efeae3;
-  font-size: 1.4rem;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  color: rgb(47, 45, 45);
-  padding: 0.6em 1.25em;
-  border: 1px solid rgba(128, 128, 128, 0.451);
-  border-radius: 3rem;
-}
+  /** =================================Hamburger Menu Button========================================= */
+  /** ==================================Hamburger Menu Button========================================= */
+  /* #region l-Hamburger DropDown Menu-Button */
+  nav .menu-btn {
+    z-index: 2;
+    background-color: #efeae3;
+    font-size: 1.4rem;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: rgb(47, 45, 45);
+    padding: 0.6em 1.25em;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    border-radius: 3rem;
+  }
 
-/* ======Hamburger Lines and menu-text aligned in flex===== */
-nav .menu-btn .hamburger {
-  display: flex;
-  align-items: center;
-  gap: 0.45em;
-}
-/* ======Hamburger Lines===== */
-nav .menu-btn .hamburger .line {
-  display: block;
-  width: 20px;
-  height: 1px;
-  background-color: black;
-  margin: 4px 0;
-  transition: all 0.3s ease-in-out;
-}
-/* ======Hamburger menu text next to lines===== */
+  /* ======Hamburger Lines and menu-text aligned in flex===== */
+  nav .menu-btn .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+  }
+  /* ======Hamburger Lines===== */
+  nav .menu-btn .hamburger .line {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  /* ======Hamburger menu text next to lines===== */
 
-nav .menu {
-  display: block;
-  font-size: 1.25rem;
-  user-select: none;
-}
+  nav .menu {
+    display: block;
+    font-size: 1.25rem;
+    user-select: none;
+  }
 
-/* #endregion l-Hamburger DropDown Menu-Button*/
-/* #endregion p-HamburgerMenu and Menu-Button */
+  /* #endregion l-Hamburger DropDown Menu-Button*/
+  /* #endregion p-HamburgerMenu and Menu-Button */
 
-/** ============================================Page1============================================= */
-/** ============================================Page1============================================= */
-/* #region p-Page1 */
-.page1 video {
-  margin: 3rem auto;
-  height: 52vw;
-  width: 91vw;
-  object-fit: cover;
-  padding: 0 0.2rem;
-  border-radius: 1.3rem;
-}
-/** ============================================Hero, left and right ============================================= */
-/** ============================================Hero, left and right============================================= */
-/* #region l-Hero */
-/* ======Hero Wrapper===== */
-.hero {
-  flex-direction: column-reverse;
-  padding-top: 3.2rem;
-  padding-bottom: 2.8rem;
-  gap: 3.8rem;
-}
-/* ======Hero Left Text===== */
-.hero .left {
-  font-size: 1.32rem;
-  align-self: flex-start;
-  width: 100%;
-  max-width: 280px;
-  /* letter-spacing: -0.1rem; */
-  line-height: 1.03;
-  padding-bottom: 0.7rem;
-}
-/* ======Hero Right Text===== */
-.hero .right {
-  width: 100%;
-  justify-self: flex-start;
-  align-self: flex-end;
-  font-size: 6.7rem;
-  letter-spacing: -0.24rem;
-  padding-right: 0rem;
-}
-/* #endregion l-Hero */
-/** ============================================Animated-Balls============================================= */
-/** ============================================Animated-Balls============================================= */
-/* #region l-Animated-Balls */
-.animated-ball1 {
-  height: 45vw;
-  width: 100vw;
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  right: -40vw;
-  position: absolute;
-  top: 25rem;
-  filter: blur(15px);
-  animation: ball1 ease-in-out infinite alternate 3s;
-}
-.animated-ball2 {
-  height: 20vw;
-  width: 70vw;
-  background-color: #fe690a;
-  border-radius: 50vw;
-  right: -43vw;
-  position: absolute;
-  top: 32rem;
-  filter: blur(30px);
-  animation: ball2 linear infinite alternate 3s;
-}
-.animated-ball3 {
-  height: 16rem;
-  width: 16rem;
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  right: -4rem;
-  position: absolute;
-  top: 35rem;
-  filter: blur(15px);
-  animation: ball2 linear infinite alternate 3s;
-}
+  /** ============================================Page1============================================= */
+  /** ============================================Page1============================================= */
+  /* #region p-Page1 */
+  .page1 video {
+    margin: 3rem auto;
+    height: 52vw;
+    width: 91vw;
+    object-fit: cover;
+    padding: 0 0.2rem;
+    border-radius: 1.3rem;
+  }
+  /** ============================================Hero, left and right ============================================= */
+  /** ============================================Hero, left and right============================================= */
+  /* #region l-Hero */
+  /* ======Hero Wrapper===== */
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 3.2rem;
+    padding-bottom: 2.8rem;
+    gap: 3.8rem;
+  }
+  /* ======Hero Left Text===== */
+  .hero .left {
+    font-size: 1.32rem;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 280px;
+    /* letter-spacing: -0.1rem; */
+    line-height: 1.03;
+    padding-bottom: 0.7rem;
+  }
+  /* ======Hero Right Text===== */
+  .hero .right {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 6.7rem;
+    letter-spacing: -0.24rem;
+    padding-right: 0rem;
+  }
+  /* #endregion l-Hero */
+  /** ============================================Animated-Balls============================================= */
+  /** ============================================Animated-Balls============================================= */
+  /* #region l-Animated-Balls */
+  .animated-ball1 {
+    height: 45vw;
+    width: 100vw;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -40vw;
+    position: absolute;
+    top: 25rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 3s;
+  }
+  .animated-ball2 {
+    height: 20vw;
+    width: 70vw;
+    background-color: #fe690a;
+    border-radius: 50vw;
+    right: -43vw;
+    position: absolute;
+    top: 32rem;
+    filter: blur(30px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
+    height: 16rem;
+    width: 16rem;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -4rem;
+    position: absolute;
+    top: 35rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
+  }
 
-/* #endregion l-Animated-Balls */
-/* #endregion p-Page1 */
+  /* #endregion l-Animated-Balls */
+  /* #endregion p-Page1 */
 
-/** ============================================Page2============================================= */
-/** ============================================Page2============================================= */
-/* #region p-Page2 */
-.page2 {
-}
-/* #region p-moving-text */
-/* =============Moving Text Container============ */
-.moving-text-container {
-  padding: 0 0;
-}
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page2 */
+  .page2 {
+  }
+  /* #region p-moving-text */
+  /* =============Moving Text Container============ */
+  .moving-text-container {
+    padding: 0 0;
+  }
 
-/* =============Moving Text============ */
-.moving-text {
-  gap: 0.9rem;
-  padding-right: 1rem;
-  animation: moving-text infinite linear 10.2s;
-}
-/* =============Disk before Heading============ */
+  /* =============Moving Text============ */
+  .moving-text {
+    gap: 0.9rem;
+    padding-right: 1rem;
+    animation: moving-text infinite linear 10.2s;
+  }
+  /* =============Disk before Heading============ */
 
-.moving-text .disk {
-  height: 2rem;
-  width: 2rem;
-}
-/* =============Heading============ */
-.moving-text h1 {
-  font-size: 4rem;
-}
+  .moving-text .disk {
+    height: 2rem;
+    width: 2rem;
+  }
+  /* =============Heading============ */
+  .moving-text h1 {
+    font-size: 4rem;
+  }
 
-/* #endregion p-moving-text */
+  /* #endregion p-moving-text */
 
-/* #region p-Page2-content */
-.page2-content-container {
-  /* background-color: red; */
-  width: 91%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 6.5rem;
-}
-/* #region l-page2content .left  */
-.page2-content-container .left {
-  width: 100%;
-  min-width: 420px;
-  max-width: 700px;
-  margin-top: 5.8rem;
-}
-.page2-content-container .left h1 {
-  font-size: 2.39rem;
-  line-height: 1;
-  letter-spacing: -0.099rem;
-}
-/* ball1 */
-.page2-content-container .left .page2-animated-ball1 {
-  height: calc(26rem - 1vw);
-  width: calc(26rem - 1vw);
-  border-radius: 30rem;
-  filter: blur(40px);
-  background-color: var(--sundown-orange);
-  position: absolute;
-  left: 13rem;
-  top: 8rem;
-  z-index: -1;
-  animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
-}
-/* ball 2*/
-.page2-content-container .left .page2-animated-ball2 {
-  height: calc(25rem - 1vw);
-  width: calc(25rem - 1vw);
-  border-radius: 30rem;
-  filter: blur(10px);
-  background-color: var(--sundown-orange);
-  position: absolute;
-  left: 16rem;
-  top: 4rem;
-  z-index: -2;
-  animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
-}
+  /* #region p-Page2-content */
+  .page2-content-container {
+    /* background-color: red; */
+    width: 91%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 6.5rem;
+  }
+  /* #region l-page2content .left  */
+  .page2-content-container .left {
+    width: 100%;
+    min-width: 420px;
+    max-width: 700px;
+    margin-top: 5.8rem;
+  }
+  .page2-content-container .left h1 {
+    font-size: 2.39rem;
+    line-height: 1;
+    letter-spacing: -0.099rem;
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1 {
+    height: calc(26rem - 1vw);
+    width: calc(26rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(40px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 13rem;
+    top: 8rem;
+    z-index: -1;
+    animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  }
+  /* ball 2*/
+  .page2-content-container .left .page2-animated-ball2 {
+    height: calc(25rem - 1vw);
+    width: calc(25rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(10px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 16rem;
+    top: 4rem;
+    z-index: -2;
+    animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  }
 
-/* #endregion l-page2content .left  */
+  /* #endregion l-page2content .left  */
 
-/* #region l-page2content .right  */
-.page2-content-container .right {
-  /* background-color: coral; */
-  width: 20.5rem;
-  z-index: 2;
-  margin-right: 2.3rem;
-}
-.page2-content-container .right img {
-  display: block;
-  width: 100%;
-  border-radius: 0.4rem;
-  margin-top: 3.85rem;
-  margin-bottom: 2.3rem;
-  margin-inline: auto;
-}
+  /* #region l-page2content .right  */
+  .page2-content-container .right {
+    /* background-color: coral; */
+    width: 20.5rem;
+    z-index: 2;
+    margin-right: 2.3rem;
+  }
+  .page2-content-container .right img {
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    margin-top: 3.85rem;
+    margin-bottom: 2.3rem;
+    margin-inline: auto;
+  }
 
-.page2-content-container .right p {
-  text-justify: right;
-  font-size: 0.92rem;
-  line-height: 1.3;
-  max-width: 350px;
-  padding-inline: 0;
-}
-/* #endregion l-page2content .right  */
+  .page2-content-container .right p {
+    text-justify: right;
+    font-size: 0.92rem;
+    line-height: 1.3;
+    max-width: 350px;
+    padding-inline: 0;
+  }
+  /* #endregion l-page2content .right  */
 
-/* #endregion p-Page2-content */
-/* #endregion p-Page2 */
-
-
+  /* #endregion p-Page2-content */
+  /* #endregion p-Page2 */
 }
 
 /* #endregion g-Tablets/Phablets */
@@ -1274,339 +1253,338 @@ nav .menu {
 /** ==============================================Mobile=========================================== */
 /* #region g-MobileDevice */
 @media (0px <= width <= 481px) {
-.container {
-  margin-top: 1.7rem;
-  width: 92%;
-}
-/** ===============================================Nav Bar============================================= */
-/** ===============================================Nav Bar============================================= */
-/* #region p-NavStyles */
-nav img {
-  width: 8.8rem;
-}
-nav .nav-links {
-  display: none;
-}
-/* #endregion p-NavStyles */
-/** ======================================= Hamburger Menu and Menu-Button========================== */
-/** ======================================= Hamburger Menu and Menu-Button========================== */
-/* #region p-HamburgerMenu and Menu-Button*/
-/** ========================================= Hamburger DropDown Menu============================== */
-/** ========================================= Hamburger DropDown Menu============================== */
-/* #region l-Hamburger DropDown Menu */
+  .container {
+    margin-top: 1.7rem;
+    width: 92%;
+  }
+  /** ===============================================Nav Bar============================================= */
+  /** ===============================================Nav Bar============================================= */
+  /* #region p-NavStyles */
+  nav img {
+    width: 8.8rem;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  /* #endregion p-NavStyles */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /** ======================================= Hamburger Menu and Menu-Button========================== */
+  /* #region p-HamburgerMenu and Menu-Button*/
+  /** ========================================= Hamburger DropDown Menu============================== */
+  /** ========================================= Hamburger DropDown Menu============================== */
+  /* #region l-Hamburger DropDown Menu */
 
-nav .nav-links-hamburger {
-  min-height: max-content;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: -150%;
-  right: 0;
-  left: 0;
-  background-color: #efeae3;
-  padding-inline: 1.17rem;
-  padding-top: 8.3rem;
-  padding-bottom: 2.5rem;
-  border-bottom-left-radius: 1.8rem;
-  border-bottom-right-radius: 1.8rem;
-  transition: linear 0.7s;
-  overflow: hidden;
-  z-index: 1;
-}
-/* ======Hamburger Nav Drop Down Menu Links===== */
-nav .nav-links-hamburger a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1.1;
-  text-align: right;
-  color: black;
-  font-size: 3.6rem;
-  letter-spacing: -0.04rem;
-  transition: linear 0.5s;
-}
+  nav .nav-links-hamburger {
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: -150%;
+    right: 0;
+    left: 0;
+    background-color: #efeae3;
+    padding-inline: 1.17rem;
+    padding-top: 8.3rem;
+    padding-bottom: 2.5rem;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    transition: linear 0.7s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* ======Hamburger Nav Drop Down Menu Links===== */
+  nav .nav-links-hamburger a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: right;
+    color: black;
+    font-size: 3.6rem;
+    letter-spacing: -0.04rem;
+    transition: linear 0.5s;
+  }
 
-nav .nav-links-hamburger-backdrop {
-  display: block;
-  z-index: 1;
-}
-/* #endregion l-Hamburger DropDown Menu */
+  nav .nav-links-hamburger-backdrop {
+    display: block;
+    z-index: 1;
+  }
+  /* #endregion l-Hamburger DropDown Menu */
 
-/** =========================================Hamburger Menu Button====================================== */
-/** =========================================Hamburger Menu Button====================================== */
-/* #region l-Hamburger DropDown Menu-Button */
-nav .menu-btn {
-  z-index: 2;
-  font-family: "Neuehaasdisplay roman";
-  font-size: 1.25rem;
-  display: flex;
-  padding: 0.65em 1em;
-  background-color: #efeae3;
-  cursor: pointer;
-  align-items: center;
-  color: rgb(47, 45, 45);
-  padding: 0.6em 1em;
-  border: 1px solid rgba(128, 128, 128, 0.451);
-  border-radius: 3rem;
-}
-/* ======Hamburger Lines and menu-text aligned in flex===== */
-nav .menu-btn .hamburger {
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-}
-/* ======Hamburger Lines===== */
-nav .menu-btn .hamburger .line {
-  width: 20px;
-  height: 1px;
-  background-color: black;
-  display: block;
-  margin: 4px 0;
-  transition: all 0.3s ease-in-out;
-}
-/* ======Hamburger menu text next to lines===== */
-nav .menu {
-  display: block;
-  font-size: 1.03rem;
-  letter-spacing: -0.01em;
-  user-select: none;
-}
-/* #endregion l-Hamburger DropDown Menu-Button */
+  /** =========================================Hamburger Menu Button====================================== */
+  /** =========================================Hamburger Menu Button====================================== */
+  /* #region l-Hamburger DropDown Menu-Button */
+  nav .menu-btn {
+    z-index: 2;
+    font-family: "Neuehaasdisplay roman";
+    font-size: 1.25rem;
+    display: flex;
+    padding: 0.65em 1em;
+    background-color: #efeae3;
+    cursor: pointer;
+    align-items: center;
+    color: rgb(47, 45, 45);
+    padding: 0.6em 1em;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    border-radius: 3rem;
+  }
+  /* ======Hamburger Lines and menu-text aligned in flex===== */
+  nav .menu-btn .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+  }
+  /* ======Hamburger Lines===== */
+  nav .menu-btn .hamburger .line {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  /* ======Hamburger menu text next to lines===== */
+  nav .menu {
+    display: block;
+    font-size: 1.03rem;
+    letter-spacing: -0.01em;
+    user-select: none;
+  }
+  /* #endregion l-Hamburger DropDown Menu-Button */
 
-/* #endregion p-HamburgerMenu*/
+  /* #endregion p-HamburgerMenu*/
 
-/** ============================================Page1============================================= */
-/** ============================================Page1============================================= */
-/* #region p-Page1*/
-/** ============================================Hero, left and right ============================================= */
-/** ============================================Hero, left and right============================================= */
-/* #region l-Hero */
-/* ======Hero Wrapper===== */
-.hero {
-  flex-direction: column-reverse;
-  padding-top: 2.2rem;
-  padding-bottom: 2.5rem;
-  gap: 4.3rem;
-}
-/* ======Hero Left===== */
-.hero .left {    
-  font-size: 1.45rem;
-  font-weight: 500;
-  line-height: 1;
-  align-self: flex-start;
-  width: 100%;
-  letter-spacing: -0.05rem;
-  max-width: 280px;
-}
-/* ======Hero Right===== */
-.hero .right {
-  width: 100%;
-  justify-self: flex-start;
-  align-self: flex-end;
-  font-size: 4.25rem;
-  letter-spacing: -0.16rem;
-  padding-right: 1rem;
-}
-/* #endregion l-Hero */
+  /** ============================================Page1============================================= */
+  /** ============================================Page1============================================= */
+  /* #region p-Page1*/
+  /** ============================================Hero, left and right ============================================= */
+  /** ============================================Hero, left and right============================================= */
+  /* #region l-Hero */
+  /* ======Hero Wrapper===== */
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    gap: 4.3rem;
+  }
+  /* ======Hero Left===== */
+  .hero .left {
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1;
+    align-self: flex-start;
+    width: 100%;
+    letter-spacing: -0.05rem;
+    max-width: 280px;
+  }
+  /* ======Hero Right===== */
+  .hero .right {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 4.25rem;
+    letter-spacing: -0.16rem;
+    padding-right: 1rem;
+  }
+  /* #endregion l-Hero */
 
-/** ============================================Video============================================= */
-/** ============================================Video============================================= */
-.page1 video {
-  margin: 0rem auto;
-  margin-bottom: 1.9rem;
-  width: 91.5vw;
-  height: 125.3vw;
-  padding: 0.3rem 0.1rem;
-  object-fit: cover;
-  border-radius: 1.5rem;
-  position: relative;
-  z-index: 0;
-}
+  /** ============================================Video============================================= */
+  /** ============================================Video============================================= */
+  .page1 video {
+    margin: 0rem auto;
+    margin-bottom: 1.9rem;
+    width: 91.5vw;
+    height: 125.3vw;
+    padding: 0.3rem 0.1rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    position: relative;
+    z-index: 0;
+  }
 
-/** ============================================Animated-Balls============================================= */
-/** ============================================Animated-Balls============================================= */
-/* #region l-Animated-Balls*/
-.animated-ball1 {
-  height: 17rem;
-  width: 50rem;
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  right: -30rem;
-  position: absolute;
-  top: 23.5rem;
-  filter: blur(15px);
-  animation: ball1 ease-in-out infinite alternate 4s;
-}
-.animated-ball2 {
-  height: 17rem;
-  width: 24rem;
-  background-color: #fe470a;
-  border-radius: 50vw;
-  right: -13rem;
-  position: absolute;
-  top: 29rem;
-  filter: blur(10px);
-  animation: ball2 linear infinite alternate 3s;
-}
-.animated-ball3 {
-  height: 16rem;
-  width: 18rem;
-  background-color: #fe530a;
-  border-radius: 50vw;
-  right: -2rem;
-  position: absolute;
-  top: 28.5rem;
-  filter: blur(15px);
-  animation: ball2 linear infinite alternate 3s;
-}
-/* #endregion l-Animated-Balls*/
+  /** ============================================Animated-Balls============================================= */
+  /** ============================================Animated-Balls============================================= */
+  /* #region l-Animated-Balls*/
+  .animated-ball1 {
+    height: 17rem;
+    width: 50rem;
+    background-color: var(--sundown-orange);
+    border-radius: 50vw;
+    right: -30rem;
+    position: absolute;
+    top: 23.5rem;
+    filter: blur(15px);
+    animation: ball1 ease-in-out infinite alternate 4s;
+  }
+  .animated-ball2 {
+    height: 17rem;
+    width: 24rem;
+    background-color: #fe470a;
+    border-radius: 50vw;
+    right: -13rem;
+    position: absolute;
+    top: 29rem;
+    filter: blur(10px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  .animated-ball3 {
+    height: 16rem;
+    width: 18rem;
+    background-color: #fe530a;
+    border-radius: 50vw;
+    right: -2rem;
+    position: absolute;
+    top: 28.5rem;
+    filter: blur(15px);
+    animation: ball2 linear infinite alternate 3s;
+  }
+  /* #endregion l-Animated-Balls*/
 
-/* #endregion p-Page1*/
-/** ============================================Page2============================================= */
-/** ============================================Page2============================================= */
-/* #region p-Page2 */
-.page2 {
-  overflow-x: hidden;
-}
-/* #region p-moving-text */
-/* =============Moving Text Container============ */
-.moving-text-container {
-  padding: 0.2rem 0;
-}
+  /* #endregion p-Page1*/
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page2 */
+  .page2 {
+    overflow-x: hidden;
+  }
+  /* #region p-moving-text */
+  /* =============Moving Text Container============ */
+  .moving-text-container {
+    padding: 0.2rem 0;
+  }
 
-/* =============Moving Text============ */
-.moving-text {
-  gap: 0.7rem;
-  padding-right: 1rem;
-  animation: moving-text infinite linear 10.4s;
-}
-/* =============Disk before Heading============ */
+  /* =============Moving Text============ */
+  .moving-text {
+    gap: 0.7rem;
+    padding-right: 1rem;
+    animation: moving-text infinite linear 10.4s;
+  }
+  /* =============Disk before Heading============ */
 
-.moving-text .disk {
-  height: 2rem;
-  width: 2rem;
-}
-/* =============Heading============ */
-.moving-text h1 {
-  font-weight: 300;
-  font-size: 3.5rem;
-}
+  .moving-text .disk {
+    height: 2rem;
+    width: 2rem;
+  }
+  /* =============Heading============ */
+  .moving-text h1 {
+    font-weight: 300;
+    font-size: 3.5rem;
+  }
 
-/* #endregion p-moving-text */
+  /* #endregion p-moving-text */
 
-/* #region p-Page2-content */
-.page2-content-container {
-  /* background-color: red; */
-  width: 92%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 6.5rem;
-}
-/* #region l-page2content .left  */
-.page2-content-container .left {
-  width: 100%;
-  max-width: 500px;
-  min-width: 0;
-  margin-top: 4.2rem;
-}
-.page2-content-container .left h1 {
-  font-weight: 300;
-  font-size: calc(2.09rem - 0.08vw);
-  letter-spacing: -0.05rem;
-  /* background-color: red; */
-  /* line-height: 1.03; */
-}
-/* ball1 */
-.page2-content-container .left .page2-animated-ball1 {
-  height: calc(22em - 1vw);
-  width: calc(22rem - 1vw);
-  border-radius: 30rem;
-  filter: blur(30px);
-  background-color: var(--sundown-orange);
-  position: absolute;
-  left: 30%;
-  top: 9rem;
-  z-index: -1;
-  animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
-}
-/* ball 2*/
-.page2-content-container .left .page2-animated-ball2 {
-  height: calc(20rem - 2vh + 2vw);
-  width: calc(20rem - 2vh + 2vw);
-  border-radius: 30rem;
-  filter: blur(5px);
-  background-color: #fe880a;
-  position: absolute;
-  left: 35%;
-  top: 6rem;
-  z-index: -2;
-  animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
-}
+  /* #region p-Page2-content */
+  .page2-content-container {
+    /* background-color: red; */
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 6.5rem;
+  }
+  /* #region l-page2content .left  */
+  .page2-content-container .left {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    margin-top: 4.2rem;
+  }
+  .page2-content-container .left h1 {
+    font-weight: 300;
+    font-size: calc(2.09rem - 0.08vw);
+    letter-spacing: -0.05rem;
+    /* background-color: red; */
+    /* line-height: 1.03; */
+  }
+  /* ball1 */
+  .page2-content-container .left .page2-animated-ball1 {
+    height: calc(22em - 1vw);
+    width: calc(22rem - 1vw);
+    border-radius: 30rem;
+    filter: blur(30px);
+    background-color: var(--sundown-orange);
+    position: absolute;
+    left: 30%;
+    top: 9rem;
+    z-index: -1;
+    animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
+  }
+  /* ball 2*/
+  .page2-content-container .left .page2-animated-ball2 {
+    height: calc(20rem - 2vh + 2vw);
+    width: calc(20rem - 2vh + 2vw);
+    border-radius: 30rem;
+    filter: blur(5px);
+    background-color: #fe880a;
+    position: absolute;
+    left: 35%;
+    top: 6rem;
+    z-index: -2;
+    animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
+  }
 
-/* #endregion l-page2content .left  */
+  /* #endregion l-page2content .left  */
 
-/* #region l-page2content .right  */
-.page2-content-container .right {
-  width: 100%;
-  z-index: 2;
-  margin-right: 2.3rem;
-  max-width: 250px;
-  min-width: 0;
-}
-.page2-content-container .right img {
-  display: block;
-  max-width: 100%;
-  min-width: 0;
-  border-radius: 0.4rem;
-  margin-top: 3.4rem;
-  margin-bottom: 2.2rem;
-  margin-inline: auto;
-}
+  /* #region l-page2content .right  */
+  .page2-content-container .right {
+    width: 100%;
+    z-index: 2;
+    margin-right: 2.3rem;
+    max-width: 250px;
+    min-width: 0;
+  }
+  .page2-content-container .right img {
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    border-radius: 0.4rem;
+    margin-top: 3.4rem;
+    margin-bottom: 2.2rem;
+    margin-inline: auto;
+  }
 
-.page2-content-container .right p {
-  text-justify: right;
-  font-size: 0.92rem;
-  line-height: 1.4;
-  max-width: 250px;
-  padding-inline: 0;
-}
-/* #endregion l-page2content .right  */
+  .page2-content-container .right p {
+    text-justify: right;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    max-width: 250px;
+    padding-inline: 0;
+  }
+  /* #endregion l-page2content .right  */
 
-/* #endregion p-Page2-content */
-/* #endregion p-Page2 */
+  /* #endregion p-Page2-content */
+  /* #endregion p-Page2 */
 
-/* #region p-Page3 */
-/* #endregion p-Page3 */
+  /* #region p-Page3 */
+  /* #endregion p-Page3 */
 }
 /* #endregion g-mobile*/
 
-
 /* #region p-Nav-Menu-Button-Clicks */
 #click:checked ~ .nav-links-hamburger {
-display: flex;
-top: 0;
-transition: all ease 0.5s;
+  display: flex;
+  top: 0;
+  transition: all ease 0.5s;
 }
 
 #click:checked ~ .nav-links-hamburger a {
-display: flex;
+  display: flex;
 }
 #click:checked ~ .nav-links-hamburger-backdrop {
-transition: all ease 0.5s;
-top: 0;
+  transition: all ease 0.5s;
+  top: 0;
 }
 #click:checked ~ .menu-btn .hamburger .line:nth-child(1) {
-transform: rotate(-45deg) translate(-10%, 45%);
-transition: linear 0.3s;
+  transform: rotate(-45deg) translate(-10%, 45%);
+  transition: linear 0.3s;
 }
 
 #click:checked ~ .menu-btn .hamburger .line:nth-child(2) {
-transform: rotate(45deg) translate(-14%, -45%);
-transition: linear 0.3s;
+  transform: rotate(45deg) translate(-14%, -45%);
+  transition: linear 0.3s;
 }
 /* #endregion p-Nav-Menu-Button-Clicks*/
 
@@ -1615,56 +1593,56 @@ transition: linear 0.3s;
 
 /* #region p-Animated-balls Animation  */
 @keyframes ball1 {
-/* orange front */
-from {
-  transform: rotate(2deg);
-}
-to {
-  transform: rotate(-18deg);
-}
+  /* orange front */
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    transform: rotate(-18deg);
+  }
 }
 @keyframes ball2 {
-/* Yello behind */
-from {
-  transform: translate(0, 0);
-}
-to {
-  transform: translate(0%, -25%);
-}
+  /* Yello behind */
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0%, -25%);
+  }
 }
 /* #endregion p-Animated-balls Animation*/
 /* #endregion l-page1 Animations */
 /* #endregion l-page2 Animations */
 /* #region c-Moving-Text Animations*/
 @keyframes moving-text {
-from {
-  transform: translateX(0);
-} /* Start text outside the container */
-to {
-  transform: translateX(-100%);
-} /* Move text all the way to the left */
+  from {
+    transform: translateX(0);
+  } /* Start text outside the container */
+  to {
+    transform: translateX(-100%);
+  } /* Move text all the way to the left */
 }
 /* #endregion p-Moving-Text Animations*/
 /* #region c-Left Animated ball Animation */
 /* ball animation */
 /* red ball front */
 @keyframes page2-animated-ball1-animation {
-from {
-  transform: translate(0%, -5%);
-}
-to {
-  transform: translate(-5%, 0%);
-}
+  from {
+    transform: translate(0%, -5%);
+  }
+  to {
+    transform: translate(-5%, 0%);
+  }
 }
 /* ball2 animation */
 /* orange back ball*/
 @keyframes page2-animated-ball2-animation {
-from {
-  transform: translate(0%, -5%) rotate(-10deg) skew(0deg);
-}
-to {
-  transform: translate(-5%, 15%) rotate(80deg) skew(9deg);
-}
+  from {
+    transform: translate(0%, -5%) rotate(-10deg) skew(-2deg);
+  }
+  to {
+    transform: translate(-5%, 15%) rotate(80deg) skew(9deg);
+  }
 }
 /* #endregion c-Left Animated ball Animation */
 /* #endregion l-page2 Animations */
