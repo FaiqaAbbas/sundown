@@ -1625,7 +1625,7 @@ nav .menu-btn {
     filter: blur(50px);
     background-color: var(--sundown-orange);
     position: absolute;
-    left: 15%;
+    left: 23%;
     top: 10rem;
     z-index: -1;
     animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
@@ -1638,7 +1638,7 @@ nav .menu-btn {
     filter: blur(5px);
     background-color: #fe880a;
     position: absolute;
-    left: 27%;
+    left: 30%;
     top: 6rem;
     z-index: -2;
     animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
@@ -1742,7 +1742,7 @@ nav .menu-btn {
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    height: calc(113vw);
+    height: calc(115vw);
     /* width: calc(23rem + 10vw); */
     width: 98%;
     border-radius: 1rem;
