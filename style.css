@@ -52,7 +52,8 @@ html {
 .container {
   width: 95%;
   /* max-width: 1500px; */
-  margin: calc(1.2rem + 1vw) auto;
+  /* margin: calc(1.2rem + 1vw) auto; */
+  margin:1.9rem auto;
 }
 
 /* #region pResets */
@@ -830,9 +831,6 @@ nav .menu-btn {
   /* #region p-Page3 */
   .page3 {
     /* background-color: blueviolet; */
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
   }
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
@@ -955,13 +953,14 @@ nav .menu-btn {
 @media (481px <= width <= 765px) {
   .container {
     width: 93%;
+
   }
   /* ======NAV BAR===== */
   /** ===============================================Nav Bar============================================= */
   /** ===============================================Nav Bar============================================= */
   /* #region p-NavStyles */
   nav img {
-    width: 8.8rem;
+    width: calc(6rem + 5.8vw);
   }
   nav .nav-links {
     display: none;
@@ -997,6 +996,7 @@ nav .menu-btn {
   }
   /* ======Hamburger Nav Drop Down Menu Links===== */
   nav .nav-links-hamburger a {
+  
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -1020,12 +1020,12 @@ nav .menu-btn {
   nav .menu-btn {
     z-index: 2;
     background-color: #efeae3;
-    font-size: 1.4rem;
+    font-size: calc(1rem + 0.4vw);
     display: flex;
     cursor: pointer;
     align-items: center;
     color: rgb(47, 45, 45);
-    padding: 0.6em 1.25em;
+    padding: calc(0.3em + 1vw) calc(1em + 1.1vw);
     border: 1px solid rgba(128, 128, 128, 0.451);
     border-radius: 3rem;
   }
@@ -1034,7 +1034,7 @@ nav .menu-btn {
   nav .menu-btn .hamburger {
     display: flex;
     align-items: center;
-    gap: 0.45em;
+    gap: 0.55em;
   }
   /* ======Hamburger Lines===== */
   nav .menu-btn .hamburger .line {
@@ -1073,17 +1073,16 @@ nav .menu-btn {
   /* ======Hero Wrapper===== */
   .hero {
     flex-direction: column-reverse;
-    padding-top: 3.2rem;
+    padding-top: calc(3rem + 1vw);
     padding-bottom: 2.8rem;
-    gap: 3.8rem;
+    gap: 3.35rem;
   }
   /* ======Hero Left Text===== */
   .hero .left {
-    font-size: 1.32rem;
+    font-size: calc(0.925rem + 1vw);
     align-self: flex-start;
     width: 100%;
     max-width: 280px;
-    /* letter-spacing: -0.1rem; */
     line-height: 1.03;
     padding-bottom: 0.7rem;
   }
@@ -1092,9 +1091,9 @@ nav .menu-btn {
     width: 100%;
     justify-self: flex-start;
     align-self: flex-end;
-    font-size: 6.7rem;
-    letter-spacing: -0.24rem;
-    padding-right: 0rem;
+    font-size: calc(5rem + 3.2vw);
+    letter-spacing: -0.2rem;
+    padding-right: 0;
   }
   /* #endregion l-Hero */
   /** ============================================Animated-Balls============================================= */
@@ -1245,6 +1244,125 @@ nav .menu-btn {
 
   /* #endregion p-Page2-content */
   /* #endregion p-Page2 */
+  /** ============================================Page2============================================= */
+  /** ============================================Page2============================================= */
+  /* #region p-Page3 */
+  .page3 {
+    /* background-color: blueviolet; */
+  }
+  /** ==============================================featured projects heading=========================================== */
+  /** ==============================================featured projects heading=========================================== */
+
+  /* #region p-featured-projects-heading */
+  .featured-projects-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    padding-bottom: calc(1rem + 0.9vw);
+    /* background-color:pink; */
+  }
+  .featured-projects-heading h6 {
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    font-family: "Neuehaasdisplay roman", sans-serif;
+    font-size: calc(0.712rem + 0.152vw);
+    font-weight: 200;
+    line-height: 1.2;
+  }
+  .featured-projects-heading .red-dot {
+    background-color: var(--sundown-orange);
+    border-radius: 100vw;
+    width: calc(0.33rem + 0.3vw);
+    height: calc(0.33rem + 0.3vw);
+  }
+  /* #endregion p-featured-projects-heading */
+
+  /** ==============================================featured projects list container=========================================== */
+  /** ==============================================featured projects list container=========================================== */
+
+  /* #region p-featured-projects-list container*/
+  /** ================list container================= */
+  .featured-projects-list-container {
+    /* background-color: pink; */
+    padding-bottom: 12rem;
+  }
+  /**==========================================list====================== */
+  .featured-projects-list {
+    /* background-color: #ff9831; */
+    grid-column-gap: calc(0.4rem + 1vw);
+    grid-row-gap: 1em;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding: 0 calc(1.5em + 1vw);
+    display: grid;
+  }
+  .video-on-hover {
+    display: none;
+  }
+  /** ===================================list project========================== */
+  /* #region l-list-project */
+  .featured-projects-list .project {
+    border-bottom: none;
+    overflow: hidden;
+  }
+
+  .featured-projects-list .project video {
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    height: calc(55vw);
+    /* width: calc(23rem + 10vw); */
+    width: 98%;
+    border-radius: 1rem;
+  }
+  .featured-projects-list .project a {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.4rem + 0.2vw);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0;
+    padding: 1.2rem 0;
+  }
+  /** ============================left========================== */
+  /* #region  left */
+  .featured-projects-list .project a h2 {
+    font-size: calc(1.28rem + 1.82vw);
+  }
+
+  /** ============================backdrop========================== */
+  .featured-projects-list .project .backdrop {
+    display: none;
+  }
+
+  /** featured visual  */
+  /* #region l-featured visual */
+
+  /* #endregion l-featured visual */
+
+  /* #endregion left */
+  /** ==========================right===================== */
+  /* #region  right*/
+
+  .featured-projects-list .project a .brand {
+    text-align: left;
+    padding-right: 0rem;
+  }
+  .featured-projects-list .project a .brand .name {
+    font-size: calc(0.6rem + 0.71vw);
+  }
+
+  .featured-projects-list .project a .brand .category {
+    font-size: calc(0.6rem + 0.63vw);
+  }
+  /* #endregion right*/
+
+  /* #endregion l-list-project */
+
+  /* #endregion p-featured-projects-list */
+  /* #endregion p-Page3 */
 }
 
 /* #endregion g-Tablets/Phablets */
@@ -1501,26 +1619,26 @@ nav .menu-btn {
   }
   /* ball1 */
   .page2-content-container .left .page2-animated-ball1 {
-    height: calc(22em - 1vw);
-    width: calc(22rem - 1vw);
+    height: calc(20rem - 2vh );
+    width: calc(20rem - 2vh);
     border-radius: 30rem;
-    filter: blur(30px);
+    filter: blur(50px);
     background-color: var(--sundown-orange);
     position: absolute;
-    left: 30%;
-    top: 9rem;
+    left: 15%;
+    top: 10rem;
     z-index: -1;
     animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
   }
   /* ball 2*/
   .page2-content-container .left .page2-animated-ball2 {
-    height: calc(20rem - 2vh + 2vw);
-    width: calc(20rem - 2vh + 2vw);
+    height: calc(19rem - 2vh);
+    width: calc(19rem - 2vh);
     border-radius: 30rem;
     filter: blur(5px);
     background-color: #fe880a;
     position: absolute;
-    left: 35%;
+    left: 27%;
     top: 6rem;
     z-index: -2;
     animation: page2-animated-ball2-animation 3s ease-in-out infinite alternate;
@@ -1559,6 +1677,121 @@ nav .menu-btn {
   /* #endregion p-Page2 */
 
   /* #region p-Page3 */
+  .page3 {
+    /* background-color: blueviolet; */
+  }
+  /** ==============================================featured projects heading=========================================== */
+  /** ==============================================featured projects heading=========================================== */
+
+  /* #region p-featured-projects-heading */
+  .featured-projects-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    padding-bottom: calc(1rem + 0.9vw);
+    /* background-color:pink; */
+  }
+  .featured-projects-heading h6 {
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    font-family: "Neuehaasdisplay roman", sans-serif;
+    font-size: calc(0.85rem + 0.152vw);
+    font-weight: 200;
+    line-height: 1.2;
+  }
+  .featured-projects-heading .red-dot {
+    background-color: var(--sundown-orange);
+    border-radius: 100vw;
+    width: calc(0.33rem + 0.3vw);
+    height: calc(0.33rem + 0.3vw);
+  }
+  /* #endregion p-featured-projects-heading */
+
+  /** ==============================================featured projects list container=========================================== */
+  /** ==============================================featured projects list container=========================================== */
+
+  /* #region p-featured-projects-list container*/
+  /** ================list container================= */
+  .featured-projects-list-container {
+    /* background-color: pink; */
+    padding-bottom: 12rem;
+  }
+  /**==========================================list====================== */
+  .featured-projects-list {
+    /* background-color: #ff9831; */
+    grid-column-gap: calc(0.4rem + 1vw);
+    grid-row-gap: 1em;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    padding: 0 calc(0.79em + 1vw);
+    display: grid;
+  }
+  .video-on-hover {
+    display: none;
+  }
+  /** ===================================list project========================== */
+  /* #region l-list-project */
+  .featured-projects-list .project {
+    border-bottom: none;
+    overflow: hidden;
+  }
+
+  .featured-projects-list .project video {
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    height: calc(69vh);
+    /* width: calc(23rem + 10vw); */
+    width: 98%;
+    border-radius: 1rem;
+  }
+  .featured-projects-list .project a {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.4rem + 0.2vw);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0;
+    padding: 1.7rem 0;
+  }
+  /** ============================left========================== */
+  /* #region  left */
+  .featured-projects-list .project a h2 {
+    font-size: calc(1.5rem + 1.83vw);
+  }
+
+  /** ============================backdrop========================== */
+  .featured-projects-list .project .backdrop {
+    display: none;
+  }
+
+  /** featured visual  */
+  /* #region l-featured visual */
+
+  /* #endregion l-featured visual */
+
+  /* #endregion left */
+  /** ==========================right===================== */
+  /* #region  right*/
+
+  .featured-projects-list .project a .brand {
+    text-align: left;
+    padding-right: 0rem;
+  }
+  .featured-projects-list .project a .brand .name {
+    font-size: calc(0.7rem + 0.71vw);
+  }
+
+  .featured-projects-list .project a .brand .category {
+    font-size: calc(0.7rem + 0.63vw);
+  }
+  /* #endregion right*/
+
+  /* #endregion l-list-project */
+
+  /* #endregion p-featured-projects-list */
   /* #endregion p-Page3 */
 }
 /* #endregion g-mobile*/

@@ -1,10 +1,10 @@
 //  locomotive library
-document.addEventListener("DOMContentLoaded", function () {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#wrapper"),
-    smooth: true,
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const scroll = new LocomotiveScroll({
+//     el: document.querySelector("#wrapper"),
+//     smooth: true,
+//   });
+// });
 
 // Function to preload video and image
 function preloadMedia(videoSrc, imageSrc) {
