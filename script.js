@@ -36,10 +36,9 @@ projects.forEach(function (project) {
   var videoSrc = project.getAttribute("video-src");
   var imageSrc = project.getAttribute("image-src");
   preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
+  project.querySelector('video').src=preloadedMediaByProject[projectName].video.src;
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
-
-    // project_video.style.display='block';
     var preloadedMedia = preloadedMediaByProject[projectName];
     project_video.src = preloadedMedia.video.src;
     project_video.poster = preloadedMedia.image.src;
