@@ -1742,7 +1742,7 @@ nav .menu-btn {
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    height: calc(69vh);
+    height: calc(110vw);
     /* width: calc(23rem + 10vw); */
     width: 98%;
     border-radius: 1rem;
