@@ -1742,7 +1742,7 @@ nav .menu-btn {
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    height: calc(115vw);
+    height: calc(113vw);
     /* width: calc(23rem + 10vw); */
     width: 98%;
     border-radius: 1rem;
@@ -1758,7 +1758,7 @@ nav .menu-btn {
   }
   /** ============================left========================== */
   /* #region  left */
-  .featured-projects-list .project a h2 {
+  .featured-projects-list .project a h2 {  
     font-weight: 300;
     font-size: calc(1.5rem + 1.83vw);
   }
