@@ -514,7 +514,7 @@ nav .menu-btn {
 /** ================list container================= */
 .featured-projects-list-container {
   /* background-color: pink; */
-  padding-bottom: 12rem;
+  padding-bottom: calc(1.7rem + 2.5vw);
 }
 /**==========================================list====================== */
 .featured-projects-list {
@@ -546,7 +546,7 @@ nav .menu-btn {
 .featured-projects-list .project a {
   width: 95%;
   margin: 0 auto;
-  padding: 1.9rem 0;
+  padding: calc(1.3rem + 0.57vw) 0;
   /* background-color: blue; */
   display: flex;
   align-items: center;
@@ -614,6 +614,21 @@ nav .menu-btn {
 /* #endregion l-list-project */
 
 /* #endregion p-featured-projects-list */
+.all-projects-button{
+  display: inline-flex;
+  align-items: center;
+  gap:0.6rem;
+  margin:0 calc(1rem + 2vw);
+  border:1px solid rgba(0, 0, 0, .2);
+  border-radius:5rem;
+  padding:0.85em 1.6em; 
+}
+.all-projects-button .text{
+  font-family: 'NeuehaasDisplay roman';
+  font-size: calc(0.56rem + 0.5vw);
+  font-weight: 300;
+  color:var(--black)
+}
 /* #endregion p-Page3 */
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
@@ -867,7 +882,7 @@ nav .menu-btn {
   /** ================list container================= */
   .featured-projects-list-container {
     /* background-color: pink; */
-    padding-bottom: 12rem;
+    padding-bottom: 1rem;
   }
   /**==========================================list====================== */
   .featured-projects-list {
@@ -943,6 +958,15 @@ nav .menu-btn {
   /* #endregion l-list-project */
 
   /* #endregion p-featured-projects-list */
+  .all-projects-button{
+    margin:0 calc(1rem + 2vw);
+    gap:0.6rem;
+    padding:0.85em 1.65em; 
+  }
+  .all-projects-button .text{
+    font-size: calc(01rem + 0.2vw);
+   
+  }
   /* #endregion p-Page3 */
 }
 /* #endregion g-Laptops */
@@ -1285,7 +1309,7 @@ nav .menu-btn {
   /** ================list container================= */
   .featured-projects-list-container {
     /* background-color: pink; */
-    padding-bottom: 12rem;
+    padding-bottom: 3.5rem;
   }
   /**==========================================list====================== */
   .featured-projects-list {
@@ -1312,7 +1336,7 @@ nav .menu-btn {
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    height: calc(55vw);
+    height: calc(53vw);
     /* width: calc(23rem + 10vw); */
     width: 98%;
     border-radius: 1rem;
@@ -1362,7 +1386,17 @@ nav .menu-btn {
   /* #endregion l-list-project */
 
   /* #endregion p-featured-projects-list */
+  .all-projects-button{
+    margin:0 calc(1rem + 3vw);
+    gap:0.6rem;
+    padding:0.8em 1.65em; 
+  }
+  .all-projects-button .text{
+    font-size: calc(1rem + 0.25vw);
+   
+  }
   /* #endregion p-Page3 */
+
 }
 
 /* #endregion g-Tablets/Phablets */
@@ -1715,7 +1749,7 @@ nav .menu-btn {
   /** ================list container================= */
   .featured-projects-list-container {
     /* background-color: pink; */
-    padding-bottom: 12rem;
+    padding-bottom: 1.3rem;
   }
   /**==========================================list====================== */
   .featured-projects-list {
@@ -1746,21 +1780,22 @@ nav .menu-btn {
     /* width: calc(23rem + 10vw); */
     width: 98%;
     border-radius: 1rem;
+    
   }
   .featured-projects-list .project a {
     display: flex;
     flex-direction: column;
-    gap: calc(0.4rem + 0.2vw);
+    gap: calc(0.3rem);
     align-items: flex-start;
     justify-content: center;
     margin: 0 0;
-    padding: 1.7rem 0;
+    padding: 1.5rem 0;
   }
   /** ============================left========================== */
   /* #region  left */
   .featured-projects-list .project a h2 {  
     font-weight: 300;
-    font-size: calc(1.5rem + 1.83vw);
+    font-size: calc(1.45rem + 1.8vw);
   }
 
   /** ============================backdrop========================== */
@@ -1782,17 +1817,27 @@ nav .menu-btn {
     padding-right: 0rem;
   }
   .featured-projects-list .project a .brand .name {
-    font-size: calc(0.7rem + 0.71vw);
+    font-size: calc(0.7rem + 0.59vw);
   }
 
   .featured-projects-list .project a .brand .category {
-    font-size: calc(0.7rem + 0.63vw);
+    font-size: calc(0.7rem + 0.59vw);
   }
   /* #endregion right*/
 
   /* #endregion l-list-project */
 
   /* #endregion p-featured-projects-list */
+  .all-projects-button{
+    margin:0 1rem;
+    margin-bottom: 12rem;
+    gap:0.6rem;
+    padding:0.8em 1.65em; 
+  }
+  .all-projects-button .text{
+    font-size: calc(1rem + 0.25vw);
+   
+  }
   /* #endregion p-Page3 */
 }
 /* #endregion g-mobile*/
