@@ -541,6 +541,7 @@ nav .menu-btn {
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 }
 .featured-projects-list .project video {
+  pointer-events: none;
   display: none;
 }
 .featured-projects-list .project a {
