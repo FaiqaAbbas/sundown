@@ -1,10 +1,10 @@
 //  locomotive library
-// document.addEventListener("DOMContentLoaded", function () {
-//   const scroll = new LocomotiveScroll({
-//     el: document.querySelector("#wrapper"),
-//     smooth: true,
-//   });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("#wrapper"),
+    smooth: true,
+  });
+});
 
 // Function to preload video and image
 function preloadMedia(videoSrc, imageSrc) {
@@ -55,3 +55,10 @@ projects.forEach(function (project) {
   });
 });
 
+// for page 4
+var a=document.querySelectorAll(".page4 .wrapper .left .three a");
+// var before=document.querySelector()
+// console.log(a);
+// a.forEach(text,addEventListener('click',function(){
+  
+// }))

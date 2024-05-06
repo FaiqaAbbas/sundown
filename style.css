@@ -630,6 +630,76 @@ nav .menu-btn {
   font-weight: 300;
   color:var(--black)
 }
+/* #region p-Page4 */
+.page4{
+  width: 98.5%;
+  height: 100vh;
+  /* margin-top:8.8rem; */
+  background-color: var(--off-white);
+} 
+.page4 .wrapper{
+  height: 45rem;
+  display:flex;
+  align-items: start;
+  justify-content: space-between;
+  background-color: var(--black);
+  border-radius: 1.5rem;
+}
+/* #region l-left */
+.page4 .left{
+  margin-top:9.4rem;
+  margin-lefT:calc(2rem + 2vw);
+  /* background-color: pink; */
+  width: 40%;
+  /* color:var(--off-white);*/
+  padding-left:calc(1.8rem + 2vw);
+  padding-right:calc(3.7rem + 4vw);
+}
+.page4 .three{
+  border-left:3px solid grey;
+  margin-bottom:2.37rem;
+}
+.page4 .left a{ 
+  color:#efeae355;
+  line-height: 1;
+  text-align: start;
+  display:block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size:calc(2.2rem + 2.5vw);
+  padding-left:calc(0.9rem);
+  
+}
+.page4 .left a:hover:nth-child(1){
+  border-left:3px solid red;
+  padding-left:1rem;
+}
+
+.page4 .left .paragraph{
+    font-family: 'Neuehaasdisplay roman', sans-serif;
+    font-size: 0.99rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+ /* #endregion l-left */
+
+ /* #region l-right */
+ .page4 .right{
+  width: 55%;
+  height: 100%;
+
+ }
+ .page4 .right{
+  background-image:url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-800.jpg'); 
+  background-size:cover;
+  background-position: 40%;
+  border-radius:1.5rem;
+
+}
+ /* #endregion l-right */
+
+/* #endregion p-Page4 */
+
 /* #endregion p-Page3 */
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
@@ -1660,15 +1730,15 @@ nav .menu-btn {
     filter: blur(80px);
     background-color: var(--sundown-orange);
     position: absolute;
-    left: 25%;
+    left: 27%;
     top: 10rem;
     z-index: -1;
     animation: page2-animated-ball1-animation 3s ease-in-out infinite alternate;
   }
   /* ball 2*/
   .page2-content-container .left .page2-animated-ball2 {
-    height: calc(22rem - 2vh);
-    width: calc(22rem - 2vh);
+    height: calc(20rem - 2vh);
+    width: calc(20rem - 2vh);
     border-radius: 30rem;
     filter: blur(5px);
     background-color: #fe880a;
