@@ -41,8 +41,10 @@ projects.forEach(function (project) {
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
     var preloadedMedia = preloadedMediaByProject[projectName];
-    project_video.src = preloadedMedia.video.src;
-    project_video.poster = preloadedMedia.image.src;
+    if(project_video.src==" "){
+      project_video.src = preloadedMedia.video.src;
+      project_video.poster = preloadedMedia.image.src;
+    }
   });
 
   // Clear video source and poster on mouse leave
