@@ -630,7 +630,13 @@ nav .menu-btn {
   font-weight: 300;
   color:var(--black)
 }
+/* #endregion p-Page3 */
+/** ============================================Page4============================================= */
+/** ============================================Page4============================================= */
 /* #region p-Page4 */
+input[type='radio']{
+  display: none;
+}
 .page4{
   width: 98.5%;
   height: 100vh;
@@ -641,43 +647,47 @@ nav .menu-btn {
   height: 45rem;
   display:flex;
   align-items: start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: var(--black);
   border-radius: 1.5rem;
 }
 /* #region l-left */
 .page4 .left{
   margin-top:9.4rem;
-  margin-lefT:calc(2rem + 2vw);
+  margin-inline: auto;
+  /* margin-lefT:calc(2rem + 2vw); */
   /* background-color: pink; */
-  width: 40%;
-  /* color:var(--off-white);*/
-  padding-left:calc(1.8rem + 2vw);
-  padding-right:calc(3.7rem + 4vw);
+  width: 45%;
+  /* padding-inline:calc(3rem + 6vw); */
+
+  max-width: 303px;
+  /* margin-left:calc(4.7rem + 2.8vw) ; */
+  
 }
 .page4 .three{
-  border-left:3px solid grey;
-  margin-bottom:2.37rem;
+  margin-bottom:2.3rem;
 }
-.page4 .left a{ 
+.page4 .left a label{ 
   color:#efeae355;
   line-height: 1;
   text-align: start;
   display:block;
   cursor: pointer;
   text-decoration: none;
-  font-size:calc(2.2rem + 2.5vw);
+  font-size:calc(3.1rem + 1.4vw);
   padding-left:calc(0.9rem);
-  
-}
-.page4 .left a:hover:nth-child(1){
-  border-left:3px solid red;
+  border-left:3px solid #efeae355;
   padding-left:1rem;
+}
+#radio:checked ~ a label{
+  border-left:3px solid var(--sundown-orange);
+  color:var(--off-white);
 }
 
 .page4 .left .paragraph{
-    font-family: 'Neuehaasdisplay roman', sans-serif;
-    font-size: 0.99rem;
+  color:var(--off-white);
+  font-family: 'Neuehaasdisplay roman', sans-serif;
+    font-size: calc(0.5rem + 0.6vw);
     font-weight: 400;
     line-height: 1.4;
 }
@@ -692,7 +702,6 @@ nav .menu-btn {
  .page4 .right{
   background-image:url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-800.jpg'); 
   background-size:cover;
-  background-position: 40%;
   border-radius:1.5rem;
 
 }
@@ -700,7 +709,7 @@ nav .menu-btn {
 
 /* #endregion p-Page4 */
 
-/* #endregion p-Page3 */
+
 /* #endregion pResets */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
