@@ -32,12 +32,13 @@ var projects = document.querySelectorAll(".featured-projects-list .project");
 var preloadedMediaByProject = {};
 
 projects.forEach(function (project) {
-  var project_video_tab=querySelector('video');
   var projectName = project.classList[1];
+  var project_video_tab=project.querySelector('video');
   var videoSrc = project.getAttribute("video-src");
   var imageSrc = project.getAttribute("image-src");
   preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
   project_video_tab.src=preloadedMediaByProject[projectName].video.src;
+  console.log(project_video_tab)
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
     var preloadedMedia = preloadedMediaByProject[projectName];
