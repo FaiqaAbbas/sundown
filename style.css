@@ -1530,7 +1530,57 @@ input[type='radio']{
    
   }
   /* #endregion p-Page3 */
+/* #region p-Page4 */
 
+.page4{
+ 
+}
+
+.page4 .wrapper{
+flex-direction: column;
+}
+/* #region l-left */
+
+.page4 .left{
+  width: 100%;
+  max-width: 700px;
+  padding-inline:12vw;
+  /* margin-left: (cla7.4vw; */
+}
+
+.page4 .left .three{
+  margin-bottom:3rem;
+}
+.page4 .left .three label{ 
+  
+  font-size:calc(2.24rem + 2vw);
+  padding-left:calc(0.7rem + 0.1vw);
+  
+}
+
+.page4 .left .paragraph{
+  font-size: calc(0.84rem + 0.13vw);
+  font-weight: 400;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 700px;
+  /* background-color: pink; */
+}
+ /* #endregion l-left */
+
+ /* #region l-right */
+ .page4 .wrapper .right{
+  width: 100%;
+  }
+  .page4 .wrapper .right img{
+
+    width: 100%;
+  }
+
+  
+ /* #endregion l-right */
+
+/* #endregion p-Page4 */
 }
 
 /* #endregion g-Tablets/Phablets */
@@ -1973,6 +2023,57 @@ input[type='radio']{
    
   }
   /* #endregion p-Page3 */
+  * #region p-Page4 */
+
+  .page4{
+   
+  }
+  
+  .page4 .wrapper{
+  flex-direction: column;
+  }
+  /* #region l-left */
+  
+  .page4 .left{
+    width: 100%;
+    max-width: 700px;
+    padding-inline:12vw;
+    /* margin-left: (cla7.4vw; */
+  }
+  
+  .page4 .left .three{
+    margin-bottom:3rem;
+  }
+  .page4 .left .three label{ 
+    
+    font-size:calc(2.24rem + 2vw);
+    padding-left:calc(0.7rem + 0.1vw);
+    
+  }
+  
+  .page4 .left .paragraph{
+    font-size: calc(0.84rem + 0.13vw);
+    font-weight: 400;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 700px;
+    /* background-color: pink; */
+  }
+   /* #endregion l-left */
+  
+   /* #region l-right */
+   .page4 .wrapper .right{
+    width: 100%;
+    }
+    .page4 .wrapper .right img{
+  
+      width: 100%;
+    }
+  
+    
+   /* #endregion l-right */
+  
+  /* #endregion p-Page4 */
 }
 /* #endregion g-mobile*/
 
