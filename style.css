@@ -637,14 +637,14 @@ nav .menu-btn {
 
 .page4{
   background-color: var(--off-white);
-  width: 98.7%;
+  width: 98.8%;
+  padding-inline:0.3rem;
   height: 100vh;
 }
 input[type='radio']{
   display: none;
 } 
 .page4 .wrapper{
-  height: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--black);
@@ -655,11 +655,13 @@ input[type='radio']{
 .page4 .left{
   margin-inline:auto;
   align-self: center;
-  /* width:26.5%; */
+  padding:6vw 0;
+  max-width:250px;
 }
 
 .page4 .left .three{
-  margin-bottom:2.4rem;
+  /* background-color: #ffcb83; */
+  margin-bottom:4.2rem;
 }
 .page4 .left .three label{ 
   color:#efeae355;
@@ -668,8 +670,8 @@ input[type='radio']{
   display:block;
   cursor: pointer;
   text-decoration: none;
-  font-size:calc(3rem + 1.45vw);
-  padding-left:calc(0.9rem);
+  font-size:calc(2rem + 2vw);
+  padding-left:calc(0.8rem + 0.1vw);
   border-left:3px solid #efeae355;
   
 }
@@ -682,10 +684,12 @@ input[type='radio']{
 .page4 .left .paragraph{
   color:var(--off-white);
   font-family: 'Neuehaasdisplay roman', sans-serif;
-  font-size: calc(0.88rem + 0.12vw);
+  font-size: calc(0.846rem + 0.13vw);
   font-weight: 400;
   line-height: 1.4;
-  max-width:303px;
+  width:calc(259px + 3vw);
+  max-width:250px;
+  margin-top:-1.5rem;
   /* background-color: pink; */
 }
  /* #endregion l-left */
@@ -696,11 +700,11 @@ input[type='radio']{
    justify-self:right;
   }
   .page4 .wrapper .right img{
-    width: 100%;
-    height: 100%;
+    height:100%;
+    width:100%;
     object-fit: cover;
     border-radius: 1.3rem;
-    
+    overflow: hidden;
   }
 
   
@@ -1047,6 +1051,57 @@ input[type='radio']{
    
   }
   /* #endregion p-Page3 */
+/** ============================================Page4============================================= */
+/** ============================================Page4============================================= */
+/* #region p-Page4 */
+
+.page4{
+ 
+}
+
+.page4 .wrapper{
+
+}
+/* #region l-left */
+
+.page4 .left{
+  /* margin-left: (cla7.4vw; */
+}
+
+.page4 .left .three{
+  margin-bottom:3rem;
+}
+.page4 .left .three label{ 
+  
+  font-size:calc(2.24rem + 2vw);
+  padding-left:calc(0.7rem + 0.1vw);
+  
+}
+
+.page4 .left .paragraph{
+  font-size: calc(0.84rem + 0.13vw);
+  font-weight: 400;
+  line-height: 1.4;
+  width:calc(215px + 4vw);
+  max-width:245px;
+  /* background-color: pink; */
+}
+ /* #endregion l-left */
+
+ /* #region l-right */
+ .page4 .wrapper .right{
+ 
+  }
+  .page4 .wrapper .right img{
+
+    
+  }
+
+  
+ /* #endregion l-right */
+
+/* #endregion p-Page4 */
+
 }
 /* #endregion g-Laptops */
 
