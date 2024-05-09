@@ -56,3 +56,9 @@ projects.forEach(function (project) {
   });
 });
 
+// Page4
+// var design=document.querySelector("#design");
+// var design_label=document.querySelector("#design + label");
+// design_label.style.borderLeftColor="#fe330a";
+// design_label.style.color="#efeae3";
+

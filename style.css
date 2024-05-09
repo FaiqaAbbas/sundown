@@ -636,70 +636,74 @@ nav .menu-btn {
 /* #region p-Page4 */
 
 .page4{
-  width: 98.4%;
-  height: 100vh;
-  /* margin-top:8.8rem; */
   background-color: var(--off-white);
+  width: 98.7%;
+  height: 100vh;
+}
+input[type='radio']{
+  display: none;
 } 
 .page4 .wrapper{
-  height: 45rem;
-  display:flex;
-  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--black);
   border-radius: 1.5rem;
 }
 /* #region l-left */
+
 .page4 .left{
-  margin-left: auto;
-  /* margin-top:9.4rem; */
-  background-color: rgb(80, 41, 48);
-  width: 35%;
-  /* max-width: 310px; */
-  padding-left:calc(2.45rem + 1vw);
+  margin-inline:auto;
+  align-self: center;
+  /* width:26.5%; */
 }
-.page4 .three{
+
+.page4 .left .three{
   margin-bottom:2.4rem;
 }
-.page4 .left a h1{ 
+.page4 .left .three label{ 
   color:#efeae355;
   line-height: 1;
   text-align: start;
   display:block;
   cursor: pointer;
   text-decoration: none;
-  font-size:calc(3.1rem + 1.3vw);
+  font-size:calc(3rem + 1.45vw);
   padding-left:calc(0.9rem);
   border-left:3px solid #efeae355;
-  padding-left:1rem;
+  
+}
+
+.page4 .left .three .heading:checked + label{
+  color:var(--off-white);
+  border-left:3px solid var(--sundown-orange);
 }
 
 .page4 .left .paragraph{
   color:var(--off-white);
   font-family: 'Neuehaasdisplay roman', sans-serif;
-  font-size: calc(0.74rem + 0.3vw);
+  font-size: calc(0.88rem + 0.12vw);
   font-weight: 400;
   line-height: 1.4;
-  max-width: 308px;
+  max-width:303px;
+  /* background-color: pink; */
 }
  /* #endregion l-left */
 
  /* #region l-right */
- .page4 .right{
-  /* margin-left: 12rem; */
-   background-color: lavender;
-   width: 55%;
-   height: 100%;
-   margin-left:auto;
-   
+ .page4 .wrapper .right{
+   width: 55.1%; 
+   justify-self:right;
   }
-  .page4 .right img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.4rem;
-  
+  .page4 .wrapper .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.3rem;
+    
+  }
 
-}
+  
  /* #endregion l-right */
 
 /* #endregion p-Page4 */
