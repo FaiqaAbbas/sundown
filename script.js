@@ -24,42 +24,35 @@ function preloadMedia(videoSrc, imageSrc) {
 
 
 
+
 // Pre load all videos related to project lists
 var project_video = document.querySelector(".video-on-hover");
 var project_list = document.querySelector(".featured-projects-list");
 var projects = document.querySelectorAll(".featured-projects-list .project");
+var project_video_tab=document.querySelector('.featured-projects-list .project video');
 // Object to store preloaded media URLs for each project
 var preloadedMediaByProject = {};
-
 projects.forEach(function (project) {
   var projectName = project.classList[1];
-  var project_video_tab=project.querySelector('video');
   var videoSrc = project.getAttribute("video-src");
   var imageSrc = project.getAttribute("image-src");
   preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
   project_video_tab.src=preloadedMediaByProject[projectName].video.src;
-  console.log(project_video_tab)
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
     var preloadedMedia = preloadedMediaByProject[projectName];
+    project_video.src = preloadedMedia.video.src;
+    project_video.poster = preloadedMedia.image.src;
     if(project_video.src==" "){
       project_video.src = preloadedMedia.video.src;
       project_video.poster = preloadedMedia.image.src;
     }
   });
-
   // Clear video source and poster on mouse leave
   project.addEventListener("mouseleave", function () {
-    project_video.src = "";
-    project_video.poster = "";
+    project_video.src = " ";
+    project_video.poster = " ";
     // project_video.style.display='none';
   });
 });
 
-// for page 4
-var a=document.querySelectorAll(".page4 .wrapper .left .three a");
-// var before=document.querySelector()
-// console.log(a);
-// a.forEach(text,addEventListener('click',function(){
-  
-// }))
