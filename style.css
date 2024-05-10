@@ -2050,7 +2050,7 @@ flex-direction: column;
   .page4 .left{
     width: 100%;
     max-width: 900px;
-    padding-inline:5.4vw;
+    padding-inline:5vw;
     /* margin-left: (cla7.4vw; */
   }
   
@@ -2066,7 +2066,7 @@ flex-direction: column;
   }
   
   .page4 .left .paragraph{
-    font-size: calc(0.898rem + 0.13vw);
+    font-size: calc(0.93rem + 0.13vw);
     font-weight: 400;
     line-height: 1.4;
     width: 100%;
