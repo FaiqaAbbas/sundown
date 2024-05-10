@@ -2042,6 +2042,7 @@ flex-direction: column;
   
   .page4 .wrapper{
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 1.1rem;
   }
   /* #region l-left */
@@ -2070,7 +2071,7 @@ flex-direction: column;
     line-height: 1.4;
     width: 100%;
     color:var(--off-white);
-    padding-bottom: 11vh;
+    margin-bottom: 11vh;
     /* max-width: px; */
     background-color: pink;
   }
