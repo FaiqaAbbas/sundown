@@ -2060,19 +2060,19 @@ flex-direction: column;
   }
   .page4 .left .three label{ 
     
-    font-size:calc(2.2rem + 2vw);
+    font-size:calc(2.4rem + 2vw);
     padding-left:calc(0.7rem + 0.6vw);
     
   }
   
   .page4 .left .paragraph{
-    font-size: calc(0.93rem + 0.13vw);
+    font-size: calc(0.915rem + 0.13vw);
     font-weight: 400;
     line-height: 1.4;
     width: 100%;
     color:var(--off-white);
     margin-bottom: 11vh;
-    background-color: rgb(255, 0, 43);
+    background-color: rgb(15, 10, 11);
   }
    /* #endregion l-left */
   
