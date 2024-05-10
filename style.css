@@ -2026,7 +2026,7 @@ flex-direction: column;
   /* #endregion p-featured-projects-list */
   .all-projects-button{
     margin:0 1rem;
-    margin-bottom: 12rem;
+    margin-bottom: 3.5rem;
     gap:0.6rem;
     padding:0.6em 1.65em; 
   }
@@ -2044,7 +2044,6 @@ flex-direction: column;
   flex-direction: column;
   justify-content: space-between;
   gap:11vh;
-  background-color: pink;
   border-radius: 1.1rem;
   }
   /* #region l-left */
@@ -2074,7 +2073,6 @@ flex-direction: column;
     width: 100%;
     height: 155px;
     color:var(--off-white);
-    background-color: rgb(15, 10, 11);
   }
    /* #endregion l-left */
   
