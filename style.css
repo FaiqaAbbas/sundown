@@ -2072,8 +2072,7 @@ flex-direction: column;
     width: 100%;
     color:var(--off-white);
     margin-bottom: 11vh;
-    /* max-width: px; */
-    background-color: pink;
+    background-color: rgb(255, 0, 43);
   }
    /* #endregion l-left */
   
