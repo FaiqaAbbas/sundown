@@ -1560,7 +1560,7 @@ input[type='radio']{
 .page4 .left{
   /* background-color: #eb8602; */
   width: 82%;
-  max-width:calc(350px);
+  max-width:calc(330px);
   padding-top: 3.4rem;
   padding-bottom: 0;
 }
@@ -1575,7 +1575,7 @@ input[type='radio']{
 }
 
 .page4 .left .paragraph{
-  width:345px;
+  width:335px;
   font-size: calc(0.889rem + 0.13vw);
   font-weight: 400;
   height: 140px;
