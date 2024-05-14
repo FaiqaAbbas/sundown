@@ -1415,7 +1415,8 @@ input[type='radio']{
   /* #region p-Page3 */
   .page3 {
     /* background-color: blueviolet; */
-    padding-bottom: 4.3rem;
+    margin-bottom: 6rem;
+    
   }
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
@@ -1565,7 +1566,7 @@ input[type='radio']{
 
 .page4 .left .three{
   /* background-color: #ffcb83; */
-  margin-bottom: 0rem;
+  margin-bottom: 1.9rem;
 }
 .page4 .left .three label{ 
   font-size:calc(2rem + 1vw);
@@ -1911,6 +1912,7 @@ input[type='radio']{
   /* #region p-Page3 */
   .page3 {
     /* background-color: blueviolet; */
+    margin-bottom:5rem;
   }
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
@@ -2046,7 +2048,7 @@ input[type='radio']{
   flex-direction: column;
   justify-content: space-between;
   gap:11vh;
-  background-color: pink;
+  /* background-color: pink; */
   border-radius: 1.1rem;
   }
   /* #region l-left */
