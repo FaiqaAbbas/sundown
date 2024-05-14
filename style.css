@@ -2031,7 +2031,6 @@ input[type='radio']{
   /* #endregion p-featured-projects-list */
   .all-projects-button{
     margin:0 1rem;
-    margin-bottom: 12rem;
     gap:0.6rem;
     padding:0.6em 1.65em; 
   }
@@ -2040,6 +2039,9 @@ input[type='radio']{
    
   }
   /* #endregion p-Page3 */
+/** ============================================Page4============================================= */
+/** ============================================Page4============================================= */
+
 /* #region p-Page4 */
   .page4{
    padding-bottom: 4vh;
