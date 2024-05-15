@@ -2051,7 +2051,7 @@ input[type='radio']{
   .page4 .wrapper{
   flex-direction: column;
   justify-content: space-between;
-  gap:11vh;
+  gap:7vh;
   /* background-color: pink; */
   border-radius: 1.1rem;
   }
@@ -2066,7 +2066,7 @@ input[type='radio']{
   
   .page4 .left .three{
     margin-bottom:1.5rem;
-    padding-top:3.7rem;
+    padding-top:3.4rem;
   }
   .page4 .left .three label{ 
     font-size:calc(2.25rem + 2vw);
@@ -2079,10 +2079,10 @@ input[type='radio']{
     font-weight: 400;
     line-height: 1.4;
     width: 100%;
-    height: 155px;
+    height: 150px;
     color:var(--off-white);
     max-width: 295px;
-    background-color: rgb(255, 106, 0);
+  /*  background-color: rgb(255, 106, 0); */
   }
    /* #endregion l-left */
   
