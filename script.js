@@ -29,7 +29,7 @@ function preloadMedia(videoSrc, imageSrc) {
 var project_video = document.querySelector(".video-on-hover");
 var project_list = document.querySelector(".featured-projects-list");
 var projects = document.querySelectorAll(".featured-projects-list .project");
-var project_video_tab=document.querySelector('.featured-projects-list .project video');
+// var project_video_tab=document.querySelector('.featured-projects-list .project video');
 // Object to store preloaded media URLs for each project
 var preloadedMediaByProject = {};
 projects.forEach(function (project) {
@@ -37,7 +37,7 @@ projects.forEach(function (project) {
   var videoSrc = project.getAttribute("video-src");
   var imageSrc = project.getAttribute("image-src");
   preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
-  project_video_tab.src=preloadedMediaByProject[projectName].video.src;
+  // project_video_tab.src=preloadedMediaByProject[projectName].video.src;
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
     var preloadedMedia = preloadedMediaByProject[projectName];

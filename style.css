@@ -518,7 +518,7 @@ nav .menu-btn {
   padding-bottom: calc(1.7rem + 2.5vw);
 }
 /**==========================================list====================== */
-.featured-projects-list {
+.featured-projects-list{
   /* display: flex;
   flex-direction: column; */
 }
@@ -2051,7 +2051,7 @@ input[type='radio']{
   .page4 .wrapper{
   flex-direction: column;
   justify-content: space-between;
-  gap:7vh;
+  gap:11vh;
   /* background-color: pink; */
   border-radius: 1.1rem;
   }
@@ -2065,8 +2065,8 @@ input[type='radio']{
   }
   
   .page4 .left .three{
-    margin-bottom:1.9rem;
-    padding-top:3.8rem;
+    margin-bottom:1.5rem;
+    padding-top:3.7rem;
   }
   .page4 .left .three label{ 
     font-size:calc(2.25rem + 2vw);
@@ -2079,10 +2079,10 @@ input[type='radio']{
     font-weight: 400;
     line-height: 1.4;
     width: 100%;
-    height: 150px;
+    height: 155px;
     color:var(--off-white);
     max-width: 295px;
-  /*  background-color: rgb(255, 106, 0); */
+    background-color: rgb(255, 106, 0);
   }
    /* #endregion l-left */
   
