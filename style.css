@@ -2082,7 +2082,7 @@ input[type='radio']{
     height: 155px;
     color:var(--off-white);
     max-width: 295px;
-    background-color: rgb(255, 106, 0);
+    /* background-color: rgb(255, 106, 0); */
   }
    /* #endregion l-left */
   
