@@ -1853,7 +1853,7 @@ input[type='radio']{
   }
   /* ball1 */
   .page2-content-container .left .page2-animated-ball1 {
-    height: calc(200rem - 2vh );
+    height: calc(20rem - 2vh );
     width: calc(20rem - 2vh);
     border-radius: 30rem;
     filter: blur(30px);
