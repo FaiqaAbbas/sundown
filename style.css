@@ -1866,8 +1866,8 @@ input[type='radio']{
   }
   /* ball 2*/
   .page2-content-container .left .page2-animated-ball2 {
-    height: calc(20rem - 2vh);
-    width: calc(20rem - 2vh);
+    height: calc(19rem - 2vh);
+    width: calc(19rem - 2vh);
     border-radius: 30rem;
     filter: blur(5px);
     background-color: #fe880a;
