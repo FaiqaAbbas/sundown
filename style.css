@@ -2051,7 +2051,7 @@ input[type='radio']{
   .page4 .wrapper{
   flex-direction: column;
   justify-content: space-between;
-  gap:6vh;
+  gap:5vh;
   /* background-color: pink; */
   border-radius: 1.1rem;
   }
