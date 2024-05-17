@@ -1723,13 +1723,13 @@ input[type='radio']{
   }
   /* ======Hero Left===== */
   .hero .left {
-    font-size: 1.44rem;
+    font-size: 1.45rem;
     font-weight: 500;
     line-height: 1;
     align-self: flex-start;
     width: 100%;
     letter-spacing: -0.05rem;
-    max-width: 270px;
+    max-width: 280px;
   }
   /* ======Hero Right===== */
   .hero .right {
