@@ -1729,7 +1729,7 @@ input[type='radio']{
     align-self: flex-start;
     width: 100%;
     letter-spacing: -0.05rem;
-    max-width: 275px;
+    max-width: 280px;
   }
   /* ======Hero Right===== */
   .hero .right {
