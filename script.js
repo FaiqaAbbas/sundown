@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Function to preload video and image
 function preloadMedia(videoSrc, imageSrc) {
   var video = document.createElement("video");
   video.src = videoSrc;
@@ -88,3 +87,39 @@ execution.addEventListener("change", updateHeading);
 
 // Optionally, call updateHeading() initially to set the heading based on the default selection
 updateHeading();
+
+
+
+
+
+  const carousel = document.querySelector('.carousel');
+  carousel.addEventListener('mousemove',function(details){
+    let scrollIndicator=document.querySelector(".scrollIndicator")
+    scrollIndicator.style.top=`${details.clientY}px`; 
+    scrollIndicator.style.left=`${details.clientX}px`; 
+})
+  let isMouseDown = false;
+  let startX;
+  let scrollLeft;
+
+  carousel.addEventListener('mousedown', (e) => {
+    isMouseDown = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    isMouseDown = false;
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isMouseDown = false;
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust the scroll speed multiplier as needed
+    carousel.scrollLeft = scrollLeft - walk;
+  });

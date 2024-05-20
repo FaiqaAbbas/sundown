@@ -483,16 +483,16 @@ nav .menu-btn {
 /** ==============================================featured projects heading=========================================== */
 /** ==============================================featured projects heading=========================================== */
 
-/* #region p-featured-projects-heading */
-.featured-projects-heading {
+/* #region p-page-heading */
+.page-heading {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.5rem;
   padding-bottom: 1.9rem;
   /* background-color:pink; */
 }
-.featured-projects-heading h6 {
+.page-heading h6 {
   letter-spacing: 0.03rem;
   text-transform: uppercase;
   font-family: "Neuehaasdisplay roman", sans-serif;
@@ -500,13 +500,13 @@ nav .menu-btn {
   font-weight: 200;
   line-height: 1.2;
 }
-.featured-projects-heading .red-dot {
+.page-heading .red-dot {
   background-color: var(--sundown-orange);
   border-radius: 100vw;
-  width: calc(0.33rem + 0.3vw);
-  height: calc(0.33rem + 0.3vw);
+  width: calc(0.23rem + 0.3vw);
+  height: calc(0.23rem + 0.3vw);
 }
-/* #endregion p-featured-projects-heading */
+/* #endregion p-page-heading */
 
 /** ==============================================featured projects list container=========================================== */
 /** ==============================================featured projects list container=========================================== */
@@ -639,7 +639,7 @@ nav .menu-btn {
   background-color: var(--off-white);
   width: 94%;
   margin: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 input[type='radio']{
   display: none;
@@ -711,13 +711,74 @@ input[type='radio']{
  /* #endregion l-right */
 
 /* #endregion p-Page4 */
-
+/** ============================================Page5============================================= */
+/** ============================================Page5============================================= */
 /* #region p-Page5 */
 .page5{
   width:100%;
-  min-height:100vh;
-  margin-top:5vh;
+  /* min-height:100vh; */
+  /* background-color: lavender; */
+  margin-top:9rem;
+  height: 100vh;
   
+  /* cursor: none; */
+}
+.page5 .page-heading{
+  padding-inline:3.5rem;
+  padding-bottom:3.3rem;
+}
+
+
+.scrollIndicator {
+  position: absolute;
+  z-index: 99999999999;
+  top:-40px;
+  left:-40px;
+  transform: translate(-50%,-50%);
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  
+}
+.page5 .carousel {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style:none;
+  /* background-color: #ffce9d; */
+  display: flex;
+  gap:7rem;
+}
+.carousel::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.page5 .carousel .card-container:nth-child(1){
+  margin-left:5.8rem;
+}
+.page5 .carousel .card-container:nth-child(7){
+  margin-right:7rem;
+}
+.page5 .carousel .card{
+  border-left:1px solid rgb(0, 0, 0, 0.2);
+  padding-left: 1.45rem;
+  width: 225px;
+
+}
+
+
+.page5 .carousel .card img{
+ object-fit: cover;
+ width:75%
+
+}
+.page5 .carousel .card p{
+  margin-top:1.2rem;
+  /* background-color: lavender; */
+  font-family: "NeuehaasDisplay roman";
+  font-size: 0.99rem;
+  line-height: 1.4;
 }
 /* #endregion p-Page4 */
 /* #endregion pResets */
@@ -941,8 +1002,8 @@ input[type='radio']{
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
 
-  /* #region p-featured-projects-heading */
-  .featured-projects-heading {
+  /* #region p-page-heading */
+  .page-heading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -950,7 +1011,7 @@ input[type='radio']{
     padding-bottom: calc(1rem + 0.9vw);
     /* background-color:pink; */
   }
-  .featured-projects-heading h6 {
+  .page-heading h6 {
     letter-spacing: 0.03rem;
     text-transform: uppercase;
     font-family: "Neuehaasdisplay roman", sans-serif;
@@ -958,13 +1019,13 @@ input[type='radio']{
     font-weight: 200;
     line-height: 1.2;
   }
-  .featured-projects-heading .red-dot {
+  .page-heading .red-dot {
     background-color: var(--sundown-orange);
     border-radius: 100vw;
     width: calc(0.33rem + 0.3vw);
     height: calc(0.33rem + 0.3vw);
   }
-  /* #endregion p-featured-projects-heading */
+  /* #endregion p-page-heading */
 
   /** ==============================================featured projects list container=========================================== */
   /** ==============================================featured projects list container=========================================== */
@@ -1422,8 +1483,8 @@ input[type='radio']{
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
 
-  /* #region p-featured-projects-heading */
-  .featured-projects-heading {
+  /* #region p-page-heading */
+  .page-heading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1431,7 +1492,7 @@ input[type='radio']{
     padding-bottom: calc(1rem + 0.9vw);
     /* background-color:pink; */
   }
-  .featured-projects-heading h6 {
+  .page-heading h6 {
     letter-spacing: 0.03rem;
     text-transform: uppercase;
     font-family: "Neuehaasdisplay roman", sans-serif;
@@ -1439,13 +1500,13 @@ input[type='radio']{
     font-weight: 200;
     line-height: 1.2;
   }
-  .featured-projects-heading .red-dot {
+  .page-heading .red-dot {
     background-color: var(--sundown-orange);
     border-radius: 100vw;
     width: calc(0.33rem + 0.3vw);
     height: calc(0.33rem + 0.3vw);
   }
-  /* #endregion p-featured-projects-heading */
+  /* #endregion p-page-heading */
 
   /** ==============================================featured projects list container=========================================== */
   /** ==============================================featured projects list container=========================================== */
@@ -1918,8 +1979,8 @@ input[type='radio']{
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
 
-  /* #region p-featured-projects-heading */
-  .featured-projects-heading {
+  /* #region p-page-heading */
+  .page-heading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1927,7 +1988,7 @@ input[type='radio']{
     padding-bottom: calc(1rem + 0.9vw);
     /* background-color:pink; */
   }
-  .featured-projects-heading h6 {
+  .page-heading h6 {
     letter-spacing: 0.03rem;
     text-transform: uppercase;
     font-family: "Neuehaasdisplay roman", sans-serif;
@@ -1935,13 +1996,13 @@ input[type='radio']{
     font-weight: 200;
     line-height: 1.2;
   }
-  .featured-projects-heading .red-dot {
+  .page-heading .red-dot {
     background-color: var(--sundown-orange);
     border-radius: 100vw;
     width: calc(0.33rem + 0.3vw);
     height: calc(0.33rem + 0.3vw);
   }
-  /* #endregion p-featured-projects-heading */
+  /* #endregion p-page-heading */
 
   /** ==============================================featured projects list container=========================================== */
   /** ==============================================featured projects list container=========================================== */
