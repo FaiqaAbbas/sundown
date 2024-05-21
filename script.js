@@ -93,11 +93,7 @@ updateHeading();
 
 
   const carousel = document.querySelector('.carousel');
-  carousel.addEventListener('mousemove',function(details){
-    let scrollIndicator=document.querySelector(".scrollIndicator")
-    scrollIndicator.style.top=`${details.clientY}px`; 
-    scrollIndicator.style.left=`${details.clientX}px`; 
-})
+
   let isMouseDown = false;
   let startX;
   let scrollLeft;

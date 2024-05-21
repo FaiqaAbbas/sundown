@@ -724,11 +724,14 @@ input[type='radio']{
   /* cursor: none; */
 }
 .page5 .page-heading{
-  padding-inline:3.5rem;
+  padding-inline:calc(2rem + 2.4vw);
   padding-bottom:3.3rem;
 }
+.page5 .page-heading h6{
+  font-size:calc(0.59rem + 0.3vw);
+}
 
-
+/* 
 .scrollIndicator {
   position: absolute;
   z-index: 99999999999;
@@ -741,44 +744,45 @@ input[type='radio']{
   border-radius: 50%;
   background-color: white;
   
-}
+} */
 .page5 .carousel {
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style:none;
   /* background-color: #ffce9d; */
   display: flex;
-  gap:7rem;
+  gap:calc(8.5vw);
 }
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 
 .page5 .carousel .card-container:nth-child(1){
-  margin-left:5.8rem;
+  margin-left:calc(3.2rem + 3vw);
 }
 .page5 .carousel .card-container:nth-child(7){
   margin-right:7rem;
 }
 .page5 .carousel .card{
   border-left:1px solid rgb(0, 0, 0, 0.2);
-  padding-left: 1.45rem;
-  width: 225px;
+  padding-left: calc(1rem + 0.42vw);
+  width: calc(145px + 5vw);
 
 }
 
 
 .page5 .carousel .card img{
  object-fit: cover;
- width:75%
+ width:calc(13.5vw)
 
 }
 .page5 .carousel .card p{
   margin-top:1.2rem;
   /* background-color: lavender; */
   font-family: "NeuehaasDisplay roman";
-  font-size: 0.99rem;
+  font-size: calc(0.63rem + 0.45vw);
   line-height: 1.4;
+  background-color: pink;
 }
 /* #endregion p-Page4 */
 /* #endregion pResets */
