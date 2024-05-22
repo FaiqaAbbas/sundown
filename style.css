@@ -731,27 +731,14 @@ input[type='radio']{
   font-size:calc(0.59rem + 0.3vw);
 }
 
-/* 
-.scrollIndicator {
-  position: absolute;
-  z-index: 99999999999;
-  top:-40px;
-  left:-40px;
-  transform: translate(-50%,-50%);
-  width: 35px;
-  height: 35px;
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: white;
-  
-} */
+
 .page5 .carousel {
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style:none;
   /* background-color: #ffce9d; */
   display: flex;
-  gap:calc(8.5vw);
+  gap:calc(10vw);
 }
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -766,7 +753,7 @@ input[type='radio']{
 .page5 .carousel .card{
   border-left:1px solid rgb(0, 0, 0, 0.2);
   padding-left: calc(1rem + 0.42vw);
-  width: calc(145px + 5vw);
+  width: calc(148px + 5vw);
 
 }
 
@@ -780,9 +767,9 @@ input[type='radio']{
   margin-top:1.2rem;
   /* background-color: lavender; */
   font-family: "NeuehaasDisplay roman";
-  font-size: calc(0.63rem + 0.45vw);
+  font-size: calc(0.66rem + 0.4vw);
   line-height: 1.4;
-  background-color: pink;
+  /* background-color: pink; */
 }
 /* #endregion p-Page4 */
 /* #endregion pResets */
