@@ -738,7 +738,7 @@ input[type='radio']{
   -ms-overflow-style:none;
   /* background-color: #ffce9d; */
   display: flex;
-  gap:calc(10vw);
+  gap:calc(2rem + 6.2vw);
 }
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -753,23 +753,24 @@ input[type='radio']{
 .page5 .carousel .card{
   border-left:1px solid rgb(0, 0, 0, 0.2);
   padding-left: calc(1rem + 0.42vw);
-  width: calc(148px + 5vw);
+  width: calc(2rem + 15.2vw);
+  background-color:lavender
 
 }
 
 
 .page5 .carousel .card img{
  object-fit: cover;
- width:calc(13.5vw)
+ width:calc(12vw)
 
 }
 .page5 .carousel .card p{
   margin-top:1.2rem;
   /* background-color: lavender; */
   font-family: "NeuehaasDisplay roman";
-  font-size: calc(0.66rem + 0.4vw);
+  font-size: calc(0.662rem + 0.4vw);
   line-height: 1.4;
-  /* background-color: pink; */
+  background-color: pink;
 }
 /* #endregion p-Page4 */
 /* #endregion pResets */
