@@ -763,6 +763,7 @@ input[type='radio']{
 
 }
 .page5 .carousel .card p{
+  font-family: 'Neuehaasdisplay roman';
   font-size: calc(0.64rem + 0.43vw);
   line-height: 1.4;
   /* background-color: pink; */
@@ -1189,7 +1190,6 @@ input[type='radio']{
   margin-right:7rem;
 }
 .page5 .carousel .card{
-  font-family: 'Neuehaasdisplay roman';
   border-left:1px solid rgb(0, 0, 0, 0.2);
   padding-left: calc(1rem + 0.6vw);
   width: 28vw;
