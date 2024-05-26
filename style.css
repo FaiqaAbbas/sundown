@@ -2262,7 +2262,7 @@ justify-content: space-around;
     padding:0.8em 1.65em; 
   }
   .all-projects-button .text{
-    font-size: calc(1rem + 0.25vw);
+    font-size: calc(1rem + 0.255vw);
    
   }
   /* #endregion p-Page3 */
