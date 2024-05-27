@@ -742,7 +742,7 @@ input[type='radio']{
   /* min-height:100vh; */
   /* background-color: lavender; */
   padding-top:5.2rem;
-  height: 90vh;
+  height: 100vh;
   margin-top:-1px;
   /* cursor: none; */
 }
@@ -2262,7 +2262,7 @@ justify-content: space-around;
     padding:0.8em 1.65em; 
   }
   .all-projects-button .text{
-    font-size: calc(1rem + 0.255vw);
+    font-size: calc(1rem + 0.25vw);
    
   }
   /* #endregion p-Page3 */
@@ -2375,7 +2375,7 @@ justify-content: space-around;
 
 .page5 .carousel .card img{
  width:calc(9rem);
- margin-bottom:0.6rem;
+ margin-bottom:0.7rem;
 
 }
 .page5 .carousel .card p{
