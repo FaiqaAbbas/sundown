@@ -1288,6 +1288,52 @@ justify-content: space-around;
   }
 /* #endregion p-Page5 */
 }
+/** ============================================Footer============================================= */
+/** ============================================Footer============================================= */
+/* #region p-footer */
+footer{
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  bottom:0%;
+  background-color:black;
+  color:white;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+  /* justify-content: center; */
+  padding:2rem;
+}
+footer .top{
+  width: 100%;
+  height:40%;
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .middle{
+  width: 100%;
+  height: 50%;
+  background-color: pink;
+  font-size: 40vw;
+  text-align: center;
+  text-justify: center;
+  font-weight: 800;
+}
+
+
+footer .bottom{
+  border-top:1px solid rgb(243, 230, 205) ;
+  width: 100%;
+  background-color: tomato;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+/* #endregion p-footer */
 /* #endregion g-Laptops */
 
 /** =========================================Tablet/Phablets=========================================== */
