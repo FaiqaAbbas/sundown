@@ -49,6 +49,7 @@ html {
   font-size: 0.94rem;
 }
 main {
+  pointer-events: none;
   position: relative;
   z-index: 10;
 }
@@ -60,10 +61,7 @@ main .page1,
 nav {
   background-color: #efeae3;
 }
-.page6 {
-  height: 100vh;
-  width: 100%;
-}
+
 .container {
   width: 95%;
   /* max-width: 1500px; */
@@ -791,7 +789,14 @@ input[type="radio"] {
   /* background-color: pink; */
 }
 /* #endregion p-Page5 */
-/* #endregion pResets */
+/** ============================================Page5============================================= */
+/** ============================================Page5============================================= */
+/* #region p-page6  */
+.page6{
+  height: 100vh;
+  pointer-events: none;
+}
+/* #endregion p-page6 */
 /** ============================================Footer============================================= */
 /** ============================================Footer============================================= */
 /* #region p-footer */
@@ -800,38 +805,76 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0%;
-  background-color: rgb(237, 84, 84);
+  background-color: black;
   color: white;
   z-index: 9;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  /* justify-content: center; */
-  padding: 2rem;
 }
 footer .top {
+  
   width: 100%;
   height: 40%;
-  background-color: lavender;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding:3.7rem 5.5rem;
+}
+footer .top .left{
+  justify-self: left ;
+}
+footer .top .left a{
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+  color:var(--off-white);
+  font-size:2rem;
+  cursor: pointer;
+}
+footer .right{
+  margin-right: 3rem;
+  border-bottom:1px solid grey;
+  padding-bottom:1rem;
+}
+footer .right p{
+  font-family: "NeuehaasDisplay roman";
+  line-height: 1.3;
+  font-size:1.25rem;
+  max-width: 270px;
+}
+footer .right .email{
+
+}
+footer .right .email input{
+  margin-top:2.4rem;
+  background-color: transparent;
+  border: none;
+  color:white;
+  width: 85%;
+}
+footer .right .email a{
+  text-decoration: none;
+  color:var(--off-white)
+}
+footer .right .email svg{
+width: 14%;
+}
+footer .right .email input:focus{
+
+  border: none;
+  outline:none;
+
 }
 footer .middle {
   width: 100%;
   height: 50%;
-  /* background-color: pink; */
-  /* font-size: 10vw; */
   text-align: center;
   text-justify: center;
   font-weight: 800;
 }
 footer .middle .footer_logo_wrapper {
-  background-color: rgb(0, 0, 0);
+
   width: 100%;
-  margin-top: 6.25em;
+  margin-top:3.7rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2em;
@@ -843,20 +886,69 @@ footer .middle .footer_logo_wrapper .footer_logo {
   width: 100%;
   height: 100%;
 }
-footer .middle .footer_logo_wrapper .footer_logo img {
-  width: 90%;
-  /* display: inline-block; */
-}
 
 footer .bottom {
-  border-top: 1px solid rgb(243, 230, 205);
   width: 100%;
-  background-color: tomato;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
 }
+
+.footer_links {
+  font-family: "NeuehaasDisplay roman";
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+}
+.footer-line-break {
+  background-color: rgba(239, 234, 227, .3);
+  width: 100%;
+  height: 1px;
+}
+
+footer .footer_links_wrapper {
+
+  border-top: 1px rgba(239, 234, 227, .3);
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.75em auto;
+  display: flex;
+  position: relative;
+}
+
+.text-color-white {
+  color: var(--off-white);
+}
+.footer_location {
+  grid-column-gap: .375em;
+  grid-row-gap: .375em;
+  align-items: flex-start;
+  display: flex;
+}
+.footer_socials {
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1.5em;
+  flex-direction: row;
+  display: flex;
+}
+.location_icon {
+  width: 1.25em;
+  height: 1.25em;
+  position: relative;
+}
+.footer_socials .footer-link {
+  color: var(--off-white);
+  font-family: "Neuehaasdisplay roman", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  cursor:pointer;
+}
+
 /* #endregion p-footer */
+/* #endregion pResets */
+
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
 /*! ==============================================Media Queries=========================================== */
