@@ -1,14 +1,3 @@
-const footer = document.querySelector('footer');
-
-footer.addEventListener('click', function() {
-  document.body.classList.add('is-locked'); // Add a class to disable Locomotive Scroll
-
-  // Perform actions specific to footer click here (optional)
-
-  setTimeout(function() {
-    document.body.classList.remove('is-locked'); // Re-enable Locomotive Scroll after a delay
-  }, 200); // Adjust delay as needed (optional)
-});
 //  locomotive library
 document.addEventListener("DOMContentLoaded", function () {
   const scroll = new LocomotiveScroll({
