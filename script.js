@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     el: document.querySelector("#wrapper"),
     smooth: true,
   });
-});
+
 
 function preloadMedia(videoSrc, imageSrc) {
   var video = document.createElement("video");
@@ -119,3 +119,4 @@ updateHeading();
     const walk = (x - startX) * 2; // Adjust the scroll speed multiplier as needed
     carousel.scrollLeft = scrollLeft - walk;
   });
+});
