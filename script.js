@@ -1,11 +1,3 @@
-//  locomotive library
-document.addEventListener("DOMContentLoaded", function () {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("#wrapper"),
-    smooth: true,
-  });
-})
-
 function preloadMedia(videoSrc, imageSrc) {
   var video = document.createElement("video");
   video.src = videoSrc;
