@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     el: document.querySelector("#wrapper"),
     smooth: true,
   });
-});
+})
 
 function preloadMedia(videoSrc, imageSrc) {
   var video = document.createElement("video");
@@ -33,24 +33,24 @@ var projects = document.querySelectorAll(".featured-projects-list .project");
 var preloadedMediaByProject = {};
 projects.forEach(function (project) {
   var projectName = project.classList[1];
-  var videoSrc = project.getAttribute("video-src");
   var imageSrc = project.getAttribute("image-src");
+  var videoSrc = project.getAttribute("video-src");
   preloadedMediaByProject[projectName] = preloadMedia(videoSrc, imageSrc);
   // project_video_tab.src=preloadedMediaByProject[projectName].video.src;
   // Event listeners for project hover
   project.addEventListener("mouseenter", function () {
     var preloadedMedia = preloadedMediaByProject[projectName];
-    project_video.src = preloadedMedia.video.src;
     project_video.poster = preloadedMedia.image.src;
+    project_video.src = preloadedMedia.video.src;
     if(project_video.src==" "){
-      project_video.src = preloadedMedia.video.src;
       project_video.poster = preloadedMedia.image.src;
+      project_video.src = preloadedMedia.video.src;
     }
   });
   // Clear video source and poster on mouse leave
   project.addEventListener("mouseleave", function () {
-    project_video.src = " ";
     project_video.poster = " ";
+    project_video.src = " ";
     // project_video.style.display='none';
   });
 });
