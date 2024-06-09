@@ -63,7 +63,7 @@ var paragraph = document.querySelector(".page4 .left .paragraph"); // Assuming t
 var image = document.querySelector(".page4 .right img"); // Assuming there's only one h1 element
 
 function updateHeading() {
-  if (design.checked) {
+  if (design.checked ) {
     paragraph.innerText = "Our team works with our clients to refine an idea and concept into an executable design.We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.";
     image.src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-800.jpg";
   } else if (project.checked) {
