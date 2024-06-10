@@ -50,12 +50,26 @@ html {
   font-family: "Neuehaasdisplay mediu", sans-serif;
   font-size: 0.94rem;
 }
+/* #region p-scrollbar styles */
+*::selection {
+	background-color:black;
+	color: #e5e4e3;
+}
+
+html::-webkit-scrollbar {
+	width: 7px;
+	background-color: #efeae3;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: #655e5d;
+	border-radius: 20px;
+}
+/* #endregion p-scrollbar styles */
 main {
-	/* background-color: black; */
 	position: relative;
 	z-index: 10;
 	width: 100%;
-	/* height: 590vh; */
 }
 main .page1,
 .page2,
@@ -65,13 +79,9 @@ main .page1,
 nav {
   background-color: #efeae3;
 }
-.page2{
-  z-index: 2;
-}
+
 .container {
   width: 95%;
-  /* max-width: 1500px; */
-  /* margin: calc(1.2rem + 1vw) auto; */
   margin: 1.9rem auto;
 }
 
@@ -642,8 +652,10 @@ nav .menu-btn {
 
 /* #endregion p-featured-projects-list */
 .all-projects-button {
+  text-decoration: none;
+  overflow: hidden;
   position: relative;
-  z-index: 7;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -652,12 +664,111 @@ nav .menu-btn {
   border-radius: 5rem;
   padding: 0.85em 1.6em;
 }
+.all-projects-button::after {
+  z-index: -2;
+  content: "";
+  height: 250%;
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  top: -250%;
+  background: radial-gradient(
+    circle at center,
+    #fe530a,
+    #fe690a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #fe530a,
+    #fe630a,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3,
+    #efeae3
+  );
+  transition: ease-in-out 1s;
+}
+.all-projects-button:hover::after {
+  top: -15%;
+  transition: all ease 0.7s;
+  background: radial-gradient(
+    circle at center,
+    #fe530a,
+    #fe690a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #fe530a,
+    #fe630a,
+    var(--sundown-orange),
+    var(--sundown-orange),
+    var(--sundown-orange),
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+}
 
-.all-projects-button .text {
+
+.all-projects-button .text,
+.all-projects-button svg {
   font-family: "NeuehaasDisplay roman";
   font-size: calc(0.56rem + 0.5vw);
   font-weight: 300;
   color: var(--black);
+}
+.all-projects-button:hover .text,
+.all-projects-button:hover svg {
+  color: white;
+  transition: all ease 0.4s;
 }
 /* #endregion p-Page3 */
 /** ============================================Page4============================================= */
@@ -801,7 +912,7 @@ input[type="radio"] {
 /** ============================================Footer============================================= */
 /* #region p-footer */
 .footer-wrapper {
-	height: 110vh;
+	height: 100vh;
 	width: 100%;
 	/* background-color: #EFEAE3; */
 }
@@ -2500,22 +2611,7 @@ footer .footer_links_wrapper {
   transition: linear 0.3s;
 }
 /* #endregion p-Nav-Menu-Button-Clicks*/
-/* #region p-scrollbar styles */
-*::selection {
-	background-color:black;
-	color: #e5e4e3;
-}
 
-html::-webkit-scrollbar {
-	width: 7px;
-	background-color: #efeae3;
-}
-
-html::-webkit-scrollbar-thumb {
-	background-color: #655e5d;
-	border-radius: 20px;
-}
-/* #endregion p-scrollbar styles */
 /* #region p-Animations */
 /* #region l-page1 Animations */
 
