@@ -2507,7 +2507,6 @@ footer .footer_links_wrapper {
 }
 
 html::-webkit-scrollbar {
-	display: block;
 	width: 7px;
 	background-color: #efeae3;
 }
