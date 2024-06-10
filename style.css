@@ -801,7 +801,7 @@ input[type="radio"] {
 /** ============================================Footer============================================= */
 /* #region p-footer */
 .footer-wrapper {
-	height: 100vh;
+	height: 110vh;
 	width: 100%;
 	/* background-color: #EFEAE3; */
 }
