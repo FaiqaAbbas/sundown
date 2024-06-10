@@ -912,6 +912,7 @@ input[type="radio"] {
 /** ============================================Footer============================================= */
 /* #region p-footer */
 .footer-wrapper {
+  margin-top:2rem;
 	height: 100vh;
 	width: 100%;
 	/* background-color: #EFEAE3; */
