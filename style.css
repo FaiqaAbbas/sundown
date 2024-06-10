@@ -917,14 +917,37 @@ input[type="radio"] {
 	width: 100%;
 	/* background-color: #EFEAE3; */
 }
+footer .animated-ball1{
+  top:-40%;
+  left:-20%;
+  height: calc(14rem + 16vw);
+  width: calc(40rem + 60vw);
+  background-color: var(--sundown-orange);
+  border-radius: 50vw;
+  z-index: -3;
+  filter: blur(50px);
+  animation: footer-animated-ball1 linear infinite alternate 2s;
+  
+}
+footer .animated-ball2{
+  top:-24%;
+  right:-30%;
+  height: calc(14rem + 22vw);
+  width: calc(40rem + 48vw);
+  background-color: var(--sundown-orange);
+  border-radius: 50vw;
+  z-index: -1;
+  filter: blur(50px);
 
+  animation: footer-animated-ball2 linear infinite alternate 4s;
+}
 footer {
   height: 100vh;
   width: 100%; 
   color: var(--off-white); 
   background-color: #0b0500;
   position: fixed;
-  z-index: 9; 
+  z-index: 19; 
   bottom: 0; 
   opacity: 1; 
 }
@@ -954,8 +977,8 @@ footer .top .left a{
 }
 footer .right{
   margin-right: 3rem;
-  border-bottom:1px solid grey;
-  padding-bottom:1rem;
+  border-bottom:1px solid rgba(255, 255, 255, 0.497);
+  padding-bottom:0.7rem;
 }
 footer .right p{
   font-family: "NeuehaasDisplay roman";
@@ -964,14 +987,18 @@ footer .right p{
   max-width: 270px;
 }
 footer .right .email{
-
+  
 }
 footer .right .email input{
+  /* font-size: 1rem; */
   margin-top:2.4rem;
   background-color: transparent;
   border: none;
   color:white;
   width: 85%;
+}
+footer .right .email input::placeholder{
+  color: rgba(255, 255, 255, 0.497)
 }
 footer .right .email a{
   text-decoration: none;
@@ -1002,6 +1029,7 @@ footer .middle .footer_logo_wrapper {
   padding-left: 2em;
   padding-right: 2em;
   position: relative;
+  z-index:-2;
 }
 footer .middle .footer_logo_wrapper .footer_logo {
   object-fit: cover;
@@ -2667,6 +2695,29 @@ footer .footer_links_wrapper {
   }
   to {
     transform: translate(-5%, 15%) rotate(80deg) skew(9deg);
+  }
+}
+/* #endregion c-Left Animated ball Animation */
+/* #endregion l-page2 Animations */
+/* #region l-footer Animations */
+
+/* #region footer Animated ball Animation */
+@keyframes footer-animated-ball1{
+  from {
+    transform:rotate(-20deg);
+  }
+  to {
+    transform: rotate(-7deg);
+  }
+}
+/* ball2 animation */
+/* orange back ball*/
+@keyframes footer-animated-ball2{
+  from {
+    transform:rotate(40deg);
+  }
+  to {
+    transform: rotate(20deg);
   }
 }
 /* #endregion c-Left Animated ball Animation */
