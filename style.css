@@ -63,8 +63,6 @@ main .page1,
 .page4,
 .page5,
 nav {
-  position: relative;
-  z-index: 1;
   background-color: #efeae3;
 }
 .page2{
@@ -1410,6 +1408,9 @@ footer .footer_links_wrapper {
   /** ===============================================Nav Bar============================================= */
   /** ===============================================Nav Bar============================================= */
   /* #region p-NavStyles */
+  nav{
+    /* background-color: var(--off-white); */
+  }
   nav img {
     width: calc(6rem + 5.8vw);
   }
@@ -1698,6 +1699,7 @@ footer .footer_links_wrapper {
   /** ============================================Page3============================================= */
   /* #region p-Page3 */
   .page3 {
+    margin:0;
     /* background-color: blueviolet; */
   }
   /** ==============================================featured projects heading=========================================== */
@@ -2237,6 +2239,7 @@ footer .footer_links_wrapper {
 
   /* #region p-Page3 */
   .page3 {
+    margin:0;
   }
   /** ==============================================featured projects heading=========================================== */
   /** ==============================================featured projects heading=========================================== */
@@ -2352,7 +2355,7 @@ footer .footer_links_wrapper {
 
   /* #endregion p-featured-projects-list */
   .all-projects-button {
-    margin: 0 1rem;
+    margin: 0 1.4rem;
     gap: 0.6rem;
     padding: 0.8em 1.65em;
   }
