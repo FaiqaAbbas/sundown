@@ -2497,7 +2497,19 @@ footer .footer_links_wrapper {
   transition: linear 0.3s;
 }
 /* #endregion p-Nav-Menu-Button-Clicks*/
+/* #region p-scrollbar styles */
 
+html::-webkit-scrollbar {
+	display: block;
+	width: 7px;
+	background-color: #efeae3;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: #655e5d;
+	border-radius: 20px;
+}
+/* #endregion p-scrollbar styles */
 /* #region p-Animations */
 /* #region l-page1 Animations */
 
