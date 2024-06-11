@@ -2656,28 +2656,14 @@ body{
 	/* background-color: #EFEAE3; */
 }
 footer .animated-ball1{
-  top:-40%;
-  left:-20%;
-  height: calc(14rem + 16vw);
-  width: calc(40rem + 60vw);
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  z-index: -3;
+  top:-10%;
+  left:-120%;
   filter: blur(50px);
-  animation: footer-animated-ball1 linear infinite alternate 2s;
   
 }
 footer .animated-ball2{
-  top:-24%;
-  right:-30%;
-  height: calc(14rem + 22vw);
-  width: calc(40rem + 48vw);
-  background-color: var(--sundown-orange);
-  border-radius: 50vw;
-  z-index: -1;
-  filter: blur(50px);
-
-  animation: footer-animated-ball2 linear infinite alternate 4s;
+  top:-10%;
+  right:-120%;
 }
 footer {
   
