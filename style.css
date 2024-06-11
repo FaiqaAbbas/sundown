@@ -857,7 +857,7 @@ input[type="radio"] {
   /* min-height:100vh; */
   /* background-color: lavender; */
   padding-top: 5.2rem;
-  height: 100vh;
+  padding-bottom: 6rem;
   margin-top: -1px;
   /* cursor: none; */
 }
@@ -875,7 +875,7 @@ input[type="radio"] {
   -ms-overflow-style: none;
   /* background-color: #ffce9d; */
   display: flex;
-  gap: calc(8.6vw);
+  gap: calc(1rem + 2*(3vw));
 }
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -901,7 +901,7 @@ input[type="radio"] {
 }
 .page5 .carousel .card p {
   font-family: "Neuehaasdisplay roman";
-  font-size: calc(0.64rem + 0.43vw);
+  font-size: calc(0.64rem + 0.42vw);
   line-height: 1.4;
   user-select: none;
   /* background-color: pink; */
@@ -945,12 +945,12 @@ footer {
   
   display: flex;
   align-items: flex-end;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%; 
   color: var(--off-white); 
   background-color: #0b0500;
   position: fixed;
-  z-index: 9; 
+  z-index: 19; 
   bottom: 0; 
   opacity: 1; 
 }
@@ -966,7 +966,7 @@ footer .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:3.7rem 5.5rem;
+  padding:3.7rem 6.2vw
 }
 footer .top .left{
   justify-self: left ;
@@ -979,7 +979,7 @@ footer .top .left a{
   cursor: pointer;
 }
 footer .right{
-  margin-right: 3rem;
+  margin-right: 3.6vw;
   border-bottom:1px solid rgba(255, 255, 255, 0.497);
   padding-bottom:0.7rem;
 }
@@ -1564,6 +1564,9 @@ footer .footer_links_wrapper {
 /** =========================================Tablet/Phablets=========================================== */
 /** =========================================Tablet/Phablets=========================================== */
 /* #region g-Tablets/Phablets */
+body{
+  overflow-x:hidden;
+}
 @media (481px <= width <= 765px) {
   .container {
     width: 93%;
@@ -1998,7 +2001,7 @@ footer .footer_links_wrapper {
     flex-direction: column;
     justify-content: space-around;
     gap: 2.2rem;
-    width: 92%;
+    width: 90%;
     /* margin: 0 auto; */
     }
     /* #region l-left */
@@ -2022,7 +2025,7 @@ footer .footer_links_wrapper {
   }
 
   .page4 .left .paragraph {
-    width: 350px;
+    width: calc(330px + 1.3vw);
     font-size: calc(0.866rem + 0.13vw);
     font-weight: 400;
     height: 140px;
@@ -2052,30 +2055,30 @@ footer .footer_links_wrapper {
     padding-top: 0rem;
   }
   .page5 .page-heading {
-    padding-inline: calc(4vw);
+    padding-inline: calc(1rem + 2vw);
     padding-top: calc(6rem );
-    /* padding-bottom: calc(1rem); */
+    padding-bottom: calc(4rem + 2vw);
     gap: 0.55rem;
   }
   .page5 .page-heading h6 {
-    font-size: calc(0.66rem + 0.2vw);
+    font-size: calc(0.67rem + 0.2vw);
   }
 
   .page5 .carousel {
-    gap: calc(2rem + 4.4vw);
+    gap: calc(2rem + 0.8vw);
   }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
 
   .page5 .carousel .card-container:nth-child(1) {
-    margin-left: calc(4.7vw);
+    margin-left: calc(1rem + 3vw);
   }
   .page5 .carousel .card-container:nth-child(7) {
     margin-right: 3rem;
   }
   .page5 .carousel .card {
-    padding-left: calc(1rem + 0.5vw);
+    padding-left: calc(1rem + 0.9vw);
     width: 56vw;
   }
 
@@ -2087,7 +2090,7 @@ footer .footer_links_wrapper {
   .page5 .carousel .card p {
     margin-top: 1.2rem;
     font-family: "NeuehaasDisplay roman";
-    font-size: calc(0.67rem + 0.5vw);
+    font-size: calc(2.79vw);
     line-height: 1.4;
     /* background-color: pink; */
   }
