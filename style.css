@@ -942,9 +942,6 @@ footer .animated-ball2{
   animation: footer-animated-ball2 linear infinite alternate 4s;
 }
 footer {
-  
-  display: flex;
-  align-items: flex-end;
   height: 100vh;
   width: 100%; 
   color: var(--off-white); 
