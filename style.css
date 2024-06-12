@@ -947,26 +947,27 @@ footer {
   color: var(--off-white); 
   background-color: #0b0500;
   position: fixed;
-  z-index: 9; 
+  z-index: 19; 
   bottom: 0; 
   opacity: 1; 
+  display: flex;
+  align-items:  flex-end;
+}
+.footer-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-footer .top .left a:hover {
-  opacity: 0.7; /* Changes opacity on hover */
-  transition: all ease-in-out 0.2s
-}
 footer .top {
-
+  /* background-color: rgb(0, 94, 13); */
   width: 100%;
   height: 41%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:3.7rem 6.2vw
-}
-footer .top .left{
-  justify-self: left ;
+  padding:3rem 6.2vw 4rem 6.8vw;
 }
 footer .top .left a{
   letter-spacing: -0.1rem;
@@ -974,6 +975,10 @@ footer .top .left a{
   color:var(--off-white);
   font-size:2rem;
   cursor: pointer;
+}
+footer .top .left a:hover {
+  opacity: 0.7; /* Changes opacity on hover */
+  transition: all ease-in-out 0.2s
 }
 footer .right{
   margin-right: 3.6vw;
@@ -986,9 +991,7 @@ footer .right p{
   font-size:1.25rem;
   max-width: 270px;
 }
-footer .right .email{
-  
-}
+
 footer .right .email input{
   /* font-size: 1rem; */
   margin-top:2.4rem;
@@ -1023,11 +1026,9 @@ footer .middle {
 footer .middle .footer_logo_wrapper {
 
   width: 100%;
-  margin-top:3.7rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin:3.7rem auto;
+  margin-bottom: 2.2rem;
+  padding-inline: 2rem;
   position: relative;
   z-index:-2;
 }
@@ -1039,6 +1040,7 @@ footer .middle .footer_logo_wrapper .footer_logo {
 
 footer .bottom {
   width: 100%;
+  /* background-color: rgb(203, 17, 0); */
 
 }
 footer .mobile{
@@ -1049,7 +1051,6 @@ footer .mobile{
   font-family: "NeuehaasDisplay roman";
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   display: flex;
@@ -1059,6 +1060,7 @@ footer .mobile{
   background-color: rgba(239, 234, 227, .3);
   width: 100%;
   height: 1px;
+  margin-bottom: 0.25rem;
 }
 
 footer .footer_links_wrapper {
