@@ -2677,7 +2677,7 @@ footer {
   color: var(--off-white); 
   background-color: #0b0500;
   position: fixed;
-  z-index: 19; 
+  z-index: 9; 
   bottom: 0; 
   opacity: 1; 
 }
