@@ -1574,7 +1574,7 @@ footer .footer_links_wrapper {
 body{
   overflow-x:hidden;
 }
-@media (481px <= width <= 765px) {
+@media (481px <= width <= 767px) {
   .container {
     width: 93%;
   }
@@ -2072,32 +2072,32 @@ body{
   }
 
   .page5 .carousel {
-    gap: calc(2rem + 0.8vw);
+    gap: calc(9vw);
   }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
 
   .page5 .carousel .card-container:nth-child(1) {
-    margin-left: calc(1rem + 3vw);
+    margin-left: calc(1rem + 2vw);
   }
   .page5 .carousel .card-container:nth-child(7) {
     margin-right: 3rem;
   }
   .page5 .carousel .card {
     padding-left: calc(1rem + 0.9vw);
-    width: 56vw;
+    width: 57vw;
   }
 
   .page5 .carousel .card img {
     object-fit: cover;
-    width: calc(9.34rem);
+    width: calc(9.5rem);
     margin-bottom: 0rem;
   }
   .page5 .carousel .card p {
     margin-top: 1.2rem;
     font-family: "NeuehaasDisplay roman";
-    font-size: calc(2.79vw);
+    font-size: calc(0.93rem );
     line-height: 1.4;
     /* background-color: pink; */
   }
