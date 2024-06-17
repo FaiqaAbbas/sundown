@@ -903,7 +903,7 @@ input[type="radio"] {
 
   display: block;
   user-select: none;
-  color: var(--off-white)
+  color: #efeae3e6;
 }
 
 .page5 .carousel .card-container:nth-child(1) {
