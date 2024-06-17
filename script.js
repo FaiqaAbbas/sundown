@@ -140,8 +140,6 @@ updateHeading();
 
 
 
-
-
 const carousel_container=document.querySelector('.carousel-container')
 const footer=document.querySelector('.footer-wrapper')
 const cursor=document.querySelector('.cursor')
