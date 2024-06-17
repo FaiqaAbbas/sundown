@@ -887,8 +887,6 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content:center;
-  gap:0.3rem;
-  z-index: 3;
   background-color: var(--sundown-orange);
   top:100%;
   height: 5.7rem;
@@ -900,10 +898,9 @@ input[type="radio"] {
   display: none;
 }
 .carousel-container:hover .cursor svg{
-
   display: block;
   user-select: none;
-  color: #efeae3e6;
+  color: #efeae3a9;
 }
 
 .page5 .carousel .card-container:nth-child(1) {
@@ -936,12 +933,14 @@ input[type="radio"] {
 /** ============================================Footer============================================= */
 /** ============================================Footer============================================= */
 /* #region p-footer */
+
 .footer-wrapper {
   margin-top:2rem;
 	height: 100vh;
 	width: 100%;
 	/* background-color: #EFEAE3; */
 }
+
 footer .animated-ball1{
   top:-40%;
   left:-20%;

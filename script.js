@@ -1,7 +1,7 @@
 window.onload = function () {
-	setTimeout(function () {
-		window.scrollTo(0, 0);
-	}, 100);
+	// setTimeout(function () {
+	// 	window.scrollTo(0, 0);
+	// }, 100);
 };
 
 //  lenis for smmoth scrolling
@@ -143,11 +143,14 @@ updateHeading();
 
 
 const carousel_container=document.querySelector('.carousel-container')
+const footer=document.querySelector('.footer-wrapper')
 const cursor=document.querySelector('.cursor')
-window.addEventListener('mousemove',function(details){ 
+carousel_container.addEventListener('mousemove',function(details){ 
+  
   cursor.style.top=`${details.clientY}px`; 
-    cursor.style.left=`${details.clientX}px`; 
+  cursor.style.left=`${details.clientX}px`; 
 })
+
 
 
 
