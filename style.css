@@ -881,24 +881,30 @@ input[type="radio"] {
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
-
 .carousel-container:hover .cursor{
-  cursor:none;
+  cursor: none;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:0.3rem;
+  z-index: 3;
   background-color: var(--sundown-orange);
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
+  top:100%;
+  height: 5.7rem;
+  width: 5.7rem;
+  border-radius: 7rem;
   transform: translate(-50%,-50%);
 }
-/* .cursor{
-  position: absolute;
-  background-color: var(--sundown-orange);
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
+.cursor svg{
+  display: none;
+}
+.carousel-container:hover .cursor svg{
 
-} */
+  display: block;
+  user-select: none;
+  color: var(--off-white)
+}
 
 .page5 .carousel .card-container:nth-child(1) {
   margin-left: calc(3.2rem + 3vw);
