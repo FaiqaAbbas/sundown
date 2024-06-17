@@ -877,9 +877,28 @@ input[type="radio"] {
   display: flex;
   gap: calc(1rem + 2*(3vw));
 }
+
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+.carousel-container:hover .cursor{
+  cursor:none;
+  position: fixed;
+  background-color: var(--sundown-orange);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+  transform: translate(-50%,-50%);
+}
+/* .cursor{
+  position: absolute;
+  background-color: var(--sundown-orange);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+
+} */
 
 .page5 .carousel .card-container:nth-child(1) {
   margin-left: calc(3.2rem + 3vw);

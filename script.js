@@ -136,3 +136,21 @@ updateHeading();
     const walk = (x - startX) * 2; // Adjust the scroll speed multiplier as needed
     carousel.scrollLeft = scrollLeft - walk;
   });
+
+
+
+
+
+
+const carousel_container=document.querySelector('.carousel-container')
+const cursor=document.querySelector('.cursor')
+window.addEventListener('mousemove',function(details){ 
+  cursor.style.top=`${details.clientY}px`; 
+    cursor.style.left=`${details.clientX}px`; 
+})
+
+
+
+
+
+  // Page 5 cursor 
