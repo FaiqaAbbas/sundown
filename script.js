@@ -1,7 +1,7 @@
 window.onload = function () {
-	// setTimeout(function () {
-	// 	window.scrollTo(0, 0);
-	// }, 100);
+	setTimeout(function () {
+		window.scrollTo(0, 0);
+	}, 100);
 };
 
 //  lenis for smmoth scrolling
@@ -19,7 +19,6 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// ends
 
 
 
