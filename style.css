@@ -271,11 +271,11 @@ nav .menu-btn {
 /** ============================================Page1============================================= */
 /* #region p-Page1 */
 
-.page1 {
+section.page1 {
   position: relative;
   overflow-x: hidden;
   margin-top: -1px;
-  /* Overflow hidden doesnot work on mobile
+    /* Overflow hidden doesnot work on mobile
   device so when we do position:relative and then 
   use overflow-x : hidden on a container, it works 
   for mobile device.*/
@@ -598,6 +598,7 @@ nav .menu-btn {
 .featured-projects-list .project a h2 {
   font-family: "Neuehaasdisplay mediu";
   font-size: calc(2rem + 1.49vw);
+  opacity:0;
   letter-spacing: -0.1rem;
 }
 
@@ -839,6 +840,7 @@ input[type="radio"] {
   justify-self: right;
 }
 .page4 .wrapper .right img {
+  pointer-events: all;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -2689,7 +2691,9 @@ body{
     /* background-color: pink; */
   }
   /* #endregion p-Page5 */
-/* #region p-footer */
+ /** ============================================Footer============================================= */
+  /** ===========================================Footer============================================== */
+  /* #region p-footer */
 .footer-wrapper {
   margin-top:2rem;
 	height: 100vh;
