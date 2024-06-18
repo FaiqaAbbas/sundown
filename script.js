@@ -100,37 +100,19 @@ project.addEventListener("change", updateHeading);
 execution.addEventListener("change", updateHeading);
 updateHeading();
 
-const carousel = document.querySelector('.carousel');
-let isMouseDown = false;
-let startX;
-let scrollLeft;
-
-carousel.addEventListener('mouseenter', (e) => {
-  isMouseDown = true;
-  startX = e.pageX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
-});
-
-carousel.addEventListener('mouseleave', () => {
-  isMouseDown = false;
-});
-
-carousel.addEventListener('mousemove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.pageX - carousel.offsetLeft;
-  const walk = (x - startX) * 2; // Adjust the scroll speed multiplier as needed
-  carousel.scrollLeft = scrollLeft - walk;
-});
-
-// const carousel_container = document.querySelector('.carousel-container');
-// const cursor = document.querySelector('.cursor');
-// carousel_container.addEventListener('mousemove', function (details) {
-//   cursor.style.top = `${details.clientY}px`;
-//   cursor.style.left = `${details.clientX}px`;
-// });
-
-
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 3.5,
+    freeMode: true,
+    speed:1000
+  });
+    if (window.innerWidth <= 767) {
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        freeMode: true,
+      });
+    }
+  
 
 function mouseMover() {
   const cursor = document.querySelector(".cursor");
