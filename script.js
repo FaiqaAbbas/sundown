@@ -1,3 +1,14 @@
+
+// Lenis for smooth scrolling
+const lenis = new Lenis();
+lenis.on("scroll", (e) => {
+  // console.log(e);
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 function preloadMedia(videoSrc, imageSrc) {
   return new Promise((resolve, reject) => {
     var video = document.createElement("video");
@@ -59,16 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Lenis for smooth scrolling
-const lenis = new Lenis();
-lenis.on("scroll", (e) => {
-  // console.log(e);
-});
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
 
 // Page4
 var design = document.querySelector("#design");
