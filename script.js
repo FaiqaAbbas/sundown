@@ -105,17 +105,13 @@ let isMouseDown = false;
 let startX;
 let scrollLeft;
 
-carousel.addEventListener('mousedown', (e) => {
+carousel.addEventListener('mouseenter', (e) => {
   isMouseDown = true;
   startX = e.pageX - carousel.offsetLeft;
   scrollLeft = carousel.scrollLeft;
 });
 
 carousel.addEventListener('mouseleave', () => {
-  isMouseDown = false;
-});
-
-carousel.addEventListener('mouseup', () => {
   isMouseDown = false;
 });
 
@@ -127,9 +123,35 @@ carousel.addEventListener('mousemove', (e) => {
   carousel.scrollLeft = scrollLeft - walk;
 });
 
-const carousel_container = document.querySelector('.carousel-container');
-const cursor = document.querySelector('.cursor');
-carousel_container.addEventListener('mousemove', function (details) {
-  cursor.style.top = `${details.clientY}px`;
-  cursor.style.left = `${details.clientX}px`;
-});
+// const carousel_container = document.querySelector('.carousel-container');
+// const cursor = document.querySelector('.cursor');
+// carousel_container.addEventListener('mousemove', function (details) {
+//   cursor.style.top = `${details.clientY}px`;
+//   cursor.style.left = `${details.clientX}px`;
+// });
+
+
+
+function mouseMover() {
+  const cursor = document.querySelector(".cursor");
+  const page5 = document.querySelector(".page5");
+  page5.addEventListener("mousemove", (dets) => {
+    gsap.to(cursor, {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+  page5.addEventListener("mouseleave", (dets) => {
+    gsap.to(cursor, {
+      scale: 0,
+      opacity: 0,
+    });
+  });
+  page5.addEventListener("mouseenter", (dets) => {
+    gsap.to(cursor, {
+      scale: 1,
+      opacity: 1,
+    });
+  });
+}
+mouseMover();
