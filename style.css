@@ -888,7 +888,8 @@ input[type="radio"] {
   align-items: center;
   justify-content:center;
   background-color: var(--sundown-orange);
-  top:100%;
+  top:20%;
+  left:50%;
   height: 5.7rem;
   width: 5.7rem;
   border-radius: 7rem;
