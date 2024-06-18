@@ -9,10 +9,6 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
-
-
-
-
 function preloadMedia(videoSrc, imageSrc) {
   return new Promise((resolve, reject) => {
     var video = document.createElement("video");
@@ -131,58 +127,9 @@ carousel.addEventListener('mousemove', (e) => {
   carousel.scrollLeft = scrollLeft - walk;
 });
 
-<<<<<<< HEAD
 const carousel_container = document.querySelector('.carousel-container');
 const cursor = document.querySelector('.cursor');
 carousel_container.addEventListener('mousemove', function (details) {
   cursor.style.top = `${details.clientY}px`;
   cursor.style.left = `${details.clientX}px`;
 });
-=======
-  let isMouseDown = false;
-  let startX;
-  let scrollLeft;
-
-  carousel.addEventListener('mousedown', (e) => {
-    isMouseDown = true;
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-  });
-
-  carousel.addEventListener('mouseleave', () => {
-    isMouseDown = false;
-  });
-
-  carousel.addEventListener('mouseup', () => {
-    isMouseDown = false;
-  });
-
-  carousel.addEventListener('mousemove', (e) => {
-    if (!isMouseDown) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust the scroll speed multiplier as needed
-    carousel.scrollLeft = scrollLeft - walk;
-  });
-
-
-
-
-
-
-const carousel_container=document.querySelector('.carousel-container')
-const footer=document.querySelector('.footer-wrapper')
-const cursor=document.querySelector('.cursor')
-carousel_container.addEventListener('mousemove',function(details){ 
-  
-  cursor.style.top=`${details.clientY}px`; 
-  cursor.style.left=`${details.clientX}px`; 
-})
-
-
-
-
-
-
-  // Page 5 cursor 
->>>>>>> parent of 902854d (Not Final page 5 hover)
