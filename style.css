@@ -871,13 +871,13 @@ input[type="radio"] {
   font-size: calc(0.6rem + 0.3vw);
 }
 .swiper-container{
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   overflow-x: scroll;
 }
 .page5 .carousel {
   
+  opacity:0;
   /* background-color: #ffce9d; */
   display: flex;
   gap: calc(1rem + 2*(3vw));
@@ -912,7 +912,7 @@ input[type="radio"] {
   margin-left: calc(3.2rem + 3vw);
 }
 .page5 .carousel .card-container:nth-child(7) {
-  margin-right: 7rem;
+  margin-right: 3rem;
 }
 .page5 .carousel .card {
   padding-left: calc(1rem + 0.42vw);

@@ -103,7 +103,7 @@ page3.addEventListener('mouseleave',function(){
 // #region Page 5
 let page4Left=document.querySelector('.page4 .wrapper .left')
 let page4Right=document.querySelector('.page4 .wrapper .right img')
-let page4content=[page2Left,page4Right]
+let page4content=[page4Left,page4Right]
 let page5=document.querySelector('.page5 .carousel')
 page4content.forEach((side)=>{
   side.addEventListener('mouseleave',function(){
