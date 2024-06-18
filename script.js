@@ -9,6 +9,10 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
+
+
+
+
 function preloadMedia(videoSrc, imageSrc) {
   return new Promise((resolve, reject) => {
     var video = document.createElement("video");
