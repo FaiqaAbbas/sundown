@@ -2662,6 +2662,7 @@ body{
 
   .page5 .carousel {
     gap: calc(2rem + 1.8vw);
+    /* margin-right: 18rem; */
   }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
@@ -2670,8 +2671,8 @@ body{
   .page5 .carousel .card-container:nth-child(1) {
     margin-left: calc(4vw);
   }
-  .page5 .carousel .card-container:nth-child(7) {
-    margin-right: 1rem;
+  .page5 .carousel .card-container:nth-child(7){
+    /* margin-right:5rem; */
   }
   .page5 .carousel .card {
     padding-left: calc(1rem + 1.8vw);

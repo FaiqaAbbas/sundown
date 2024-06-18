@@ -105,13 +105,12 @@ updateHeading();
     freeMode: true,
     speed:1000
   });
-    if (window.innerWidth <= 767) {
-      var swiper = new Swiper(".swiper-container", {
+  if (window.innerWidth <= 767) {
+    var swiper = new Swiper(".swiper-container", {
         slidesPerView: 1.5,
-        spaceBetween: 30,
         freeMode: true,
-      });
-    }
+    });
+  }
   
 
 function mouseMover() {
