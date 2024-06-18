@@ -871,8 +871,8 @@ input[type="radio"] {
 
 .page5 .carousel {
   
-  /* overflow-x: scroll; */
-  /* scrollbar-width: none; */
+  overflow-x: scroll;
+  scrollbar-width: none;
   -ms-overflow-style: none;
   /* background-color: #ffce9d; */
   display: flex;
