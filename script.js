@@ -44,8 +44,6 @@ const heroRight = document.querySelector('.page1 .hero .right p');
 // #region Page2
 
 
-// #region Page3
-
 gsap.fromTo(".page2 .left, .page2 .right", {
   y: 200
 }, {
@@ -60,6 +58,9 @@ gsap.fromTo(".page2 .left, .page2 .right", {
   }
 });
 // #endregion Page2
+
+// #region Page3
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Function to animate each project as it comes into view
@@ -77,7 +78,7 @@ function animateProjects() {
         start: "top 80%", // Start animating when the top of the project is 80% from the top of the viewport
         end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
         toggleActions: "play reset play reset", // Controls the play and pause behavior
-        markers: false // Optional: Shows markers for debugging
+        // markers: true // Optional: Shows markers for debugging
       }
     });
   });
@@ -86,48 +87,56 @@ function animateProjects() {
 animateProjects();
 // #endregion Page3
 
-
-
 // #region Page 4 
-let page3=document.querySelector('.page3 .featured-projects-list')
-let page4=document.querySelector('.page4 .wrapper .left')
-page3.addEventListener('mouseleave',function(){
-  gsap.fromTo(page4,
-    {
-      y:100,
-      opacity:0
-    },
-    {
-      y:0,
-      opacity:1,
-      duration:1
-    })
-})
+gsap.fromTo(".page4 .wrapper .left", {
+  y: 200
+}, {
+  y: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".page4",
+    start: "top 90%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    scrub: true, // Smoothly animates the values over the duration of the scroll
+    // markers: true // Optional: shows markers for trigger start and end points
+  }
+});
 // #endregion Page 4 
 
 // #region Page 5
-let page4Left=document.querySelector('.page4 .wrapper .left')
-let page4Right=document.querySelector('.page4 .wrapper .right img')
-let page4content=[page4Left,page4Right]
-let page5=document.querySelector('.page5 .carousel')
-page4content.forEach((side)=>{
-  side.addEventListener('mouseleave',function(){
-  gsap.fromTo(page5,{
-    opacity:0,
-    y:100
-  },
-  {
-    opacity:1,
-    y:0
-  }
 
-)})
 
-})
+  // Create a GSAP timeline for sequencing animations
+  const page5Cards = document.querySelectorAll('.page5 .carousel .card');
+
+  // Create a GSAP timeline for sequencing animations
+  const tl1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page5",
+      start: "top 60%", // Animation starts when top of .page5 is 60% from the top of viewport
+      end: "bottom 100%", // Animation ends when bottom of .page5 is 100% from the top of viewport
+      scrub: true, // Smoothly animates the timeline over the duration of the scroll
+      // markers: true // Optional: shows markers for trigger start and end points
+    }
+  });
+
+  // Loop through each card and add to timeline with smooth animation
+  page5Cards.forEach((card, index) => {
+    tl1.fromTo(card, {
+      y: 100, // Start each card 50px below its final position
+      opacity: 0
+    }, {
+      y: 0,
+      opacity: 1,
+      duration: 2, // Adjust duration as needed
+      ease: "sine.inOut" // Use a smooth easing function
+    }, index * 1); // Stagger each card animation by 0.1 seconds
+  });
+
 
 // #endregion Page 5
-// #endregion GSAP Animation
 })
+// #endregion GSAP Animation
 
 
 
