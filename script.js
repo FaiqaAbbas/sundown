@@ -45,7 +45,7 @@ const heroRight = document.querySelector('.page1 .hero .right p');
 
 
 gsap.fromTo(".page2 .left, .page2 .right", {
-  y: 200
+  y: 100
 }, {
   y: 0,
   duration: 2,
@@ -116,7 +116,7 @@ gsap.fromTo(".page4 .wrapper .left", {
       start: "top 40%", // Animation starts when top of .page5 is 60% from the top of viewport
       end: "bottom 70%", // Animation ends when bottom of .page5 is 100% from the top of viewport
       scrub: true, // Smoothly animates the timeline over the duration of the scroll
-      markers: true // Optional: shows markers for trigger start and end points
+      // markers: true // Optional: shows markers for trigger start and end points
     }
   });
 
