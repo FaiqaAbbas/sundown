@@ -38,50 +38,55 @@ const heroRight = document.querySelector('.page1 .hero .right p');
     '-=1'  // Start this animation 0.8 seconds before the previous one ends
   );
 
+  gsap.registerPlugin(ScrollTrigger);
 // #endregion Page1
 
 // #region Page2
 
-let page1=document.querySelector('.page1 video')
-let page2Left=document.querySelector('.page2 .left')
-let page2Right=document.querySelector('.page2 .right')
 
-page1.addEventListener('mouseenter',function(){
-  gsap.fromTo([page2Left,page2Right],{
-    opacity:0,
-    y:100
-  },
-  {
-    opacity:1,
-    y:0,
-    duration:2
-  })
-})
+// #region Page3
+
+gsap.fromTo(".page2 .left, .page2 .right", {
+  y: 200
+}, {
+  y: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page2",
+    start: "top 50%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    scrub: true, // Smoothly animates the values over the duration of the scroll
+    // markers: true // Optional: shows markers for trigger start and end points
+  }
+});
 // #endregion Page2
+gsap.registerPlugin(ScrollTrigger);
 
-// #region Page 3 
-
-
-const project_heading = document.querySelectorAll(
-  ".featured-projects-list .project a h2"
-);
-let page2Content=document.querySelector('.page2-content-container')
-
-
-page2Content.addEventListener("mouseleave", function () {
-  project_heading.forEach((project) => {
-    gsap.from(project, {
-      opacity: 0,
+// Function to animate each project as it comes into view
+function animateProjects() {
+  gsap.utils.toArray(".featured-projects-list .project").forEach((project) => {
+    gsap.fromTo(project.querySelector("h2"), {
+      opacity: 1,
       y: 100
-    });
-    gsap.to(project, {
+    }, {
       opacity: 1,
       y: 0,
-      duration: 1, // Optionally, specify the animation duration
+      duration:1,
+      scrollTrigger: {
+        trigger: project,
+        start: "top 80%", // Start animating when the top of the project is 80% from the top of the viewport
+        end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
+        toggleActions: "play reset play reset", // Controls the play and pause behavior
+        markers: false // Optional: Shows markers for debugging
+      }
     });
   });
-});
-// #endregion Page 3 
+}
+
+animateProjects();
+// #endregion Page3
+
+
 
 // #region Page 4 
 let page3=document.querySelector('.page3 .featured-projects-list')
