@@ -113,10 +113,10 @@ gsap.fromTo(".page4 .wrapper .left", {
   const tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".page5",
-      start: "top 60%", // Animation starts when top of .page5 is 60% from the top of viewport
-      end: "bottom 100%", // Animation ends when bottom of .page5 is 100% from the top of viewport
+      start: "top 40%", // Animation starts when top of .page5 is 60% from the top of viewport
+      end: "bottom 70%", // Animation ends when bottom of .page5 is 100% from the top of viewport
       scrub: true, // Smoothly animates the timeline over the duration of the scroll
-      // markers: true // Optional: shows markers for trigger start and end points
+      markers: true // Optional: shows markers for trigger start and end points
     }
   });
 
