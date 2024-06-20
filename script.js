@@ -114,7 +114,7 @@ gsap.fromTo(".page4 .wrapper .left", {
     scrollTrigger: {
       trigger: ".page5",
       start: "top 40%", // Animation starts when top of .page5 is 60% from the top of viewport
-      end: "bottom 70%", // Animation ends when bottom of .page5 is 100% from the top of viewport
+      end: "bottom 60%", // Animation ends when bottom of .page5 is 100% from the top of viewport
       scrub: true, // Smoothly animates the timeline over the duration of the scroll
       // markers: true // Optional: shows markers for trigger start and end points
     }
@@ -123,7 +123,7 @@ gsap.fromTo(".page4 .wrapper .left", {
   // Loop through each card and add to timeline with smooth animation
   page5Cards.forEach((card, index) => {
     tl1.fromTo(card, {
-      y: 100, // Start each card 50px below its final position
+      y: 50, // Start each card 50px below its final position
       opacity: 0
     }, {
       y: 0,
