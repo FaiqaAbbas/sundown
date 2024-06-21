@@ -44,13 +44,13 @@ gsap.fromTo(".page2 .left, .page2 .right", {
 {
   opacity:1,
   scale:1,
-  duration: 4,
+  duration: 2,
   scrollTrigger: {
-    trigger: ".page1",
-    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    end: "bottom 20%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    trigger: ".page2",
+    start: "top 80%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    end: "bottom 100%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
     scrub: true, // Smoothly animates the values over the duration of the scroll
-    ease:"power2.inOut"
+    ease:"linear.inOut"
     // markers: true // Optional: shows markers for trigger start and end points
   }
 });
@@ -128,7 +128,7 @@ gsap.fromTo(".page4 .wrapper .left", {
       opacity: 1,
       duration: 1, // Adjust duration as needed
       ease: "sine.inOut" // Use a smooth easing function
-    }, index*1.4 ); // Stagger each card animation by 0.1 seconds
+    }); // Stagger each card animation by 0.1 seconds
   });
 
 
@@ -154,7 +154,7 @@ gsap.fromTo([".footer_logo",".footer .top"], {
     // markers: true // Optional: shows markers for trigger start and end points
   }
 })
-// #region p-footer
+// #endregion p-footer
 
 // #endregion GSAP and ScrollTrigger Animation
 })
