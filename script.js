@@ -71,8 +71,8 @@ function animateProjects() {
       duration:1,
       scrollTrigger: {
         trigger: project,
-        start: "top 40%",
-        end: "bottom 30%", 
+        start: "top 100%",
+        end: "bottom 20%", 
         // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
         // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
         toggleActions: "play none play reset", // Controls the play and pause behavior
@@ -105,32 +105,24 @@ gsap.fromTo(".page4 .wrapper .left", {
 
 
   // Create a GSAP timeline for sequencing animations
-  const page5Cards = document.querySelectorAll('.page5 .carousel .card');
+  // const page5Cards = document.querySelectorAll('.page5 .carousel .card');
 
   // Create a GSAP timeline for sequencing animations
-  const tl1 = gsap.timeline({
+  gsap.fromTo('.page5 .carousel', {
+    y: 100, // Start each card 50px below its final position
+    opacity: 0
+  }, {
+    y: 0,
+    opacity: 1,
+    duration: 5, // Adjust duration as needed 
     scrollTrigger: {
-      trigger: ".page4",
-      start: "bottom 60%", // Animation starts when top of .page5 is 60% from the top of viewport
-      // end: "bottom 20%", // Animation ends when bottom of .page5 is 100% from the top of viewport
-      scrub: true, // Smoothly animates the timeline over the duration of the scroll
-      // markers: true // Optional: shows markers for trigger start and end points
+      trigger: ".page5 .carousel",
+      start: "top 80%",
+      end:"bottom 90%", 
+      ease:'power2.inOut',
+      scrub: true
     }
   });
-
-  // Loop through each card and add to timeline with smooth animation
-  page5Cards.forEach((card, index) => {
-    tl1.fromTo(card, {
-      y: 20, // Start each card 50px below its final position
-      opacity: 0
-    }, {
-      y: 0,
-      opacity: 1,
-      duration: 1, // Adjust duration as needed
-      ease: "sine.inOut" // Use a smooth easing function
-    }); // Stagger each card animation by 0.1 seconds
-  });
-
 
 // #endregion Page 5
 
