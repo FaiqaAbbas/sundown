@@ -64,14 +64,14 @@ function animateProjects() {
   gsap.utils.toArray(".featured-projects-list .project").forEach((project) => {
     gsap.fromTo(project.querySelector("h2"), {
       opacity: 1,
-      y: 50
+      y: 80
     }, {
       opacity: 1,
       y: 0,
       duration:1,
       scrollTrigger: {
         trigger: project,
-        start: "top 20%",
+        start: "top 40%",
         end: "bottom 30%", 
         // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
         // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
