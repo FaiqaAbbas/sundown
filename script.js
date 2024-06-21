@@ -71,8 +71,8 @@ function animateProjects() {
       duration:1,
       scrollTrigger: {
         trigger: project,
-        start: "top 60%",
-        end: "bottom 40%", 
+        start: "bottom 90%",
+        end: "top 40%", 
         // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
         // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
         toggleActions: "play none play reset", // Controls the play and pause behavior
