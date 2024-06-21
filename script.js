@@ -20,15 +20,15 @@ gsap.registerPlugin(ScrollTrigger);
 // #region Page1
 
 gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
-
+  opacity:1,
 },
 {
-  y:-190,
+  opacity:0,
   duration:3,
   scrollTrigger:{
     trigger:".page1 .hero",
     start:"bottom 70%",
-    end:"bottom 30%",
+    // end:"bottom 30%",
     scrub:true,
     // markers:true
   }
@@ -111,8 +111,8 @@ gsap.fromTo(".page4 .wrapper .left", {
   const tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".page4",
-      start: "bottom 50%", // Animation starts when top of .page5 is 60% from the top of viewport
-      end: "bottom 10%", // Animation ends when bottom of .page5 is 100% from the top of viewport
+      start: "bottom 60%", // Animation starts when top of .page5 is 60% from the top of viewport
+      // end: "bottom 20%", // Animation ends when bottom of .page5 is 100% from the top of viewport
       scrub: true, // Smoothly animates the timeline over the duration of the scroll
       // markers: true // Optional: shows markers for trigger start and end points
     }
@@ -128,11 +128,34 @@ gsap.fromTo(".page4 .wrapper .left", {
       opacity: 1,
       duration: 1, // Adjust duration as needed
       ease: "sine.inOut" // Use a smooth easing function
-    }, index*1 ); // Stagger each card animation by 0.1 seconds
+    }, index*1.4 ); // Stagger each card animation by 0.1 seconds
   });
 
 
 // #endregion Page 5
+
+// #region p-footer
+gsap.fromTo([".footer_logo",".footer .top"], {
+  opacity:0,
+  // scale:0,
+  y:-100
+}, 
+{
+    y:0,
+  opacity:1,
+  // scale:1,
+  duration: 4,
+  scrollTrigger: {
+    trigger: ".page5",
+    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    // end: "bottom 20%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    scrub: true, // Smoothly animates the values over the duration of the scroll
+    ease:"power2.inOut"
+    // markers: true // Optional: shows markers for trigger start and end points
+  }
+})
+// #region p-footer
+
 // #endregion GSAP and ScrollTrigger Animation
 })
 
