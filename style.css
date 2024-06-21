@@ -876,7 +876,7 @@ input[type="radio"] {
   overflow-x: scroll;
 } */
 .page5 .carousel {
-  /* background-color: #ffce9d; */
+  background-color: #ffce9d;
   display: flex;
   gap: calc(1rem + 2*(3vw));
 
