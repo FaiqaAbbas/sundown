@@ -39,10 +39,12 @@ gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
 // #region Page2
 gsap.fromTo(".page2 .left, .page2 .right", {
   opacity:0,
-  scale:0
+  scale:0.5,
+  rotate:-70
 }, 
 {
   opacity:1,
+  rotate:0,
   scale:1,
   duration: 2,
   scrollTrigger: {
@@ -71,7 +73,7 @@ function animateProjects() {
       duration:1,
       scrollTrigger: {
         trigger: project,
-        start: "bottom 100%",
+        start: "bottom 120%",
         end: "top 40%", 
         // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
         // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
