@@ -1,3 +1,4 @@
+// Animations
 document.addEventListener('DOMContentLoaded', function() {
   // Your code here
 // #region p-Lenis for smooth scrolling
@@ -12,48 +13,44 @@ function raf(time) {
 requestAnimationFrame(raf);
 // #endregion p-Lenis for smooth scrolling
 
+// #region GSAP and ScrollTrigger Animation
+  
+gsap.registerPlugin(ScrollTrigger);
 
 // #region Page1
 
-const heroLeft = document.querySelectorAll('.page1 .hero .left p');
-const heroRight = document.querySelector('.page1 .hero .right p');
+gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
 
+},
+{
+  y:-190,
+  duration:3,
+  scrollTrigger:{
+    trigger:".page1 .hero",
+    start:"bottom 70%",
+    end:"bottom 30%",
+    scrub:true,
+    // markers:true
+  }
+})
 
-  // Create a GSAP timeline for sequencing animations
-  const tl = gsap.timeline();
-
-  // Animate each paragraph in heroLeft one after another
-  heroLeft.forEach((p, index) => {
-    tl.fromTo(p, 
-      { opacity: 0, y: 50 }, 
-      { opacity: 1, y: 0, duration: 0.3 }, 
-      index * 0.2  // Delay each subsequent animation by 0.2 seconds
-    );
-  });
-
-  // Animate heroRight paragraph after heroLeft animations
-  tl.fromTo(heroRight, 
-    { opacity: 0, y: 60 }, 
-    { opacity: 1, y: 0, duration: 1 },
-    '-=1'  // Start this animation 0.8 seconds before the previous one ends
-  );
-
-  gsap.registerPlugin(ScrollTrigger);
 // #endregion Page1
 
 // #region Page2
-
-
 gsap.fromTo(".page2 .left, .page2 .right", {
-  y: 100
-}, {
-  y: 0,
-  duration: 2,
+  opacity:0,
+  scale:0
+}, 
+{
+  opacity:1,
+  scale:1,
+  duration: 4,
   scrollTrigger: {
-    trigger: ".page2",
-    start: "top 50%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    trigger: ".page1",
+    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    end: "bottom 20%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
     scrub: true, // Smoothly animates the values over the duration of the scroll
+    ease:"power2.inOut"
     // markers: true // Optional: shows markers for trigger start and end points
   }
 });
@@ -61,23 +58,24 @@ gsap.fromTo(".page2 .left, .page2 .right", {
 
 // #region Page3
 
-gsap.registerPlugin(ScrollTrigger);
 
 // Function to animate each project as it comes into view
 function animateProjects() {
   gsap.utils.toArray(".featured-projects-list .project").forEach((project) => {
     gsap.fromTo(project.querySelector("h2"), {
       opacity: 1,
-      y: 100
+      y: 50
     }, {
       opacity: 1,
       y: 0,
       duration:1,
       scrollTrigger: {
         trigger: project,
-        start: "top 80%", // Start animating when the top of the project is 80% from the top of the viewport
-        end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
-        toggleActions: "play reset play reset", // Controls the play and pause behavior
+        start: "top 20%",
+        end: "bottom 30%", 
+        // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
+        // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
+        toggleActions: "play none play reset", // Controls the play and pause behavior
         // markers: true // Optional: Shows markers for debugging
       }
     });
@@ -94,9 +92,9 @@ gsap.fromTo(".page4 .wrapper .left", {
   y: 0,
   duration: 1,
   scrollTrigger: {
-    trigger: ".page4",
-    start: "top 90%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+    trigger: ".page3",
+    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
+    // end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
     scrub: true, // Smoothly animates the values over the duration of the scroll
     // markers: true // Optional: shows markers for trigger start and end points
   }
@@ -112,9 +110,9 @@ gsap.fromTo(".page4 .wrapper .left", {
   // Create a GSAP timeline for sequencing animations
   const tl1 = gsap.timeline({
     scrollTrigger: {
-      trigger: ".page5",
-      start: "top 40%", // Animation starts when top of .page5 is 60% from the top of viewport
-      end: "bottom 60%", // Animation ends when bottom of .page5 is 100% from the top of viewport
+      trigger: ".page4",
+      start: "bottom 50%", // Animation starts when top of .page5 is 60% from the top of viewport
+      end: "bottom 10%", // Animation ends when bottom of .page5 is 100% from the top of viewport
       scrub: true, // Smoothly animates the timeline over the duration of the scroll
       // markers: true // Optional: shows markers for trigger start and end points
     }
@@ -123,25 +121,20 @@ gsap.fromTo(".page4 .wrapper .left", {
   // Loop through each card and add to timeline with smooth animation
   page5Cards.forEach((card, index) => {
     tl1.fromTo(card, {
-      y: 50, // Start each card 50px below its final position
+      y: 20, // Start each card 50px below its final position
       opacity: 0
     }, {
       y: 0,
       opacity: 1,
-      duration: 2, // Adjust duration as needed
+      duration: 1, // Adjust duration as needed
       ease: "sine.inOut" // Use a smooth easing function
-    }, index * 1); // Stagger each card animation by 0.1 seconds
+    }, index*1 ); // Stagger each card animation by 0.1 seconds
   });
 
 
 // #endregion Page 5
+// #endregion GSAP and ScrollTrigger Animation
 })
-// #endregion GSAP Animation
-
-
-
-// #endregion Page3
-
 
 
 // #region Page3 Media Preloading
