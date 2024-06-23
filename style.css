@@ -1705,6 +1705,8 @@ body{
   }
 
   nav .nav-links-hamburger-backdrop {
+    transition: linear 0.7s;
+   
     display: block;
     z-index: 1;
   }
@@ -2250,7 +2252,7 @@ body{
     padding-bottom: 2.5rem;
     border-bottom-left-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
-    transition: linear 0.7s;
+    transition: all ease 0.7s;
     overflow: hidden;
     z-index: 1;
   }
@@ -2264,12 +2266,13 @@ body{
     color: black;
     font-size: 3.6rem;
     letter-spacing: -0.04rem;
-    transition: linear 0.5s;
+  
   }
 
   nav .nav-links-hamburger-backdrop {
     display: block;
     z-index: 1;
+    transition: all ease 0.5s;
   }
   /* #endregion l-Hamburger DropDown Menu */
 
