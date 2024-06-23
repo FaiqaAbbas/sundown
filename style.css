@@ -322,7 +322,6 @@ section.page1 {
   border-radius: 1.3rem;
   max-width: 94vw;
   margin:0 auto;
-  min-height: 100vh;
 }
 .page1 video {
   display: block;
