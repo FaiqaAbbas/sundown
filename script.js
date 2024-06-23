@@ -43,7 +43,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo(".page2 .left, .page2 .right", {
   opacity:0,
   scale:0.5,
-  rotate:-20
+  rotate:-10
 }, 
 {
   opacity:1,
