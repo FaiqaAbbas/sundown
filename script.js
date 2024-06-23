@@ -88,7 +88,7 @@ animateProjects();
 // #endregion Page3
 
 // #region Page 4 
-gsap.fromTo(".page4 .wrapper .left", {
+gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
   y: 200
 }, {
   y: 0,
