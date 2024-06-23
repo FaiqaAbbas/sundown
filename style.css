@@ -577,6 +577,9 @@ section.page1 {
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
   z-index:0;
 }
+.project.fifty .video-container{
+  background-color: pink;
+}
 .featured-projects-list .project video {
   pointer-events: none;
   display: none;
