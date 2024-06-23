@@ -19,20 +19,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 // #region Page1
 
-gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
-  opacity:1,
-},
-{
-  opacity:0,
-  duration:3,
-  scrollTrigger:{
-    trigger:".page1 .hero",
-    start:"bottom 70%",
-    // end:"bottom 30%",
-    scrub:true,
-    // markers:true
-  }
-})
+// gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
+//   opacity:0.6,
+//   rotate:10
+// },
+// {
+//   opacity:1,
+//   rotate:0,
+//   duration:3,
+//   scrollTrigger:{
+//     trigger:".page1 .hero",
+//     start:"bottom 100%",
+//     end:"bottom 80%",
+//     // end:"bottom 30%",
+//     scrub:true,
+//     // markers:true
+//   }
+// })
 
 // #endregion Page1
 
@@ -40,7 +43,7 @@ gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
 gsap.fromTo(".page2 .left, .page2 .right", {
   opacity:0,
   scale:0.5,
-  rotate:-70
+  rotate:-20
 }, 
 {
   opacity:1,
