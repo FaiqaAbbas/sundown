@@ -314,19 +314,12 @@ section.page1 {
 /* #endregion l-Hero*/
 /** ============================================Video============================================= */
 /** ============================================Video============================================= */
-.page1-video-container{
-  position: relative;
-  z-index: 1;
-  background-image:url("/sources/page1 video thumbnail.png") ;
-  background-size: cover;
-  border-radius: 1.3rem;
-  max-width: 94vw;
-  margin:0 auto;
-}
+
 .page1 video {
   display: block;
+  
   border-radius: 1.3rem;
-  width: 100%;
+  width: 94vw;
   object-fit: cover;
   position: relative;
 }
