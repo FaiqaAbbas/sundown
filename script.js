@@ -1,4 +1,4 @@
-// Animations
+// #region p-Animations
 document.addEventListener('DOMContentLoaded', function() {
   // Your code here
 // #region p-Lenis for smooth scrolling
@@ -152,6 +152,9 @@ gsap.fromTo([".footer_logo",".footer .top"], {
 
 // #endregion GSAP and ScrollTrigger Animation
 })
+// #endregion p-Animations
+
+
 
 
 // #region Page3 Media Preloading

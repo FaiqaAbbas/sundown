@@ -577,8 +577,8 @@ section.page1 {
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
   z-index:0;
 }
-.project.fifty .video-container{
-  background-color: pink;
+.video-container{
+  display: none;
 }
 .featured-projects-list .project video {
   pointer-events: none;
@@ -1440,14 +1440,47 @@ footer .footer_links_wrapper {
     border-bottom: none;
     overflow: hidden;
   }
+  .video-container{
+    display:block;
+    width: 98%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    /* background-color: pink; */
+  
+  }
+
+  .fifty .video-container{
+    background-image:url('./sources/Projects/50th Aniverasry Image.webp')
+  }
+  .Makers .video-container{
+    background-image:url('./sources/Projects/Makers.webp')
+  }
+  .Play .video-container{
+    background-image:url('./sources/Projects/Play Thumbnail.png')
+  }
+  .Kelce .video-container{
+    background-image:url('./sources/Projects/Kelce Thumbnail.png')
+  }
+  .Capezio .video-container{
+    background-image:url('./sources/Projects/Capezio Thumbnail.png')
+  }
+  .Carmelo .video-container{
+    background-image:url('./sources/Projects/Carmelo Thumbnail.png')
+  }
+  .Converse .video-container{
+    background-image:url('./sources/Projects/Converse Thumbnail.png')
+  }
+  .NYFW .video-container{
+    background-image:url('./sources/Projects/NYFP Thumbnail.png')
+  }
 
   .featured-projects-list .project video {
     margin: 0 auto;
     display: block;
     object-fit: cover;
     height: calc(56vw);
-    /* width: calc(23rem + 10vw); */
-    width: 98%;
+    width: 100%;
     border-radius: 1rem;
   }
   .featured-projects-list .project a {
@@ -1968,14 +2001,46 @@ body{
     border-bottom: none;
     overflow: hidden;
   }
+  .video-container{
+    display:block;
+    width: 98%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    /* background-color: pink; */
+  }
 
+  .fifty .video-container{
+    background-image:url('./sources/Projects/50th Aniverasry Image.webp')
+  }
+  .Makers .video-container{
+    background-image:url('./sources/Projects/Makers.webp')
+  }
+  .Play .video-container{
+    background-image:url('./sources/Projects/Play Thumbnail.png')
+  }
+  .Kelce .video-container{
+    background-image:url('./sources/Projects/Kelce Thumbnail.png')
+  }
+  .Capezio .video-container{
+    background-image:url('./sources/Projects/Capezio Thumbnail.png')
+  }
+  .Carmelo .video-container{
+    background-image:url('./sources/Projects/Carmelo Thumbnail.png')
+  }
+  .Converse .video-container{
+    background-image:url('./sources/Projects/Converse Thumbnail.png')
+  }
+  .NYFW .video-container{
+    background-image:url('./sources/Projects/NYFP Thumbnail.png')
+  }
   .featured-projects-list .project video {
     margin: 0 auto;
     display: block;
     object-fit: cover;
     height: calc(53vw);
     /* width: calc(23rem + 10vw); */
-    width: 98%;
+    width: 100%;
     border-radius: 1rem;
   }
   .featured-projects-list .project a {
@@ -2513,14 +2578,46 @@ body{
     border-bottom: none;
     overflow: hidden;
   }
+  .video-container{
+    display:block;
+    width: 98%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    /* background-color: pink; */
+  }
 
+  .fifty .video-container{
+    background-image:url('./sources/Projects/50th Aniverasry Image.webp')
+  }
+  .Makers .video-container{
+    background-image:url('./sources/Projects/Makers.webp')
+  }
+  .Play .video-container{
+    background-image:url('./sources/Projects/Play Thumbnail.png')
+  }
+  .Kelce .video-container{
+    background-image:url('./sources/Projects/Kelce Thumbnail.png')
+  }
+  .Capezio .video-container{
+    background-image:url('./sources/Projects/Capezio Thumbnail.png')
+  }
+  .Carmelo .video-container{
+    background-image:url('./sources/Projects/Carmelo Thumbnail.png')
+  }
+  .Converse .video-container{
+    background-image:url('./sources/Projects/Converse Thumbnail.png')
+  }
+  .NYFW .video-container{
+    background-image:url('./sources/Projects/NYFP Thumbnail.png')
+  }
   .featured-projects-list .project video {
     margin: 0 auto;
     display: block;
     object-fit: cover;
     height: calc(113vw);
     /* width: calc(23rem + 10vw); */
-    width: 98%;
+    width: 100%;
     border-radius: 1rem;
   }
   .featured-projects-list .project a {
