@@ -152,10 +152,7 @@ gsap.fromTo([".footer_logo",".footer .top"], {
 
 // #endregion GSAP and ScrollTrigger Animation
 })
-// #endregion p-Animations
-
-
-
+// #enregion p-Animations
 
 // #region Page3 Media Preloading
 // Preloading Media for Page 3
@@ -207,6 +204,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Event listeners for project hover
       projects.forEach(function (project) {
+        var video=project.querySelector('video')
+        video.src=project.dataset.videoSrc;
+        
         project.addEventListener("mouseenter", function () {
           project_video.poster = project.dataset.imageSrc;
           project_video.src = project.dataset.videoSrc;
