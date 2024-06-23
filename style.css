@@ -273,7 +273,7 @@ nav .menu-btn {
 
 section.page1 {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   margin-top: -1px;
     /* Overflow hidden doesnot work on mobile
   device so when we do position:relative and then 
@@ -314,11 +314,20 @@ section.page1 {
 /* #endregion l-Hero*/
 /** ============================================Video============================================= */
 /** ============================================Video============================================= */
-.page1 video {
-  display: block;
-  margin-top: 3.3rem;
+.page1-video-container{
+  position: relative;
+  z-index: 1;
+  background-image:url("/sources/page1 video thumbnail.png") ;
+  background-size: cover;
   border-radius: 1.3rem;
   max-width: 94vw;
+  margin:0 auto;
+  min-height: 100vh;
+}
+.page1 video {
+  display: block;
+  border-radius: 1.3rem;
+  max-width: 100%;
   object-fit: cover;
   position: relative;
 }
