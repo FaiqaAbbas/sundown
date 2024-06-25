@@ -271,7 +271,7 @@ updateHeading();
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 3.5,
   freeMode: true,
-  speed: 1000,
+  speed: 2000,
 });
 if (window.innerWidth <= 767) {
   var swiper = new Swiper(".swiper-container", {
