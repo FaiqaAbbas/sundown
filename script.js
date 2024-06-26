@@ -95,7 +95,7 @@ gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
   y: 200
 }, {
   y: 0,
-  duration: 1,
+  duration: 2,
   scrollTrigger: {
     trigger: ".page3",
     start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
