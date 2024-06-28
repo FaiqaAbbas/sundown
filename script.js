@@ -119,7 +119,7 @@ gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
   }, {
     y: 0,
     opacity: 1,
-    duration: 5, // Adjust duration as needed 
+    duration: 3, // Adjust duration as needed 
     scrollTrigger: {
       trigger: ".page5 .carousel",
       start: "top 80%",
