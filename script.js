@@ -95,7 +95,7 @@ gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
   y: 200
 }, {
   y: 0,
-  duration: 1,
+  duration: 2,
   scrollTrigger: {
     trigger: ".page3",
     start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
@@ -119,7 +119,7 @@ gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
   }, {
     y: 0,
     opacity: 1,
-    duration: 5, // Adjust duration as needed 
+    duration: 3, // Adjust duration as needed 
     scrollTrigger: {
       trigger: ".page5 .carousel",
       start: "top 80%",
@@ -272,7 +272,7 @@ updateHeading();
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 3.5,
   freeMode: true,
-  speed: 1000,
+  speed: 2000,
 });
 if (window.innerWidth <= 767) {
   var swiper = new Swiper(".swiper-container", {
