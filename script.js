@@ -209,6 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
       projects.forEach(function (project) {
         var video=project.querySelector('video')
         video.src=project.dataset.videoSrc;
+        video.poster=project.dataset.imageSrc;
         
         project.addEventListener("mouseenter", function () {
           project_video.poster = project.dataset.imageSrc;
