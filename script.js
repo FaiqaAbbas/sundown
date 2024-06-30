@@ -1,36 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-  const webPage=document.querySelector('.webPage')
-  webPage.style.display='none'
-  const loader = document.querySelector('.loader');
-  const loaderText = document.querySelector('.loaderText');
-  const textArray = [ 'ENVIRONMENTS','EXPERIENCES', 'CONTENT',''];
-  let textIndex = 0;
-
-  // Function to change the text
-  function changeText() {
-      loaderText.innerText = textArray[textIndex];
-      textIndex = (textIndex + 1) % textArray.length;
-
-      // Check if all texts have been shown
-      if (textIndex === 0) {
-          // Animate loader sliding up
-          loader.style.transition = 'transform 1s ease, opacity 1s ease';
-          loader.style.transform = 'translateY(-100%)';
-          
-          // Optionally hide loader after animation completes
-          setTimeout(() => {
-            loader.style.display = 'none';
-          }, 2000); // Wait for 1 second (adjust as needed)
-          webPage.style.display = 'block';
-      }
-  }
-
-  // Set interval to change text every 1.5 seconds
-  setInterval(changeText, 1500);
-
-  // Initial call to set the first text immediately
-  changeText();
+ 
 // #region p-Lenis for smooth scrolling
 const lenis = new Lenis();
 lenis.on("scroll", (e) => {
@@ -237,6 +207,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   Promise.all(preloadedMediaPromises)
     .then(() => {
+      const webPage=document.querySelector('.webPage')
+      webPage.style.display='none'
+      const loader = document.querySelector('.loader');
+      const loaderText = document.querySelector('.loaderText');
+      const textArray = [ 'ENVIRONMENTS','EXPERIENCES', 'CONTENT',''];
+      let textIndex = 0;
+    
+      // Function to change the text
+      function changeText() {
+          loaderText.innerText = textArray[textIndex];
+          textIndex = (textIndex + 1) % textArray.length;
+    
+          // Check if all texts have been shown
+          if (textIndex === 0) {
+              // Animate loader sliding up
+              loader.style.transition = 'transform 1s ease, opacity 1s ease';
+              loader.style.transform = 'translateY(-100%)';
+              
+              // Optionally hide loader after animation completes
+              setTimeout(() => {
+                loader.style.display = 'none';
+              }, 2000); // Wait for 1 second (adjust as needed)
+              webPage.style.display = 'block';
+          }
+      }
+    
+      // Set interval to change text every 1.5 seconds
+      setInterval(changeText, 1500);
+    
+      // Initial call to set the first text immediately
+      changeText();
       document.body.style.display = "block"; // Show the content after all media are loaded
 
       // Event listeners for project hover
