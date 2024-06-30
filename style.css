@@ -40,6 +40,26 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
 }
+.loader{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position:fixed;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loaderText{
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #fe330a, #ff9831);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: ease-in-out 1s;
+  cursor:pointer;
+}
+
 body,
 html {
   /* lenis not working because of that */
@@ -65,6 +85,7 @@ html::-webkit-scrollbar-thumb {
 	background-color: #655e5d;
 	border-radius: 20px;
 }
+/* Mozilla */
 /* #endregion p-scrollbar styles */
 main {
 	position: relative;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting Sun Loader Animation</title>
+  <script src="https://cdn.jsdelivr.net/npm/@lottie/player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <div id="loader">
+    <lottie-player id="lottie-player" src="path/to/setting_sun.json"  loop autoplay></lottie-player>
+  </div>
+  
+  <script>
+    const lottiePlayer = document.getElementById('lottie-player');
+
+    lottiePlayer.addEventListener('load', () => {
+      // Show loader initially
+      document.getElementById("loader").style.display = "block";
+    });
+  </script>
+</body>
+</html>

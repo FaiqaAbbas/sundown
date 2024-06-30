@@ -1,6 +1,36 @@
-// #region p-Animations
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Your code here
+  const webPage=document.querySelector('.webPage')
+  webPage.style.display='none'
+  const loader = document.querySelector('.loader');
+  const loaderText = document.querySelector('.loaderText');
+  const textArray = [ 'ENVIRONMENTS','EXPERIENCES', 'CONTENT',''];
+  let textIndex = 0;
+
+  // Function to change the text
+  function changeText() {
+      loaderText.innerText = textArray[textIndex];
+      textIndex = (textIndex + 1) % textArray.length;
+
+      // Check if all texts have been shown
+      if (textIndex === 0) {
+          // Animate loader sliding up
+          loader.style.transition = 'transform 1s ease, opacity 1s ease';
+          loader.style.transform = 'translateY(-100%)';
+          
+          // Optionally hide loader after animation completes
+          setTimeout(() => {
+            loader.style.display = 'none';
+          }, 2000); // Wait for 1 second (adjust as needed)
+          webPage.style.display = 'block';
+      }
+  }
+
+  // Set interval to change text every 1.5 seconds
+  setInterval(changeText, 1500);
+
+  // Initial call to set the first text immediately
+  changeText();
 // #region p-Lenis for smooth scrolling
 const lenis = new Lenis();
 lenis.on("scroll", (e) => {
@@ -66,11 +96,13 @@ gsap.fromTo(".page2 .left, .page2 .right", {
 
 // Function to animate each project as it comes into view
 function animateProjects() {
-  gsap.utils.toArray(".featured-projects-list .project").forEach((project) => {
+  gsap.utils.toArray(".featured-projects-list .project")
+  .forEach((project) => {
     gsap.fromTo(project.querySelector("h2"), {
       opacity: 1,
       y: 80
-    }, {
+    }, 
+    {
       opacity: 1,
       y: 0,
       duration:1,
@@ -154,8 +186,10 @@ gsap.fromTo([".footer_logo",".footer .top"], {
 // #endregion p-footer
 
 // #endregion GSAP and ScrollTrigger Animation
+
+
 })
-// #enregion p-Animations
+
 
 // #region Page3 Media Preloading
 // Preloading Media for Page 3
@@ -269,33 +303,8 @@ updateHeading();
 // #endregion Page4 Picture and Changing content
 
 
-// Page 5 swiper cursor
-
-function mouseMover() {
-  const cursor = document.querySelector(".cursor");
-  const page5 = document.querySelector(".page5");
-  page5.addEventListener("mousemove", (dets) => {
-    gsap.to(cursor, {
-      x: dets.x,
-      y: dets.y,
-    });
-  });
-  page5.addEventListener("mouseleave", (dets) => {
-    gsap.to(cursor, {
-      scale: 0,
-      opacity: 0,
-    });
-  });
-  page5.addEventListener("mouseenter", (dets) => {
-    gsap.to(cursor, {
-      scale: 1,
-      opacity: 1,
-    });
-  });
-}
-mouseMover();
-
-  // #region Page 5 Swiper and Cursor
+// #region Page 5 Swiper and Cursor
+// Swiper
 var swiper = new Swiper('.swiper-container', {
   freeMode: true,
   breakpoints: {
@@ -322,6 +331,30 @@ var swiper = new Swiper('.swiper-container', {
   }
 
 });
+// Cursor
+function mouseMover() {
+  const cursor = document.querySelector(".cursor");
+  const page5 = document.querySelector(".page5");
+  page5.addEventListener("mousemove", (dets) => {
+    gsap.to(cursor, {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+  page5.addEventListener("mouseleave", (dets) => {
+    gsap.to(cursor, {
+      scale: 0,
+      opacity: 0,
+    });
+  });
+  page5.addEventListener("mouseenter", (dets) => {
+    gsap.to(cursor, {
+      scale: 1,
+      opacity: 1,
+    });
+  });
+}
+mouseMover();
 
 
 
