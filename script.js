@@ -228,13 +228,13 @@ document.addEventListener("DOMContentLoaded", () => {
               // Optionally hide loader after animation completes
               setTimeout(() => {
                 loader.style.display = 'none';
-              }, 2000); // Wait for 1 second (adjust as needed)
+              }, 3000); // Wait for 1 second (adjust as needed)
               webPage.style.display = 'block';
           }
       }
     
       // Set interval to change text every 1.5 seconds
-      setInterval(changeText, 1500);
+      setInterval(changeText, 2000);
     
       // Initial call to set the first text immediately
       changeText();
