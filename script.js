@@ -271,7 +271,7 @@ updateHeading();
 // #region Page 5 Swiper and Cursor
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 3.5,
-  freeMode: true,
+  // freeMode: true,
   speed: 2000,
 });
 if (window.innerWidth <= 767) {
