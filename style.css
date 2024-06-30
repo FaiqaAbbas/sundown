@@ -866,6 +866,7 @@ input[type="radio"] {
   padding-bottom: 6rem;
   margin-top: -1px;
   cursor: none;
+  overflow: hidden;
 }
 .page5 .page-heading {
   padding-inline: calc(2.5rem + 4vw);
@@ -874,17 +875,8 @@ input[type="radio"] {
 .page5 .page-heading h6 {
   font-size: calc(0.6rem + 0.3vw);
 }
-.swiper-container{
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  overflow-x: scroll;
-}
-.page5 .carousel {
-  /* background-color: #ffce9d; */
-  display: flex;
-  gap: calc(1rem + 2*(3vw));
 
-}
+
 
 .carousel::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -913,9 +905,7 @@ input[type="radio"] {
 .page5 .carousel .card-container:nth-child(1) {
   margin-left: calc(3.2rem + 3vw);
 }
-.page5 .carousel .card-container:nth-child(7) {
-  margin-right: 3rem;
-}
+
 .page5 .carousel .card {
   padding-left: calc(1rem + 0.42vw);
   width: calc(8rem + 8.4vw);
@@ -1602,11 +1592,6 @@ footer .footer_links_wrapper {
     font-size: calc(0.6rem + 0.3vw);
   }
 
-  .page5 .carousel {
-
-    gap: calc(8.55vw);
-
-  }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
@@ -1627,11 +1612,11 @@ footer .footer_links_wrapper {
   .page5 .carousel .card img {
     object-fit: cover;
     /* margin-bottom:0.6rem; */
-    width: calc(14vw);
+    width: calc(15vw);
   }
   .page5 .carousel .card p {
     margin-top: 0rem;
-    font-size: calc(0.632rem + 0.45vw);
+    font-size: calc(0.63rem + 0.49vw);
     line-height: 1.4;
   }
   /* #endregion p-Page5 */
@@ -2176,9 +2161,6 @@ body{
     font-size: calc(0.67rem + 0.2vw);
   }
 
-  .page5 .carousel {
-    gap: calc(9vw);
-  }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
@@ -2764,10 +2746,6 @@ body{
     font-size: calc(0.67rem + 1vw);
   }
 
-  .page5 .carousel {
-    gap: calc(2rem + 1.8vw);
-    /* margin-right: 18rem; */
-  }
   .carousel::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
@@ -2780,16 +2758,16 @@ body{
   }
   .page5 .carousel .card {
     padding-left: calc(1rem + 1.8vw);
-    width: 56vw;
+    width: 60vw;
     /* background-color:lavender */
   }
 
   .page5 .carousel .card img {
-    width: calc(9rem);
-    margin-bottom: 0.7rem;
+    width: calc(10rem);
+    margin-bottom: 1.3rem;
   }
   .page5 .carousel .card p {
-    font-size: calc(0.73rem + 0.6vw);
+    font-size: calc(0.8rem + 0.7vw);
     /* background-color: pink; */
   }
   /* #endregion p-Page5 */

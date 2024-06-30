@@ -268,18 +268,7 @@ execution.addEventListener("change", updateHeading);
 updateHeading();
 // #endregion Page4 Picture and Changing content
 
-// #region Page 5 Swiper and Cursor
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3.5,
-  // freeMode: true,
-  speed: 2000,
-});
-if (window.innerWidth <= 767) {
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 1.5,
-    freeMode: true,
-  });
-}
+
 // Page 5 swiper cursor
 
 function mouseMover() {
@@ -305,6 +294,36 @@ function mouseMover() {
   });
 }
 mouseMover();
+
+  // #region Page 5 Swiper and Cursor
+var swiper = new Swiper('.swiper-container', {
+  freeMode: true,
+  breakpoints: {
+    
+    // when window width is >= 480px
+    991: {
+      slidesPerView: 3.7,
+      spaceBetween: 10
+    },
+    // when window width is >= 640px
+    767: {
+      slidesPerView: 2.7,
+      spaceBetween: 30
+    },
+    481: {
+      slidesPerView: 1.6,
+      spaceBetween: 30
+    },
+    100:{
+      slidesPerView: 1.345,
+      spaceBetween: 0
+    }
+    
+  }
+
+});
+
+
+
+
 // #endregion Page 5 Swiper and Cursor
-
-
