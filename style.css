@@ -59,12 +59,12 @@
   transition: ease-in-out 1s;
   cursor:pointer;
 }
-
+ 
 body,
 html {
   /* lenis not working because of that */
   /*  */
-  /* overflow-x: hidden; */
+
   width: 100%;
   height: 100vh;
   font-family: "Neuehaasdisplay mediu", sans-serif;
@@ -98,6 +98,7 @@ main .page1,
 .page4,
 .page5,
 nav {
+    overflow: hidden;
   background-color: #efeae3;
 }
 
