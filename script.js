@@ -217,10 +217,10 @@ document.addEventListener("DOMContentLoaded", () => {
       // Function to change the text
       function changeText() {
           loaderText.innerText = textArray[textIndex];
-          textIndex = (textIndex + 1) % textArray.length;
+          textIndex = (textIndex + 1);
     
           // Check if all texts have been shown
-          if (textIndex === 0) {
+          if (textIndex === 4) {
               // Animate loader sliding up
               loader.style.transition = 'transform 1s ease, opacity 1s ease';
               loader.style.transform = 'translateY(-100%)';
