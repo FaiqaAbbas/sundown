@@ -93,7 +93,6 @@ main {
 	width: 100%;
 }
 main .page1,
-.page2,
 .page3,
 .page4,
 .page5,
@@ -392,6 +391,7 @@ section.page1 {
 
 .page2 {
   /* background-color: cornsilk; */
+  background-color: #efeae3;
   min-height: 100vh;
   width: 100%;
   position: relative;
