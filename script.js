@@ -1,206 +1,220 @@
-
-document.addEventListener('DOMContentLoaded', function() {
-  const webPage = document.querySelector('.webPage');
-  const loader = document.querySelector('.loader');
-  const loaderText = document.querySelector('.loaderText');
-  const textArray = ['ENVIRONMENTS', 'EXPERIENCES', 'CONTENT', ''];
+document.addEventListener("DOMContentLoaded", function () {
+  // #region loader animation
+  const webPage = document.querySelector(".webPage");
+  const loader = document.querySelector(".loader");
+  const loaderText = document.querySelector(".loaderText");
+  const textArray = ["ENVIRONMENTS", "EXPERIENCES", "CONTENT", ""];
   let textIndex = 0;
-  
+
   // Hide the scrollbar initially
-  document.body.style.overflow = 'hidden';
-  
+  document.body.style.overflow = "hidden";
+
   // Function to change the text
   function changeText() {
-      loaderText.innerText = textArray[textIndex];
-      textIndex = (textIndex + 1);
-  
-      // Check if all texts have been shown
-      if (textIndex === textArray.length) {
-          // Animate loader sliding up
-          loader.style.transition = 'transform 1s ease, opacity 1s ease';
-          loader.style.transform = 'translateY(-100%)';
-          
-          // Optionally hide loader after animation completes
-          setTimeout(() => {
-              loader.style.display = 'none';
-          }, 1000); // Wait for 1 second (adjust as needed)
-  
-          // Show the main content
-          webPage.style.display = 'block';
-  
-          // Re-enable the scrollbar
-          document.body.style.overflow = 'auto';
-  
-          // Stop the text change loop
-          return;
-      }
-  
-      // Continue changing text
-      setTimeout(changeText, 2000);
+    loaderText.innerText = textArray[textIndex];
+    textIndex = textIndex + 1;
+
+    // Check if all texts have been shown
+    if (textIndex === textArray.length) {
+      // Animate loader sliding up
+      loader.style.transition = "transform 1s ease, opacity 1s ease";
+      loader.style.transform = "translateY(-100%)";
+
+      // Optionally hide loader after animation completes
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 1000); // Wait for 1 second (adjust as needed)
+
+      // Show the main content
+      webPage.style.display = "block";
+
+      // Re-enable the scrollbar
+      document.body.style.overflow = "auto";
+
+      // Stop the text change loop
+      return;
+    }
+
+    // Continue changing text
+    setTimeout(changeText, 2000);
   }
-  
+
   // Initial call to set the first text immediately
   changeText();
-  
-// #region p-Lenis for smooth scrolling
-const lenis = new Lenis();
-lenis.on("scroll", (e) => {
-  // console.log(e);
-});
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-// #endregion p-Lenis for smooth scrolling
+  // #endregion loader animation
 
-// #region GSAP and ScrollTrigger Animation
-  
-gsap.registerPlugin(ScrollTrigger);
-
-// #region Page1
-
-// gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
-//   opacity:0.6,
-//   rotate:10
-// },
-// {
-//   opacity:1,
-//   rotate:0,
-//   duration:3,
-//   scrollTrigger:{
-//     trigger:".page1 .hero",
-//     start:"bottom 100%",
-//     end:"bottom 80%",
-//     // end:"bottom 30%",
-//     scrub:true,
-//     // markers:true
-//   }
-// })
-
-// #endregion Page1
-
-// #region Page2
-gsap.fromTo(".page2 .left, .page2 .right", {
-  opacity:0,
-  scale:0.5,
-  rotate:-10
-}, 
-{
-  opacity:1,
-  rotate:0,
-  scale:1,
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".page2",
-    start: "top 80%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    end: "bottom 100%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
-    scrub: true, // Smoothly animates the values over the duration of the scroll
-    ease:"linear.inOut"
-    // markers: true // Optional: shows markers for trigger start and end points
+  // #region p-Lenis for smooth scrolling
+  const lenis = new Lenis();
+  lenis.on("scroll", (e) => {
+    // console.log(e);
+  });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
   }
-});
-// #endregion Page2
+  requestAnimationFrame(raf);
+  // #endregion p-Lenis for smooth scrolling
 
-// #region Page3
+  // #region GSAP and ScrollTrigger Animation
 
+  gsap.registerPlugin(ScrollTrigger);
 
-// Function to animate each project as it comes into view
-function animateProjects() {
-  gsap.utils.toArray(".featured-projects-list .project")
-  .forEach((project) => {
-    gsap.fromTo(project.querySelector("h2"), {
-      opacity: 1,
-      y: 80
-    }, 
+  // #region Page1
+
+  // gsap.fromTo(['.page1 .hero .left','.page1 .hero .right'] ,{
+  //   opacity:0.6,
+  //   rotate:10
+  // },
+  // {
+  //   opacity:1,
+  //   rotate:0,
+  //   duration:3,
+  //   scrollTrigger:{
+  //     trigger:".page1 .hero",
+  //     start:"bottom 100%",
+  //     end:"bottom 80%",
+  //     // end:"bottom 30%",
+  //     scrub:true,
+  //     // markers:true
+  //   }
+  // })
+
+  // #endregion Page1
+
+  // #region Page2
+  gsap.fromTo(
+    ".page2 .left, .page2 .right",
+    {
+      opacity: 0,
+      scale: 0.5,
+      rotate: -10,
+    },
     {
       opacity: 1,
-      y: 0,
-      duration:1,
+      rotate: 0,
+      scale: 1,
+      duration: 2,
       scrollTrigger: {
-        trigger: project,
-        start: "bottom 120%",
-        end: "top 40%", 
-        // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
-        // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
-        toggleActions: "play none play reset", // Controls the play and pause behavior
-        // markers: true // Optional: Shows markers for debugging
-      }
-    });
-  });
-}
+        trigger: ".page2",
+        start: "top 80%", // Animation starts when top of the trigger element hits 80% of the viewport height
+        end: "bottom 100%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+        scrub: true, // Smoothly animates the values over the duration of the scroll
+        ease: "linear.inOut",
+        // markers: true // Optional: shows markers for trigger start and end points
+      },
+    }
+  );
+  // #endregion Page2
 
-animateProjects();
-// #endregion Page3
+  // #region Page3
 
-// #region Page 4 
-gsap.fromTo([".page4 .wrapper .left",".page4 .wrapper"], {
-  y: 200
-}, {
-  y: 0,
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".page3",
-    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    // end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
-    scrub: true, // Smoothly animates the values over the duration of the scroll
-    // markers: true // Optional: shows markers for trigger start and end points
+  // Function to animate each project as it comes into view
+  function animateProjects() {
+    gsap.utils
+      .toArray(".featured-projects-list .project")
+      .forEach((project) => {
+        gsap.fromTo(
+          project.querySelector("h2"),
+          {
+            opacity: 1,
+            y: 80,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+              trigger: project,
+              start: "bottom 120%",
+              end: "top 40%",
+              // scrub:true,// Start animating when the top of the project is 80% from the top of the viewport
+              // end: "bottom 0%", // End animating when the bottom of the project is 20% from the bottom of the viewport
+              toggleActions: "play none play reset", // Controls the play and pause behavior
+              // markers: true // Optional: Shows markers for debugging
+            },
+          }
+        );
+      });
   }
-});
-// #endregion Page 4 
 
-// #region Page 5
+  animateProjects();
+  // #endregion Page3
 
+  // #region Page 4
+  gsap.fromTo(
+    [".page4 .wrapper .left", ".page4 .wrapper"],
+    {
+      y: 200,
+    },
+    {
+      y: 0,
+      duration: 2,
+      scrollTrigger: {
+        trigger: ".page3",
+        start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
+        // end: "bottom 50%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+        scrub: true, // Smoothly animates the values over the duration of the scroll
+        // markers: true // Optional: shows markers for trigger start and end points
+      },
+    }
+  );
+  // #endregion Page 4
+
+  // #region Page 5
 
   // Create a GSAP timeline for sequencing animations
   // const page5Cards = document.querySelectorAll('.page5 .carousel .card');
 
   // Create a GSAP timeline for sequencing animations
-  gsap.fromTo('.page5 .carousel', {
-    y: 100, // Start each card 50px below its final position
-    opacity: 0
-  }, {
-    y: 0,
-    opacity: 1,
-    duration: 3, // Adjust duration as needed 
-    scrollTrigger: {
-      trigger: ".page5 .carousel",
-      start: "top 80%",
-      end:"bottom 90%", 
-      ease:'power2.inOut',
-      scrub: true
+  gsap.fromTo(
+    ".page5 .carousel",
+    {
+      y: 100, // Start each card 50px below its final position
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 3, // Adjust duration as needed
+      scrollTrigger: {
+        trigger: ".page5 .carousel",
+        start: "top 80%",
+        end: "bottom 90%",
+        ease: "power2.inOut",
+        scrub: true,
+      },
     }
-  });
+  );
 
-// #endregion Page 5
+  // #endregion Page 5
 
-// #region p-footer
-gsap.fromTo([".footer_logo",".footer .top"], {
-  opacity:0,
-  // scale:0,
-  y:-100
-}, 
-{
-    y:0,
-  opacity:1,
-  // scale:1,
-  duration: 4,
-  scrollTrigger: {
-    trigger: ".page5",
-    start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
-    // end: "bottom 20%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
-    scrub: true, // Smoothly animates the values over the duration of the scroll
-    ease:"power2.inOut"
-    // markers: true // Optional: shows markers for trigger start and end points
-  }
-})
-// #endregion p-footer
+  // #region p-footer
+  gsap.fromTo(
+    [".footer_logo", ".footer .top"],
+    {
+      opacity: 0,
+      // scale:0,
+      y: -100,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      // scale:1,
+      duration: 4,
+      scrollTrigger: {
+        trigger: ".page5",
+        start: "bottom 70%", // Animation starts when top of the trigger element hits 80% of the viewport height
+        // end: "bottom 20%", // Animation ends when bottom of the trigger element hits 20% of the viewport height
+        scrub: true, // Smoothly animates the values over the duration of the scroll
+        ease: "power2.inOut",
+        // markers: true // Optional: shows markers for trigger start and end points
+      },
+    }
+  );
+  // #endregion p-footer
 
-// #endregion GSAP and ScrollTrigger Animation
-
-
-})
-
+  // #endregion GSAP and ScrollTrigger Animation
+});
 
 // #region Page3 Media Preloading
 // Preloading Media for Page 3
@@ -248,14 +262,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   Promise.all(preloadedMediaPromises)
     .then(() => {
-     
-
       // Event listeners for project hover
       projects.forEach(function (project) {
-        var video=project.querySelector('video')
-        video.src=project.dataset.videoSrc;
-        video.poster=project.dataset.imageSrc;
-        
+        var video = project.querySelector("video");
+        video.src = project.dataset.videoSrc;
+        video.poster = project.dataset.imageSrc;
+
         project.addEventListener("mouseenter", function () {
           project_video.poster = project.dataset.imageSrc;
           project_video.src = project.dataset.videoSrc;
@@ -313,34 +325,30 @@ execution.addEventListener("change", updateHeading);
 updateHeading();
 // #endregion Page4 Picture and Changing content
 
-
 // #region Page 5 Swiper and Cursor
 // Swiper
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper(".swiper-container", {
   freeMode: true,
   breakpoints: {
-    
     // when window width is >= 480px
     991: {
       slidesPerView: 3.7,
-      spaceBetween: 10
+      spaceBetween: 10,
     },
     // when window width is >= 640px
     767: {
       slidesPerView: 2.7,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     481: {
       slidesPerView: 1.6,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
-    100:{
+    100: {
       slidesPerView: 1.345,
-      spaceBetween: 0
-    }
-    
-  }
-
+      spaceBetween: 0,
+    },
+  },
 });
 // Cursor
 function mouseMover() {
@@ -366,8 +374,5 @@ function mouseMover() {
   });
 }
 mouseMover();
-
-
-
 
 // #endregion Page 5 Swiper and Cursor
