@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Continue changing text
-    setTimeout(changeText, 2000);
+    setTimeout(changeText, 1500);
   }
 
   // Initial call to set the first text immediately
