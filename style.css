@@ -602,6 +602,7 @@ section.page1 {
 }
 .video-container{
   display: none;
+
 }
 .featured-projects-list .project video {
   pointer-events: none;

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Continue changing text
-    setTimeout(changeText, 1500);
+    setTimeout(changeText, 500);
   }
 
   // Initial call to set the first text immediately
@@ -218,71 +218,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // #region Page3 Media Preloading
 // Preloading Media for Page 3
-function preloadMedia(videoSrc, imageSrc) {
-  return new Promise((resolve, reject) => {
-    var video = document.createElement("video");
-    video.src = videoSrc;
-    video.preload = "auto";
-    video.onloadeddata = () => resolve(video);
-    video.onerror = reject;
+// function preloadMedia(videoSrc) {
+//   return new Promise((resolve, reject) => {
+//     var video = document.createElement("video");
+//     video.src = videoSrc;
+//     video.preload = "auto";
+//     video.onloadeddata = () => resolve(video);
+//     video.onerror = reject;
 
-    var img = new Image();
-    img.src = imageSrc;
-
-    resolve({
-      video: video,
-      image: img,
-    });
-  });
-}
+//     var img = new Image();
+//     resolve({
+//       video: video,
+//     });
+//   });
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   // Pre load all videos related to project lists
   var project_video = document.querySelector(".video-on-hover");
   var projects = document.querySelectorAll(".featured-projects-list .project");
-
-  // Object to store preloaded media URLs for each project
-  var preloadedMediaPromises = [];
-
   projects.forEach(function (project) {
-    var projectName = project.classList[1];
-    var imageSrc = project.getAttribute("image-src");
-    var videoSrc = project.getAttribute("video-src");
-    var preloadPromise = preloadMedia(videoSrc, imageSrc)
-      .then((media) => {
-        project.dataset.mediaLoaded = "true";
-        project.dataset.videoSrc = media.video.src;
-        project.dataset.imageSrc = media.image.src;
-      })
-      .catch((err) => {
-        console.error(`Failed to load media for ${projectName}:`, err);
-      });
-    preloadedMediaPromises.push(preloadPromise);
-  });
-
-  Promise.all(preloadedMediaPromises)
-    .then(() => {
       // Event listeners for project hover
-      projects.forEach(function (project) {
-        var video = project.querySelector("video");
-        video.src = project.dataset.videoSrc;
-        video.poster = project.dataset.imageSrc;
-
         project.addEventListener("mouseenter", function () {
-          project_video.poster = project.dataset.imageSrc;
-          project_video.src = project.dataset.videoSrc;
+        var video=project.querySelector("video")
+        project_video.poster=video.getAttribute('poster')
+          project_video.src = video.getAttribute('src');
         });
-
-        project.addEventListener("mouseleave", function () {
-          project_video.poster = " ";
-          project_video.src = " ";
-        });
-      });
     })
-    .catch((err) => {
-      console.error("One or more media files failed to load:", err);
-      document.body.style.display = "block"; // Show the content even if some media fail to load
-    });
+   
 });
 
 //  #endregion Page3 Media Preloading
