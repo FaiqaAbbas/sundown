@@ -244,6 +244,10 @@ document.addEventListener("DOMContentLoaded", () => {
         project_video.poster=video.getAttribute('poster')
           project_video.src = video.getAttribute('src');
         });
+        project.addEventListener("mouseleave", function () {
+          project_video.poster=""
+          project_video.src ="";
+          });
     })
    
 });

@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Setting Sun Loader Animation</title>
-  <script src="https://cdn.jsdelivr.net/npm/@lottie/player@latest/dist/lottie-player.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anime.js/3.8.3/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 <body>
-  <div id="loader">
-    <lottie-player id="lottie-player" src="path/to/setting_sun.json"  loop autoplay></lottie-player>
-  </div>
-  
-  <script>
-    const lottiePlayer = document.getElementById('lottie-player');
 
-    lottiePlayer.addEventListener('load', () => {
-      // Show loader initially
-      document.getElementById("loader").style.display = "block";
-    });
-  </script>
-</body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>[Your Name]</h1>
+      <h3>MERN Stack Developer</h3>
+      <p>Building modern and engaging web applications.</p>
+      <a href="#about">Learn More</a>
+    </div>
+    <img src="path/to/your/hero-image.jpg" alt="Hero Image"> </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod risus eget laoreet rutrum. Donec at leo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed consectetur quam id leo pretium, vitae tincidunt eros pulvinar. Donec sed odio dui. Fusce dapibus, tellus quis vestibulum vehicula, sapien purus gravida lorem, at auctor wisi leo at tellus.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        <h3>MongoDB</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-progress="80"></div> </div>
+      </li>
+      <li>
+        <h3>Express.js</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-progress="70"></div> </div>
+      </li>
+      <li>
+        <h3>React.js</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-progress="90"></div> </div>
+      </li>
+      <li>
+        <h3>Node.js</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-progress="85"></div> </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="path/to/project1.jpg" alt="Project 1">
+        <h3>Project 1 Title</h3>
+        <p>A brief description of your project.</p>
+        <a href="#">View Project</a>
+      </div>
+      </div>
+  </section>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <form action="#">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>  </body>
 </html>
